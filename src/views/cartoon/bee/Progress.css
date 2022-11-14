@@ -1,0 +1,79 @@
+.progress {
+  position: absolute;
+  height: 53%;
+  top: 0;
+  left: 0;
+  margin-top: 3.7%;
+  margin-left: 3%;
+}
+.progress_ {
+  position: absolute;
+  height: 53%;
+  top: 0;
+  left: 0;
+  margin-top: 3.3%;
+  margin-left: 3%;
+}
+.progress__ {
+  position: absolute;
+  height: 53%;
+  top: 0;
+  left: 0;
+  margin-top: 3%;
+  margin-left: 3%;
+}
+#progress1 {
+  content: url(/public/img/cartoon/bee/page1/progress1.png);
+}
+#progress2 {
+  margin-left: 8%;
+  content: url(/public/img/cartoon/bee/page1/progress2.png);
+}
+#progress3 {
+  margin-left: 14%;
+  content: url(/public/img/cartoon/bee/page1/progress3.png);
+}
+#progress4 {
+  margin-left: 19%;
+  content: url(/public/img/cartoon/bee/page1/progress4.png);
+}
+#progress5 {
+  margin-left: 25%;
+  content: url(/public/img/cartoon/bee/page1/progress5.png);
+}
+#progress6 {
+  margin-left: 30%;
+  content: url(/public/img/cartoon/bee/page1/progress5.png);
+}
+#progress7 {
+  margin-left: 30%;
+  content: url(/public/img/cartoon/bee/page1/progress7.png);
+}
+#progress8 {
+  margin-left: 35%;
+  content: url(/public/img/cartoon/bee/page1/progress8.png);
+}
+#progress9 {
+  margin-left: 40%;
+  content: url(/public/img/cartoon/bee/page1/progress9.png);
+}
+#progress10 {
+  margin-left: 45%;
+  content: url(/public/img/cartoon/bee/page1/progress10.png);
+}
+#progress11 {
+  margin-left: 50%;
+  content: url(/public/img/cartoon/bee/page1/progress11.png);
+}
+#progress12 {
+  margin-left: 55%;
+  content: url(/public/img/cartoon/bee/page1/progress12.png);
+}
+#progress13 {
+  margin-left: 60%;
+  content: url(/public/img/cartoon/bee/page1/progress13.png);
+}
+#progress14 {
+  margin-left: 65%;
+  content: url(/public/img/cartoon/bee/page1/progress14.png);
+}

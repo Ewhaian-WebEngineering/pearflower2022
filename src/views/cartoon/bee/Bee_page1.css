@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.inlineBlock {
+  display: inline-block;
+  position: absolute;
+}
+.bee_container {
+  position: fixed;
+  width: var(--vw);
+  height: var(--vh);
+  background-color: rgb(255, 255, 255);
+}
+.bee_background_wrap {
+  width: 97%;
+  height: 98%;
+  margin: 0 auto;
+  margin-top: 2%;
+  /*background-color: rgb(180, 180, 47);*/
+  /*content: url("/public/img/cartoon/bee/page1/background.png");*/
+}
+#bee_page1 {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-image: url("/public/img/cartoon/bee/page1/background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#bee_page1_person1 {
+  display: inline-block;
+  position: absoltue;
+  top: 0;
+  left: 0;
+  margin-top: 20%;
+  height: 30%;
+  content: url("/public/img/cartoon/bee/page1/person1.png");
+}
+#bee_page1_person1_poster {
+  top: 0;
+  height: 16%;
+  margin-left: 25%;
+  margin-top: 22%;
+  content: url("/public/img/cartoon/bee/page1/person1_poster.png");
+}
+#bee_page1_person1_progressBar_name {
+  height: 2.5%;
+  top: 0;
+  right: 0;
+  margin-right: 36%;
+  margin-top: 5.5%;
+  content: url(/public/img/cartoon/bee/page1/progressName.png);
+}
+#bee_page1_person1_progressBar {
+  display: inline-flex;
+  position: relative;
+  top: 0;
+  right: 0;
+  margin-left: 33%;
+  margin-top: 11%;
+  width: 51%;
+  height: 3.3%;
+  /*background-color: brown;*/
+}
+#bee_page1_person1_progressBar_wrap {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-image: url(/public/img/cartoon/bee/page1/progressBar_wrap.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#bee_page1_person1_progressBar_line {
+  top: 0;
+  left: 0;
+  margin-left: 43%;
+  margin-top: 17%;
+  height: 6%;
+  content: url(/public/img/cartoon/bee/page1/progressBar_line.png);
+}
+
+#bee_page1_person2 {
+  top: 0;
+  left: 0;
+  margin-top: 70%;
+  margin-left: 0.7%;
+  height: 27%;
+  content: url("/public/img/cartoon/bee/page1/person2.png");
+}
+
+.bee_page1_person2_trash {
+  height: 4%;
+  left: 0;
+  top: 0;
+  content: url(/public/img/cartoon/bee/page1/person2_trash.png);
+}
+#bee_page1_person2_trash1 {
+  margin-left: 35%;
+  margin-top: 89%;
+}
+#bee_page1_person2_trash2 {
+  height: 3%;
+  margin-left: 20%;
+  margin-top: 76%;
+}
+#bee_page1_person2_trash3 {
+  height: 3%;
+  margin-left: 2%;
+  margin-top: 85%;
+}
+#bee_page1_person2_effect {
+  top: 0;
+  left: 0;
+  height: 5%;
+  margin-top: 73%;
+  margin-left: 1%;
+  content: url(/public/img/cartoon/bee/page1/person2_effect.png);
+}
+
+#bee_page1_person3 {
+  top: 0;
+  margin-top: 82%;
+  right: 0;
+  height: 25%;
+  content: url("/public/img/cartoon/bee/page1/person3.png");
+}
+
+#bee_page1_person3_sweat {
+  top: 0;
+  right: 0;
+  margin-right: 12%;
+  margin-top: 93%;
+  height: 2%;
+  content: url("/public/img/cartoon/bee/page1/person3_effect_sweat.png");
+}
+#bee_page1_person4 {
+  bottom: 0;
+  left: 0;
+  margin-left: 0.7%;
+  height: 38%;
+  content: url("/public/img/cartoon/bee/page1/person4.png");
+}
+
+#bee_page1_person4_effect {
+  height: 5%;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 57%;
+  margin-left: 15%;
+  content: url("/public/img/cartoon/bee/page1/person4_effect.png");
+}
+#bee_page1_person4_work1 {
+  bottom: 0;
+  left: 0;
+  height: 7%;
+  margin-bottom: 40%;
+  margin-left: 3%;
+  content: url(/public/img/cartoon/bee/page1/person4_work1.png);
+}
+#bee_page1_person4_work2 {
+  height: 7%;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 72%;
+  margin-left: 10%;
+  content: url(/public/img/cartoon/bee/page1/person4_work2.png);
+}
