@@ -4,6 +4,7 @@ import Intro from "./views/Intro";
 import Main from "./views/Main";
 import Event from "./views/Event";
 import Goods from "./views/Goods";
+import Gamehome from "./views/Gamehome";
 /*cartoon pages*/
 import Bee1 from "./views/cartoon/bee/Bee_page1";
 import Bee2 from "./views/cartoon/bee/Bee_page2";
@@ -18,6 +19,7 @@ function App() {
         <Route exact path="/main" element={<Main />} />
         <Route exact path="/event" element={<Event />} />
         <Route exact path="/goods" element={<Goods />} />
+        <Route exact path="/gamehome" element={<Gamehome />} />
       </Routes>
     </div>
   );
