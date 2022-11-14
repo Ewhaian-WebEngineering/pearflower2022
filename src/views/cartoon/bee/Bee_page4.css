@@ -1,0 +1,30 @@
+#bee_page4 {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  /*background-color: blue;*/
+  background-image: url("/public/img/cartoon/bee/page4/background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bee_page4_heart {
+  bottom: 0;
+  left: 0;
+  height: 3.5%;
+}
+#bee_page4_heart1 {
+  margin-bottom: 46%;
+  margin-left: 50%;
+  content: url(/public/img/cartoon/bee/page4/heart1.png);
+}
+#bee_page4_heart2 {
+  margin-left: 30%;
+  margin-bottom: 78%;
+  content: url(/public/img/cartoon/bee/page4/heart2.png);
+}
+#bee_page4_heart3 {
+  margin-left: 37%;
+  margin-bottom: 87%;
+  content: url(/public/img/cartoon/bee/page4/heart3.png);
+}
