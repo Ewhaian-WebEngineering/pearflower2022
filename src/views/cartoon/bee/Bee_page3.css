@@ -1,0 +1,37 @@
+#bee_page3 {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  /*background-color: blue;*/
+  background-image: url("/public/img/cartoon/bee/page3/background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.cloud {
+  right: 0;
+  bottom: 0;
+}
+#cloud1 {
+  height: 3.5%;
+  margin-bottom: 80%;
+  margin-right: 25%;
+  content: url(/public/img/cartoon/bee/page3/cloud1.png);
+}
+#cloud2 {
+  height: 6%;
+  margin-bottom: 86%;
+  margin-right: 15%;
+  content: url(/public/img/cartoon/bee/page3/cloud2.png);
+}
+#cloud3 {
+  height: 8%;
+  margin-bottom: 100%;
+  margin-right: 15%;
+  content: url(/public/img/cartoon/bee/page3/cloud3.png);
+}
+#cloud4 {
+  width: 100%;
+  top: 0;
+  content: url(/public/img/cartoon/bee/page3/cloud4.png);
+}
