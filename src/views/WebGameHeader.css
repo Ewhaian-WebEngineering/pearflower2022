@@ -1,0 +1,24 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    height: 55px;
+    width: 100%;
+    background: url("../img/header.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto 0;
+    width: 120px;
+    margin-left: 20px;
+
+}
