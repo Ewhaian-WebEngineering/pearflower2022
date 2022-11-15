@@ -1,0 +1,151 @@
+#sprout_page1 {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  /*background-color: blue;*/
+  background-image: url("/public/img/cartoon/sprout/page1/background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#sprout_page1_cut1_sweat {
+  top: 0;
+  right: 0;
+  height: 2%;
+  margin-top: 22%;
+  margin-right: 5%;
+  content: url(/public/img/cartoon/sprout/page1/person1_sweat.png);
+}
+#sprout_page1_cut1_coffee_cloud1 {
+  top: 0;
+  right: 0;
+  height: 1%;
+  margin-top: 38%;
+  margin-right: 35%;
+  content: url(/public/img/cartoon/sprout/page1/person1_coffee_cloud1.png);
+}
+#sprout_page1_cut1_coffee_cloud2 {
+  top: 0;
+  right: 0;
+  height: 3.5%;
+  margin-top: 31.5%;
+  margin-right: 36.5%;
+  content: url(/public/img/cartoon/sprout/page1/person1_coffee_cloud2.png);
+}
+#sprout_page1_cut1_coffee_cloud3 {
+  top: 0;
+  right: 0;
+  height: 4%;
+  margin-top: 23%;
+  margin-right: 40%;
+  content: url(/public/img/cartoon/sprout/page1/person1_coffee_cloud3.png);
+}
+#sprout_page1_cut1_clock_wrap {
+  top: 0;
+  right: 0;
+  width: 10%;
+  height: 4.5%;
+  margin-right: 25%;
+  margin-top: 4%;
+  /*background-color: blueviolet;*/
+}
+#sprout_page1_cut1_clock {
+  width: 100%;
+  height: 100%;
+  content: url(/public/img/cartoon/sprout/page1/clock_wrap.png);
+}
+#sprout_page1_cut1_clock_long {
+  height: 43%;
+  top: 0;
+  right: 0;
+  margin-top: 3%;
+  margin-right: -5%;
+  content: url(/public/img/cartoon/sprout/page1/clock_long_line.png);
+}
+#sprout_page1_cut1_clock_short {
+  height: 25%;
+  top: 0;
+  right: 0;
+  margin-right: -33%;
+  margin-top: 40%;
+  content: url(/public/img/cartoon/sprout/page1/clock_small_line.png);
+}
+#sprout_page1_cut2_person1_check {
+  top: 0;
+  left: 0;
+  height: 3.3%;
+  margin-top: 69%;
+  margin-left: 25%;
+  content: url(/public/img/cartoon/sprout/page1/person2_check.png);
+}
+#sprout_page1_cut2_cat_talk {
+  top: 0;
+  left: 0;
+  height: 3%;
+  margin-top: 76%;
+  margin-left: 33%;
+  content: url(/public/img/cartoon/sprout/page1/cat_talk.png);
+}
+#sprout_page1_cut2_person2_heart {
+  top: 0;
+  right: 0;
+  height: 3.3%;
+  margin-top: 65%;
+  margin-right: 29%;
+  content: url(/public/img/cartoon/sprout/page1/person3_heart.png);
+}
+#sprout_page1_cut2_person2_talk {
+  top: 0;
+  right: 0;
+  height: 3.5%;
+  margin-top: 74%;
+  margin-right: 30%;
+  content: url(/public/img/cartoon/sprout/page1/person3_talk.png);
+}
+#sprout_page1_cut2_person1_hair {
+  top: 0;
+  left: 0;
+  height: 6.5%;
+  margin-top: 77.5%;
+  margin-left: 2%;
+  content: url(/public/img/cartoon/sprout/page1/person2_hair.png);
+}
+#sprout_page1_cut3_cat {
+  content: url(/public/img/cartoon/sprout/page1/black_cat.png);
+  bottom: 0;
+  right: 0;
+  height: 4%;
+  margin-bottom: 66%;
+  margin-right: 15%;
+}
+#sprout_page1_cut3_downTree {
+  bottom: 0;
+  right: 0;
+  height: 8%;
+  margin-bottom: 58%;
+  margin-right: 22%;
+  content: url(/public/img/cartoon/sprout/page1/tree_down.png);
+}
+#sprout_page1_cut3_person_effect {
+  bottom: 0;
+  right: 0;
+  height: 1.2%;
+  margin-bottom: 87%;
+  margin-right: 26%;
+  content: url(/public/img/cartoon/sprout/page1/person_in_window_effect.png);
+}
+#sprout_page1_cut3_persons {
+  bottom: 0;
+  left: 0;
+  height: 31%;
+  margin-left: 6%;
+  content: url(/public/img/cartoon/sprout/page1/person4_5.png);
+}
+#sprout_page1_cut3_person_heart {
+  left: 0;
+  bottom: 0;
+  height: 5%;
+  margin-bottom: 55%;
+  margin-left: 11.5%;
+  content: url(/public/img/cartoon/sprout/page1/person4_heart.png);
+}
