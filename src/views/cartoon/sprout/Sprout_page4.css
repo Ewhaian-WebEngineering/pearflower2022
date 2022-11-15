@@ -1,0 +1,180 @@
+#sprout_page4 {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  /*background-color: blue;*/
+  background-image: url("/public/img/cartoon/sprout/page4/background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#sprout_page4_cloud1 {
+  top: 0;
+  left: 0;
+  height: 1.3%;
+  margin-left: 15%;
+  margin-top: 49%;
+  content: url(/public/img/cartoon/sprout/page4/cloud1.png);
+}
+#sprout_page4_cloud2 {
+  top: 0;
+  right: 0;
+  height: 3%;
+  margin-top: 7%;
+  margin-right: 20%;
+  opacity: 40%;
+  content: url(/public/img/cartoon/sprout/page4/cloud2.png);
+}
+#sprout_page4_cloud3 {
+  top: 0;
+  left: 0;
+  height: 3%;
+  margin-top: 15%;
+  margin-left: 10%;
+  opacity: 40%;
+  content: url(/public/img/cartoon/sprout/page4/cloud3.png);
+}
+#sprout_page4_firecracker1_wrap {
+  display: inline-flex;
+  width: 12%;
+  height: 5%;
+  top: 0;
+  left: 0;
+  margin-top: 27%;
+  margin-left: 20%;
+}
+#sprout_page4_firecracker1_inside {
+  width: 65%;
+  height: 65%;
+  top: 0;
+  left: 0;
+  margin-left: 19%;
+  margin-top: 13%;
+  content: url(/public/img/cartoon/sprout/page4/firecracker_inside1.png);
+}
+#sprout_page4_firecracker1_outside {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: url(/public/img/cartoon/sprout/page4/firecracker_outside1.png);
+}
+#sprout_page4_firecracker2_wrap {
+  width: 15%;
+  height: 7%;
+  top: 0;
+  left: 0;
+  margin-top: 37%;
+  margin-left: 7%;
+}
+#sprout_page4_firecracker2_inside {
+  width: 65%;
+  height: 65%;
+  top: 0;
+  left: 0;
+  margin-left: 14%;
+  margin-top: 16%;
+  content: url(/public/img/cartoon/sprout/page4/firecracker_inside2.png);
+}
+#sprout_page4_firecracker2_outside {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: url(/public/img/cartoon/sprout/page4/firecracker_outside2.png);
+}
+#sprout_page4_firecracker3_wrap {
+  width: 18%;
+  height: 9%;
+  top: 0;
+  right: 0;
+  margin-top: 15%;
+  margin-right: 5%;
+}
+#sprout_page4_firecracker3_inside {
+  width: 65%;
+  height: 65%;
+  top: 0;
+  left: 0;
+  margin-left: 14%;
+  margin-top: 16%;
+  content: url(/public/img/cartoon/sprout/page4/firecracker_inside2.png);
+}
+#sprout_page4_firecracker3_outside {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: url(/public/img/cartoon/sprout/page4/firecracker_outside2.png);
+}
+#sprout_page4_merryGoRound_wrap {
+  width: 45%;
+  height: 16%;
+  top: 0;
+  left: 0;
+  margin-top: 70%;
+  margin-left: 10%;
+  background-image: url(/public/img/cartoon/sprout/page4/merry_go_round.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#sprout_page4_merryGoRound_horse1 {
+  background-origin: 0;
+  left: 0;
+  bottom: 0;
+  height: 25%;
+  margin-bottom: 6%;
+  margin-left: 17%;
+  content: url(/public/img/cartoon/sprout/page4/horse.png);
+}
+#sprout_page4_merryGoRound_horse2 {
+  background-origin: 0;
+  left: 0;
+  bottom: 0;
+  height: 25%;
+  margin-bottom: 12%;
+  margin-left: 37%;
+  content: url(/public/img/cartoon/sprout/page4/horse.png);
+}
+#sprout_page4_merryGoRound_horse3 {
+  background-origin: 0;
+  left: 0;
+  bottom: 0;
+  height: 25%;
+  margin-bottom: 6%;
+  margin-left: 57%;
+  content: url(/public/img/cartoon/sprout/page4/horse.png);
+}
+#sprout_page4_train1 {
+  bottom: 0;
+  right: 0;
+  height: 7%;
+  margin-bottom: 94%;
+  margin-right: 3%;
+  content: url(/public/img/cartoon/sprout/page4/train.png);
+}
+#sprout_page4_train2 {
+  top: 0;
+  right: 0;
+  height: 5%;
+  margin-top: 61%;
+  margin-right: 20%;
+  content: url(/public/img/cartoon/sprout/page4/train2.png);
+}
+#sprout_page4_persons {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45%;
+  margin: 0 auto;
+  content: url(/public/img/cartoon/sprout/page4/persons.png);
+}
+#sprout_page4_persons_effect {
+  bottom: 0;
+  height: 6%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  margin-bottom: 80%;
+  content: url(/public/img/cartoon/sprout/page4/persons_effect.png);
+}
