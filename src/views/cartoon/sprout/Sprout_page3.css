@@ -1,0 +1,100 @@
+#sprout_page3 {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  /*background-color: blue;*/
+  background-image: url("/public/img/cartoon/sprout/page3/background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#sprout_page3_toDoListWrap {
+  width: 32%;
+  height: 14%;
+  top: 0;
+  left: 0;
+  margin-top: 92%;
+  margin-left: 3%;
+  background-image: url(/public/img/cartoon/sprout/page3/toDoList.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#sprout_page3_toDoListBox1_wrap {
+  width: 12%;
+  height: 13%;
+  top: 0;
+  left: 0;
+  margin-top: 32%;
+  margin-left: 13%;
+  background-image: url(/public/img/cartoon/sprout/page3/toDoBox1.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#sprout_page3_toDoListBox2_wrap {
+  width: 12%;
+  height: 13%;
+  top: 0;
+  left: 0;
+  margin-top: 47%;
+  margin-left: 16%;
+  background-image: url(/public/img/cartoon/sprout/page3/toDoBox2.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#sprout_page3_toDoListBox3_wrap {
+  width: 12%;
+  height: 13%;
+  top: 0;
+  left: 0;
+  margin-top: 62%;
+  margin-left: 20%;
+  background-image: url(/public/img/cartoon/sprout/page3/toDoBox3.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#sprout_page3_toDoListCheck1 {
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 120%;
+  margin-left: 20%;
+  margin-bottom: 20%;
+  content: url(/public/img/cartoon/sprout/page3/check1.png);
+}
+#sprout_page3_toDoListCheck2 {
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 120%;
+  margin-left: 20%;
+  margin-bottom: 20%;
+  content: url(/public/img/cartoon/sprout/page3/check2.png);
+}
+#sprout_page3_toDoListCheck3 {
+  bottom: 0;
+  left: 0;
+  width: 90%;
+  height: 120%;
+  margin-left: 20%;
+  margin-bottom: 20%;
+  content: url(/public/img/cartoon/sprout/page3/check3.png);
+}
+#sprout_page3_check4_wrap {
+  width: 8%;
+  height: 4%;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 86%;
+  margin-right: 2%;
+  background-image: url(/public/img/cartoon/sprout/page3/checkCircle.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#sprout_page3_check4 {
+  bottom: 0;
+  left: 0;
+  height: 40%;
+  margin-bottom: 33%;
+  margin-left: 28%;
+  content: url(/public/img/cartoon/sprout/page3/check_big.png);
+}
