@@ -1,4 +1,3 @@
-/*모바일*/
 @media screen and (max-width: 768px) {
     * {
         text-align: center;
@@ -36,29 +35,46 @@
 
     .gamemiddle {
         width: 100vw;
-        height: 150vh;
+        height: 92vh;
+        /*150vh*/
         display: flex;
         position: relative;
     }
 
-    #escape {
-        width: 70vw;
+    #gameboard {
+        width: 78vw;
+
     }
 
-    .escape {
+    .gameboard {
         position: absolute;
-        padding-top: 77vw;
+        padding-top: 15vw;
+        left: 0;
         right: 0;
+        z-index: 1;
+
     }
 
-    .howtoplay {
+    .howtolabel {
+        position: absolute;
+        padding-top: 20vw;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    #howtolabel {
+        width: 35vw;
+    }
+
+    .start {
         position: absolute;
         padding-top: 145.5vw;
         left: 0;
         right: 0;
     }
 
-    #howtoplay {
+    #startbtn {
         width: 62vw;
     }
 }
