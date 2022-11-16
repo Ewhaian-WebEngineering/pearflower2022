@@ -41,9 +41,59 @@
 #bee_page1_person1_poster {
   top: 0;
   height: 16%;
-  margin-left: 25%;
+  margin-left: 18%;
   margin-top: 22%;
   content: url("/public/img/cartoon/bee/page1/person1_poster.png");
+  -webkit-animation: twisterInDown 2s;
+  animation: twisterInDown 2s;
+}
+@-webkit-keyframes twisterInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scale(0, 0) rotate(360deg) translateY(-100%);
+    transform: scale(0, 0) rotate(360deg) translateY(-100%);
+  }
+
+  30% {
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scale(0, 0) rotate(360deg) translateY(-100%);
+    transform: scale(0, 0) rotate(360deg) translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform: scale(1, 1) rotate(0deg) translateY(0%);
+    transform: scale(1, 1) rotate(0deg) translateY(0%);
+  }
+}
+@keyframes twisterInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scale(0, 0) rotate(360deg) translateY(-100%);
+    transform: scale(0, 0) rotate(360deg) translateY(-100%);
+  }
+
+  30% {
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scale(0, 0) rotate(360deg) translateY(-100%);
+    transform: scale(0, 0) rotate(360deg) translateY(-100%);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform-origin: 100% 100%;
+    transform-origin: 100% 100%;
+    -webkit-transform: scale(1, 1) rotate(0deg) translateY(0%);
+    transform: scale(1, 1) rotate(0deg) translateY(0%);
+  }
 }
 #bee_page1_person1_progressBar_name {
   height: 2.5%;
@@ -71,6 +121,7 @@
   background-image: url(/public/img/cartoon/bee/page1/progressBar_wrap.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  animation: lightSpeedInLeft 2s ease-out;
 }
 #bee_page1_person1_progressBar_line {
   top: 0;
@@ -79,6 +130,7 @@
   margin-top: 17%;
   height: 6%;
   content: url(/public/img/cartoon/bee/page1/progressBar_line.png);
+  animation: lightSpeedInLeft 2s ease-out;
 }
 
 #bee_page1_person2 {
@@ -99,16 +151,31 @@
 #bee_page1_person2_trash1 {
   margin-left: 35%;
   margin-top: 89%;
+  animation: falling_trash infinite;
+  animation-duration: 3s;
+}
+@keyframes falling_trash {
+  from {
+    opacity: 0%;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 100%;
+  }
 }
 #bee_page1_person2_trash2 {
   height: 3%;
   margin-left: 20%;
   margin-top: 76%;
+  animation: falling_trash infinite;
+  animation-duration: 2s;
 }
 #bee_page1_person2_trash3 {
   height: 3%;
   margin-left: 2%;
   margin-top: 85%;
+  animation: falling_trash infinite;
+  animation-duration: 2.5s;
 }
 #bee_page1_person2_effect {
   top: 0;
@@ -134,6 +201,14 @@
   margin-top: 93%;
   height: 2%;
   content: url("/public/img/cartoon/bee/page1/person3_effect_sweat.png");
+  animation: sweat 1s infinite;
+}
+@keyframes sweat {
+  from {
+  }
+  to {
+    transform: translateX(3px);
+  }
 }
 #bee_page1_person4 {
   bottom: 0;
@@ -166,4 +241,29 @@
   margin-bottom: 72%;
   margin-left: 10%;
   content: url(/public/img/cartoon/bee/page1/person4_work2.png);
+}
+/*외부 코드*/
+@keyframes lightSpeedInLeft {
+  from {
+    transform: translate3d(-100%, 0, 0) skewX(30deg);
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(-20deg);
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(5deg);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.lightSpeedInLeft {
+  animation-name: lightSpeedInLeft;
+  animation-timing-function: ease-out;
 }

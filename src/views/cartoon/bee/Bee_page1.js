@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Bee_page1.css";
 import "./Bee_page2.css";
 import "./Progress.css";
@@ -11,8 +11,72 @@ function setScreenSize() {
   document.documentElement.style.setProperty("--vh", `${vh}px`);
   document.documentElement.style.setProperty("--vw", `${vw}px`);
 }
+//progress bar 내용물 전부 Hidden 처리하는 함수
+function progressInit() {
+  document.documentElement.style.setProperty("--progress1", `hidden`);
+  document.documentElement.style.setProperty("--progress2", `hidden`);
+  document.documentElement.style.setProperty("--progress3", `hidden`);
+  document.documentElement.style.setProperty("--progress4", `hidden`);
+  document.documentElement.style.setProperty("--progress5", `hidden`);
+  document.documentElement.style.setProperty("--progress6", `hidden`);
+  document.documentElement.style.setProperty("--progress7", `hidden`);
+  document.documentElement.style.setProperty("--progress8", `hidden`);
+  document.documentElement.style.setProperty("--progress9", `hidden`);
+  document.documentElement.style.setProperty("--progress10", `hidden`);
+  document.documentElement.style.setProperty("--progress11", `hidden`);
+  document.documentElement.style.setProperty("--progress12", `hidden`);
+  document.documentElement.style.setProperty("--progress13", `hidden`);
+  document.documentElement.style.setProperty("--progress14", `hidden`);
+}
+//progress bar 내용물 채워지는 애니메이션 함수
+function progressAni() {
+  document.documentElement.style.setProperty("--progress1", `visible`);
+  setTimeout(() => {
+    document.documentElement.style.setProperty("--progress2", `visible`);
+  }, 100);
+  setTimeout(() => {
+    document.documentElement.style.setProperty("--progress3", `visible`);
+  }, 200);
+  setTimeout(() => {
+    document.documentElement.style.setProperty("--progress4", `visible`);
+  }, 300);
+  setTimeout(() => {
+    document.documentElement.style.setProperty("--progress5", `visible`);
+  }, 400);
+  setTimeout(() => {
+    document.documentElement.style.setProperty("--progress6", `visible`);
+  }, 500);
+  setTimeout(() => {
+    document.documentElement.style.setProperty("--progress7", `visible`);
+  }, 600);
+  setTimeout(() => {
+    document.documentElement.style.setProperty("--progress8", `visible`);
+  }, 700);
+  setTimeout(() => {
+    document.documentElement.style.setProperty("--progress9", `visible`);
+  }, 800);
+  setTimeout(() => {
+    document.documentElement.style.setProperty("--progress10", `visible`);
+  }, 900);
+  setTimeout(() => {
+    document.documentElement.style.setProperty("--progress11", `visible`);
+  }, 1000);
+  setTimeout(() => {
+    document.documentElement.style.setProperty("--progress12", `visible`);
+  }, 1100);
+  setTimeout(() => {
+    document.documentElement.style.setProperty("--progress13", `visible`);
+  }, 1200);
+  setTimeout(() => {
+    document.documentElement.style.setProperty("--progress14", `visible`);
+  }, 1300);
+}
 function Bee_page1() {
   setScreenSize();
+  useEffect(() => {
+    progressInit();
+    progressAni();
+  }, []);
   return (
     <div className="bee_container">
       <div className="bee_background_wrap">
@@ -69,7 +133,6 @@ function Bee_page1() {
           <div id="bee_page1_person4_work1" className="inlineBlock"></div>
           <div id="bee_page1_person4_work2" className="inlineBlock"></div>
         </div>
-        <div id="bee_page2"></div>
       </div>
       <div className="skipBtn inlineBlock"></div>
     </div>
