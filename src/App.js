@@ -34,12 +34,9 @@ function App() {
         <Route exact path="/event" element={<Event />} />
         <Route exact path="/goods" element={<Goods />} />
         <Route exact path="/gamehome" element={<Gamehome />} />
-<<<<<<< Updated upstream
+        <Route exact path="/gameinfo" element={<GameInfo />} />
         <Route exact path="/finalgame" element={<GamePage />} />
         <Route exact path="/finalgameover" element={<GameOverPage />} />
-=======
-        <Route exact path="/gameinfo" element={<GameInfo />} />
->>>>>>> Stashed changes
       </Routes>
     </div>
   );

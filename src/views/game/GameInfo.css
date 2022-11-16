@@ -1,0 +1,80 @@
+@media screen and (max-width: 768px) {
+    * {
+        text-align: center;
+    }
+
+    .wrapper {
+        background: url("/public/img/game/background.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    .gameheader {
+        height: 8vh;
+        display: flex;
+    }
+
+    .header-box {
+        padding-left: 2vw;
+        padding-top: 1.3vw;
+    }
+
+    .circle {
+        position: absolute;
+        right: 6vw;
+    }
+
+    #circle {
+        width: 179.5vw;
+    }
+
+    #logo {
+        width: 25vw;
+    }
+
+    .gamemiddle {
+        width: 100vw;
+        height: 92vh;
+        /*150vh*/
+        display: flex;
+        position: relative;
+    }
+
+    #gameboard {
+        width: 78vw;
+
+    }
+
+    .gameboard {
+        position: absolute;
+        padding-top: 15vw;
+        left: 0;
+        right: 0;
+        z-index: 1;
+
+    }
+
+    .howtolabel {
+        position: absolute;
+        padding-top: 20vw;
+        left: 0;
+        right: 0;
+        z-index: 2;
+    }
+
+    #howtolabel {
+        width: 35vw;
+    }
+
+    .start {
+        position: absolute;
+        padding-top: 145.5vw;
+        left: 0;
+        right: 0;
+    }
+
+    #startbtn {
+        width: 62vw;
+    }
+}
