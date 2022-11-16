@@ -4,7 +4,6 @@
       .background {
           width: 100vw;
           height: 100vh;
-          background-image: url('/public/img/game/background.png');
           position: fixed relative;
           z-index: 1;
       }
@@ -52,54 +51,56 @@
       }
   }
 
+  /*PC*/
   @media screen and (min-width: 768px) {
       .background {
+          position: fixed relative;
           width: 100vw;
           height: 100vh;
-          background-image: url('/public/img/game/background_web.png');
-          position: fixed relative;
+          top: 0%;
+          left: 0%;
           z-index: 1;
           background-repeat: no-repeat;
       }
 
       .guideText {
           position: absolute;
-          width: 270px;
-          height: 17px;
-          top: 93px;
-          left: 58px;
+          width: 28vw;
+          height: 3vh;
+          top: 17%;
+          left: 59%;
           z-index: 3;
       }
 
       .keyWindow {
           position: absolute;
-          width: 37vw;
-          height: 37vh;
-          top: 131px;
-          left: 33px;
+          width: 44vw;
+          height: 42vh;
+          top: 22%;
+          left: 51%;
       }
 
       .door {
           position: absolute;
-          width: 301px;
-          height: 291px;
-          top: 369px;
-          left: 49px;
+          width: 38vw;
+          height: 52vh;
+          top: 33%;
+          left: 6.25%;
       }
 
       .character {
           position: absolute;
-          width: 342px;
-          height: 171px;
-          top: 664px;
-          left: 31px;
+          width: 44vw;
+          height: 25vh;
+          top: 69%;
+          left: 56%;
       }
 
       .key {
           position: absolute;
-          width: 59px;
-          height: 46.7px;
-          top: 280px;
-          left: 168px;
+          width: 6.5vw;
+          height: 7vh;
+          top: 50%;
+          left: 70%;
       }
   }
