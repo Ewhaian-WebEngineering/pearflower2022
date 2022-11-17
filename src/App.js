@@ -15,8 +15,8 @@ import Sprout1 from "./views/cartoon/sprout/Sprout_page1";
 import Sprout2 from "./views/cartoon/sprout/Sprout_page2";
 import Sprout3 from "./views/cartoon/sprout/Sprout_page3";
 import Sprout4 from "./views/cartoon/sprout/Sprout_page4";
-import GamePage from "./views/GamePage"
-import GameOverPage from "./views/GameOverPage";
+import GamePage from "./views/game/GamePage"
+import GameOverPage from "./views/game/GameOverPage";
 function App() {
   return (
     <div className="App">
