@@ -1,0 +1,146 @@
+/*모바일*/
+@media screen and (max-width: 768px) {
+    * {
+        text-align: center;
+    }
+
+    .wrapper {
+        background: url("/public/img/game/background.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    .gameheader {
+        height: 8vh;
+        display: flex;
+    }
+
+    .header-box {
+        padding-left: 2vw;
+        padding-top: 1.3vw;
+    }
+
+    .circle {
+        position: absolute;
+        right: 6vw;
+    }
+
+    #circle {
+        width: 179.5vw;
+    }
+
+    #logo {
+        width: 25vw;
+    }
+
+    .gamemiddle {
+        width: 100vw;
+        height: 92vh;
+        /*150vh*/
+        display: flex;
+        position: relative;
+    }
+
+    #escape {
+        width: 70vw;
+    }
+
+    .escape {
+        position: absolute;
+        padding-top: 77vw;
+        right: 0;
+    }
+
+    .howtoplay {
+        position: absolute;
+        padding-top: 145.5vw;
+        left: 0;
+        right: 0;
+    }
+
+    #howtoplay {
+        width: 62vw;
+    }
+}
+
+/*웹*/
+@media screen and (min-width:768px) {
+    .wrapper {
+
+        background: url("/public/img/game/background.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+    }
+
+    .gameheader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        height: 55px;
+        width: 100%;
+        background: url("/public/img/game/header.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 3;
+    }
+
+    #logo {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto 0;
+        width: 120px;
+        margin-left: 20px;
+    }
+
+    .header-box {
+        padding-left: 1.8vw;
+        padding-top: 1.2vw;
+    }
+
+    .gamemiddle {
+        width: 100vw;
+        height: 200vh;
+        display: flex;
+        position: relative;
+    }
+
+    #escape {
+        width: 35vw;
+    }
+
+    .escape {
+        position: absolute;
+        right: 0;
+        padding-top: 40vw;
+        padding-right: 5vw;
+        z-index: 2;
+    }
+
+    #howtoplay {
+        width: 20vw;
+    }
+
+    .howtoplay {
+        position: absolute;
+        right: 0;
+        padding-top: 56vw;
+        padding-right: 5vw;
+    }
+
+    #circle {
+        width: 89vw;
+    }
+
+    .circle {
+        position: absolute;
+        right: 34vw;
+        z-index: 1;
+    }
+}
