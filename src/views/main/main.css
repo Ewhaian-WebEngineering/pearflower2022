@@ -1,0 +1,81 @@
+
+.mainFullBox {
+    
+}
+
+.mainFullBox img{
+    text-align: center;
+    width: 100%;
+}
+
+
+.textBox{
+    /* background-color: red; */
+    padding-top: 40px;
+    text-align: center;
+}
+
+.textBox h1{
+    font-weight: 600;
+    font-size: 41px;
+    line-height: 38px;
+}
+
+.textBox h2{
+    color: #EB4C53;
+    font-size: 31px;
+    padding-top: 75px;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+.textBox p {
+    padding-top: 50px;
+    line-height: 38px;
+}
+
+.eventBoxFull{
+    padding-top: 95px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 180px;
+}
+
+.eventGrayBox {
+    height: 480px;
+    width: 950px;
+    
+}
+
+.eventGrayBox p {
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.mainGrayBox{
+    height: 440px;
+    width: 950px;
+    background-color: #ECECEC;
+
+}
+
+.btnBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.mainBtn{
+width:  350px;
+Height:70px;
+background: #FFB09F;
+border-radius: 34.9351px;
+text-align: center;
+line-height: 70px;
+font-weight: 700;
+font-size: 21px;
+text-decoration: none;
+text-decoration-style: none;
+}

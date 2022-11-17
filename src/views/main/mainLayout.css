@@ -1,0 +1,30 @@
+.floatingBtn1{
+    display:inline-block;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.19);
+    border-radius: 56px;
+    width: 100px;
+    height: 100px;
+  position:sticky;
+  bottom: 140px;
+  left: 90vw;
+  top: 200px;
+}
+
+.floatingBtn2{
+    display:inline-block;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.19);
+    border-radius: 56px;
+    width: 100px;
+    height: 100px;
+  position:sticky;
+  bottom: 30px;
+  left: 90vw;
+}
+
+.floatingBtn2 img{
+    margin: 20px;
+    width: 60%;
+    height: 60%;
+}
