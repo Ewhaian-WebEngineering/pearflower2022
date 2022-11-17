@@ -152,13 +152,50 @@
   margin-left: 57%;
   content: url(/public/img/cartoon/sprout/page4/horse.png);
 }
-#sprout_page4_train1 {
+#sprout_page4_train1_wrap {
+  width: 48%;
+  height: 8%;
   bottom: 0;
   right: 0;
-  height: 7%;
-  margin-bottom: 94%;
+  margin-bottom: 90%;
+  background-color: aquamarine;
+}
+#sprout_page4_train1 {
+  top: 0;
+  right: 0;
+  height: 90%;
+  width: 100%;
   margin-right: 3%;
   content: url(/public/img/cartoon/sprout/page4/train.png);
+}
+.sprout_page4_train1_wheel {
+  bottom: 0;
+  height: 25%;
+  right: 0;
+  margin-bottom: 1%;
+  content: url(/public/img/cartoon/sprout/page4/train1_wheel.png);
+}
+#sprout_page4_train1_wheel1 {
+  margin-right: 90%;
+}
+#sprout_page4_train1_wheel2 {
+  margin-right: 80%;
+}
+#sprout_page4_train1_wheel3 {
+  height: 35%;
+  margin-right: 66%;
+}
+#sprout_page4_train1_wheel4 {
+  margin-right: 49%;
+}
+#sprout_page4_train1_wheel5 {
+  margin-right: 38%;
+}
+#sprout_page4_train1_wheel6 {
+  margin-right: 18%;
+}
+#sprout_page4_train1_wheel7 {
+  margin-right: 7%;
 }
 #sprout_page4_train2 {
   top: 0;

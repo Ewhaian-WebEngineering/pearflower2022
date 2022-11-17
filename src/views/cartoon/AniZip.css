@@ -23,6 +23,16 @@
   animation-duration: 2s;
   animation-iteration-count: infinite;
 }
+.wheel-rotate {
+  animation-name: wheel-rotate;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.move_train {
+  animation-name: move_train;
+  animation-duration: 5s;
+}
 
 @keyframes fadeInUp {
   from {
@@ -59,6 +69,13 @@
     transform: translateY(10px);
   }
 }
+@keyframes rolling_wheel {
+  from {
+  }
+  to {
+    rotate: 360;
+  }
+}
 @keyframes zoomIn {
   from {
     opacity: 0;
@@ -67,5 +84,20 @@
 
   50% {
     opacity: 1;
+  }
+}
+@keyframes wheel-rotate {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes move_train {
+  from {
+  }
+  to {
+    transform: translateX(-100%);
   }
 }

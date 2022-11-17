@@ -52,6 +52,29 @@ function sprout_page4_firecracker3_ani() {
     outside.classList.add("zoomIn");
   }, 700);
 }
+function sprout_page4_train1_wheel_ani() {
+  document
+    .getElementById("sprout_page4_train1_wheel1")
+    .classList.add("wheel-rotate");
+  document
+    .getElementById("sprout_page4_train1_wheel2")
+    .classList.add("wheel-rotate");
+  document
+    .getElementById("sprout_page4_train1_wheel3")
+    .classList.add("wheel-rotate");
+  document
+    .getElementById("sprout_page4_train1_wheel4")
+    .classList.add("wheel-rotate");
+  document
+    .getElementById("sprout_page4_train1_wheel5")
+    .classList.add("wheel-rotate");
+  document
+    .getElementById("sprout_page4_train1_wheel6")
+    .classList.add("wheel-rotate");
+  document
+    .getElementById("sprout_page4_train1_wheel7")
+    .classList.add("wheel-rotate");
+}
 function sprout_page4_train2() {
   var target = document.getElementById("sprout_page4_train2");
 }
@@ -70,6 +93,7 @@ function Sprout_page4() {
     sprout_page4_firecracker1_ani();
     sprout_page4_firecracker2_ani();
     sprout_page4_firecracker3_ani();
+    sprout_page4_train1_wheel_ani();
   }, []);
   return (
     <div className="bee_container">
@@ -122,7 +146,37 @@ function Sprout_page4() {
               className="inlineBlock"
             ></div>
           </div>
-          <div id="sprout_page4_train1" className="inlineBlock"></div>
+          <div id="sprout_page4_train1_wrap" className="inlineBlock">
+            <div id="sprout_page4_train1" className="inlineBlock"></div>
+            <div
+              id="sprout_page4_train1_wheel1"
+              className="inlineBlock sprout_page4_train1_wheel"
+            ></div>
+            <div
+              id="sprout_page4_train1_wheel2"
+              className="inlineBlock sprout_page4_train1_wheel"
+            ></div>
+            <div
+              id="sprout_page4_train1_wheel3"
+              className="inlineBlock sprout_page4_train1_wheel"
+            ></div>
+            <div
+              id="sprout_page4_train1_wheel4"
+              className="inlineBlock sprout_page4_train1_wheel"
+            ></div>
+            <div
+              id="sprout_page4_train1_wheel5"
+              className="inlineBlock sprout_page4_train1_wheel"
+            ></div>
+            <div
+              id="sprout_page4_train1_wheel6"
+              className="inlineBlock sprout_page4_train1_wheel"
+            ></div>
+            <div
+              id="sprout_page4_train1_wheel7"
+              className="inlineBlock sprout_page4_train1_wheel"
+            ></div>
+          </div>
           <div id="sprout_page4_train2" className="inlineBlock"></div>
           <div id="sprout_page4_persons" className="inlineBlock"></div>
           <div id="sprout_page4_persons_effect" className="inlineBlock"></div>
