@@ -15,8 +15,12 @@ import Sprout1 from "./views/cartoon/sprout/Sprout_page1";
 import Sprout2 from "./views/cartoon/sprout/Sprout_page2";
 import Sprout3 from "./views/cartoon/sprout/Sprout_page3";
 import Sprout4 from "./views/cartoon/sprout/Sprout_page4";
+import Mushroom2 from "./views/cartoon/mushroom/Mushroom_page2";
+import Mushroom3 from "./views/cartoon/mushroom/Mushroom_page3";
+import Mushroom4 from "./views/cartoon/mushroom/Mushroom_page4";
 import GamePage from "./views/game/GamePage"
 import GameOverPage from "./views/game/GameOverPage";
+
 function App() {
   return (
     <div className="App">
@@ -30,6 +34,9 @@ function App() {
         <Route exact path="/sprout2" element={<Sprout2 />} />
         <Route exact path="/sprout3" element={<Sprout3 />} />
         <Route exact path="/sprout4" element={<Sprout4 />} />
+        <Route exact path="/mushroom2" element={<Mushroom2/>} />
+        <Route exact path="/mushroom3" element={<Mushroom3/>} />
+        <Route exact path="/mushroom4" element={<Mushroom4/>} />
         <Route exact path="/main" element={<Main />} />
         <Route exact path="/event" element={<Event />} />
         <Route exact path="/goods" element={<Goods />} />
