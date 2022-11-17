@@ -3,6 +3,7 @@
   height: 100%;
   margin: 0 auto;
   position: relative;
+  overflow: hidden;
   /*background-color: blue;*/
   background-image: url("/public/img/cartoon/sprout/page4/background.png");
   background-size: 100% 100%;
@@ -44,6 +45,7 @@
   margin-left: 20%;
 }
 #sprout_page4_firecracker1_inside {
+  opacity: var(--firecracker1-inside);
   width: 65%;
   height: 65%;
   top: 0;
@@ -53,6 +55,7 @@
   content: url(/public/img/cartoon/sprout/page4/firecracker_inside1.png);
 }
 #sprout_page4_firecracker1_outside {
+  opacity: var(--firecracker1-outside);
   width: 100%;
   height: 100%;
   top: 0;
@@ -68,6 +71,7 @@
   margin-left: 7%;
 }
 #sprout_page4_firecracker2_inside {
+  opacity: var(--firecracker2-inside);
   width: 65%;
   height: 65%;
   top: 0;
@@ -77,6 +81,7 @@
   content: url(/public/img/cartoon/sprout/page4/firecracker_inside2.png);
 }
 #sprout_page4_firecracker2_outside {
+  opacity: var(--firecracker2-outside);
   width: 100%;
   height: 100%;
   top: 0;
@@ -92,6 +97,7 @@
   margin-right: 5%;
 }
 #sprout_page4_firecracker3_inside {
+  opacity: var(--firecracker3-inside);
   width: 65%;
   height: 65%;
   top: 0;
@@ -101,6 +107,7 @@
   content: url(/public/img/cartoon/sprout/page4/firecracker_inside2.png);
 }
 #sprout_page4_firecracker3_outside {
+  opacity: var(--firecracker3-outside);
   width: 100%;
   height: 100%;
   top: 0;

@@ -1,7 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../bee/Bee_page1.css";
 import "./Sprout_page4.css";
 import "../SkipBtn.css";
+import "../AniZip.css";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -9,8 +10,67 @@ function setScreenSize() {
   document.documentElement.style.setProperty("--vh", `${vh}px`);
   document.documentElement.style.setProperty("--vw", `${vw}px`);
 }
+function sprout_page4_horse1_ani() {
+  document
+    .getElementById("sprout_page4_merryGoRound_horse1")
+    .classList.add("horseAni1");
+}
+function sprout_page4_horse2_ani() {
+  document
+    .getElementById("sprout_page4_merryGoRound_horse2")
+    .classList.add("horseAni2");
+}
+function sprout_page4_horse3_ani() {
+  document
+    .getElementById("sprout_page4_merryGoRound_horse3")
+    .classList.add("horseAni1");
+}
+function sprout_page4_firecracker1_ani() {
+  var inside = document.getElementById("sprout_page4_firecracker1_inside");
+  var outside = document.getElementById("sprout_page4_firecracker1_outside");
+
+  inside.classList.add("zoomIn");
+  setTimeout(() => {
+    outside.classList.add("zoomIn");
+  }, 700);
+}
+function sprout_page4_firecracker2_ani() {
+  var inside = document.getElementById("sprout_page4_firecracker2_inside");
+  var outside = document.getElementById("sprout_page4_firecracker2_outside");
+
+  inside.classList.add("zoomIn");
+  setTimeout(() => {
+    outside.classList.add("zoomIn");
+  }, 700);
+}
+function sprout_page4_firecracker3_ani() {
+  var inside = document.getElementById("sprout_page4_firecracker3_inside");
+  var outside = document.getElementById("sprout_page4_firecracker3_outside");
+
+  inside.classList.add("zoomIn");
+  setTimeout(() => {
+    outside.classList.add("zoomIn");
+  }, 700);
+}
+function sprout_page4_train2() {
+  var target = document.getElementById("sprout_page4_train2");
+}
 function Sprout_page4() {
   setScreenSize();
+  useEffect(() => {
+    sprout_page4_horse1_ani();
+    sprout_page4_horse2_ani();
+    sprout_page4_horse3_ani();
+    document.documentElement.style.setProperty("--firecracker1-inside", `0`);
+    document.documentElement.style.setProperty("--firecracker1-outside", `0`);
+    document.documentElement.style.setProperty("--firecracker2-inside", `0`);
+    document.documentElement.style.setProperty("--firecracker2-outside", `0`);
+    document.documentElement.style.setProperty("--firecracker3-inside", `0`);
+    document.documentElement.style.setProperty("--firecracker3-outside", `0`);
+    sprout_page4_firecracker1_ani();
+    sprout_page4_firecracker2_ani();
+    sprout_page4_firecracker3_ani();
+  }, []);
   return (
     <div className="bee_container">
       <div className="bee_background_wrap">
