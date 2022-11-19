@@ -1,0 +1,79 @@
+.firecracker1_wrap {
+  display: inline-flex;
+  width: 12%;
+  height: 5%;
+  top: 0;
+  left: 0;
+  margin-top: 27%;
+  margin-left: 20%;
+}
+.firecracker1_inside {
+  opacity: var(--firecracker1-inside);
+  width: 65%;
+  height: 65%;
+  top: 0;
+  left: 0;
+  margin-left: 19%;
+  margin-top: 13%;
+  content: url(/public/img/cartoon/sprout/page4/firecracker_inside1.png);
+}
+.firecracker1_outside {
+  opacity: var(--firecracker1-outside);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: url(/public/img/cartoon/sprout/page4/firecracker_outside1.png);
+}
+.firecracker2_wrap {
+  width: 15%;
+  height: 7%;
+  top: 0;
+  left: 0;
+  margin-top: 37%;
+  margin-left: 7%;
+}
+.firecracker2_inside {
+  opacity: var(--firecracker2-inside);
+  width: 65%;
+  height: 65%;
+  top: 0;
+  left: 0;
+  margin-left: 14%;
+  margin-top: 16%;
+  content: url(/public/img/cartoon/sprout/page4/firecracker_inside2.png);
+}
+.firecracker2_outside {
+  opacity: var(--firecracker2-outside);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: url(/public/img/cartoon/sprout/page4/firecracker_outside2.png);
+}
+.firecracker3_wrap {
+  width: 18%;
+  height: 9%;
+  top: 0;
+  right: 0;
+  margin-top: 15%;
+  margin-right: 5%;
+}
+.firecracker3_inside {
+  opacity: var(--firecracker3-inside);
+  width: 65%;
+  height: 65%;
+  top: 0;
+  left: 0;
+  margin-left: 14%;
+  margin-top: 16%;
+  content: url(/public/img/cartoon/sprout/page4/firecracker_inside2.png);
+}
+.firecracker3_outside {
+  opacity: var(--firecracker3-outside);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: url(/public/img/cartoon/sprout/page4/firecracker_outside2.png);
+}

@@ -1,0 +1,17 @@
+.clouds {
+  top: 0;
+  right: 0;
+  width: 150%;
+  height: 60%;
+  margin-top: -25%;
+  content: url(/public/img/cartoon/bee/page4/clouds.png);
+  animation: move_clouds 15s infinite alternate linear;
+}
+@keyframes move_clouds {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(10%);
+  }
+}

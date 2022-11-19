@@ -35,7 +35,7 @@ function throw_honey_ani() {
     document.documentElement.style.setProperty("--honey-effect2", `visible`);
     var honey_effect = document.getElementById("bee_page2_person1_honeyEffect");
     honey_effect.classList.add("fadeInUp");
-  }, 500);
+  }, 700);
   setTimeout(() => {
     document.documentElement.style.setProperty("--honey-effect1", `visible`);
   }, 3000);

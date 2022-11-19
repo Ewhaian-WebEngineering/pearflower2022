@@ -20,8 +20,12 @@
 }
 .zoomIn {
   animation-name: zoomIn;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-iteration-count: infinite;
+}
+.zoomIn2 {
+  animation-name: zoomIn;
+  animation-duration: 2s;
 }
 .wheel-rotate {
   animation-name: wheel-rotate;
@@ -92,9 +96,21 @@
   animation-direction: alternate;
   animation-timing-function: linear;
 }
+.shakeBody2s {
+  animation-name: shakeBody;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
 .throwHoneyBox {
   animation-name: throwHoneyBox;
   animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+.whiteCatEntrance {
+  animation-name: white_cat_entrance;
+  animation-duration: 2s;
   animation-fill-mode: forwards;
 }
 @keyframes fadeInUp {
@@ -446,5 +462,16 @@
     transform: rotate(-360deg);
     margin-top: 7%;
     margin-right: 27%;
+  }
+}
+@keyframes white_cat_entrance {
+  from {
+    opacity: 0;
+    visibility: visible;
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-160%);
   }
 }

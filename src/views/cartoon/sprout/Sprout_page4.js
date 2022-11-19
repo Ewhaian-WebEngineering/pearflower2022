@@ -3,6 +3,7 @@ import "../bee/Bee_page1.css";
 import "./Sprout_page4.css";
 import "../SkipBtn.css";
 import "../AniZip.css";
+import "../Firecrackers.css";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -32,7 +33,7 @@ function sprout_page4_firecracker1_ani() {
   inside.classList.add("zoomIn");
   setTimeout(() => {
     outside.classList.add("zoomIn");
-  }, 700);
+  }, 1000);
 }
 function sprout_page4_firecracker2_ani() {
   var inside = document.getElementById("sprout_page4_firecracker2_inside");
@@ -41,7 +42,7 @@ function sprout_page4_firecracker2_ani() {
   inside.classList.add("zoomIn");
   setTimeout(() => {
     outside.classList.add("zoomIn");
-  }, 700);
+  }, 1000);
 }
 function sprout_page4_firecracker3_ani() {
   var inside = document.getElementById("sprout_page4_firecracker3_inside");
@@ -50,7 +51,7 @@ function sprout_page4_firecracker3_ani() {
   inside.classList.add("zoomIn");
   setTimeout(() => {
     outside.classList.add("zoomIn");
-  }, 700);
+  }, 1000);
 }
 function sprout_page4_train1_wheel_ani() {
   document
@@ -83,21 +84,33 @@ function sprout_page4_train1_move_ani() {
 function sprout_page4_train2() {
   var target = document.getElementById("sprout_page4_train2");
 }
+function firecracker_ani() {
+  setTimeout(() => {
+    sprout_page4_firecracker1_ani();
+    setTimeout(() => {
+      sprout_page4_firecracker2_ani();
+      setTimeout(() => {
+        sprout_page4_firecracker3_ani();
+      }, 1500);
+    }, 1000);
+  }, 500);
+}
+function firecracker_init() {
+  document.documentElement.style.setProperty("--firecracker1-inside", `0`);
+  document.documentElement.style.setProperty("--firecracker1-outside", `0`);
+  document.documentElement.style.setProperty("--firecracker2-inside", `0`);
+  document.documentElement.style.setProperty("--firecracker2-outside", `0`);
+  document.documentElement.style.setProperty("--firecracker3-inside", `0`);
+  document.documentElement.style.setProperty("--firecracker3-outside", `0`);
+}
 function Sprout_page4() {
   setScreenSize();
   useEffect(() => {
     sprout_page4_horse1_ani();
     sprout_page4_horse2_ani();
     sprout_page4_horse3_ani();
-    document.documentElement.style.setProperty("--firecracker1-inside", `0`);
-    document.documentElement.style.setProperty("--firecracker1-outside", `0`);
-    document.documentElement.style.setProperty("--firecracker2-inside", `0`);
-    document.documentElement.style.setProperty("--firecracker2-outside", `0`);
-    document.documentElement.style.setProperty("--firecracker3-inside", `0`);
-    document.documentElement.style.setProperty("--firecracker3-outside", `0`);
-    sprout_page4_firecracker1_ani();
-    sprout_page4_firecracker2_ani();
-    sprout_page4_firecracker3_ani();
+    firecracker_init();
+    firecracker_ani();
     sprout_page4_train1_wheel_ani();
     sprout_page4_train1_move_ani();
   }, []);
@@ -108,34 +121,43 @@ function Sprout_page4() {
           <div id="sprout_page4_cloud1" className="inlineBlock"></div>
           <div id="sprout_page4_cloud2" className="inlineBlock"></div>
           <div id="sprout_page4_cloud3" className="inlineBlock"></div>
-          <div id="sprout_page4_firecracker1_wrap" className="inlineBlock">
+          <div
+            id="sprout_page4_firecracker1_wrap"
+            className="inlineBlock firecracker1_wrap"
+          >
             <div
               id="sprout_page4_firecracker1_inside"
-              className="inlineBlock"
+              className="inlineBlock firecracker1_inside"
             ></div>
             <div
               id="sprout_page4_firecracker1_outside"
-              className="inlineBlock"
+              className="inlineBlock firecracker1_outside"
             ></div>
           </div>
-          <div id="sprout_page4_firecracker2_wrap" className="inlineBlock">
+          <div
+            id="sprout_page4_firecracker2_wrap"
+            className="inlineBlock firecracker2_wrap"
+          >
             <div
               id="sprout_page4_firecracker2_inside"
-              className="inlineBlock"
+              className="inlineBlock firecracker2_inside"
             ></div>
             <div
               id="sprout_page4_firecracker2_outside"
-              className="inlineBlock"
+              className="inlineBlock firecracker2_outside"
             ></div>
           </div>
-          <div id="sprout_page4_firecracker3_wrap" className="inlineBlock">
+          <div
+            id="sprout_page4_firecracker3_wrap"
+            className="inlineBlock firecracker3_wrap"
+          >
             <div
               id="sprout_page4_firecracker3_inside"
-              className="inlineBlock"
+              className="inlineBlock firecracker3_inside"
             ></div>
             <div
               id="sprout_page4_firecracker3_outside"
-              className="inlineBlock"
+              className="inlineBlock firecracker3_outside"
             ></div>
           </div>
           <div id="sprout_page4_merryGoRound_wrap" className="inlineBlock">
