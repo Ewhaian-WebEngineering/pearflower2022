@@ -200,10 +200,10 @@ function Event() {
           <div className="eventHeader">
             <Link to="/main"><img alt="logoSquare" className="logo"></img></Link>
             <div className="menuBtnDiv">
-              <img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerToMain.png'}></img>
-              <img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerSchedule.png'}></img>
-              <img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerEvent.png'}></img>
-              <img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerGoods.png'}></img>
+              <Link to="/main"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerToMain.png'}></img></Link>
+              <Link to="/timeTable"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerSchedule.png'}></img></Link>
+              <Link to="/event"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerEvent.png'}></img></Link>
+              <Link to="/goods"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerGoods.png'}></img></Link>
             </div>
           </div>
           <div className="eventWrapper">
@@ -224,20 +224,15 @@ function Event() {
             <img alt="PhotoPopup" className={classnames('webClosePopUp', (photoHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/closePopup.png'} onClick={photoClick}></img>
             <img alt="BingoPopup" className={classnames('webPopUp', (bingoHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/webBingoPopup.png'} ></img>
             <img alt="BingoPopup" className={classnames('webClosePopUp', (bingoHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/closePopup.png'} onClick={bingoClick}></img>
-            <img alt="HoneyJarPopup" className={classnames('webPopUp', (honeyJarHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/webHoneyJarPopup.png'} ></img>
-            <img alt="HoneyJarPopup" className={classnames('webClosePopUp', (honeyJarHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/closePopup.png'} onClick={honeyJarClick}></img>
             <img alt="TeaComPopup" className={classnames('webPopUp', (teacomHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/webTeacomPopup.png'} ></img>
             <img alt="TeaComPopup" className={classnames('webClosePopUp', (teacomHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/closePopup.png'} onClick={teacomClick}></img>
             <img alt="NewUserPopup" className={classnames('webPopUp', (newUserHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/webNewUserPopup.png'} ></img>
             <img alt="NewUserPopup" className={classnames('webClosePopUp', (newUserHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/closePopup.png'} onClick={newUserClick}></img>
-            <img alt="BeotAlongPopup" className={classnames('webPopUp', (beotAlongHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/webBeotAlongPopup.png'} ></img>
-            <img alt="BeotAlongPopup" className={classnames('webClosePopUp', (beotAlongHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/closePopup.png'} onClick={beotAlongClick}></img>
             <img alt="WishTreePopup" className={classnames('webPopUp', (wishTreeHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/webWishTreePopup.png'} ></img>
             <img alt="WishTreePopup" className={classnames('webClosePopUp', (wishTreeHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/closePopup.png'} onClick={wishTreeClick}></img>
             <img alt="MaxLevPopup" className={classnames('webPopUp', (maxLevHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/webMaxLevPopup.png'} ></img>
             <img alt="MaxLevPopup" className={classnames('webClosePopUp', (maxLevHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/closePopup.png'} onClick={maxLevClick}></img>
-            <img alt="EscapePopup" className={classnames('webPopUp', (escapeHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/webEscapePopup.png'} ></img>
-            <img alt="EscapePopup" className={classnames('webClosePopUp', (escapeHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/closePopup.png'} onClick={escapeClick}></img>
+
           </div>
           <div ref={outerDivRef} className="outer">
             <div className="inner">
@@ -259,7 +254,7 @@ function Event() {
             <div className="inner">
               <div className="eventIcons2">
                 <div className="HONEYJAR">
-                  <img alt="HoneyJarEvent" className="icon honeyjar" src={process.env.PUBLIC_URL + '/img/event/iconHoneyJar.png'} onClick={honeyJarClick}></img>
+                  <Link to="/honeyjar"><img alt="HoneyJarEvent" className="icon honeyjar" src={process.env.PUBLIC_URL + '/img/event/iconHoneyJar.png'}></img></Link>
                   <img alt="nameHoneyJarEvent" id="name" className="honeyjarname" src={process.env.PUBLIC_URL + '/img/event/iconNameHoneyJar.png'}></img>
                 </div>
                 <div className="TEACOM">
@@ -271,7 +266,7 @@ function Event() {
                   <img alt="nameNewUserEvent" id="name" className="newusername" src={process.env.PUBLIC_URL + '/img/event/iconNameNewUser.png'}></img>
                 </div>
                 <div className="BEOTALONG">
-                  <img alt="SingAlongEvent" className="icon beotalong" src={process.env.PUBLIC_URL + '/img/event/iconBeotAlong.png'} onClick={beotAlongClick}></img>
+                  <Link to="/beotalong"><img alt="SingAlongEvent" className="icon beotalong" src={process.env.PUBLIC_URL + '/img/event/iconBeotAlong.png'} ></img></Link>
                   <img alt="nameSingAlongEvent" id="name" className="beotalongname" src={process.env.PUBLIC_URL + '/img/event/iconNameBeotAlong.png'}></img>
                 </div>
 
@@ -288,7 +283,7 @@ function Event() {
                   <img alt="nameMaxLevelUserEvent" id="name" className="maxlevname" src={process.env.PUBLIC_URL + '/img/event/iconNameMaxLev.png'}></img>
                 </div>
                 <div className="ESCAPE">
-                  <img alt="EscapeGame" className="icon eventEscape" src={process.env.PUBLIC_URL + '/img/event/iconEscape.png'} onClick={escapeClick}></img>
+                  <Link to="/escape"><img alt="EscapeGame" className="icon eventEscape" src={process.env.PUBLIC_URL + '/img/event/iconEscape.png'}></img></Link>
                   <img alt="nameEscapeGame" id="name" className="escapename" src={process.env.PUBLIC_URL + '/img/event/iconNameEscape.png'}></img>
                 </div>
               </div>
