@@ -8,3 +8,136 @@
   background-repeat: no-repeat;
   overflow: hidden;
 }
+
+@keyframes shaking-item {
+  0% {transform: translateX(3px);}
+  100% {}
+}
+
+#mush1_exclamationmark {
+  content: url(/public/img/cartoon/mushroom/page1/mush1exclamationmark.png);
+  position: absolute;
+  width: 21%;
+  top: 0;
+  margin-top: 23%;
+  left: 0;
+  margin-left: 32%;
+  z-index: 5;
+  animation: shaking-item 0.1s 4;
+}
+
+@keyframes show-item {
+  0% {visibility: hidden;}
+  100% {visibility: visible;}
+}
+
+#mush1_squarehoney {
+  content: url(/public/img/cartoon/mushroom/page1/mush1squarehoney.png);
+  position: absolute;
+  width: 30%;
+  top: 0;
+  margin-top: 11%;
+  left: 0;
+  margin-left: 10%;
+  visibility: hidden;
+  animation: show-item 2s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+}
+
+/* 두 번째 컷 */
+
+#mush1_secondcut {
+  position: absolute;
+  top: 0;
+  margin-top: 142%;
+}
+
+#mush1_phone {
+  content: url(/public/img/cartoon/mushroom/page1/mush1phone.png);
+  width: 30%;
+  margin-left: 12%;
+  animation: shaking-item 0.1s 4;
+  animation-delay: 2s;
+}
+
+#mush1_hi {
+  content: url(/public/img/cartoon/mushroom/page1/mush1hi.png);
+  position: absolute;
+  width: 12%;
+  top: 0;
+  margin-top: -25%;
+  left: 0;
+  margin-left: 23%;
+  z-index: 3;
+  visibility: hidden;
+  animation: show-item 2s;
+  animation-delay: 3.4s;
+  animation-fill-mode: forwards;
+}
+
+#mush1_message {
+  content: url(/public/img/cartoon/mushroom/page1/mush1message.png);
+  position: absolute;
+  width: 15%;
+  top: 0;
+  margin-top: -16%;
+  left: 0;
+  margin-left: 30%;
+  z-index: 3;
+  visibility: hidden;
+  animation: show-item 2s;
+  animation-delay: 3.2s;
+  animation-fill-mode: forwards;
+}
+
+#mush1_honeybubble {
+  content: url(/public/img/cartoon/mushroom/page1/mush1honeybubble.png);
+  position: absolute;
+  width: 20%;
+  top: 0;
+  margin-top: -15%;
+  left: 0;
+  margin-left: 10%;
+  z-index: 3;
+  visibility: hidden;
+  animation: show-item 2s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+#mush1_bighoneybubble {
+  content: url(/public/img/cartoon/mushroom/page1/mush1bighoneybubble.png);
+  position: absolute;
+  width: 45%;
+  bottom: 0;
+  margin-bottom: 57%;
+  right: 0;
+  margin-right: 15%;
+  visibility: hidden;
+  animation: show-item 2s;
+  animation-delay: 3.9s;
+  animation-fill-mode: forwards;
+}
+
+/* iphone SE 버전 */
+@media screen and (device-width: 375px) and (device-height: 667px) {
+  #mush1_exclamationmark {
+    margin-top: 15%;
+  }
+
+  #mush1_squarehoney {
+    margin-top: 5%;
+  }
+}
+
+/* Galaxy Fold 버전 */
+@media screen and (device-width: 280px) and (device-height: 653px) {
+  #mush1_secondcut {
+    margin-top: 154%;
+  }
+
+  #mush1_bighoneybubble {
+    margin-bottom: 64%;
+  }
+}
