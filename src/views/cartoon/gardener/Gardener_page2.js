@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 import "../bee/Bee_page1.css";
-// import "./Mushroom_page2.css";
+import "./Gardener_page2.css";
 import "../SkipBtn.css";
 
 function setScreenSize() {

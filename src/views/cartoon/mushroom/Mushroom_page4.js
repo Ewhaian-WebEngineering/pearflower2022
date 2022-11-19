@@ -19,6 +19,10 @@ function Mushroom_page4() {
           {/* 범퍼카 부분 */}
           <div id="mush4_playground" />
           <div id="mush4_bumpercar1" />
+          {/* 범퍼카 상호작용 넣을 경우 - animation 부분 따로 클래스 분리한다음 swipe 이벤트 발생 시 클래스 추가되도록 */}
+          {/* http://labs.rampinteractive.co.uk/touchSwipe/demos/Page_scrolling.html
+          [자바스크립트] 스와이프 방향 알아내기 - Marshall K
+           */}
           <div id="mush4_bumpercar2" />
           <div id="mush4_bumpercar3" />
           <div id="mush4_bumpercar4" />

@@ -33,6 +33,23 @@
   z-index: 2;
 }
 
+/* 범퍼카 애니메이션 
+1. 운동장 끝으로 감
+2. 좌우반전
+3. 범퍼카 3 근처로 감
+4. 부딪히는 효과 생김
+5. 범퍼카3 앞으로 밀림
+*/
+
+@keyframes bumpercar2-effect {
+  49% {transform: translateX(80%);}
+  50% {content: url(/public/img/cartoon/mushroom/page4/mush4bumpercar2_turn.png);}
+  100% {
+    content: url(/public/img/cartoon/mushroom/page4/mush4bumpercar2_turn.png);
+    transform: translate(-0.3%, 54%);
+  }
+}
+
 #mush4_bumpercar2 {
   content: url(/public/img/cartoon/mushroom/page4/mush4bumpercar2.png);
   position: absolute;
@@ -40,8 +57,13 @@
   top: 0;
   margin-top: 96%;
   left: 0;
-  margin-left: 40%;
-  z-index: 10;
+  margin-left: 35%;
+  z-index: 11;
+  cursor: pointer;
+
+  animation: bumpercar2-effect 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
 }
 
 #mush4_bumpercar3 {
@@ -51,7 +73,7 @@
   top: 0;
   margin-top: 113%;
   left: 0;
-  margin-left: 12%;
+  margin-left: 10%;
   z-index: 10;
 }
 
@@ -63,7 +85,7 @@
   margin-top: 124%;
   left: 0;
   margin-left: 50%;
-  z-index: 10;
+  z-index: 15;
 }
 
 /* 포장마차 부분 */
@@ -137,7 +159,7 @@
   width: 13%;
   left: 0;
   margin-left: 18%;
-  animation: wheel-rotate 2s linear;
+  animation: wheel-rotate 1.5s linear;
   bottom: 0;
 }
 
@@ -152,4 +174,26 @@
   z-index: 30;
 }
 
-/* iphone4, iphonese playground 위쪽으로, 내 핸드폰도 마찬가지 */
+/* iphone4, iphonese playground 위쪽으로 */
+/* iphone SE 버전 */
+@media screen and (device-width: 375px) and (device-height: 667px) {
+  #mush4_playground {
+    margin-top: 87%;
+  }
+
+  #mush4_bumpercar1 {
+    margin-top: 67%;
+  }
+
+  #mush4_bumpercar2 {
+    margin-top: 76%;
+  }
+
+  #mush4_bumpercar3 {
+    margin-top: 93%;
+  }
+
+  #mush4_bumpercar4 {
+    margin-top: 104%;
+  }
+}
