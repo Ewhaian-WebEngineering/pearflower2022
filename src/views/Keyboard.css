@@ -1,0 +1,26 @@
+/*키보드*/
+.keyboard {
+    margin: 15px auto;
+}
+
+.rec {
+    width: 80px;
+    height: 80px;
+}
+
+/*첫 번째 줄 블럭들*/
+.key_1 {
+    margin: 0px auto;
+}
+
+#rec2 {
+    margin-left: 2vw;
+}
+
+#rec3 {
+    margin-left: 2vw;
+}
+
+#rec4 {
+    margin-left: 2vw;
+}

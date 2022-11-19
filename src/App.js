@@ -1,14 +1,14 @@
 import './App.css';
 import { Routes, Route } from "react-router-dom";
-import Cartoon from "./views/Cartoon";
 import Main from "./views/Main";
+import GameMain from "./views/GameMain";
 
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/" element={ <Cartoon /> } />
-        <Route exact path="/main" element={ <Main /> } />
+        <Route exact path="/" element={<Main />} />
+        <Route exact path="/GameMain" element={<GameMain />} />
       </Routes>
     </div>
   );
