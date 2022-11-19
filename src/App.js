@@ -7,6 +7,7 @@ import Event from "./views/event/Event";
 import Goods from "./views/Goods";
 import Gamehome from "./views/game/Gamehome";
 import GameInfo from "./views/game/GameInfo";
+import GameMain from "./views/game/GameMain";
 /*cartoon pages*/
 import Bee1 from "./views/cartoon/bee/Bee_page1";
 import Bee2 from "./views/cartoon/bee/Bee_page2";
@@ -52,6 +53,7 @@ function App() {
         <Route exact path="/goods" element={<Goods />} />
         <Route exact path="/gamehome" element={<Gamehome />} />
         <Route exact path="/gameinfo" element={<GameInfo />} />
+        <Route exact path="/gamemain" element={<GameMain />} />
         <Route exact path="/finalgame" element={<GamePage />} />
         <Route exact path="/finalgameover" element={<GameOverPage />} />
       </Routes>
