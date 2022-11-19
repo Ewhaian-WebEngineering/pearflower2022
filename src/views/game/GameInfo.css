@@ -4,6 +4,7 @@
     }
 
     .wrapper {
+
         background: url("/public/img/game/background.png");
         background-repeat: no-repeat;
         background-position: top center;
@@ -77,4 +78,120 @@
     #startbtn {
         width: 62vw;
     }
+}
+
+/*웹*/
+@media screen and (min-width:768px) {
+    .wrapper {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: var(--gameHome-wrap-vw);
+        height: var(--gameHome-wrap-vh);
+    }
+
+
+    .gameheader {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        height: 55px;
+        width: 100%;
+        background: url("/public/img/game/header.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 3;
+    }
+
+    #logo {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto 0;
+        width: 120px;
+        margin-left: 20px;
+    }
+
+    /* 
+    .header-box {
+        padding-left: 1.8vw;
+        padding-top: 1.2vw;
+    } */
+
+
+    .gamemiddle {
+        display: inline-block;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: relative;
+        background-color: blueviolet;
+        background-image: url(/public/img/game/background_web.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+    #gameboard {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-top: 8%;
+        margin-left: 22%;
+        width: 69vw;
+        height: 68vh;
+    }
+
+    .gameboard {
+        position: absolute;
+        width: 70%;
+        z-index: 1;
+
+    }
+
+    #howtolabel {
+        width: 100%;
+    }
+
+    .howtolabel {
+        position: absolute;
+        top: 0;
+        margin-top: 8%;
+        right: 0;
+        margin-right: 47%;
+        width: 8%;
+        z-index: 2;
+    }
+
+    .start {
+        display: inline-block;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 15%;
+        margin-bottom: 3%;
+        margin-right: 3%;
+    }
+
+    #startbtn {
+        width: 100%;
+        height: 100%;
+    }
+
+    #circle {
+        width: 100%;
+    }
+
+    .circle {
+        position: absolute;
+        left: -10%;
+        top: -25%;
+        width: 80%;
+    }
+
 }
