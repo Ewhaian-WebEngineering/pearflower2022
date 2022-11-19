@@ -5,6 +5,7 @@ import "../SkipBtn.css";
 import "../AniZip.css";
 import "./Clouds.css";
 import "../Firecrackers.css";
+import "../CartoonBtns.css";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -134,7 +135,11 @@ function Bee_page4() {
           </div>
         </div>
       </div>
-      <div className="skipBtn inlineBlock"></div>
+      <div className="cartoon_btns inlineBlock">
+        <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+        <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+        <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+      </div>
     </div>
   );
 }
