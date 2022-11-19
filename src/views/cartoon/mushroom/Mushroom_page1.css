@@ -1,0 +1,10 @@
+#mushroom_page1 {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-image: url("/public/img/cartoon/mushroom/page1/mush1Bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
