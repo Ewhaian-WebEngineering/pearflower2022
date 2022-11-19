@@ -1,0 +1,8 @@
+.skipBtn {
+  bottom: 0;
+  right: 0;
+  height: 6%;
+  margin-bottom: 5%;
+  margin-right: 3%;
+  content: url(/public/img/cartoon/skipBtn.png);
+}

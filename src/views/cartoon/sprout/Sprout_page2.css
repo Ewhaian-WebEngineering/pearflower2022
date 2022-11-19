@@ -1,0 +1,42 @@
+#sprout_page2 {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  /*background-color: blue;*/
+  background-image: url("/public/img/cartoon/sprout/page2/background.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#sprout_page2_honeyBox {
+  height: 13%;
+  top: 0;
+  left: 0;
+  margin-top: 38%;
+  margin-left: 4%;
+  content: url(/public/img/cartoon/sprout/page2/honeyBox.png);
+}
+#sprout_page2_amusementPark {
+  top: 0;
+  right: 0;
+  height: 28%;
+  margin-top: 4%;
+  margin-right: 4%;
+  content: url(/public/img/cartoon/sprout/page2/amusementPark.png);
+}
+#sprout_page2_what {
+  bottom: 0;
+  left: 0;
+  height: 13%;
+  margin-bottom: 64%;
+  margin-left: 3%;
+  content: url(/public/img/cartoon/sprout/page2/what.png);
+}
+#sprout_page2_talk {
+  bottom: 0;
+  left: 0;
+  height: 8%;
+  margin-left: 32%;
+  margin-bottom: 58%;
+  content: url(/public/img/cartoon/sprout/page2/talk.png);
+}

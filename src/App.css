@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 .App {
   text-align: center;
 }
 
+=======
+>>>>>>> 40aea295d49e3200a91bf1ec59edd3aa8ed3704b
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -32,7 +35,15 @@
   from {
     transform: rotate(0deg);
   }
+<<<<<<< HEAD
   to {
     transform: rotate(360deg);
   }
 }
+=======
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+>>>>>>> 40aea295d49e3200a91bf1ec59edd3aa8ed3704b

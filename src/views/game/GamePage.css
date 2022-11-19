@@ -1,0 +1,257 @@
+  /*모바일*/
+  @media screen and (max-width: 768px) {
+
+      .background {
+          width: 100vw;
+          height: 100vh;
+          position: fixed relative;
+          z-index: 1;
+      }
+
+      .guideText {
+          position: absolute;
+          width: 66vw;
+          height: 2vh;
+          top: 11%;
+          left: 17%;
+          z-index: 3;
+      }
+
+      .keyWindow {
+          position: absolute;
+          width: 83vw;
+          height: 25vh;
+          /* top: 131px; */
+          top: 17%;
+          left: 8%;
+      }
+
+      .door {
+          position: absolute;
+          width: 77vw;
+          height: 34vh;
+          top: 44%;
+          left: 12.6%;
+      }
+
+      .character {
+          position: absolute;
+          width: 88vw;
+          height: 20vh;
+          top: 79%;
+          left: 8%;
+      }
+
+      .key {
+          position: absolute;
+          width: 15vw;
+          height: 6vh;
+          top: 34%;
+          left: 43%;
+          cursor: pointer;
+          z-index: 5;
+      }
+
+      .word1 {
+          position: absolute;
+          color: white;
+          top: 85%;
+          left: 55%;
+          font-size: 3vw;
+          cursor: pointer;
+      }
+
+      .word2 {
+          position: absolute;
+          color: white;
+          top: 88%;
+          left: 25%;
+          font-size: 3vw;
+          cursor: pointer;
+      }
+
+      .word3 {
+          position: absolute;
+          color: white;
+          top: 84%;
+          left: 48%;
+          font-size: 3vw;
+          cursor: pointer;
+      }
+
+      .word4 {
+          position: absolute;
+          color: white;
+          top: 86%;
+          left: 38%;
+          font-size: 3vw;
+          cursor: pointer;
+      }
+
+      .word5 {
+          position: absolute;
+          color: white;
+          top: 85%;
+          left: 33%;
+          font-size: 3vw;
+          cursor: pointer;
+      }
+
+      .word6 {
+          position: absolute;
+          color: white;
+          top: 87%;
+          left: 45%;
+          font-size: 3vw;
+          cursor: pointer;
+      }
+
+      .word7 {
+          position: absolute;
+          color: white;
+          top: 85%;
+          left: 23%;
+          font-size: 3vw;
+          cursor: pointer;
+      }
+
+      .word8 {
+          position: absolute;
+          color: white;
+          top: 87%;
+          left: 35%;
+          font-size: 3vw;
+          cursor: pointer;
+      }
+  }
+
+  /*PC*/
+  @media screen and (min-width: 768px) {
+
+      .background {
+          position: fixed relative;
+          width: 100vw;
+          height: 100vh;
+          top: 0%;
+          left: 0%;
+          z-index: 1;
+          background-repeat: no-repeat;
+          pointer-events: auto;
+      }
+
+      .guideText {
+          position: absolute;
+          width: 28vw;
+          height: 3vh;
+          top: 17%;
+          left: 59%;
+          z-index: 3;
+      }
+
+      .keyWindow {
+          position: absolute;
+          width: 44vw;
+          height: 42vh;
+          top: 22%;
+          left: 51%;
+      }
+
+      .door {
+          position: absolute;
+          width: 38vw;
+          height: 52vh;
+          top: 33%;
+          left: 6.25%;
+      }
+
+      .character {
+          position: absolute;
+          width: 44vw;
+          height: 25vh;
+          top: 69%;
+          left: 56%;
+      }
+
+      .key {
+          position: absolute;
+          width: 6.5vw;
+          height: 7vh;
+          top: 50%;
+          left: 70%;
+          cursor: pointer;
+          cursor: hand;
+          z-index: 5;
+      }
+
+      .word1 {
+          position: absolute;
+          color: white;
+          top: 79%;
+          left: 70%;
+          font-size: 1.5vw;
+          cursor: pointer;
+      }
+
+      .word2 {
+          position: absolute;
+          color: white;
+          top: 80%;
+          left: 65%;
+          font-size: 1.5vw;
+          cursor: pointer;
+      }
+
+      .word3 {
+          position: absolute;
+          color: white;
+          top: 75%;
+          left: 80%;
+          font-size: 1.5vw;
+          cursor: pointer;
+      }
+
+      .word4 {
+          position: absolute;
+          color: white;
+          top: 77%;
+          left: 75%;
+          font-size: 1.5vw;
+          cursor: pointer;
+      }
+
+      .word5 {
+          position: absolute;
+          color: white;
+          top: 76%;
+          left: 72%;
+          font-size: 1.5vw;
+          cursor: pointer;
+      }
+
+      .word6 {
+          position: absolute;
+          color: white;
+          top: 75%;
+          left: 67%;
+          font-size: 1.5vw;
+          cursor: pointer;
+      }
+
+      .word7 {
+          position: absolute;
+          color: white;
+          top: 76%;
+          left: 69%;
+          font-size: 1.5vw;
+          cursor: pointer;
+      }
+
+      .word8 {
+          position: absolute;
+          color: white;
+          top: 78%;
+          left: 62%;
+          font-size: 1.5vw;
+          cursor: pointer;
+      }
+  }

@@ -1,0 +1,29 @@
+.headerFlame{
+    height: 80px;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo{
+    padding-left: 50px;
+}
+
+.headerLogo img{
+    height: 70px;
+}
+
+.headerLink{
+    padding-right: 70px;
+    display: flex;
+
+}
+
+.headerLink p {
+    font-weight: 600;
+    font-size: 20px;
+    padding-right: 50px;
+    text-decoration: none;
+}
+

@@ -1,0 +1,155 @@
+#mushroom_page4 {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  background-image: url("/public/img/cartoon/mushroom/page4/mush4Bg.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+/* 범퍼카부분 */
+
+#mush4_playground {
+  content: url(/public/img/cartoon/mushroom/page4/mush4playground.png);
+  position: absolute;
+  width: 86%;
+  top: 0;
+  margin-top: 107%;
+  left: 0;
+  margin-left: 0.7%;
+  z-index: 1;
+}
+
+#mush4_bumpercar1 {
+  content: url(/public/img/cartoon/mushroom/page4/mush4bumpercar1.png);
+  position: absolute;
+  width: 28%;
+  top: 0;
+  margin-top: 87%;
+  left: 0;
+  margin-left: 1%;
+  z-index: 2;
+}
+
+#mush4_bumpercar2 {
+  content: url(/public/img/cartoon/mushroom/page4/mush4bumpercar2.png);
+  position: absolute;
+  width: 28%;
+  top: 0;
+  margin-top: 96%;
+  left: 0;
+  margin-left: 40%;
+  z-index: 10;
+}
+
+#mush4_bumpercar3 {
+  content: url(/public/img/cartoon/mushroom/page4/mush4bumpercar3.png);
+  position: absolute;
+  width: 28%;
+  top: 0;
+  margin-top: 113%;
+  left: 0;
+  margin-left: 12%;
+  z-index: 10;
+}
+
+#mush4_bumpercar4 {
+  content: url(/public/img/cartoon/mushroom/page4/mush4bumpercar4.png);
+  position: absolute;
+  width: 40%;
+  top: 0;
+  margin-top: 124%;
+  left: 0;
+  margin-left: 50%;
+  z-index: 10;
+}
+
+/* 포장마차 부분 */
+
+#mush4_hotdog {
+  content: url(/public/img/cartoon/mushroom/page4/mush4hotdog.png);
+  position: absolute;
+  width: 23%;
+  bottom: 0;
+  margin-bottom: 26%;
+  right: 0;
+  margin-right: -3.5%;
+  z-index: 20;
+}
+
+#mush4_redcart {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 26%;
+  transform: translateX(41%);
+}
+
+#redcart {
+  content: url(/public/img/cartoon/mushroom/page4/mush4redcart.png);
+  width: 36%;
+  left: 0;
+}
+
+#redcartwheel {
+  content: url(/public/img/cartoon/mushroom/page4/mush4redcartwheel.png);
+  position: absolute;
+  width: 13%;
+  left: 0;
+  margin-left: 4%;
+  bottom: 0;
+}
+
+/* 아이스크림 차 이동 애니메이션 */
+@keyframes icecream-move {
+  0% {transform: translateX(-30%);}
+  100% {transform: translatex(2%);}
+}
+
+#mush4_icecream {
+  /* display: flex;
+  align-items: flex-end; */
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 26%;
+  z-index: 5;
+  transform: translateX(-30%);
+  animation: icecream-move 1.5s ease-in;
+  animation-fill-mode: forwards;
+}
+
+#icecream {
+  content: url(/public/img/cartoon/mushroom/page4/mush4icecream.png);
+  width: 40%;
+  left: 0;
+}
+
+/* 바퀴 굴러가는 효과 */
+@keyframes wheel-rotate {
+  0% {transform: rotate(0);}
+  100% {transform: rotate(360deg);}
+}
+
+#icecreamwheel {
+  content: url(/public/img/cartoon/mushroom/page4/mush4icecreamwheel.png);
+  position: absolute;
+  width: 13%;
+  left: 0;
+  margin-left: 18%;
+  animation: wheel-rotate 2s linear;
+  bottom: 0;
+}
+
+#mush4_watchingcart {
+  content: url(/public/img/cartoon/mushroom/page4/mush4watchingcart.png);
+  position: absolute;
+  width: 30%;
+  bottom: 0;
+  margin-bottom: 5%;
+  left: 0;
+  margin-left: 25%;
+  z-index: 30;
+}
+
+/* iphone4, iphonese playground 위쪽으로, 내 핸드폰도 마찬가지 */
