@@ -3,6 +3,7 @@ import "./Bee_page1.css";
 import "./Bee_page2.css";
 import "./Progress.css";
 import "../SkipBtn.css";
+import "../AniZip.css";
 //import { Link } from "react-router-dom";
 
 function setScreenSize() {
@@ -12,7 +13,7 @@ function setScreenSize() {
   document.documentElement.style.setProperty("--vw", `${vw}px`);
 }
 //progress bar 내용물 전부 Hidden 처리하는 함수
-function progressInit() {
+function imagesInit() {
   document.documentElement.style.setProperty("--progress1", `hidden`);
   document.documentElement.style.setProperty("--progress2", `hidden`);
   document.documentElement.style.setProperty("--progress3", `hidden`);
@@ -27,6 +28,7 @@ function progressInit() {
   document.documentElement.style.setProperty("--progress12", `hidden`);
   document.documentElement.style.setProperty("--progress13", `hidden`);
   document.documentElement.style.setProperty("--progress14", `hidden`);
+  document.documentElement.style.setProperty("--progressbar", `hidden`);
 }
 //progress bar 내용물 채워지는 애니메이션 함수
 function progressAni() {
@@ -71,22 +73,47 @@ function progressAni() {
     document.documentElement.style.setProperty("--progress14", `visible`);
   }, 1300);
 }
+function bee_page1_person4_effect_ani() {
+  var target = document.getElementById("bee_page1_person4_effect");
+  target.classList.add("flash");
+}
+function bee_page1_person3_sweat() {
+  var target = document.getElementById("bee_page1_person3_sweat");
+  target.classList.add("sweat");
+}
+function bee_page1_progressBar_entrance_ani() {
+  document.documentElement.style.setProperty("--progressbar", `visible`);
+  var target = document.getElementById("bee_page1_person1_progressBar");
+  target.classList.add("lightSpeedInLeft");
+}
+function bee_page1_person1_poster_entrance_ani() {
+  var target = document.getElementById("bee_page1_person1_poster");
+  target.classList.add("twisterInDown");
+}
 function Bee_page1() {
   setScreenSize();
   useEffect(() => {
-    progressInit();
-    progressAni();
+    imagesInit();
+    bee_page1_person1_poster_entrance_ani();
+    setTimeout(() => {
+      bee_page1_progressBar_entrance_ani();
+      setTimeout(() => {
+        progressAni();
+      }, 500);
+    }, 2000);
+    bee_page1_person4_effect_ani();
+    bee_page1_person3_sweat();
   }, []);
   return (
     <div className="bee_container">
       <div className="bee_background_wrap">
         <div id="bee_page1">
           <div id="bee_page1_person1_poster" className="inlineBlock"></div>
-          <div
-            id="bee_page1_person1_progressBar_name"
-            className="inlineBlock"
-          ></div>
           <div id="bee_page1_person1_progressBar">
+            <div
+              id="bee_page1_person1_progressBar_name"
+              className="inlineBlock"
+            ></div>
             <div
               id="bee_page1_person1_progressBar_wrap"
               className="inlineBlock"
@@ -106,11 +133,13 @@ function Bee_page1() {
               <div id="progress13" className="progress__ inlineBlock"></div>
               <div id="progress14" className="progress__ inlineBlock"></div>
             </div>
+            <div
+              id="bee_page1_person1_progressBar_line"
+              className="inlineBlock"
+            ></div>
           </div>
-          <div
-            id="bee_page1_person1_progressBar_line"
-            className="inlineBlock"
-          ></div>
+          <div id="bee_page1_person1_effect1" className="inlineBlock"></div>
+          <div id="bee_page1_person1_effect2" className="inlineBlock"></div>
           <div id="bee_page1_person1" className="inlineBlock"></div>
           <div id="bee_page1_person2" className="inlineBlock"></div>
           <div

@@ -38,69 +38,35 @@
   height: 30%;
   content: url("/public/img/cartoon/bee/page1/person1.png");
 }
+#bee_page1_person1_effect1 {
+  top: 0;
+  left: 0;
+  height: 2.5%;
+  margin-top: 30%;
+  margin-left: 4%;
+  content: url(/public/img/cartoon/bee/page1/person1_effect1.png);
+}
+#bee_page1_person1_effect2 {
+  top: 0;
+  left: 0;
+  height: 3%;
+  margin-top: 20%;
+  margin-left: 13%;
+  content: url(/public/img/cartoon/bee/page1/person1_effect2.png);
+}
 #bee_page1_person1_poster {
   top: 0;
   height: 16%;
   margin-left: 18%;
   margin-top: 22%;
   content: url("/public/img/cartoon/bee/page1/person1_poster.png");
-  -webkit-animation: twisterInDown 2s;
-  animation: twisterInDown 2s;
-}
-@-webkit-keyframes twisterInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    -webkit-transform: scale(0, 0) rotate(360deg) translateY(-100%);
-    transform: scale(0, 0) rotate(360deg) translateY(-100%);
-  }
-
-  30% {
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    -webkit-transform: scale(0, 0) rotate(360deg) translateY(-100%);
-    transform: scale(0, 0) rotate(360deg) translateY(-100%);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    -webkit-transform: scale(1, 1) rotate(0deg) translateY(0%);
-    transform: scale(1, 1) rotate(0deg) translateY(0%);
-  }
-}
-@keyframes twisterInDown {
-  0% {
-    opacity: 0;
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    -webkit-transform: scale(0, 0) rotate(360deg) translateY(-100%);
-    transform: scale(0, 0) rotate(360deg) translateY(-100%);
-  }
-
-  30% {
-    -webkit-transform-origin: 0 100%;
-    transform-origin: 0 100%;
-    -webkit-transform: scale(0, 0) rotate(360deg) translateY(-100%);
-    transform: scale(0, 0) rotate(360deg) translateY(-100%);
-  }
-
-  100% {
-    opacity: 1;
-    -webkit-transform-origin: 100% 100%;
-    transform-origin: 100% 100%;
-    -webkit-transform: scale(1, 1) rotate(0deg) translateY(0%);
-    transform: scale(1, 1) rotate(0deg) translateY(0%);
-  }
 }
 #bee_page1_person1_progressBar_name {
-  height: 2.5%;
+  height: 80%;
   top: 0;
-  right: 0;
-  margin-right: 36%;
-  margin-top: 5.5%;
+  left: 0;
+  margin-top: -11%;
+  margin-left: -7%;
   content: url(/public/img/cartoon/bee/page1/progressName.png);
 }
 #bee_page1_person1_progressBar {
@@ -112,7 +78,7 @@
   margin-top: 11%;
   width: 51%;
   height: 3.3%;
-  background-color: brown;
+  visibility: var(--progressbar);
 }
 #bee_page1_person1_progressBar_wrap {
   position: relative;
@@ -121,16 +87,14 @@
   background-image: url(/public/img/cartoon/bee/page1/progressBar_wrap.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-  animation: lightSpeedInLeft 2s ease-out;
 }
 #bee_page1_person1_progressBar_line {
-  top: 0;
+  height: 180%;
+  bottom: 0;
   left: 0;
-  margin-left: 43%;
-  margin-top: 17%;
-  height: 6%;
+  margin-bottom: -22%;
+  margin-left: 3%;
   content: url(/public/img/cartoon/bee/page1/progressBar_line.png);
-  animation: lightSpeedInLeft 2s ease-out;
 }
 
 #bee_page1_person2 {
@@ -154,15 +118,7 @@
   animation: falling_trash infinite;
   animation-duration: 3s;
 }
-@keyframes falling_trash {
-  from {
-    opacity: 0%;
-    transform: translateY(-20px);
-  }
-  to {
-    opacity: 100%;
-  }
-}
+
 #bee_page1_person2_trash2 {
   height: 3%;
   margin-left: 20%;
@@ -201,14 +157,6 @@
   margin-top: 93%;
   height: 2%;
   content: url("/public/img/cartoon/bee/page1/person3_effect_sweat.png");
-  animation: sweat 1s infinite;
-}
-@keyframes sweat {
-  from {
-  }
-  to {
-    transform: translateX(3px);
-  }
 }
 #bee_page1_person4 {
   bottom: 0;
@@ -241,29 +189,4 @@
   margin-bottom: 72%;
   margin-left: 10%;
   content: url(/public/img/cartoon/bee/page1/person4_work2.png);
-}
-/*외부 코드*/
-@keyframes lightSpeedInLeft {
-  from {
-    transform: translate3d(-100%, 0, 0) skewX(30deg);
-    opacity: 0;
-  }
-
-  60% {
-    transform: skewX(-20deg);
-    opacity: 1;
-  }
-
-  80% {
-    transform: skewX(5deg);
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-.lightSpeedInLeft {
-  animation-name: lightSpeedInLeft;
-  animation-timing-function: ease-out;
 }

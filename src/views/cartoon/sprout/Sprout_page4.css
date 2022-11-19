@@ -157,8 +157,9 @@
   height: 8%;
   bottom: 0;
   right: 0;
+  margin-right: -50%;
   margin-bottom: 90%;
-  background-color: aquamarine;
+  /*background-color: aquamarine;*/
 }
 #sprout_page4_train1 {
   top: 0;

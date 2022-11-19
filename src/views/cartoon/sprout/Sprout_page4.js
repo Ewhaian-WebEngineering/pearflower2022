@@ -75,6 +75,11 @@ function sprout_page4_train1_wheel_ani() {
     .getElementById("sprout_page4_train1_wheel7")
     .classList.add("wheel-rotate");
 }
+function sprout_page4_train1_move_ani() {
+  document
+    .getElementById("sprout_page4_train1_wrap")
+    .classList.add("move-train");
+}
 function sprout_page4_train2() {
   var target = document.getElementById("sprout_page4_train2");
 }
@@ -94,6 +99,7 @@ function Sprout_page4() {
     sprout_page4_firecracker2_ani();
     sprout_page4_firecracker3_ani();
     sprout_page4_train1_wheel_ani();
+    sprout_page4_train1_move_ani();
   }, []);
   return (
     <div className="bee_container">

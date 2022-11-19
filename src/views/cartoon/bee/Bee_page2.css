@@ -1,4 +1,5 @@
 #bee_page2 {
+  overflow: hidden;
   width: 80%;
   height: 100%;
   margin: 0 auto;
@@ -8,35 +9,116 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+#bee_page2_window_wrap {
+  overflow: hidden;
+  width: 35%;
+  height: 17%;
+  left: 0;
+  top: 0;
+  margin-top: 10%;
+  margin-left: 9%;
+  background-image: url(/public/img/cartoon/bee/page2/window_wrap.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#bee_page2_window_content_wrap {
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  margin: 6%;
+  width: 84%;
+  height: 88%;
+  /*background-color: blueviolet;*/
+}
+#bee_page2_window_night {
+  visibility: var(--window-night);
+  width: 200%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: url(/public/img/cartoon/bee/page2/window_night.png);
+}
+#bee_page2_window_day {
+  visibility: var(--window-day);
+  width: 200%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  content: url(/public/img/cartoon/bee/page2/window_day.png);
+}
+#bee_page2_window_day_star {
+  visibility: var(--window-day-star);
+  width: 100%;
+  height: 85%;
+  margin-top: 3%;
+  top: 0;
+  left: 0;
+  content: url(/public/img/cartoon/bee/page2/window_day_star.png);
+}
+#bee_page2_window_night_star {
+  visibility: var(--window-night-star);
+  width: 100%;
+  height: 90%;
+  top: 0;
+  left: 0;
+  content: url(/public/img/cartoon/bee/page2/window_night_star.png);
+}
+#bee_page2_window_line {
+  top: 0;
+  left: 0;
+  margin-left: -3%;
+  width: 100;
+  height: 100%;
+  content: url(/public/img/cartoon/bee/page2/window_line.png);
+}
 #bee_page2_person1_honeyBox {
   top: 0;
   right: 0;
   height: 4%;
-  margin-top: 8%;
-  margin-right: 24%;
+  margin-top: 17%;
+  margin-right: 6%;
+  transform: rotate(15deg);
   content: url(/public/img/cartoon/bee/page2/honeyBox.png);
 }
 #bee_page2_person1_honeyEffect {
+  visibility: var(--honey-effect1);
   top: 0;
   right: 0;
   height: 3%;
   margin-top: 2%;
-  margin-right: 33%;
+  margin-right: 34%;
   content: url(/public/img/cartoon/bee/page2/hoenyEffect.png);
 }
+#bee_page2_person1_honeyEffect2 {
+  visibility: var(--honey-effect2);
+  top: 0;
+  right: 0;
+  height: 6%;
+  margin-right: 10%;
+  margin-top: 5%;
+  content: url(/public/img/cartoon/bee/page2/honeyEffect2.png);
+}
+#bee_page2_person2 {
+  top: 0;
+  left: 0;
+  height: 45%;
+  margin-top: 33%;
+  margin-left: 5%;
+  content: url(/public/img/cartoon/bee/page2/person2.png);
+}
 #bee_page2_person3 {
-  height: 40%;
+  height: 47%;
   bottom: 0;
   right: 0;
-  margin-right: 10%;
-  margin-bottom: 15%;
+  margin-right: 3%;
+  margin-bottom: 13%;
   content: url(/public/img/cartoon/bee/page2/person3.png);
 }
 #bee_page2_person3_effect {
-  height: 4.5%;
+  height: 5%;
   bottom: 0;
   right: 0;
-  margin-bottom: 75%;
-  margin-right: 55%;
+  margin-bottom: 70%;
+  margin-right: 57%;
   content: url(/public/img/cartoon/bee/page2/person3_effect.png);
 }
