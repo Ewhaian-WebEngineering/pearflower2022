@@ -1,0 +1,27 @@
+/*모바일*/
+@media screen and (max-width : 779px) {
+    .logo {
+        content: url("/public/img/logo_main.png");
+        top: 0;
+        left: 0;
+        width: 7rem;
+        margin-top: 3px;
+        margin-left: 9px;
+        position: absolute;
+        cursor: pointer;
+    }
+}
+
+/*웹*/
+@media screen and (min-width: 780px) {
+    .logo {
+        content: url("/public/img/logo_main.png");
+        top: 0;
+        left: 0;
+        width: 7rem;
+        margin-top: 7px;
+        margin-left: 10px;
+        position: absolute;
+        cursor: pointer;
+    }
+}
