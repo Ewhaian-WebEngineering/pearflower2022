@@ -4,6 +4,9 @@ import Intro from "./views/Intro";
 import Main from "./views/main/MainLayout";
 import TimeTable from './views/main/timeTable';
 import Event from "./views/event/Event";
+import HoneyJar from "./views/event/HoneyJar";
+import BeotAlong from "./views/event/BeotAlong";
+import Escape from "./views/event/Escape";
 import Goods from "./views/Goods";
 import Gamehome from "./views/game/Gamehome";
 import GameInfo from "./views/game/GameInfo";
@@ -50,6 +53,9 @@ function App() {
         <Route exact path="/main" element={<Main />} />
         <Route exact path="/timeTable" element={<TimeTable />} />
         <Route exact path="/event" element={<Event />} />
+        <Route exact path="/honeyjar" element={<HoneyJar />} />
+        <Route exact path="/beotalong" element={<BeotAlong />} />
+        <Route exact path="/escape" element={<Escape />} />
         <Route exact path="/goods" element={<Goods />} />
         <Route exact path="/gamehome" element={<Gamehome />} />
         <Route exact path="/gameinfo" element={<GameInfo />} />
