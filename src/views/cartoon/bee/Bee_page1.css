@@ -56,10 +56,22 @@
 }
 #bee_page1_person1_poster {
   top: 0;
-  height: 16%;
-  margin-left: 18%;
-  margin-top: 22%;
-  content: url("/public/img/cartoon/bee/page1/person1_poster.png");
+  left: 0;
+  width: 32%;
+  height: 18%;
+  margin-left: 24%;
+  margin-top: 21%;
+  background-image: url(/public/img/cartoon/bee/page1/poster/poster_blank.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#bee_page1_person1_poster_honeyBox {
+  width: 70%;
+  height: 50%;
+  top: 0;
+  left: 0;
+  margin-left: 14%;
+  margin-top: 30%;
 }
 #bee_page1_person1_progressBar_name {
   height: 80%;
@@ -113,25 +125,22 @@
   content: url(/public/img/cartoon/bee/page1/person2_trash.png);
 }
 #bee_page1_person2_trash1 {
+  visibility: var(--trash1);
   margin-left: 35%;
   margin-top: 89%;
-  animation: falling_trash infinite;
-  animation-duration: 3s;
 }
 
 #bee_page1_person2_trash2 {
+  visibility: var(--trash2);
   height: 3%;
   margin-left: 20%;
   margin-top: 76%;
-  animation: falling_trash infinite;
-  animation-duration: 2s;
 }
 #bee_page1_person2_trash3 {
+  visibility: var(--trash3);
   height: 3%;
   margin-left: 2%;
   margin-top: 85%;
-  animation: falling_trash infinite;
-  animation-duration: 2.5s;
 }
 #bee_page1_person2_effect {
   top: 0;

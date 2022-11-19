@@ -6,6 +6,11 @@
   animation-name: fadeOutDown;
   animation-duration: 1s;
 }
+.falling_trash {
+  animation-name: falling_trash;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
+}
 .horseAni1 {
   animation-name: horseAni1;
   animation-duration: 3s;
