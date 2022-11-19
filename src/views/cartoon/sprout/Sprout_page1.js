@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "../bee/Bee_page1.css";
 import "./Sprout_page1.css";
-import "../SkipBtn.css";
+import "../CartoonBtns.css";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -71,7 +72,17 @@ function Sprout_page1() {
           ></div>
         </div>
       </div>
-      <div className="skipBtn inlineBlock"></div>
+      <div className="cartoon_btns inlineBlock">
+        <Link to="/">
+          <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/main">
+          <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/sprout2">
+          <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+        </Link>
+      </div>
     </div>
   );
 }

@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Bee_page1.css";
 import "./Bee_page3.css";
-import "../SkipBtn.css";
+import "../CartoonBtns.css";
 import "../AniZip.css";
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -62,7 +63,17 @@ function Bee_page3() {
           <div id="cloud4_effect" className="inlineBlock"></div>
         </div>
       </div>
-      <div className="skipBtn inlineBlock"></div>
+      <div className="cartoon_btns inlineBlock">
+        <Link to="/bee2">
+          <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/main">
+          <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/bee4">
+          <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+        </Link>
+      </div>
     </div>
   );
 }
