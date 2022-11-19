@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Intro from "./views/Intro";
 import Main from "./views/main/MainLayout";
 import TimeTable from './views/main/timeTable';
-import Event from "./views/Event";
+import Event from "./views/event/Event";
 import Goods from "./views/Goods";
 import Gamehome from "./views/game/Gamehome";
 import GameInfo from "./views/game/GameInfo";
@@ -39,15 +39,15 @@ function App() {
         <Route exact path="/sprout2" element={<Sprout2 />} />
         <Route exact path="/sprout3" element={<Sprout3 />} />
         <Route exact path="/sprout4" element={<Sprout4 />} />
-        <Route exact path="/mushroom1" element={<Mushroom1/>} />
-        <Route exact path="/mushroom2" element={<Mushroom2/>} />
-        <Route exact path="/mushroom3" element={<Mushroom3/>} />
-        <Route exact path="/mushroom4" element={<Mushroom4/>} />
-        <Route exact path="/gardener1" element={<Gardener1/>} />
-        <Route exact path="/gardener2" element={<Gardener2/>} />
-        <Route exact path="/gardener3" element={<Gardener3/>} />
+        <Route exact path="/mushroom1" element={<Mushroom1 />} />
+        <Route exact path="/mushroom2" element={<Mushroom2 />} />
+        <Route exact path="/mushroom3" element={<Mushroom3 />} />
+        <Route exact path="/mushroom4" element={<Mushroom4 />} />
+        <Route exact path="/gardener1" element={<Gardener1 />} />
+        <Route exact path="/gardener2" element={<Gardener2 />} />
+        <Route exact path="/gardener3" element={<Gardener3 />} />
         <Route exact path="/main" element={<Main />} />
-        <Route exact path="/timeTable" element={<TimeTable/>}/>
+        <Route exact path="/timeTable" element={<TimeTable />} />
         <Route exact path="/event" element={<Event />} />
         <Route exact path="/goods" element={<Goods />} />
         <Route exact path="/gamehome" element={<Gamehome />} />
