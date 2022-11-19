@@ -2,8 +2,9 @@ import React, { useEffect } from "react";
 import "./Bee_page1.css";
 import "./Bee_page2.css";
 import "./Progress.css";
-import "../SkipBtn.css";
 import "../AniZip.css";
+import "../CartoonBtns.css";
+import { Link } from "react-router-dom";
 //import { Link } from "react-router-dom";
 
 function setScreenSize() {
@@ -163,7 +164,17 @@ function Bee_page1() {
           <div id="bee_page1_person4_work2" className="inlineBlock"></div>
         </div>
       </div>
-      <div className="skipBtn inlineBlock"></div>
+      <div className="cartoon_btns inlineBlock">
+        <Link to="/">
+          <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/main">
+          <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/bee2">
+          <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+        </Link>
+      </div>
     </div>
   );
 }

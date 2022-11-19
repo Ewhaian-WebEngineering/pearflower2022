@@ -1,10 +1,9 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../bee/Bee_page1.css";
 import "./Sprout_page2.css";
-import "../SkipBtn.css";
+import "../CartoonBtns.css";
 import "../AniZip.css";
-import "../TouchArea.css";
-import "../Visibility.css";
 
 var aniNum = 0;
 function setScreenSize() {
@@ -73,21 +72,17 @@ function Sprout_page2() {
           <div id="sprout_page2_talk" className="inlineBlock"></div>
         </div>
       </div>
-      <div className="touchArea inlineBlock">
-        <div
-          className="rightTouchArea inlineBlock"
-          onClick={() => {
-            sprout_page2_animation_entrance(++aniNum);
-          }}
-        ></div>
-        <div
-          className="leftTouchArea inlineBlock"
-          onClick={() => {
-            sprout_page2_animation_exit(aniNum--);
-          }}
-        ></div>
+      <div className="cartoon_btns inlineBlock">
+        <Link to="/sprout1">
+          <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/main">
+          <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/sprout3">
+          <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+        </Link>
       </div>
-      <div className="skipBtn inlineBlock"></div>
     </div>
   );
 }

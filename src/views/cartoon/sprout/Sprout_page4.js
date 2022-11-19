@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "../bee/Bee_page1.css";
 import "./Sprout_page4.css";
-import "../SkipBtn.css";
+import "../CartoonBtns.css";
 import "../AniZip.css";
 import "../Firecrackers.css";
 
@@ -210,7 +211,17 @@ function Sprout_page4() {
           <div id="sprout_page4_persons_effect" className="inlineBlock"></div>
         </div>
       </div>
-      <div className="skipBtn inlineBlock"></div>
+      <div className="cartoon_btns inlineBlock">
+        <Link to="/sprout3">
+          <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/main">
+          <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/">
+          <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+        </Link>
+      </div>
     </div>
   );
 }

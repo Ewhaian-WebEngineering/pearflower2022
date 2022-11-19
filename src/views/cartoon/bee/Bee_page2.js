@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Bee_page1.css";
 import "./Bee_page2.css";
-import "../SkipBtn.css";
+import "../CartoonBtns.css";
 import "../AniZip.css";
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -76,7 +77,17 @@ function Bee_page2() {
           <div id="bee_page2_person3_effect" className="inlineBlock"></div>
         </div>
       </div>
-      <div className="skipBtn inlineBlock"></div>
+      <div className="cartoon_btns inlineBlock">
+        <Link to="/bee1">
+          <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/main">
+          <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/bee3">
+          <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+        </Link>
+      </div>
     </div>
   );
 }

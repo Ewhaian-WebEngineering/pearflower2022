@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./Bee_page1.css";
 import "./Bee_page4.css";
-import "../SkipBtn.css";
+import "../CartoonBtns.css";
 import "../AniZip.css";
 import "./Clouds.css";
 import "../Firecrackers.css";
@@ -136,9 +137,15 @@ function Bee_page4() {
         </div>
       </div>
       <div className="cartoon_btns inlineBlock">
-        <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
-        <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
-        <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+        <Link to="/bee3">
+          <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/main">
+          <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/">
+          <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+        </Link>
       </div>
     </div>
   );
