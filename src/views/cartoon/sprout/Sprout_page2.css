@@ -9,6 +9,7 @@
   background-repeat: no-repeat;
 }
 #sprout_page2_honeyBox {
+  opacity: var(--page2-honeyBox);
   height: 13%;
   top: 0;
   left: 0;
@@ -17,6 +18,7 @@
   content: url(/public/img/cartoon/sprout/page2/honeyBox.png);
 }
 #sprout_page2_amusementPark {
+  opacity: var(--page2-amusementPark);
   top: 0;
   right: 0;
   height: 28%;
@@ -25,6 +27,7 @@
   content: url(/public/img/cartoon/sprout/page2/amusementPark.png);
 }
 #sprout_page2_what {
+  opacity: var(--page2-what);
   bottom: 0;
   left: 0;
   height: 13%;
@@ -33,6 +36,7 @@
   content: url(/public/img/cartoon/sprout/page2/what.png);
 }
 #sprout_page2_talk {
+  opacity: var(--page2-talk);
   bottom: 0;
   left: 0;
   height: 8%;
