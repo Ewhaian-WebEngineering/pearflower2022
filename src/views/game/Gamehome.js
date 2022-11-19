@@ -2,7 +2,14 @@ import React from 'react'
 import './Gamehome.css';
 import { Link } from "react-router-dom";
 
+function setScreenSize() {
+    let vh = window.innerHeight;
+    let vw = window.innerWidth;
+    document.documentElement.style.setProperty("—gameHome-wrap-vw", `${vw}px`);
+    document.documentElement.style.setProperty("—gameHome-wrap-vh", `${vh}px`);
+}
 export default function Gamehome() {
+    setScreenSize();
     return (
         <div className='wrapper'>
             <div className='gameheader'>
