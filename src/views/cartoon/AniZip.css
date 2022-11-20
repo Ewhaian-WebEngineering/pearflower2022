@@ -2,6 +2,11 @@
   animation-name: fadeInUp;
   animation-duration: 1s;
 }
+.fadeInUpInfinite {
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
 .fadeOutDown {
   animation-name: fadeOutDown;
   animation-duration: 1s;
@@ -40,8 +45,9 @@
 }
 .move-train {
   animation-name: move_train;
-  animation-duration: 50s;
+  animation-duration: 30s;
   animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 .flash {
   animation-name: flash;
@@ -90,7 +96,7 @@
   animation-duration: 7.5s;
 }
 .swing {
-  transform-origin: top center;
+  transform-origin: bottom center;
   animation-name: swing;
   animation-duration: 6s;
   animation-iteration-count: infinite;
@@ -186,9 +192,18 @@
 }
 @keyframes move_train {
   from {
+    transform: scaleX(1);
+  }
+  49% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(-1);
+    margin-right: 120%;
   }
   to {
-    margin-right: 300%;
+    transform: scaleX(-1);
+    margin-right: -120%;
   }
 }
 @keyframes flash {
@@ -493,5 +508,29 @@
   to {
     margin-right: -30%;
     margin-bottom: -10%;
+  }
+}
+.clock_long {
+  animation: clock_long 10s infinite linear;
+}
+.clock_short {
+  animation: clock_short 5s infinite linear;
+}
+@keyframes clock_long {
+  from {
+    transform-origin: 50% 100%;
+  }
+  to {
+    transform-origin: 50% 100%;
+    transform: rotate(360deg);
+  }
+}
+@keyframes clock_short {
+  from {
+    transform-origin: 0% 25%;
+  }
+  to {
+    transform-origin: 0% 25%;
+    transform: rotate(360deg);
   }
 }

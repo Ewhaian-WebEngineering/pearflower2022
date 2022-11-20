@@ -5,6 +5,7 @@ import "./Sprout_page4.css";
 import "../CartoonBtns.css";
 import "../AniZip.css";
 import "../Firecrackers.css";
+import "../bee/Clouds.css";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -82,8 +83,14 @@ function sprout_page4_train1_move_ani() {
     .getElementById("sprout_page4_train1_wrap")
     .classList.add("move-train");
 }
-function sprout_page4_train2() {
-  var target = document.getElementById("sprout_page4_train2");
+function sprout_page4_persons_ani() {
+  var persons = document.getElementById("sprout_page4_persons");
+  var effect = document.getElementById("sprout_page4_persons_effect");
+  persons.classList.add("fadeInUp");
+  setTimeout(() => {
+    effect.classList.add("fadeInUp");
+    document.documentElement.style.setProperty("--persons-effect", `visible`);
+  }, 700);
 }
 function firecracker_ani() {
   setTimeout(() => {
@@ -103,6 +110,7 @@ function firecracker_init() {
   document.documentElement.style.setProperty("--firecracker2-outside", `0`);
   document.documentElement.style.setProperty("--firecracker3-inside", `0`);
   document.documentElement.style.setProperty("--firecracker3-outside", `0`);
+  document.documentElement.style.setProperty("--persons-effect", `hidden`);
 }
 function Sprout_page4() {
   setScreenSize();
@@ -114,14 +122,13 @@ function Sprout_page4() {
     firecracker_ani();
     sprout_page4_train1_wheel_ani();
     sprout_page4_train1_move_ani();
+    sprout_page4_persons_ani();
   }, []);
   return (
     <div className="bee_container">
       <div className="bee_background_wrap">
         <div id="sprout_page4">
-          <div id="sprout_page4_cloud1" className="inlineBlock"></div>
-          <div id="sprout_page4_cloud2" className="inlineBlock"></div>
-          <div id="sprout_page4_cloud3" className="inlineBlock"></div>
+          <div className="clouds inlineBlock"></div>
           <div
             id="sprout_page4_firecracker1_wrap"
             className="inlineBlock firecracker1_wrap"

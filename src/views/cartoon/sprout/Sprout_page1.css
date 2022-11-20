@@ -1,4 +1,5 @@
 #sprout_page1 {
+  overflow: hidden;
   width: 80%;
   height: 100%;
   margin: 0 auto;
@@ -70,7 +71,80 @@
   margin-top: 40%;
   content: url(/public/img/cartoon/sprout/page1/clock_small_line.png);
 }
+#sprout_page1_cut2_basketWrap {
+  top: 0;
+  left: 0;
+  width: 18%;
+  height: 8%;
+  margin-top: 84%;
+  margin-left: 33%;
+}
+#sprout_page1_cut2_basket {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/public/img/cartoon/sprout/page1/basket.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+#sprout_page1_cut2_black_cat_wrap {
+  overflow: var(--basket-black-cat-wrap);
+  top: 0;
+  margin-top: -30%;
+  left: 0;
+  width: 100%;
+  height: 73%;
+}
+#sprout_page1_cut2_black_cat {
+  visibility: var(--basket-black-cat);
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  margin-bottom: -80%;
+  content: url(/public/img/cartoon/sprout/page1/black_cat_basketpng.png);
+}
+.basket_cat_entrance {
+  animation: basket_cat_entrance 2s forwards;
+}
+@keyframes basket_cat_entrance {
+  from {
+  }
+  to {
+    margin-bottom: -18%;
+  }
+}
+#sprout_page1_cut2_basket_effect {
+  visibility: var(--basket-effect);
+  top: 0;
+  left: 0;
+  height: 40%;
+  margin-left: -10%;
+  margin-top: -10%;
+  content: url(/public/img/cartoon/sprout/page1/basket_swing_effect.png);
+}
+#sprout_page1_mouse {
+  visibility: var(--sprout-page1-mouse);
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  margin-right: -40%;
+  margin-bottom: -50%;
+  content: url(/public/img/cartoon/bee/page1/poster/mouse.png);
+}
+.sprout_page1_mouse_move {
+  animation: sprout_page1_mouse 3s infinite;
+}
+@keyframes sprout_page1_mouse {
+  from {
+  }
+  to {
+    margin-bottom: -10%;
+    margin-right: -10%;
+  }
+}
 #sprout_page1_cut2_person1_check {
+  visibility: var(--sprout-page1-talk1);
   top: 0;
   left: 0;
   height: 3.3%;
@@ -79,6 +153,7 @@
   content: url(/public/img/cartoon/sprout/page1/person2_check.png);
 }
 #sprout_page1_cut2_cat_talk {
+  visibility: var(--basket-black-cat-talk);
   top: 0;
   left: 0;
   height: 3%;
@@ -87,6 +162,7 @@
   content: url(/public/img/cartoon/sprout/page1/cat_talk.png);
 }
 #sprout_page1_cut2_person2_heart {
+  visibility: var(--sprout-page1-talk3);
   top: 0;
   right: 0;
   height: 3.3%;
@@ -95,6 +171,7 @@
   content: url(/public/img/cartoon/sprout/page1/person3_heart.png);
 }
 #sprout_page1_cut2_person2_talk {
+  visibility: var(--sprout-page1-talk2);
   top: 0;
   right: 0;
   height: 3.5%;
@@ -109,6 +186,18 @@
   margin-top: 77.5%;
   margin-left: 2%;
   content: url(/public/img/cartoon/sprout/page1/person2_hair.png);
+}
+.hair_swing {
+  transform-origin: 100% 50%;
+  animation: hair_swing 5s infinite alternate;
+}
+@keyframes hair_swing {
+  from {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
 }
 #sprout_page1_cut3_cat {
   content: url(/public/img/cartoon/sprout/page1/black_cat.png);
@@ -138,10 +227,33 @@
   bottom: 0;
   left: 0;
   height: 31%;
-  margin-left: 6%;
+  margin-left: -90%;
   content: url(/public/img/cartoon/sprout/page1/person4_5.png);
 }
+.persons_move {
+  animation: persons_move 8s forwards linear;
+}
+@keyframes persons_move {
+  from {
+  }
+  20% {
+    margin-bottom: -5%;
+  }
+  40% {
+    margin-bottom: 0%;
+  }
+  60% {
+    margin-bottom: -5%;
+  }
+  80% {
+    margin-bottom: 0%;
+  }
+  to {
+    margin-left: 6%;
+  }
+}
 #sprout_page1_cut3_person_heart {
+  visibility: var(--sprout-page1-person-heart);
   left: 0;
   bottom: 0;
   height: 5%;

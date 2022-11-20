@@ -41,7 +41,7 @@ function bee_page3_ani() {
             `visible`
           );
           cloud4Effect.classList.add("shakeBody2s");
-        }, 200);
+        }, 500);
       }, 500);
     }, 500);
   }, 500);

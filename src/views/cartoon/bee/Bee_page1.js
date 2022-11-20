@@ -43,6 +43,8 @@ function beePage1Init() {
   document.documentElement.style.setProperty("--trahs3", `hidden`);
   //mouse
   document.documentElement.style.setProperty("--honeyBoxBtn-mouse", `visible`);
+  //window
+  document.documentElement.style.setProperty("--window-day-star", `visible`);
 }
 function bee_page1_person4_effect_ani() {
   var target = document.getElementById("bee_page1_person4_effect");
@@ -76,15 +78,6 @@ function falling_trashs_ani() {
       trash1.classList.add("falling_trash");
     }, 1000);
   }, 1000);
-}
-function honeyBox_plus_ani() {
-  var honeyBoxPlus = document.getElementById(
-    "bee_page1_person1_honeyBoxBtn_plus"
-  );
-  honeyBoxPlus.classList.add("fadeInUp");
-  setTimeout(() => {
-    honeyBoxPlus.classList.remove("fadeInUp");
-  }, 500);
 }
 function Bee_page1() {
   const honeyBoxSrcs = [
@@ -137,35 +130,33 @@ function Bee_page1() {
             <div
               id="bee_page1_person1_honeyBoxBtn_wrap"
               className="inlineBlock"
-            >
-              <div
-                className="inlineBlock bee_page1_person1_honeyBoxBtn"
-                onClick={() => {
-                  clickCnt++;
-                  console.log(clickCnt);
-                  var honeyBox = document.getElementById(
-                    "bee_page1_person1_poster_honeyBox"
-                  );
-                  if (clickCnt <= 20) {
-                    if (clickCnt == 1) {
-                      document.documentElement.style.setProperty(
-                        "--honeyBoxBtn-mouse",
-                        `hidden`
-                      );
-                      document
-                        .getElementById("bee_page1_person1_honeyBoxBtn_mouse")
-                        .classList.remove("mouseMove");
-                    }
-                    honeyBox.src = honeyBoxSrcs[clickCnt];
+              onClick={() => {
+                clickCnt++;
+                console.log(clickCnt);
+                var honeyBox = document.getElementById(
+                  "bee_page1_person1_poster_honeyBox"
+                );
+                if (clickCnt <= 20) {
+                  if (clickCnt == 1) {
                     document.documentElement.style.setProperty(
-                      `--progress${clickCnt}`,
-                      `visible`
+                      "--honeyBoxBtn-mouse",
+                      `hidden`
                     );
-                  } else {
-                    honeyBox.src = honeyBoxSrcs[20];
+                    document
+                      .getElementById("bee_page1_person1_honeyBoxBtn_mouse")
+                      .classList.remove("mouseMove");
                   }
-                }}
-              ></div>
+                  honeyBox.src = honeyBoxSrcs[clickCnt];
+                  document.documentElement.style.setProperty(
+                    `--progress${clickCnt}`,
+                    `visible`
+                  );
+                } else {
+                  honeyBox.src = honeyBoxSrcs[20];
+                }
+              }}
+            >
+              <div className="inlineBlock bee_page1_person1_honeyBoxBtn"></div>
               <div
                 id="bee_page1_person1_honeyBoxBtn_content"
                 className="inlineBlock"

@@ -25,22 +25,28 @@
   margin-top: 20%;
   content: url(/public/img/cartoon/bee/page4/white_cate.png);
 }
-#bee_page4_white_cat_footstep {
+#bee_page4_white_cat_footstep_wrap {
   left: 0;
   top: 0;
+  width: 10%;
   height: 6%;
-  margin-top: 97%;
-  margin-left: 8%;
+  margin-top: 95%;
+  margin-left: 10%;
+}
+#bee_page4_white_cat_footstep {
+  right: 0;
+  top: 0;
+  height: 100%;
   content: url(/public/img/cartoon/bee/page4/cat_foostep.png);
 }
 #bee_page4_mouse {
-  visibility: (--bee-page4-mouse);
+  opacity: var(--bee-page4-mouse);
   left: 0;
-  top: 0;
+  bottom: 0;
+  height: 70%;
   transform: rotate(60deg);
-  height: 4%;
-  margin-top: 110%;
-  margin-left: 2%;
+  margin-bottom: -100%;
+  margin-left: -50%;
   content: url(/public/img/cartoon/bee/page1/poster/mouse.png);
 }
 .bee_page4_mouse_move {
@@ -50,8 +56,8 @@
   from {
   }
   to {
-    margin-left: 5%;
-    margin-top: 103%;
+    margin-left: 2%;
+    margin-bottom: -100%;
   }
 }
 #bee_page4_persons_effect {
