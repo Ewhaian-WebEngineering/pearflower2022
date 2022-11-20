@@ -27,7 +27,7 @@ export default function Gamehome() {
                     <img id='escape' src='/img/game/escape.png' alt='escape'></img>
                 </div>
                 <div className='howtoplay'>
-                    <Link to='./gameinfo'>
+                    <Link to='/gameinfo'>
                         <img id='howtoplay' src='/img/game/howtoplay.png' alt='howtoplay'></img>
                     </Link>
                 </div>
