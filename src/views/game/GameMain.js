@@ -63,7 +63,19 @@ const questions = [
 
 
 
+
 function GameMain() {
+
+    const [currentIndex, setCurrentIndex] = useState(1);
+
+    function Hint() {
+        var i = 1;
+        if (currentIndex === i) {
+            return <div className="hint_content">{questions[i - 1].hint}</div>
+        }
+    }
+
+
 
 
     return (
@@ -75,14 +87,14 @@ function GameMain() {
 
                 <div className="question">
                     <img className="_question" alt="question" src="/img/game/Question.png">
-                        {/*텍스트 넣는 곳 */}
+
                     </img>
 
-                    <div className="h_text">힌트를 보려면 누르세요!</div>
-                    <div className="hintKey">
+                    <p className="h_text">힌트를 보려면 누르세요!</p>
+                    <p className="hintKey">
                         <img alt="hintkey" className="_hintkey" src="/img/game/HintKey.png" />
-                        {questions[0].hint}
-                    </div>
+                        {Hint()}
+                    </p>
                 </div>
 
 
