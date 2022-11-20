@@ -11,6 +11,9 @@ import Goods from "./views/Goods";
 import Gamehome from "./views/game/Gamehome";
 import GameInfo from "./views/game/GameInfo";
 import GameMain from "./views/game/GameMain";
+import GamePage from "./views/game/GamePage";
+import GameOverPage from "./views/game/GameOverPage";
+import GameFinish from "./views/game/GameFinish";
 /*cartoon pages*/
 import CharacterInfo from "./views/cartoon/CharacterInfo";
 import Bee1 from "./views/cartoon/bee/Bee_page1";
@@ -28,8 +31,7 @@ import Mushroom4 from "./views/cartoon/mushroom/Mushroom_page4";
 import Gardener1 from "./views/cartoon/gardener/Gardener_page1";
 import Gardener2 from "./views/cartoon/gardener/Gardener_page2";
 import Gardener3 from "./views/cartoon/gardener/Gardener_page3";
-import GamePage from "./views/game/GamePage";
-import GameOverPage from "./views/game/GameOverPage";
+
 
 function App() {
   return (
@@ -63,6 +65,7 @@ function App() {
         <Route exact path="/gamemain" element={<GameMain />} />
         <Route exact path="/finalgame" element={<GamePage />} />
         <Route exact path="/finalgameover" element={<GameOverPage />} />
+        <Route exact path="/finish" element={<GameFinish />} />
       </Routes>
     </div>
   );
