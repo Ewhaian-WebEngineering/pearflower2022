@@ -82,7 +82,7 @@ function Event() {
       outerDivRefCurrent.removeEventListener("wheel", wheelHandler);
     }
   }, []);
-
+  const [floatHidden, setFloatHidden] = useState(false);
   const [earlyHidden, setEarlyHidden] = useState(true);
   const [todayHidden, setTodayHidden] = useState(true);
   //balance photo bingo
@@ -98,14 +98,14 @@ function Event() {
   const [wishTreeHidden, setWishTreeHidden] = useState(true);
   const [maxLevHidden, setMaxLevHidden] = useState(true);
   //const [escapeHidden, setEscapeHidden] = useState(true);
+  const closeFloat = () => {
+    setFloatHidden(!floatHidden);
+  }
   const earlyClick = () => {
     setEarlyHidden(!earlyHidden);
-    console.log("사전이벤트클릭");
-    console.log(earlyHidden);
   };
   const todayClick = () => {
     setTodayHidden(!todayHidden);
-    console.log("당일이벤트클릭");
   };
   const balanceClick = () => {
     setBalanceHidden(!balanceHidden);
@@ -134,6 +134,8 @@ function Event() {
     <div>
       <MobileView>
         <div>
+          <Link to="/beotalong"><img alt="floatingBeotAlongAd" className={classnames('floatingBeotAlong', (floatHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileFloatingBeotAlong.png'}></img></Link>
+          <img alt="killingFloatBtn" className={classnames('killFloatingBeotAlong', (floatHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileFloatingKill.png'} onClick={closeFloat}></img>
           <div className="eventHeader">
             <Link to="/main"><img alt="logoSquare" className="logo"></img></Link>
             <div className="menuBtnDiv">

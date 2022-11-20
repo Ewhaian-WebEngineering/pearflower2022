@@ -7,6 +7,24 @@
         /*스크롤은 body가 아닌 outer div에서 제어할 것이므로 일단 스크롤 막기*/
     }
 
+    .floatingBeotAlong {
+        bottom: 0;
+        left: 0;
+        width: 12rem;
+        position: absolute;
+        z-index: 6;
+    }
+
+    .killFloatingBeotAlong {
+        bottom: 0;
+        left: 0;
+        width: 3rem;
+        position: absolute;
+        padding-left: 10rem;
+        padding-bottom: 2rem;
+        z-index: 6;
+    }
+
     /*헤더 스타일*/
     .eventHeader {
         position: absolute;
