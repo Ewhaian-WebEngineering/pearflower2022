@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Bee_page1.css";
 import "./Bee_page4.css";
-import "../CartoonBtns.css";
 import "../AniZip.css";
 import "./Clouds.css";
 import "../Firecrackers.css";
@@ -65,13 +64,16 @@ function white_cate_entrance_ani() {
   var white_cat = document.getElementById("bee_page4_white_cat");
   white_cat.classList.add("whiteCatEntrance");
 }
+var bee_page4_clickCnt = 0;
 function Bee_page4() {
   setScreenSize();
   useEffect(() => {
     document.documentElement.style.setProperty("--white-cat", `hidden`);
     firecracker_init();
     firecracker_ani();
-    white_cate_entrance_ani();
+    document.documentElement.style.setProperty("--bee-page4-mouse", `visible`);
+    var mouse = document.getElementById("bee_page4_mouse");
+    mouse.classList.add("bee_page4_mouse_move");
   }, []);
   return (
     <div className="bee_container">
@@ -117,6 +119,40 @@ function Bee_page4() {
               className="inlineBlock firecracker3_outside"
             ></div>
           </div>
+          <div
+            id="bee_page4_white_cat_footstep"
+            className="inlineBlock"
+            onClick={() => {
+              console.log("클릭");
+              document.documentElement.style.setProperty(
+                "--bee-page4-mouse",
+                `hidden`
+              );
+              var mouse = document.getElementById("bee_page4_mouse");
+              mouse.classList.remove("bee_page4_mouse_move");
+              bee_page4_clickCnt += 1;
+              if (bee_page4_clickCnt == 1) {
+                white_cate_entrance_ani();
+              }
+            }}
+          ></div>
+          <div
+            id="bee_page4_mouse"
+            className="inlineBlock"
+            onClick={() => {
+              console.log("클릭");
+              document.documentElement.style.setProperty(
+                "--bee-page4-mouse",
+                `hidden`
+              );
+              var mouse = document.getElementById("bee_page4_mouse");
+              mouse.classList.remove("bee_page4_mouse_move");
+              bee_page4_clickCnt += 1;
+              if (bee_page4_clickCnt == 1) {
+                white_cate_entrance_ani();
+              }
+            }}
+          ></div>
           <div id="bee_page4_cat_person_wrap" className="inlineBlock">
             <div id="bee_page4_white_cat" className="inlineBlock"></div>
             <div id="bee_page4_persons" className="inlineBlock"></div>

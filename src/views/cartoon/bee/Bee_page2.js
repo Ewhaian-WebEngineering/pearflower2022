@@ -11,8 +11,13 @@ function setScreenSize() {
   document.documentElement.style.setProperty("--vw", `${vw}px`);
 }
 function window_day_change_ani() {
-  document.documentElement.style.setProperty("--window-night", `visible`);
-  document.documentElement.style.setProperty("--window-night-star", `visible`);
+  setTimeout(() => {
+    document.documentElement.style.setProperty("--window-night", `visible`);
+    document.documentElement.style.setProperty(
+      "--window-night-star",
+      `visible`
+    );
+  }, 800);
   var windowNightBg = document.getElementById("bee_page2_window_night");
   windowNightBg.classList.add("openDownLeftReturn");
   var windowNightStar = document.getElementById("bee_page2_window_night_star");
@@ -28,6 +33,12 @@ function beePage2Init() {
   document.documentElement.style.setProperty("--window-night-star", `hidden`);
   document.documentElement.style.setProperty("--honey-effect1", `hidden`);
   document.documentElement.style.setProperty("--honey-effect2", `hidden`);
+  document.documentElement.style.setProperty(
+    "--bee_page2_honeyBox_mouse",
+    `visible`
+  );
+  var mouse = document.getElementById("bee_page2_honeyBox_mouse");
+  mouse.classList.add("bee_page2_honeyBox_mouse");
 }
 function throw_honey_ani() {
   var honey = document.getElementById("bee_page2_person1_honeyBox");
@@ -45,7 +56,6 @@ function Bee_page2() {
   setScreenSize();
   useEffect(() => {
     beePage2Init();
-    throw_honey_ani();
     setTimeout(() => {
       window_day_change_ani();
     }, 2000);
@@ -66,7 +76,20 @@ function Bee_page2() {
             </div>
             <div id="bee_page2_window_line" className="inlineBlock"></div>
           </div>
-          <div id="bee_page2_person1_honeyBox" className="inlineBlock"></div>
+          <div
+            id="bee_page2_person1_honeyBox"
+            className="inlineBlock"
+            onClick={() => {
+              document.documentElement.style.setProperty(
+                "--bee_page2_honeyBox_mouse",
+                `hidden`
+              );
+              var mouse = document.getElementById("bee_page2_honeyBox_mouse");
+              mouse.classList.remove("bee_page2_honeyBox_mouse");
+              throw_honey_ani();
+            }}
+          ></div>
+          <div id="bee_page2_honeyBox_mouse" className="inlineBlock"></div>
           <div id="bee_page2_person1_honeyEffect" className="inlineBlock"></div>
           <div
             id="bee_page2_person1_honeyEffect2"

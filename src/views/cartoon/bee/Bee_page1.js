@@ -13,11 +13,10 @@ function setScreenSize() {
   document.documentElement.style.setProperty("--vh", `${vh}px`);
   document.documentElement.style.setProperty("--vw", `${vw}px`);
 }
-//honeyBox src 배열
-const honeyBoxSrcs = ["/img/cartoon/bee/page1/poster/honey0.png"];
 //progress bar 내용물 전부 Hidden 처리하는 함수
 function beePage1Init() {
   //progress bar
+  document.documentElement.style.setProperty("--progressbar-wrap", `0`);
   document.documentElement.style.setProperty("--progress1", `hidden`);
   document.documentElement.style.setProperty("--progress2", `hidden`);
   document.documentElement.style.setProperty("--progress3", `hidden`);
@@ -38,72 +37,12 @@ function beePage1Init() {
   document.documentElement.style.setProperty("--progress18", `hidden`);
   document.documentElement.style.setProperty("--progress19", `hidden`);
   document.documentElement.style.setProperty("--progress20", `hidden`);
-  document.documentElement.style.setProperty("--progressbar", `hidden`);
   //trash
   document.documentElement.style.setProperty("--trash1", `hidden`);
   document.documentElement.style.setProperty("--trash2", `hidden`);
   document.documentElement.style.setProperty("--trahs3", `hidden`);
-}
-//progress bar 내용물 채워지는 애니메이션 함수
-function progressAni() {
-  document.documentElement.style.setProperty("--progress1", `visible`);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress2", `visible`);
-  }, 100);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress3", `visible`);
-  }, 200);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress4", `visible`);
-  }, 300);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress5", `visible`);
-  }, 400);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress6", `visible`);
-  }, 500);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress7", `visible`);
-  }, 600);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress8", `visible`);
-  }, 700);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress9", `visible`);
-  }, 800);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress10", `visible`);
-  }, 900);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress11", `visible`);
-  }, 1000);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress12", `visible`);
-  }, 1100);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress13", `visible`);
-  }, 1200);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress14", `visible`);
-  }, 1300);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress15", `visible`);
-  }, 1400);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress16", `visible`);
-  }, 1500);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress17", `visible`);
-  }, 1600);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress18", `visible`);
-  }, 1700);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress19", `visible`);
-  }, 1800);
-  setTimeout(() => {
-    document.documentElement.style.setProperty("--progress20", `visible`);
-  }, 1900);
+  //mouse
+  document.documentElement.style.setProperty("--honeyBoxBtn-mouse", `visible`);
 }
 function bee_page1_person4_effect_ani() {
   var target = document.getElementById("bee_page1_person4_effect");
@@ -114,7 +53,6 @@ function bee_page1_person3_sweat() {
   target.classList.add("sweat");
 }
 function bee_page1_progressBar_entrance_ani() {
-  document.documentElement.style.setProperty("--progressbar", `visible`);
   var target = document.getElementById("bee_page1_person1_progressBar");
   target.classList.add("lightSpeedInLeft");
 }
@@ -139,8 +77,40 @@ function falling_trashs_ani() {
     }, 1000);
   }, 1000);
 }
+function honeyBox_plus_ani() {
+  var honeyBoxPlus = document.getElementById(
+    "bee_page1_person1_honeyBoxBtn_plus"
+  );
+  honeyBoxPlus.classList.add("fadeInUp");
+  setTimeout(() => {
+    honeyBoxPlus.classList.remove("fadeInUp");
+  }, 500);
+}
 function Bee_page1() {
-  const [honeyBoxSrc, setHoneyBoxSrc] = useState(honeyBoxSrcs[0]);
+  const honeyBoxSrcs = [
+    `/img/cartoon/bee/page1/poster/honey0.png`,
+    `/img/cartoon/bee/page1/poster/honey1.png`,
+    `/img/cartoon/bee/page1/poster/honey2.png`,
+    `/img/cartoon/bee/page1/poster/honey3.png`,
+    `/img/cartoon/bee/page1/poster/honey4.png`,
+    `/img/cartoon/bee/page1/poster/honey5.png`,
+    `/img/cartoon/bee/page1/poster/honey6.png`,
+    `/img/cartoon/bee/page1/poster/honey7.png`,
+    `/img/cartoon/bee/page1/poster/honey8.png`,
+    `/img/cartoon/bee/page1/poster/honey9.png`,
+    `/img/cartoon/bee/page1/poster/honey10.png`,
+    `/img/cartoon/bee/page1/poster/honey11.png`,
+    `/img/cartoon/bee/page1/poster/honey12.png`,
+    `/img/cartoon/bee/page1/poster/honey13.png`,
+    `/img/cartoon/bee/page1/poster/honey14.png`,
+    `/img/cartoon/bee/page1/poster/honey15.png`,
+    `/img/cartoon/bee/page1/poster/honey16.png`,
+    `/img/cartoon/bee/page1/poster/honey17.png`,
+    `/img/cartoon/bee/page1/poster/honey18.png`,
+    `/img/cartoon/bee/page1/poster/honey19.png`,
+    `/img/cartoon/bee/page1/poster/honey20.png`,
+  ];
+  var clickCnt = 0;
   useEffect(() => {
     setScreenSize();
     beePage1Init();
@@ -148,11 +118,10 @@ function Bee_page1() {
     falling_trashs_ani();
     setTimeout(() => {
       bee_page1_progressBar_entrance_ani();
-      progressAni();
+      //progressAni();
     }, 2000);
     bee_page1_person4_effect_ani();
     bee_page1_person3_sweat();
-    document.documentElement.style.setProperty("--honeyBox-src", honeyBoxSrc);
   }, []);
   return (
     <div className="bee_container">
@@ -163,8 +132,49 @@ function Bee_page1() {
               id="bee_page1_person1_poster_honeyBox"
               className="inlineBlock"
               alt="honeyBox"
-              src={honeyBoxSrc}
+              src={honeyBoxSrcs[0]}
             ></img>
+            <div
+              id="bee_page1_person1_honeyBoxBtn_wrap"
+              className="inlineBlock"
+            >
+              <div
+                className="inlineBlock bee_page1_person1_honeyBoxBtn"
+                onClick={() => {
+                  clickCnt++;
+                  console.log(clickCnt);
+                  var honeyBox = document.getElementById(
+                    "bee_page1_person1_poster_honeyBox"
+                  );
+                  if (clickCnt <= 20) {
+                    if (clickCnt == 1) {
+                      document.documentElement.style.setProperty(
+                        "--honeyBoxBtn-mouse",
+                        `hidden`
+                      );
+                      document
+                        .getElementById("bee_page1_person1_honeyBoxBtn_mouse")
+                        .classList.remove("mouseMove");
+                    }
+                    honeyBox.src = honeyBoxSrcs[clickCnt];
+                    document.documentElement.style.setProperty(
+                      `--progress${clickCnt}`,
+                      `visible`
+                    );
+                  } else {
+                    honeyBox.src = honeyBoxSrcs[20];
+                  }
+                }}
+              ></div>
+              <div
+                id="bee_page1_person1_honeyBoxBtn_content"
+                className="inlineBlock"
+              ></div>
+              <div
+                id="bee_page1_person1_honeyBoxBtn_mouse"
+                className="inlineBlock mouseMove"
+              ></div>
+            </div>
           </div>
           <div id="bee_page1_person1_progressBar">
             <div

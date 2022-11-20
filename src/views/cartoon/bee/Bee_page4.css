@@ -25,6 +25,35 @@
   margin-top: 20%;
   content: url(/public/img/cartoon/bee/page4/white_cate.png);
 }
+#bee_page4_white_cat_footstep {
+  left: 0;
+  top: 0;
+  height: 6%;
+  margin-top: 97%;
+  margin-left: 8%;
+  content: url(/public/img/cartoon/bee/page4/cat_foostep.png);
+}
+#bee_page4_mouse {
+  visibility: (--bee-page4-mouse);
+  left: 0;
+  top: 0;
+  transform: rotate(60deg);
+  height: 4%;
+  margin-top: 110%;
+  margin-left: 2%;
+  content: url(/public/img/cartoon/bee/page1/poster/mouse.png);
+}
+.bee_page4_mouse_move {
+  animation: bee_page4_mouse_move 2s infinite;
+}
+@keyframes bee_page4_mouse_move {
+  from {
+  }
+  to {
+    margin-left: 5%;
+    margin-top: 103%;
+  }
+}
 #bee_page4_persons_effect {
   left: 0;
   top: 0;
