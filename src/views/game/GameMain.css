@@ -2,7 +2,7 @@
     * {
         text-align: center;
     }
-    
+
     /*문제 나오는 박스*/
     .main1 {
         display: inline-block;
@@ -16,11 +16,12 @@
         margin: 4.5vh 0;
     }
     
-    .q_text {   /*질문*/
-        width: 45%;
-        top: 18%;
+    .question {
         position: absolute;
-        text-align: center;
+        left: 0;
+        margin-left: 14%;
+        top: 30%;
+        font-size: 200%;
     }
     
     .h_text {   /*힌트를 보려면 누르세요*/
@@ -64,6 +65,11 @@
         width: 45vw;
         top: 15vh;
         height: 40vh;
+    }
+
+    .inputAnswer{
+        position: absolute;
+        border : none;
     }
     
     .answerBtn {
