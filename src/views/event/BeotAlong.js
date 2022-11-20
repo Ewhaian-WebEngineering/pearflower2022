@@ -6,7 +6,23 @@ function BeotAlong() {
     return (
         <div>
             <MobileView>
-
+                <div className="mobileBeotAlongBg">
+                    <div className="eventHeader">
+                        <Link to="/main"><img alt="logoSquare" className="logo"></img></Link>
+                        <div className="menuBtnDiv">
+                            <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'}></img>
+                        </div>
+                    </div>
+                    <div className="mobileBeotAlongWrapper">
+                        <div className="mobileBackToEventWrapper">
+                            <Link to="/event"><img alt="BackToEventPageBtn" className="mobileBackToEvent" src={process.env.PUBLIC_URL + '/img/event/detailBackToEvent.png'}></img></Link>
+                        </div>
+                        <div className="mobileBeotAlongContent">
+                            <img alt="BeotAlongExplanation" className="mobileDetailBeotAlong" src={process.env.PUBLIC_URL + '/img/event/mobileDetailBeotAlong.png'}></img>
+                            <img alt="FormBtn" className="mobileBeotAlongForm" src={process.env.PUBLIC_URL + '/img/event/mobileBeotAlongForm.png'}></img>
+                        </div>
+                    </div>
+                </div>
             </MobileView>
             <BrowserView>
                 <div className="beotAlongBg">

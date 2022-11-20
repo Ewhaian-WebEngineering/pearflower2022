@@ -6,7 +6,23 @@ function HoneyJar() {
     return (
         <div>
             <MobileView>
-
+                <div className="mobileHoneyJarBg">
+                    <div className="eventHeader">
+                        <Link to="/main"><img alt="logoSquare" className="logo"></img></Link>
+                        <div className="menuBtnDiv">
+                            <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'}></img>
+                        </div>
+                    </div>
+                    <div className="mobileHoneyJarWrapper">
+                        <div className="mobileBackToEventWrapper">
+                            <Link to="/event"><img alt="BackToEventPageBtn" className="mobileBackToEvent" src={process.env.PUBLIC_URL + '/img/event/mobileBackToEvent.png'}></img></Link>
+                        </div>
+                        <div className="mobileHoneyJarContent">
+                            <img alt="HoneyJarExplanation" className="mobileDetailHoneyJar" src={process.env.PUBLIC_URL + '/img/event/mobileDetailHoneyJar.png'}></img>
+                            <img alt="FormBtn" className="mobileHoneyJarForm" src={process.env.PUBLIC_URL + '/img/event/mobileHoneyJarForm.png'}></img>
+                        </div>
+                    </div>
+                </div>
             </MobileView>
             <BrowserView>
                 <div className="honeyJarBg">
