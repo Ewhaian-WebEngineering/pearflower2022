@@ -1,224 +1,143 @@
-.header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    padding: 0;
-    height: 55px;
-    width: 100%;
-    background: url("/public/img/game/background.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-._background {
-    background: url("/public/img/game/GameBackGround.png");
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-}
-
-
-.main {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    margin: auto 0;
-    text-align: center;
-
-}
-
-
-/*문제 나오는 박스*/
-.question {
-    float: left;
-    width: 45%;
-    margin: 40px auto;
-}
-
-._question {
-    width: 35vw;
-    height: 36vh;
-    margin: 50px auto 0;
-
-}
-
-.q_text {
-    width: 45%;
-    top: 18%;
-    position: absolute;
-    text-align: center;
-}
-
-.h_text {
-    display: inline-block;
-    width: 45%;
-    top: 28.5%;
-    position: absolute;
-    text-align: center;
-}
-
-.hintKey {
-    display: inline-block;
-    position: absolute;
-    top: 27%;
-
-    margin-left: 380px;
-    cursor: pointer;
-}
-
-._hintKey {
-    width: 10px;
-    height: 30px;
-}
-
-.hint_content {
-    background: url("/public/img/game/HintPopUp.png");
-    width: 45%;
-
-}
-
-/*결과 입력창 나타나는 곳*/
-.res_rec {
-    position: relative;
-    float: left;
-    width: 55%;
-    margin: 40px auto;
-}
-
-#result_rec {
-    width: 45vw;
-    height: 48vh;
-    margin: 50px auto 10px;
-}
-
-.answerBtn {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    margin: 240px auto;
-}
-
-#_answerBtn {
-    width: 190px;
-    height: 70px;
-}
-
-
-/*키보드*/
-.keyboard {
-    position: absolute;
-    float: left;
-    width: 45%;
-    margin-top: 320px;
-}
-
-._keyboard {
-    margin-top: 10px;
-}
-
-.kb {
-    width: 90px;
-    height: 90px;
-}
-
-.t2 {
-    margin-left: 30px;
-}
-
-/*캐릭터*/
-.pocket {
-    float: right;
-    width: 55%;
-    margin: 0px auto 45px;
-}
-
-._pocket {
-    height: 250px;
-}
-
-
-@media screen and (max-width: 1018px) {
-
-    .kb {
-        width: 70px;
+@media screen and (min-width: 768px){
+    * {
+        text-align: center;
+    }
+    .main {
+        position: relative;
+        display: flex;
+        width: 100%;
+        height: 92vh;
+    }
+    
+    
+    /*문제 나오는 박스*/
+    .main1 {
+        display: inline-block;
+        margin: 100px auto;
+        width: 50%;
+    }
+    
+    ._question {
+        width: 35vw;
+        height: 72vh;
+        margin: 4.5vh 0;
+    }
+    
+    .q_text {
+        width: 45%;
+        top: 18%;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .h_text {
+        display: inline-block;
+        width: 45%;
+        top: 28.5%;
+        position: absolute;
+        text-align: center;
+    }
+    
+    .hintKey {
+        display: inline-block;
+        position: absolute;
+        top: 27%;
+    
+        margin-left: 380px;
+        cursor: pointer;
+    }
+    
+    ._hintKey {
+        width: 10px;
+        height: 30px;
+    }
+    
+    .hint_content {
+        background: url("/public/img/game/HintPopUp.png");
+        width: 45%;
+    
+    }
+    
+    /*결과 입력창 나타나는 곳*/
+    .main2 {
+        display: inline-block;
+        margin: 10vh auto;
+        width: 50%;
+        top: 0;
+    }
+    
+    #result_rec {
+        position: absolute;
+        right: 4vw;
+        width: 45vw;
+        top: 15vh;
+        height: 40vh;
+    }
+    
+    .answerBtn {
+        position: absolute;
+        top: 44vh;
+        right: 21vw;
+        
+    }
+    
+    #_answerBtn {
+        width: 190px;
         height: 70px;
     }
+    
 
-    /*캐릭터*/
     .pocket {
-        float: right;
-        width: 55%;
-        margin: 0px auto 0px;
+        width: 50%;
+        margin: auto;
+        
     }
-
+    
     ._pocket {
-        height: 20px;
-        width: 10px;
+        height: 30vh;
     }
 }
 
-@media screen and (max-width: 840px) {
+@media screen and (max-width: 768px) {
 
-    .kb {
-        width: 50px;
-        height: 50px;
+    .gamemiddle{
+        display:block;
     }
 
-    .t2 {
-        margin-left: 20px;
+    ._background{
+        background: url("/public/img/game/background.png");
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
     }
 
-    /*캐릭터*/
-    .pocket {
-        float: right;
-        width: 55%;
-        margin: 0px auto 0px;
-    }
-
-    ._pocket {
-        width: 300px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-
-    /*질문 박스*/
-    .question {
-        clear: both;
-        width: 100%;
+    .main1 {
+        display: block;
     }
 
     ._question {
-        width: 68vw;
+        width: 80vw;
         height: 25vh;
         margin: 30px auto 0;
     }
 
-    /*답 입력*/
-    .res_rec {
-        clear: both;
+    .main2 {
+        display: block;
+    }
+
+    #p_result_rec {
         width: 100%;
+        /* height: 50vh; */
     }
 
-    #result_rec {
-        width: 80vw;
-        height: 35vh;
-        margin: 15px auto 0;
+    #result_rec{
+        margin: 3vh auto 0;
+        width: 85vw;
     }
-
     .answerBtn {
-        margin: 145px auto;
+       width: 100%;
+       position: absolute;
+       top: 57vh;
     }
 
     #_answerBtn {
@@ -226,70 +145,13 @@
         height: 50px;
     }
 
-
-    /*값 입력 키보드*/
-    .keyboard {
-        clear: both;
-        width: 100%;
-        margin: 72vh auto 0;
-    }
-
-    .kb {
-        width: 75px;
-        height: 75px;
-    }
-
-    .t2 {
-        margin-left: 30px;
-    }
-
-    /*캐릭터*/
     .pocket {
-        clear: both;
         width: 100%;
-        margin: 30vh auto 0;
+        margin: 5vh auto;
     }
 
     ._pocket {
         width: 75vw;
-        height: 30vh;
-        margin: 20vh auto 0;
-    }
-
-}
-
-@media screen and (max-width: 390px) {
-
-    #result_rec {
-        margin-bottom: 0;
-    }
-
-    .answerBtn {
-        margin: 28vh auto;
-    }
-
-    .keyboard {
-        display: block;
-    }
-
-    .kb {
-        width: 60px;
-        height: 60px;
-    }
-
-    .t2 {
-        margin-left: 15px;
-    }
-
-    .pocket {
-        width: 100%;
-        margin: 10vh auto 0;
-    }
-
-    ._pocket {
-        width: 80vw;
-        height: 30vh;
-        margin: 20 auto 0;
     }
 
 }
