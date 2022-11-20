@@ -80,6 +80,27 @@
   transform: rotate(15deg);
   content: url(/public/img/cartoon/bee/page2/honeyBox.png);
 }
+#bee_page2_honeyBox_mouse {
+  visibility: var(--bee_page2_honeyBox_mouse);
+  top: 0;
+  right: 0;
+  height: 4%;
+  transform: rotate(70deg);
+  margin-right: 15%;
+  margin-top: 16%;
+  content: url(/public/img/cartoon/bee/page1/poster/mouse.png);
+}
+.bee_page2_honeyBox_mouse {
+  animation: bee_page2_honeyBox_mouse 2s infinite;
+}
+@keyframes bee_page2_honeyBox_mouse {
+  from {
+  }
+  to {
+    margin-right: 10%;
+    margin-top: 20%;
+  }
+}
 #bee_page2_person1_honeyEffect {
   visibility: var(--honey-effect1);
   top: 0;

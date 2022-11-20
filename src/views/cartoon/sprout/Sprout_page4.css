@@ -8,6 +8,7 @@
   background-image: url("/public/img/cartoon/sprout/page4/background.png");
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  overflow: hi;
 }
 #sprout_page4_cloud1 {
   top: 0;
@@ -136,6 +137,7 @@
   content: url(/public/img/cartoon/sprout/page4/persons.png);
 }
 #sprout_page4_persons_effect {
+  visibility: var(--persons-effect);
   bottom: 0;
   height: 6%;
   left: 0;

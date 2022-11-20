@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Bee_page1.css";
 import "./Bee_page4.css";
-import "../CartoonBtns.css";
 import "../AniZip.css";
 import "./Clouds.css";
 import "../Firecrackers.css";
@@ -60,18 +59,17 @@ function firecracker_init() {
   document.documentElement.style.setProperty("--firecracker3-inside", `0`);
   document.documentElement.style.setProperty("--firecracker3-outside", `0`);
 }
-function white_cate_entrance_ani() {
-  document.documentElement.style.setProperty("--white-cat", `visible`);
-  var white_cat = document.getElementById("bee_page4_white_cat");
-  white_cat.classList.add("whiteCatEntrance");
-}
+var bee_page4_clickCnt;
 function Bee_page4() {
   setScreenSize();
   useEffect(() => {
+    bee_page4_clickCnt = 0;
     document.documentElement.style.setProperty("--white-cat", `hidden`);
     firecracker_init();
     firecracker_ani();
-    white_cate_entrance_ani();
+    document.documentElement.style.setProperty("--bee-page4-mouse", `visible`);
+    var mouse = document.getElementById("bee_page4_mouse");
+    mouse.classList.add("bee_page4_mouse_move");
   }, []);
   return (
     <div className="bee_container">
@@ -117,22 +115,50 @@ function Bee_page4() {
               className="inlineBlock firecracker3_outside"
             ></div>
           </div>
+
           <div id="bee_page4_cat_person_wrap" className="inlineBlock">
             <div id="bee_page4_white_cat" className="inlineBlock"></div>
             <div id="bee_page4_persons" className="inlineBlock"></div>
             <div
               id="bee_page4_heart1"
-              className="bee_page4_heart inlineBlock"
+              className="bee_page4_heart inlineBlock swing"
             ></div>
             <div
               id="bee_page4_heart2"
-              className="bee_page4_heart inlineBlock"
+              className="bee_page4_heart inlineBlock swing"
             ></div>
             <div
               id="bee_page4_heart3"
-              className="bee_page4_heart inlineBlock"
+              className="bee_page4_heart inlineBlock swing"
             ></div>
             <div id="bee_page4_persons_effect" className="inlineBlock"></div>
+          </div>
+          <div
+            id="bee_page4_white_cat_footstep_wrap"
+            className="inlineBlock"
+            onClick={() => {
+              bee_page4_clickCnt++;
+              if (bee_page4_clickCnt == 1) {
+                //마우스 사라지게
+                document.documentElement.style.setProperty(
+                  "--bee-page4-mouse",
+                  "0"
+                );
+                //고양이 등장
+                document.documentElement.style.setProperty(
+                  "--white-cat",
+                  `visible`
+                );
+                var white_cat = document.getElementById("bee_page4_white_cat");
+                white_cat.classList.add("whiteCatEntrance");
+              }
+            }}
+          >
+            <div
+              id="bee_page4_white_cat_footstep"
+              className="inlineBlock"
+            ></div>
+            <div id="bee_page4_mouse" className="inlineBlock"></div>
           </div>
         </div>
       </div>
