@@ -91,13 +91,13 @@ function Event() {
   const [balanceHidden, setBalanceHidden] = useState(true);
   const [photoHidden, setPhotoHidden] = useState(true);
   const [bingoHidden, setBingoHidden] = useState(true);
-  const [honeyJarHidden, setHoneyJarHidden] = useState(true);
+  //const [honeyJarHidden, setHoneyJarHidden] = useState(true);
   const [teacomHidden, setTeacomHidden] = useState(true);
   const [newUserHidden, setNewUserHidden] = useState(true);
-  const [beotAlongHidden, setBeotAlongHidden] = useState(true);
+  //const [beotAlongHidden, setBeotAlongHidden] = useState(true);
   const [wishTreeHidden, setWishTreeHidden] = useState(true);
   const [maxLevHidden, setMaxLevHidden] = useState(true);
-  const [escapeHidden, setEscapeHidden] = useState(true);
+  //const [escapeHidden, setEscapeHidden] = useState(true);
   const earlyClick = () => {
     setEarlyHidden(!earlyHidden);
     console.log("사전이벤트클릭");
@@ -116,84 +116,109 @@ function Event() {
   const bingoClick = () => {
     setBingoHidden(!bingoHidden);
   }
-  const honeyJarClick = () => {
-    setHoneyJarHidden(!honeyJarHidden);
-  }
   const teacomClick = () => {
     setTeacomHidden(!teacomHidden);
   }
   const newUserClick = () => {
     setNewUserHidden(!newUserHidden);
   }
-  const beotAlongClick = () => {
-    setBeotAlongHidden(!beotAlongHidden);
-  }
+
   const wishTreeClick = () => {
     setWishTreeHidden(!wishTreeHidden);
   }
   const maxLevClick = () => {
     setMaxLevHidden(!maxLevHidden);
   }
-  const escapeClick = () => {
-    setEscapeHidden(!escapeHidden);
-  }
+
   return (
     <div>
       <MobileView>
-        <div className="eventHeader">
-          <Link to="/main"><img alt="logoSquare" className="logo"></img></Link>
-          <div className="menuBtnDiv">
-            <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'}></img>
+        <div>
+          <div className="eventHeader">
+            <Link to="/main"><img alt="logoSquare" className="logo"></img></Link>
+            <div className="menuBtnDiv">
+              <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'}></img>
+            </div>
           </div>
+          <div ref={outerDivRef} className="outer">
+            <div className="mobileEventWrapper">
+              <img alt="earlyEvent" className="MeventBtn early" src={process.env.PUBLIC_URL + '/img/event/earlyEventBtn.png'} onClick={earlyClick}></img>
+              <img alt="todayEvent" className="MeventBtn today" src={process.env.PUBLIC_URL + '/img/event/todayEventBtn.png'} onClick={todayClick}></img>
+              <img alt="brownEarlyEvent" className={classnames('BeventBtn', 'Bearly', (earlyHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/brownEarlyEventBtn.png'} onClick={earlyClick}></img>
+              <img alt="brownTodayEvent" className={classnames('BeventBtn', 'Btoday', (todayHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/brownTodayEventBtn.png'} onClick={todayClick}></img>
+              <div className="mobilePopups">
+                <img alt="mobileEarlyEventPopup" className={classnames('mobileEventPopUp', (earlyHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileEarlyPopup.png'}></img>
+                <img alt="mobilePopupCloseBtn" className={classnames('mobileClosePopUp', (earlyHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileYellowCloseBtn.png'} onClick={earlyClick}></img>
+                <img alt="mobileEarlyEventPopup" className={classnames('mobileEventPopUp', (todayHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileTodayPopup.png'}></img>
+                <img alt="mobilePopupCloseBtn" className={classnames('mobileClosePopUp', (todayHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileYellowCloseBtn.png'} onClick={todayClick}></img>
+              </div>
+            </div>
+            <div className="inner scrollPage1">
+              <div className="eventstorycircles">
+                <img alt="WishTreeStory" id="story" className="story wishTree" src={process.env.PUBLIC_URL + '/img/event/eventStory.png'}></img>
+                <img alt="WishTreeStory" id="story" className="story balGame" src={process.env.PUBLIC_URL + '/img/event/eventStory.png'}></img>
+                <img alt="WishTreeStory" id="story" className="story 3" src={process.env.PUBLIC_URL + '/img/event/eventStory.png'}></img>
+                <img alt="WishTreeStory" id="story" className="story 4" src={process.env.PUBLIC_URL + '/img/event/eventStory.png'}></img>
+                <img alt="WishTreeStory" id="story" className="story 5" src={process.env.PUBLIC_URL + '/img/event/eventStory.png'}></img>
+                <img alt="WishTreeStory" id="story" className="story 4" src={process.env.PUBLIC_URL + '/img/event/eventStory.png'}></img>
+                <img alt="WishTreeStory" id="story" className="story 5" src={process.env.PUBLIC_URL + '/img/event/eventStory.png'}></img>
+                <img alt="WishTreeStory" id="story" className="story 4" src={process.env.PUBLIC_URL + '/img/event/eventStory.png'}></img>
+                <img alt="WishTreeStory" id="story" className="story 5" src={process.env.PUBLIC_URL + '/img/event/eventStory.png'}></img>
+              </div>
+              <div className="eventIcons1">
+                <div className="mHONEYJAR">
+                  <img alt="HoneyJarEvent" className="icon honeyjar" src={process.env.PUBLIC_URL + '/img/event/iconHoneyJar.png'}></img>
+                  <img alt="nameHoneyJarEvent" id="name" className="honeyjarname" src={process.env.PUBLIC_URL + '/img/event/iconNameHoneyJar.png'}></img>
+                </div>
+                <div className="mPHOTO">
+                  <img alt="PhotoEvent" className="icon photoevent" src={process.env.PUBLIC_URL + '/img/event/iconPhoto.png'}></img>
+                  <img alt="nameHoneyJarEvent" id="name" className="photoeventname" src={process.env.PUBLIC_URL + '/img/event/iconNamePhoto.png'}></img>
+                </div>
+                <div className="mBALANCE">
+                  <img alt="BalanceGame" className="icon balancegame" src={process.env.PUBLIC_URL + '/img/event/iconBalanceGame.png'}></img>
+                  <img alt="nameHoneyJarEvent" id="name" className="balancegamename" src={process.env.PUBLIC_URL + '/img/event/iconNameBalanceGame.png'}></img>
+                </div>
+              </div>
+            </div>
+            <div className="inner scrollPage2">
+              <div className="eventIcons2">
+                <div className="mBEOTALONG">
+                  <img alt="SingAlongEvent" className="beotalong" src={process.env.PUBLIC_URL + '/img/event/iconBeotAlong.png'}></img>
+                  <img alt="nameSingAlongEvent" id="name2" className="beotalongname" src={process.env.PUBLIC_URL + '/img/event/iconNameBeotAlong.png'}></img>
+                </div>
+                <div className="mESCAPE">
+                  <img alt="EscapeGame" className="eventEscape" src={process.env.PUBLIC_URL + '/img/event/iconEscape.png'}></img>
+                  <img alt="nameEscapeGame" id="name2" className="escapename" src={process.env.PUBLIC_URL + '/img/event/iconNameEscape.png'}></img>
+                </div>
+                <div className="mTEACOM">
+                  <img alt="TeaComEvent" className="teacom" src={process.env.PUBLIC_URL + '/img/event/iconTeaCom.png'}></img>
+                  <img alt="nameTeaComEvent" id="name2" className="teacomname" src={process.env.PUBLIC_URL + '/img/event/iconNameTeaCom.png'}></img>
+                </div>
+                <div className="mNEWUSER">
+                  <img alt="NewUserEvent" className="newuser" src={process.env.PUBLIC_URL + '/img/event/iconNewUser.png'}></img>
+                  <img alt="nameNewUserEvent" id="name2" className="newusername" src={process.env.PUBLIC_URL + '/img/event/iconNameNewUser.png'}></img>
+                </div>
+              </div>
+            </div>
+            <div className="inner scrollPage3">
+              <div className="eventIcons3">
+                <div className="mMAXLEV">
+                  <img alt="MaxLevelUserEvent" className=" icon3 maxlev" src={process.env.PUBLIC_URL + '/img/event/iconMaxLev.png'}></img>
+                  <img alt="nameMaxLevelUserEvent" id="name3" className="maxlevname" src={process.env.PUBLIC_URL + '/img/event/iconNameMaxLev.png'}></img>
+                </div>
+                <div>
+                  <img alt="BingoGame" className="icon3 bingo" src={process.env.PUBLIC_URL + '/img/event/iconBingo.png'}></img>
+                  <img alt="nameBingoGame" id="name3" className="bingoname" src={process.env.PUBLIC_URL + '/img/event/iconNameBingo.png'}></img>
+                </div>
+                <div className="mWISHTREE">
+                  <img alt="WishTree" className="icon3 wishtree" src={process.env.PUBLIC_URL + '/img/event/iconWishTree.png'}></img>
+                  <img alt="nameWishTree" id="name3" className="wishtreename" src={process.env.PUBLIC_URL + '/img/event/iconNameWishTree.png'}></img>
+                </div>
+                <img alt="eventFooter" className="eventFooter" src={process.env.PUBLIC_URL + '/img/event/eventFooter.png'}></img>
+              </div>
+            </div>
+          </div >
         </div>
-        <div ref={outerDivRef} className="outer">
-          <div className="inner scrollPage1">
-
-            <img alt="earlyEvent" className="eventBtn early" src={process.env.PUBLIC_URL + '/img/event/earlyEventBtn.png'}></img>
-            <img alt="todayEvent" className="eventBtn today" src={process.env.PUBLIC_URL + '/img/event/todayEventBtn.png'}></img>
-
-            <div id="eventstorycircles">
-              <img alt="WishTreeStory" id="story" className="story wishTree" src={process.env.PUBLIC_URL + '/img/event/eventStory.png'}></img>
-              <img alt="WishTreeStory" id="story" className="story balGame" src={process.env.PUBLIC_URL + '/img/event/eventStory.png'}></img>
-              <img alt="WishTreeStory" id="story" className="story 3" src={process.env.PUBLIC_URL + '/img/event/eventStory.png'}></img>
-              <img alt="WishTreeStory" id="story" className="story 4" src={process.env.PUBLIC_URL + '/img/event/eventStory.png'}></img>
-              <img alt="WishTreeStory" id="story" className="story 5" src={process.env.PUBLIC_URL + '/img/event/eventStory.png'}></img>
-            </div>
-            <div className="eventIcons1">
-              <img alt="HoneyJarEvent" className="icon honeyjar" src={process.env.PUBLIC_URL + '/img/event/iconHoneyJar.png'}></img>
-              <img alt="PhotoEvent" className="icon photoevent" src={process.env.PUBLIC_URL + '/img/event/iconPhoto.png'}></img>
-              <img alt="BalanceGame" className="icon balancegame" src={process.env.PUBLIC_URL + '/img/event/iconBalanceGame.png'}></img>
-              <img alt="nameHoneyJarEvent" id="name" className="honeyjarname" src={process.env.PUBLIC_URL + '/img/event/iconNameHoneyJar.png'}></img>
-              <img alt="nameHoneyJarEvent" id="name" className="photoeventname" src={process.env.PUBLIC_URL + '/img/event/iconNamePhoto.png'}></img>
-              <img alt="nameHoneyJarEvent" id="name" className="balancegamename" src={process.env.PUBLIC_URL + '/img/event/iconNameBalanceGame.png'}></img>
-            </div>
-
-          </div>
-          <div className="inner scrollPage2">
-            <div className="eventIcons2">
-              <img alt="SingAlongEvent" className="beotalong" src={process.env.PUBLIC_URL + '/img/event/iconBeotAlong.png'}></img>
-              <img alt="EscapeGame" className="escape" src={process.env.PUBLIC_URL + '/img/event/iconEscape.png'}></img>
-              <img alt="TeaComEvent" className="teacom" src={process.env.PUBLIC_URL + '/img/event/iconTeaCom.png'}></img>
-              <img alt="NewUserEvent" className="newuser" src={process.env.PUBLIC_URL + '/img/event/iconNewUser.png'}></img>
-              <img alt="nameSingAlongEvent" id="name2" className="beotalongname" src={process.env.PUBLIC_URL + '/img/event/iconNameBeotAlong.png'}></img>
-              <img alt="nameEscapeGame" id="name2" className="escapename" src={process.env.PUBLIC_URL + '/img/event/iconNameEscape.png'}></img>
-              <img alt="nameTeaComEvent" id="name2" className="teacomname" src={process.env.PUBLIC_URL + '/img/event/iconNameTeaCom.png'}></img>
-              <img alt="nameNewUserEvent" id="name2" className="newusername" src={process.env.PUBLIC_URL + '/img/event/iconNameNewUser.png'}></img>
-            </div>
-
-          </div>
-          <div className="inner scrollPage3">
-            <div className="eventIcons3">
-              <img alt="MaxLevelUserEvent" className=" icon3 maxlev" src={process.env.PUBLIC_URL + '/img/event/iconMaxLev.png'}></img>
-              <img alt="BingoGame" className="icon3 bingo" src={process.env.PUBLIC_URL + '/img/event/iconBingo.png'}></img>
-              <img alt="WishTree" className="icon3 wishtree" src={process.env.PUBLIC_URL + '/img/event/iconWishTree.png'}></img>
-              <img alt="nameMaxLevelUserEvent" id="name3" className="maxlevname" src={process.env.PUBLIC_URL + '/img/event/iconNameMaxLev.png'}></img>
-              <img alt="nameBingoGame" id="name3" className="bingoname" src={process.env.PUBLIC_URL + '/img/event/iconNameBingo.png'}></img>
-              <img alt="nameWishTree" id="name3" className="wishtreename" src={process.env.PUBLIC_URL + '/img/event/iconNameWishTree.png'}></img>
-              <img alt="eventFooter" className="eventFooter" src={process.env.PUBLIC_URL + '/img/event/eventFooter.png'}></img>
-            </div>
-          </div>
-        </div >
       </MobileView >
       <BrowserView>
         <div className="WebBg">
@@ -217,7 +242,6 @@ function Event() {
             </div>
           </div>
           <div className="webPopups">
-
             <img alt="BalancePopup" className={classnames('webPopUp', (balanceHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/webBalanceGamePopup.png'} ></img>
             <img alt="BalancePopup" className={classnames('webClosePopUp', (balanceHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/closePopup.png'} onClick={balanceClick}></img>
             <img alt="PhotoPopup" className={classnames('webPopUp', (photoHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/webPhotoEventPopup.png'} ></img>
@@ -232,7 +256,6 @@ function Event() {
             <img alt="WishTreePopup" className={classnames('webClosePopUp', (wishTreeHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/closePopup.png'} onClick={wishTreeClick}></img>
             <img alt="MaxLevPopup" className={classnames('webPopUp', (maxLevHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/webMaxLevPopup.png'} ></img>
             <img alt="MaxLevPopup" className={classnames('webClosePopUp', (maxLevHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/closePopup.png'} onClick={maxLevClick}></img>
-
           </div>
           <div ref={outerDivRef} className="outer">
             <div className="inner">
