@@ -2,6 +2,7 @@ import { click } from "@testing-library/user-event/dist/click";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Intro.css";
+import "./cartoon/bee/Bee_page1.css";
 
 var clickCnt;
 function setScreenSize() {
@@ -38,6 +39,7 @@ function Intro() {
         <div id="intro_black_cat"></div>
       </div>
       <div id="intro_speech_bubble_wrap">
+        <div id="intro_speech_bubble"></div>
         <div
           id="intro_speech_bubble_btn"
           onClick={() => {
