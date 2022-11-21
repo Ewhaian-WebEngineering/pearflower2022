@@ -67,7 +67,6 @@ function GameMain() {
 
     const navigate = useNavigate();
 
-
     //해당 인덱스답과 사용자 입력 답이 맞을 시 , currentIndex+1
     function checkAns() {
         if (currentIndex < 7 && userAnswer === questions[currentIndex].answer) {
@@ -149,7 +148,6 @@ function GameMain() {
                         {/* 사용자가 답을 입력함 */}
                         <form>
                             <input className='inputbar' type="text" onChange={(e) => setUserAnswer(e.target.value)} onKeyPress={handleOnKeyPress} ></input>
-                            {/* <input type="hidden" ></input> */}
                             <div className="answerBtn" >
                                 <img alt="answer" id="_answerBtn" src="/img/game/answerBtn.png" type="submit" onClick={handleOnClick}
                                 />
