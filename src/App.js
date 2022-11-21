@@ -6,7 +6,7 @@ import Event from "./views/event/Event";
 import HoneyJar from "./views/event/HoneyJar";
 import BeotAlong from "./views/event/BeotAlong";
 import Escape from "./views/event/Escape";
-import Goods from "./views/Goods";
+import Goods from "./views/goods/goodsLayout";
 import Gamehome from "./views/game/Gamehome";
 import GameInfo from "./views/game/GameInfo";
 import GameMain from "./views/game/GameMain";
