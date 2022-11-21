@@ -11,16 +11,19 @@ const questions = [
         question: "이화이언이 시작된 해는?",
         answer: "2001",
         hint: "우리나라가 월드컵과 붉은 악마로 가득했던 시기 - 1",
+        length: 4
     },
     {
         question: "이화여자대학교 생협 메뉴 중 하나로, \n아이스티와 아메리카노를 섞은 인기 메뉴의 명칭은?",
         answer: "아이스티노",
         hint: "첫 번째 메뉴의 네 글자와 두 번째 메뉴의 한 글자를 적절히 섞어 보세요!",
+        length: 5
     },
     {
         question: "이화이언의 운영진 팀의 개수는?",
         answer: "3",
         hint: "21 나누기 7, 27 나누기 9의 공통점은?",
+        length: 1
     },
     {
         question: "이번 11월, 이화이언에서 개최하는 행사의 명칭은?",
@@ -30,22 +33,24 @@ const questions = [
         question: "이화이언에서 비밀단어를 입장하면 접속 가능한 곳은?",
         answer: "비밀의화원",
         hint: "이화이언 사이트 우측 상단 메뉴의 '열쇠고리' 아이콘을 누르면 접속 가능한 곳은?",
+        length: 5
     },
     {
-
         question: "이화여자대학교를 대표하는 숫자 4자리",
         answer: "1886",
         hint: "이화학당이 창설된 해",
+        length: 4
     },
     {
-
         question: "이화여자대학교캠퍼스복합단지라고도 불리는\n 이화여자대학교의 대표 건축물 명칭은?",
         answer: "ECC",
         hint: "각 단어를 끊어 영어로 바꿔보고, 각 영단어의 첫 이니셜을 조합해보세요!",
+        length: 3
     }, {
         question: "이화여자대학교에서 뽀미와 뽀삐를 볼 수 있는 장소는?",
         answer: "학생문화관",
         hint: "연습실부터 생협, 라운지, 동방까지 없는 게 없는 이 곳은 어디?",
+        length: 5
     }
 ]
 
@@ -55,6 +60,7 @@ function GameMain() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [userAnswer, setUserAnswer] = useState('');
     const [visible, setVisible] = useState(false);
+    const [_popUp, setPopUp] = useState(false);    //팝업
     const [index0, setindex0] = useState(false);
     const [index1, setindex1] = useState(false);
     const [index2, setindex2] = useState(false);
@@ -63,7 +69,6 @@ function GameMain() {
     const [index5, setindex5] = useState(false);
     const [index6, setindex6] = useState(false);
     const [index7, setindex7] = useState(false);
-
 
     const navigate = useNavigate();
 
@@ -87,7 +92,6 @@ function GameMain() {
                 setindex6((index6) => true)
             }
             setCurrentIndex(currentIndex + 1)
-
         } else if (currentIndex === 7 && userAnswer === questions[currentIndex].answer) {
             setVisible((visible) => false)
             if (currentIndex === 7) {
@@ -101,6 +105,11 @@ function GameMain() {
 
     }
 
+    const Popup = () => {
+        setPopUp(_popUp => !_popUp)
+    }
+
+
 
     const handleOnClick = () => {
         checkAns();
@@ -108,7 +117,7 @@ function GameMain() {
     const handleOnKeyPress = (e) => {
         if (e.key === 'Enter') {
             handleOnClick(); // Enter 입력이 되면 클릭 이벤트 실행
-            e.preventDefault();//새로고침방지
+            e.preventDefault(); //새로고침방지
         }
     };
 
@@ -130,11 +139,12 @@ function GameMain() {
 
                         {/* <span className="popupHint">{questions[currentIndex].hint}</span> */}
 
-
                         <span className="h_text">힌트를 보려면 누르세요!</span>
-                        <span className="hintKey">
+                        <span className="hintKey" onClick={Popup}>
                             <img alt="hintkey" className="_hintkey" src="/img/game/HintKey.png" />
+
                         </span>
+                        {_popUp && <span className="popupHint">{questions[currentIndex].hint}</span>}
                     </span>
                     <span className="question">{questions[currentIndex].question}</span>
 
