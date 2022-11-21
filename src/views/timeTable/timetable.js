@@ -22,8 +22,8 @@ function timetable() {
                         </div>
 
                         <div>
-                            <p>만렙 화연 이벤트   </p>
-                            <img src="./img/timetable/section.png" alt="" />
+                            <p> 만렙 화연 이벤트</p>
+                            <img src="./img/timetable/section.png" alt="" style={{marginLeft:"33px"}} />
                             <p>~ 17:00 </p>
                         </div>
 
