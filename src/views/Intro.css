@@ -44,13 +44,21 @@
   height: 43%;
   background-size: 100% 100%;
   background-repeat: no-repeat;
+  /*background-color: blue;*/
+}
+#intro_speech_bubble {
+  width: 100%;
+  height: 60%;
+  /*background-color: aquamarine;*/
 }
 #intro_speech_bubble_btn {
   width: 38%;
   height: 13%;
-  margin-top: 58%;
+  bottom: 0;
   background-image: url(/public/img/cartoon/intro/btn.png);
   background-size: 100%;
+  background-repeat: no-repeat;
+  /*background-color: antiquewhite;*/
 }
 #intro_mouse {
   display: inline-block;
