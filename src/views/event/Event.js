@@ -4,12 +4,17 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { BrowserView, MobileView } from 'react-device-detect';
 import classnames from "classnames";
-import { SectionsContainer, Section } from 'react-fullpage';
+import { ScrollToTopOnMount, SectionsContainer, Section } from 'react-fullpage';
 import Dropdown from "./Dropdown";
 import './Event.css';
 import '../logo.css';
 let options = {
   anchors: ['page1', 'page2', 'page3'],
+  arrowNavigation: true,
+  autoScrolling: false,
+  touchSensitivity: 10,
+  css: true,
+
 };
 function Event() {
   const [dropDownView, setDropDownView] = useState(false);
@@ -77,8 +82,10 @@ function Event() {
               {dropDownView && <Dropdown />}
             </div>
           </div>
-          <SectionsContainer {...options}>
-            <div className="outer">
+          <div className="outer">
+            <ScrollToTopOnMount />
+            <SectionsContainer {...options}>
+
               <Section>
 
                 <div className="inner scrollPage1">
@@ -168,8 +175,9 @@ function Event() {
                   </div>
                 </div>
               </Section>
-            </div >
-          </SectionsContainer>
+
+            </SectionsContainer>
+          </div >
         </div>
       </MobileView >
       <BrowserView>
