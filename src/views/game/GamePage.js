@@ -68,16 +68,22 @@ function GamePage(props) {
 
     const onDragEnd = () => {
         if (correct === 0 && sentence.length >= 8)
-            window.location.href = 'https://15.164.75.25/finalgameover';
+            window.location.href = 'http://15.164.75.25/finalgameover';
         else if (correct === 1) {
             setCorrect(0);
-            window.location.href = 'https://15.164.75.25/finish';
+            window.location.href = 'http://15.164.75.25/finish';
         }
 
     }
 
     const handleOnClick = () => {
-        inspect(sentence);
+        console.log(correct);
+        if (correct === 0 && sentence.length >= 8)
+            window.location.href = 'http://15.164.75.25/finalgameover';
+        else if (correct === 1) {
+            setCorrect(0);
+            window.location.href = 'http://15.164.75.25/finish';
+        }
     };
 
     return (
