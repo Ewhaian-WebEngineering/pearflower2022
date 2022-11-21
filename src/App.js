@@ -1,6 +1,5 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import Intro from "./views/Intro";
 import Main from "./views/main/MainLayout";
 import TimeTable from "./views/main/timeTable";
 import Event from "./views/event/Event";
@@ -15,6 +14,7 @@ import GamePage from "./views/game/GamePage";
 import GameOverPage from "./views/game/GameOverPage";
 import GameFinish from "./views/game/GameFinish";
 /*cartoon pages*/
+import Intro from "./views/Intro";
 import CharacterInfo from "./views/cartoon/CharacterInfo";
 import Bee1 from "./views/cartoon/bee/Bee_page1";
 import Bee2 from "./views/cartoon/bee/Bee_page2";
@@ -32,12 +32,12 @@ import Gardener1 from "./views/cartoon/gardener/Gardener_page1";
 import Gardener2 from "./views/cartoon/gardener/Gardener_page2";
 import Gardener3 from "./views/cartoon/gardener/Gardener_page3";
 
-
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route exact path="/" element={<CharacterInfo />} />
+        <Route exact path="/" element={<Intro />} />
+        <Route exact path="/characterInfo" element={<CharacterInfo />} />
         <Route exact path="/bee1" element={<Bee1 />} />
         <Route exact path="/bee2" element={<Bee2 />} />
         <Route exact path="/bee3" element={<Bee3 />} />
