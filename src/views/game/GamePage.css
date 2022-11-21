@@ -207,6 +207,14 @@
           left: 17%;
       }
 
+      .locked {
+          position: absolute;
+          width: 44vw;
+          height: 59vh;
+          top: 17%;
+          left: 27%;
+      }
+
       .replay {
           position: absolute;
           width: 21vw;
