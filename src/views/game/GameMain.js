@@ -2,8 +2,7 @@
 import React, { useState } from 'react';
 import './GameMain.css';
 import './Gamehome.css';
-import { Link } from "react-router-dom";
-import { redirect } from 'react-router-dom/dist';
+import { Link, Navigate, useNavigate } from "react-router-dom";
 
 
 
@@ -76,22 +75,25 @@ function GameMain() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
     const [userAnswer, setUserAnswer] = useState('');
-    
+    const [popUp, setpopUp] = useState(false);
+
+    const navigate = useNavigate();
+
     //해당 인덱스답과 사용자 입력 답이 맞을 시 , currentIndex+1
     const checkAns = () => {
-        
-            if (currentIndex < 7 && userAnswer === questions[currentIndex].answer) {
-                setCurrentIndex(currentIndex + 1)
-            } else if (currentIndex === 8 && userAnswer === questions[currentIndex].answer) {
-                console.log("흠")
-            } 
-        
+        if (currentIndex < 7 && userAnswer === questions[currentIndex].answer) {
+            setCurrentIndex(currentIndex + 1)
+        } else if (currentIndex === 7 && userAnswer === questions[currentIndex].answer) {
+            navigate('/finalgame');
+        }
 
     }
 
-    const hintPopUp = () => {
-        /*CurrentIndex에 따라 다른 힌트 팝업 컴포넌트 반환*/
-    }
+    // const onCheckEnter = (e) => {   /*enter키 눌러도 반환*/
+    //     if (e.key === 'Enter') {
+    //         checkAns();
+    //     }
+    // }
 
 
 
@@ -107,25 +109,34 @@ function GameMain() {
             <div className="gamemiddle">
                 <div className="main1">
                     <img className="_question" alt="question" src="/img/game/Question.png" />
-                    <span className="question">{questions[currentIndex].question}</span>
-                    <span className="h_text">힌트를 보려면 누르세요!</span>
-                    <span className="hintKey" onClick={hintPopUp}>
-                        <img alt="hintkey" className="_hintkey" src="/img/game/HintKey.png" />
+                    <span>
+
+                        {/* <span className="popupHint">{questions[currentIndex].hint}</span> */}
+
+
+                        <span className="h_text">힌트를 보려면 누르세요!</span>
+                        <span className="hintKey">
+                            <img alt="hintkey" className="_hintkey" src="/img/game/HintKey.png"
+                                onClick={(e) => hintPopUp(questions[currentIndex].hint)}
+                            />
+                        </span>
                     </span>
+                    <span className="question">{questions[currentIndex].question}</span>
+
                 </div>
                 <div className="main2">
                     <div id="p_result_rec">
                         <img id="result_rec" alt="result" src="/img/game/AnswerRec.png" ></img>
-                        
+
                         {/* 사용자가 답을 입력함 */}
-                        <form>
-                            <input type="text" onChange={(e)=> setUserAnswer(e.target.value)}></input>
+                        <form >
+                            <input type="text" onChange={(e) => setUserAnswer(e.target.value)} ></input>
                             <div className="answerBtn" >
-                                <img alt="answer" id="_answerBtn" src="/img/game/answerBtn.png" type="submit" onClick={()=>{checkAns()}}/>
+                                <img alt="answer" id="_answerBtn" src="/img/game/answerBtn.png" type="submit" onClick={checkAns}
+                                />
                             </div>
                         </form>
-                       
-                        
+
                     </div>
                     <div className="pocket" >
                         <img className="_pocket" alt="pocket" src="/img/game/mainPocket.png" />
