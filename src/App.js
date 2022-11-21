@@ -1,7 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Main from "./views/main/MainLayout";
-import TimeTable from "./views/main/timeTable";
+import TimeTable from "./views/timeTable/timetable";
 import Event from "./views/event/Event";
 import HoneyJar from "./views/event/HoneyJar";
 import BeotAlong from "./views/event/BeotAlong";
