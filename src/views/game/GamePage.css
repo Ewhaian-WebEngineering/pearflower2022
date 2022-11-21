@@ -28,8 +28,8 @@
 
       .door {
           position: absolute;
-          width: 77vw;
-          height: 34vh;
+          width: 75vw;
+          height: 33vh;
           top: 44%;
           left: 12.6%;
       }
@@ -42,7 +42,11 @@
           left: 8%;
       }
 
-      .key {
+      .webkey {
+          opacity: 0;
+      }
+
+      .mobilekey {
           position: absolute;
           width: 15vw;
           height: 6vh;
@@ -55,8 +59,16 @@
       .open {
           position: absolute;
           width: 87vw;
-          height: 40vh;
+          height: 30vh;
           top: 33%;
+          left: 6%;
+      }
+
+      .locked {
+          position: absolute;
+          width: 87vw;
+          height: 40vh;
+          top: 30%;
           left: 6%;
       }
 
@@ -73,7 +85,7 @@
           color: white;
           top: 85%;
           left: 55%;
-          font-size: 3vw;
+          font-size: 4vw;
           cursor: pointer;
       }
 
@@ -82,7 +94,7 @@
           color: white;
           top: 88%;
           left: 25%;
-          font-size: 3vw;
+          font-size: 4vw;
           cursor: pointer;
       }
 
@@ -91,7 +103,7 @@
           color: white;
           top: 84%;
           left: 48%;
-          font-size: 3vw;
+          font-size: 4vw;
           cursor: pointer;
       }
 
@@ -100,7 +112,7 @@
           color: white;
           top: 86%;
           left: 38%;
-          font-size: 3vw;
+          font-size: 4vw;
           cursor: pointer;
       }
 
@@ -109,7 +121,7 @@
           color: white;
           top: 85%;
           left: 33%;
-          font-size: 3vw;
+          font-size: 4vw;
           cursor: pointer;
       }
 
@@ -118,7 +130,7 @@
           color: white;
           top: 87%;
           left: 45%;
-          font-size: 3vw;
+          font-size: 4vw;
           cursor: pointer;
       }
 
@@ -127,7 +139,7 @@
           color: white;
           top: 85%;
           left: 23%;
-          font-size: 3vw;
+          font-size: 4vw;
           cursor: pointer;
       }
 
@@ -136,8 +148,30 @@
           color: white;
           top: 87%;
           left: 35%;
-          font-size: 3vw;
+          font-size: 4vw;
           cursor: pointer;
+      }
+
+      .array {
+          position: absolute;
+          float: left;
+          top: 25%;
+          left: 18%;
+          font-size: 6vw;
+          z-index: 6;
+      }
+
+      .eachword {
+          margin-right: 5.5vw;
+      }
+
+      .answerBtn {
+          position: absolute;
+          width: 83vw;
+          height: 25vh;
+          /* top: 131px; */
+          top: 17%;
+          left: 8%;
       }
   }
 
@@ -188,7 +222,7 @@
           left: 56%;
       }
 
-      .key {
+      .webkey {
           position: absolute;
           width: 6.5vw;
           height: 7vh;
@@ -197,6 +231,10 @@
           cursor: pointer;
           cursor: hand;
           z-index: 5;
+      }
+
+      .mobilekey {
+          opacity: 0;
       }
 
       .open {
