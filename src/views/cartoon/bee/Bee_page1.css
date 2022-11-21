@@ -6,6 +6,9 @@
   display: inline-block;
   position: absolute;
 }
+Link {
+  appearance: none;
+}
 .bee_container {
   position: fixed;
   width: var(--vw);

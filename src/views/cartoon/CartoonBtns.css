@@ -24,3 +24,15 @@
   right: 0;
   content: url(/public/img/cartoon/button/nextBtn.png);
 }
+#characterInfo_prevBtn {
+  opacity: 70%;
+  height: 70%;
+  left: 0;
+  content: url(/public/img/cartoon/button/prevBtn.png);
+}
+#characterInfo_skipBtn {
+  opacity: 70%;
+  height: 70%;
+  right: 0;
+  content: url(/public/img/cartoon/button/skipBtn.png);
+}
