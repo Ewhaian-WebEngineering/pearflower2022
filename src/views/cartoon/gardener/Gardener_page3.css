@@ -8,3 +8,22 @@
     background-repeat: no-repeat;
     overflow: hidden;
 }
+
+#garden3_catchheart {
+    content: url(/public/img/cartoon/gardener/page3/garden3catchheart.png);
+    position: absolute;
+    width: 50%;
+    top: 0;
+    margin-top: 95%;
+    left: 0;
+    margin-left: 10%;
+}
+
+#garden3_welcome {
+    content: url(/public/img/cartoon/gardener/page3/garden3welcome.png);
+    position: absolute;
+    width: 65%;
+    bottom: 0;
+    right: 0;
+    margin-right: 5%;
+}
