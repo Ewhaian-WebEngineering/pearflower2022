@@ -1,4 +1,5 @@
 import React, {useEffect} from "react";
+import { Link } from "react-router-dom";
 import "../bee/Bee_page1.css";
 import "./Mushroom_page1.css";
 import "../SkipBtn.css";
@@ -52,7 +53,17 @@ function Mushroom_page1() {
             <div id="mush1_bighoneybubble" />
         </div>
       </div>
-      <div className="skipBtn inlineBlock"></div>
+      <div className="cartoon_btns inlineBlock">
+        <Link to="/">
+          <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/main">
+          <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+        </Link>
+        <Link to="/mushroom2">
+          <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+        </Link>
+      </div>
     </div>
   );
 }
