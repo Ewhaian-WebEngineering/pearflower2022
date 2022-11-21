@@ -4,10 +4,12 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { BrowserView, MobileView } from 'react-device-detect';
 import classnames from "classnames";
-
+import { SectionsContainer, Section } from 'react-fullpage';
 import './Event.css';
 import '../logo.css';
-
+let options = {
+  anchors: ['page1', 'page2', 'page3'],
+};
 function Event() {
 
   const [floatHidden, setFloatHidden] = useState(false);
@@ -67,7 +69,7 @@ function Event() {
           <div className="eventHeader">
             <Link to="/main"><img alt="logoSquare" className="logo"></img></Link>
             <div className="menuBtnDiv">
-              <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'} onClick={clickDropDown}>{viewDropDown && <DropDown />}</img>
+              <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'}></img>
             </div>
           </div>
           <SectionsContainer {...options}>
