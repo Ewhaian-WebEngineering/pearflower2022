@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 import { BrowserView, MobileView } from 'react-device-detect';
 import classnames from "classnames";
 import { SectionsContainer, Section } from 'react-fullpage';
+import Dropdown from "./Dropdown";
 import './Event.css';
 import '../logo.css';
 let options = {
   anchors: ['page1', 'page2', 'page3'],
 };
 function Event() {
-
+  const [dropDownView, setDropDownView] = useState(false);
   const [floatHidden, setFloatHidden] = useState(false);
   const [earlyHidden, setEarlyHidden] = useState(true);
   const [todayHidden, setTodayHidden] = useState(true);
@@ -28,6 +29,9 @@ function Event() {
   const [wishTreeHidden, setWishTreeHidden] = useState(true);
   const [maxLevHidden, setMaxLevHidden] = useState(true);
   //const [escapeHidden, setEscapeHidden] = useState(true);
+  const clickDropDown = () => {
+    setDropDownView(!dropDownView);
+  }
   const closeFloat = () => {
     setFloatHidden(!floatHidden);
   }
@@ -67,9 +71,10 @@ function Event() {
           <Link to="/beotalong"><img alt="floatingBeotAlongAd" className={classnames('floatingBeotAlong', (floatHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileFloatingBeotAlong.png'}></img></Link>
           <img alt="killingFloatBtn" className={classnames('killFloatingBeotAlong', (floatHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileFloatingKill.png'} onClick={closeFloat}></img>
           <div className="eventHeader">
-            <Link to="/main"><img alt="logoSquare" className="logo"></img></Link>
+            <Link to="/main"><img alt="logoSquare" className="Eventlogo"></img></Link>
             <div className="menuBtnDiv">
-              <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'}></img>
+              <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'} onClick={clickDropDown}></img>
+              {dropDownView && <Dropdown />}
             </div>
           </div>
           <SectionsContainer {...options}>
@@ -170,7 +175,7 @@ function Event() {
       <BrowserView>
         <div className="WebBg">
           <div className="eventHeader">
-            <Link to="/main"><img alt="logoSquare" className="logo"></img></Link>
+            <Link to="/main"><img alt="logoSquare" className="Eventlogo"></img></Link>
             <div className="menuBtnDiv">
               <Link to="/main"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerToMain.png'}></img></Link>
               <Link to="/timeTable"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerSchedule.png'}></img></Link>
