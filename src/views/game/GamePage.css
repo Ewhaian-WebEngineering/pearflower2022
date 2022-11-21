@@ -286,4 +286,17 @@
           font-size: 1.5vw;
           cursor: pointer;
       }
+
+      .array {
+          position: absolute;
+          float: left;
+          top: 35%;
+          left: 56%;
+          font-size: 4vw;
+          z-index: 6;
+      }
+
+      .eachword {
+          margin-right: 2.7vw;
+      }
   }
