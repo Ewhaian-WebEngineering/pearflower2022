@@ -1,55 +1,54 @@
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768px) {
     * {
         text-align: center;
     }
-    
+
     /*문제 나오는 박스*/
     .main1 {
         display: inline-block;
         margin: 100px auto;
         width: 50%;
     }
-    
+
     ._question {
         width: 35vw;
         height: 72vh;
         margin: 4.5vh 0;
     }
-    
-    .q_text {   /*질문*/
-        width: 45%;
-        top: 18%;
+
+    .question {
         position: absolute;
-        text-align: center;
+        left: 0;
+        margin-left: 12%;
+        top: 30%;
+        font-size: 200%;
+        overflow: auto;
     }
-    
-    .h_text {   /*힌트를 보려면 누르세요*/
+
+    .h_text {
+        /*힌트를 보려면 누르세요*/
         position: absolute;
         top: 75vh;
         left: 18vw;
-        font-size: 150%;
-        
+        font-size: 100%;
+
     }
-    
+
     .hintKey {
         position: absolute;
-        top: 74vh;
+        top: 72vh;
         left: 32.5vw;
         cursor: pointer;
     }
-    
-    ._hintKey {
-        
-        width: 10px;
-        height: 30px;
-    }
-    
-    .popupHint{
+
+
+    .popupHint {
         position: absolute;
-        top: 74vh;
-        left: 32.5vw;
+        top: 75vh;
+        left: 18vw;
+        font-size: 100%;
     }
-    
+
     /*결과 입력창 나타나는 곳*/
     .main2 {
         display: inline-block;
@@ -57,7 +56,7 @@
         width: 50%;
         top: 0;
     }
-    
+
     #result_rec {
         position: absolute;
         right: 4vw;
@@ -65,26 +64,31 @@
         top: 15vh;
         height: 40vh;
     }
-    
+
+    .inputAnswer {
+        position: absolute;
+        border: none;
+    }
+
     .answerBtn {
         position: absolute;
         top: 44vh;
         right: 21vw;
         cursor: pointer;
     }
-    
+
     #_answerBtn {
         width: 190px;
         height: 70px;
     }
-    
+
 
     .pocket {
         width: 50%;
         margin: auto;
-        
+
     }
-    
+
     ._pocket {
         height: 30vh;
     }
@@ -92,11 +96,11 @@
 
 @media screen and (max-width: 768px) {
 
-    .gamemiddle{
-        display:block;
+    .gamemiddle {
+        display: block;
     }
 
-    ._background{
+    ._background {
         background: url("/public/img/game/background.png");
         background-repeat: no-repeat;
         background-position: top center;
@@ -113,19 +117,19 @@
         margin: 30px auto 0;
     }
 
-    .h_text{
+    .h_text {
         position: absolute;
         top: 22vh;
         left: 32vw;
     }
 
-    .hintKey{
+    .hintKey {
         position: absolute;
         top: 21vh;
         left: 72vw;
     }
 
-    ._hintkey{
+    ._hintkey {
         width: 30px;
     }
 
@@ -138,14 +142,15 @@
         /* height: 50vh; */
     }
 
-    #result_rec{
+    #result_rec {
         margin: 3vh auto 0;
         width: 85vw;
     }
+
     .answerBtn {
-       width: 100%;
-       position: absolute;
-       top: 57vh;
+        width: 100%;
+        position: absolute;
+        top: 57vh;
     }
 
     #_answerBtn {
