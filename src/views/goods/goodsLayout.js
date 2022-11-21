@@ -4,11 +4,20 @@ import Detail from "./goodsDetailLayout";
 import './goodsLayout.css';
 
 function goodsLayout() {
+    // var index = 1
     
-    function activeLink(e) {
-        const index = e;
-        // console.log(index);
-        return <Detail detailGoodsId={index}/>
+    function ActiveLink(e) {
+        const index = 1;
+        const displayHandle = 0;
+        // 
+        if (typeof(e) == "object") {
+            console.log("test")
+            return <Detail detailGoodsId={index} displayHandle={displayHandle} />
+        } else {
+            console.log(e);
+            return <Detail detailGoodsId={e} displayHandle={displayHandle} />
+        }  
+        
     }
     
     const imgSrc = [
@@ -29,12 +38,12 @@ function goodsLayout() {
                 {/* test */}
                 <div className='goodsArray'>
                     {new Array(6).fill(null).map((_, index) => (
-                        <img src={imgSrc[index]} alt="" onClick={()=>activeLink(index)}/>
+                        <img src={imgSrc[index]} alt="" onClick={()=>ActiveLink(index)}/>
                     ))}
                     
                 </div>
             </div>
-            <activeLink/>
+            <ActiveLink/>
         </div>
     )
 }

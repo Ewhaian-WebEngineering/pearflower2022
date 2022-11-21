@@ -3,9 +3,10 @@ import React from 'react';
 import './goodsDetailLayout.css'
 
 
-function goodsDetailLayout(props) {
-    const detailGoodsId = props;
+function goodsDetailLayout({detailGoodsId, displayHandle}) {
+    // const detailGoodsId = props;
     console.log(detailGoodsId);
+    console.log(displayHandle);
     // const detailGoodsId = 0;
 
     function handleVoid (e){
@@ -139,20 +140,3 @@ function goodsDetailLayout(props) {
 }
 
 export default goodsDetailLayout;
-
-// {detailData[detailGoodsId].map((data, index) => (
-//     <>
-//         {/* <h1>{data.title}</h1> */}
-//         {/* <img src="../img/goods/goods_detail/1-2.png" alt="" /> */}
-//         <img id="detailImg" src="../img/goods/goods_detail/1-2.png" alt="" />
-//         <script type="text/javascript">
-            
-//             document.getElementById("detailImg").src = `../img/goods/goods_detail/{$detailGoodsId}-{$detailData[index].num}.png`;
-//         </script>
-//     </>
-// ))}
-
-
-// {new Array(6).fill(null).map((_, index) => (
-//                         <img src="../img/goods/goods1.png" alt="" onClick={activeLink(index + 1)}/>
-//                     ))}
