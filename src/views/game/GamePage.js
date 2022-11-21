@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import Header from './WebGameHeader'
 import './GamePage.css'
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
+import { add } from 'lodash';
 
 
 
@@ -11,7 +12,13 @@ function GamePage(props) {
 
     const [correct, setCorrect] = useState(0);
     const [sentence, setSentence] = useState([]);
-    const sentenceId = useRef(0);
+    const sentenceId = useRef(1);
+
+    useEffect(() => {
+        //입력값이 정답과 일치하는지 확인
+        if (sentence.length >= 8)
+            inspect(sentence);
+    }, [sentenceId.current]);
 
     //클릭 시 실행
     const addWord = (input) => {
@@ -22,37 +29,31 @@ function GamePage(props) {
         };
 
         //입력값 길이가 8이 될 때까지 배열에 입력값 추가
-        if (sentenceId.current < 8) {
+        if (sentenceId.current <= 8) {
             sentenceId.current += 1;
             setSentence([...sentence, newInput])
         }
-
-        //입력값이 정답과 일치하는지 확인
-        inspect(sentence);
-        console.log("Correct:" + correct);
     }
 
     const check = (sentence) => {
-        console.log(sentence);
-        console.log("sentence.len:" + sentence.length);
-        const answer = ['g', 'o', 'o', 'd', 'l', 'u', 'c', 'k']; //정답
-
-
-
-        if (sentence.length == 8) { //8글자 모두 저장됐을 때만 비교
+        const answer = ['', 'g', 'o', 'o', 'd', 'l', 'u', 'c', 'k']; //정답
+        let count = 0;
+        {
             sentence.map((word) => {
-                if (word.input != answer[word.id])
-                    return 0;
+                if (word.input == answer[word.id]) {
+                    count++; //입력값이 한 글자씩 맞을 때마다 count++
+                }
             })
+            if (count == 8)
+                return 1;
+            else
+                return 0;
         }
-        else //sentence.length가 8이 아닐 때
-            return 0;
+
 
     }
 
     const inspect = (sentence) => {
-
-        console.log("Check: " + check(sentence));
         if (check(sentence) == 1) { //"goodluck 입력 완료"
             setCorrect(1);
         }
@@ -65,9 +66,6 @@ function GamePage(props) {
 
 
     const onDragEnd = () => {
-        // console.log("드래그");
-        // console.log("correct:" + correct);
-        // console.log("sentence length:" + sentence.length);
         if (correct === 0 && sentence.length >= 8)
             window.location.href = 'http://localhost:3000/finalgameover';
         else if (correct === 1) {
@@ -120,7 +118,7 @@ function GamePage(props) {
             <div className="array">
                 {sentence.map((word) => {
                     return (
-                        <span className="eachword">{word.input}</span>
+                        <span className="eachword" key={word.id}>{word.input}</span>
                     );
                 })}
             </div>
