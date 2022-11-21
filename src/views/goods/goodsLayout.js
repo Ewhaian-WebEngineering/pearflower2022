@@ -7,7 +7,7 @@ function goodsLayout() {
     // var index = 1
     
     function ActiveLink(e) {
-        const index = 1;
+        const index = 1; 
         const displayHandle = 0;
         // 
         if (typeof(e) == "object") {
