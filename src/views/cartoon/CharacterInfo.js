@@ -21,7 +21,7 @@ function CharacterInfo() {
           <div id="characterInfo_title"></div>
           <div id="characterInfo_description"></div>
         </div>
-        <div id="characterInfo_wrap">
+        <div id="characterInfo_wrap_">
           <div className="characterInfo_wrap">
             <div
               id="characterInfo_mushroom_name"
@@ -72,8 +72,9 @@ function CharacterInfo() {
                 id="characterInfo_bee_description_content"
                 className="dungeunmo_font characterInfo_description_content"
               >
-                이 경험도 넣고~<br></br>저 경험도 넣어야지~<br></br>후배들을
-                위해<br></br>열심히 농축한<br></br>꿀벌 표 '꿀단지'<br></br>
+                후배들을 위해<br></br>열심히 농축한<br></br>꿀벌 표<br></br>
+                경험만땅 '꿀단지'
+                <br></br>
                 드디어 나눔합니다!
               </div>
               <Link to="/bee1">
