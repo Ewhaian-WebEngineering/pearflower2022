@@ -118,9 +118,6 @@ function GameMain() {
             <div className="gamemiddle">
                 <div className="main1">
                     <img className="_question" alt="question" src="/img/game/Question.png" />
-                    {
-                        visible && <img className="wrong" src="/img/game/wrong.png"></img>
-                    }
                     <span>
 
                         {/* <span className="popupHint">{questions[currentIndex].hint}</span> */}
@@ -137,11 +134,13 @@ function GameMain() {
                 <div className="main2">
                     <div id="p_result_rec">
                         <img id="result_rec" alt="result" src="/img/game/AnswerRec.png" ></img>
-
+                        {
+                            visible && <img className="wrong" src="/img/game/wrong.png"></img>
+                        }
                         {/* 사용자가 답을 입력함 */}
                         <form>
-                            <input type="text" onChange={(e) => setUserAnswer(e.target.value)} onKeyPress={handleOnKeyPress} ></input>
-                            <input type="hidden" ></input>
+                            <input className='inputbar' type="text" onChange={(e) => setUserAnswer(e.target.value)} onKeyPress={handleOnKeyPress} ></input>
+                            {/* <input type="hidden" ></input> */}
                             <div className="answerBtn" >
                                 <img alt="answer" id="_answerBtn" src="/img/game/answerBtn.png" type="submit" onClick={handleOnClick}
                                 />
@@ -150,7 +149,6 @@ function GameMain() {
 
                     </div>
                     <div className="pocket" >
-                        <span className='goodluck'></span>
                         <img className="_pocket" alt="pocket" src="/img/game/mainPocket.png" />
                     </div>
                 </div>

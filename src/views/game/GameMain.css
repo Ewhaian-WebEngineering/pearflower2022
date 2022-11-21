@@ -3,7 +3,13 @@
         text-align: center;
     }
 
-
+    ._background {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
 
     /*문제 나오는 박스*/
     .main1 {
@@ -25,21 +31,22 @@
         top: 30%;
         font-size: 200%;
         overflow: auto;
+        width: 27%;
     }
 
     .h_text {
         /*힌트를 보려면 누르세요*/
         position: absolute;
-        top: 75vh;
-        left: 18vw;
+        top: 80%;
+        left: 12%;
         font-size: 100%;
 
     }
 
     .hintKey {
         position: absolute;
-        top: 72vh;
-        left: 32.5vw;
+        top: 76%;
+        left: 23%;
         cursor: pointer;
     }
 
@@ -62,19 +69,19 @@
     .wrong {
         position: absolute;
         top: 0;
-        margin-top: 10%;
-        margin-left: 10%;
-        width: 20w;
-        height: 10vh;
+        right: 0;
+        margin-top: 9%;
+        margin-right: 30%;
+        width: 15%;
         z-index: 2;
     }
 
     #result_rec {
         position: absolute;
-        right: 4vw;
-        width: 45vw;
-        top: 15vh;
-        height: 40vh;
+        right: 4%;
+        width: 45%;
+        top: 15%;
+        height: 45%;
         z-index: 1;
     }
 
@@ -85,15 +92,14 @@
 
     .answerBtn {
         position: absolute;
-        top: 44vh;
-        right: 21vw;
+        top: 47%;
+        right: 13%;
         cursor: pointer;
         z-index: 3;
     }
 
     #_answerBtn {
-        width: 190px;
-        height: 70px;
+        width: 50%;
     }
 
 
@@ -106,12 +112,25 @@
     ._pocket {
         height: 30vh;
     }
+
+    .inputbar {
+        position: absolute;
+        background-color: rgb(252, 208, 214);
+        right: 6%;
+        bottom: 58%;
+        width: 40%;
+        height: 10%;
+        z-index: 3;
+        border-radius: 50px;
+        border: none;
+    }
 }
 
 @media screen and (max-width: 768px) {
 
     .gamemiddle {
         display: block;
+        position: relative;
     }
 
     ._background {
@@ -125,16 +144,22 @@
         display: block;
     }
 
+    .question {
+        position: absolute;
+        width: 55%;
+        right: 26%;
+        top: 5%;
+    }
+
     ._question {
         width: 80vw;
-        height: 25vh;
-        margin: 30px auto 0;
+        height: 30vh;
     }
 
     .h_text {
         position: absolute;
-        top: 22vh;
-        left: 32vw;
+        top: 25%;
+        left: 20%;
     }
 
     .hintKey {
@@ -144,6 +169,7 @@
     }
 
     ._hintkey {
+        position: absolute;
         width: 30px;
     }
 
@@ -158,7 +184,7 @@
 
     #result_rec {
         margin: 3vh auto 0;
-        width: 85vw;
+        width: 80vw;
     }
 
     .answerBtn {
@@ -168,8 +194,11 @@
     }
 
     #_answerBtn {
-        width: 140px;
-        height: 50px;
+        position: absolute;
+        width: 30%;
+        left: 0;
+        margin-left: 33%;
+        bottom: 0;
     }
 
     .pocket {
@@ -179,6 +208,26 @@
 
     ._pocket {
         width: 75vw;
+    }
+
+    .wrong {
+        position: absolute;
+        width: 25%;
+        left: 0;
+        margin-left: 14%;
+        top: 40%;
+    }
+
+    .inputbar {
+        position: absolute;
+        background-color: rgb(252, 208, 214);
+        right: 21%;
+        bottom: 47%;
+        width: 60%;
+        height: 5%;
+        z-index: 3;
+        border-radius: 50px;
+        border: none;
     }
 
 }
