@@ -169,7 +169,7 @@ function Bee_page4() {
         <Link to="/main">
           <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
         </Link>
-        <Link to="/">
+        <Link to="/characterInfo">
           <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
         </Link>
       </div>
