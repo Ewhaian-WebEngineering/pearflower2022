@@ -10,6 +10,7 @@ import { add } from 'lodash';
 function GamePage(props) {
 
 
+
     const [correct, setCorrect] = useState(0);
     const [sentence, setSentence] = useState([]);
     const sentenceId = useRef(1);
@@ -67,19 +68,24 @@ function GamePage(props) {
 
     const onDragEnd = () => {
         if (correct === 0 && sentence.length >= 8)
-            window.location.href = 'http://localhost:3000/finalgameover';
+            window.location.href = 'https://15.164.75.25/finalgameover';
         else if (correct === 1) {
             setCorrect(0);
-            window.location.href = 'http://localhost:3000/finish';
+            window.location.href = 'https://15.164.75.25/finish';
         }
 
     }
+
+    const handleOnClick = () => {
+        inspect(sentence);
+    };
 
     return (
         <div >
             <Header />
             <img src='/img/game/background.png' className="background" alt="배경" />
             <img src='/img/game/window.png' className="keyWindow" alt="글자입력칸" />
+
             <DragDropContext onDragEnd={onDragEnd}>
                 <Droppable droppableId="droppable">
                     {(provided, snapshot) => (
@@ -94,7 +100,8 @@ function GamePage(props) {
                                         ref={provided.innerRef}
                                         {...provided.draggableProps}
                                         {...provided.dragHandleProps}>
-                                        <img src='/img/game/key.png' className="key" />
+                                        <img src='/img/game/key.png' className="webkey" />
+                                        <img src='/img/game/key.png' className="mobilekey" onClick={handleOnClick} />
                                     </div>
                                 )}
                             </Draggable>
