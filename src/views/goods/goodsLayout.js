@@ -1,21 +1,27 @@
 import React from 'react';
 import Header from './goodsHeader';
+import Detail from "./goodsDetailLayout";
 import './goodsLayout.css';
-import styled from 'styled-components';
-
 
 function goodsLayout() {
     
     function activeLink(e) {
         const index = e;
-        console.log(index);
-        return () => {
-        console.log(index);
-
-        //   window.location.href = "/goods/" + index;
-        };
+        // console.log(index);
+        return <Detail detailGoodsId={index}/>
     }
     
+    const imgSrc = [
+        "../img/goods/goods1.png",
+        "../img/goods/goods2.png",
+        "../img/goods/goods3.png",
+        "../img/goods/goods4.png",
+        "../img/goods/goods5.png",
+        "../img/goods/goods6.png",
+        
+    ]
+
+
     return (
         <div>
             <Header style={{ backgroundColor: "#F1A6A5 !important"}} />
@@ -23,19 +29,15 @@ function goodsLayout() {
                 {/* test */}
                 <div className='goodsArray'>
                     {new Array(6).fill(null).map((_, index) => (
-                        <img src="../img/goods/goods3.png" alt="" onClick={activeLink(index + 1)}/>
+                        <img src={imgSrc[index]} alt="" onClick={()=>activeLink(index)}/>
                     ))}
                     
                 </div>
             </div>
-            {/* <goodsDetailModal/> */}
+            <activeLink/>
         </div>
     )
 }
 
 export default goodsLayout;
 
-// const HeaderGoods = styled(<Header/>)`
-//     background-color:#F1A6A5
-//     color : white
-// `;
