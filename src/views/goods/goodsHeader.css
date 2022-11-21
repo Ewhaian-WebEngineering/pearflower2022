@@ -1,6 +1,6 @@
-.headerFlame{
+.goodsHeaderFlame{
     height: 80px;
-    /* background-color: red; */
+    background-color: #F1A6A5;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,20 +14,22 @@
     height: 70px;
 }
 
-.headerLink{
+.goodsHeaderLink{
     padding-right: 70px;
     display: flex;
+   
 
 }
 
-.headerLink p {
+.goodsHeaderLink p {
     font-weight: 600;
     font-size: 25px;
     padding-right: 50px;
+   
+    
 }
 
-.headerLink a {
+.goodsHeaderLink a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
-
