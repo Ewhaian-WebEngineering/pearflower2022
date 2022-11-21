@@ -3,15 +3,28 @@ import Header from '../main/mainHeader';
 import './goodsLayout.css';
 
 function goodsLayout() {
+    
+    function activeLink(e) {
+        const index = e;
+        console.log(index);
+        return () => {
+        console.log(index);
+
+        //   window.location.href = "/goods/" + index;
+        };
+    }
+    
     return (
         <div>
             <Header />
             <div className='goodsBox'>
-                test
+                {/* test */}
                 <div className='goodsArray'>
-                    <img src="../img/goods/goods_cleaner2.png" alt="" />
+                    {new Array(6).fill(null).map((_, index) => (
+                        <img src="../img/goods/goods3.png" alt="" onClick={activeLink(index + 1)}/>
+                    ))}
+                    
                 </div>
-                test
             </div>
             {/* <goodsDetailModal/> */}
         </div>
