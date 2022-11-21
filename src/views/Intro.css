@@ -51,6 +51,7 @@
   margin-top: 58%;
   background-image: url(/public/img/cartoon/intro/btn.png);
   background-size: 100%;
+  background-repeat: no-repeat;
 }
 #intro_mouse {
   display: inline-block;
