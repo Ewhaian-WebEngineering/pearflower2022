@@ -91,3 +91,33 @@
   margin-left: 65%;
   content: url(/public/img/cartoon/bee/page1/progress14.png);
 }
+#progress15 {
+  visibility: var(--progress15);
+  margin-left: 70%;
+  content: url(/public/img/cartoon/bee/page1/progress9.png);
+}
+#progress16 {
+  visibility: var(--progress16);
+  margin-left: 75%;
+  content: url(/public/img/cartoon/bee/page1/progress10.png);
+}
+#progress17 {
+  visibility: var(--progress17);
+  margin-left: 80%;
+  content: url(/public/img/cartoon/bee/page1/progress11.png);
+}
+#progress18 {
+  visibility: var(--progress18);
+  margin-left: 85%;
+  content: url(/public/img/cartoon/bee/page1/progress12.png);
+}
+#progress19 {
+  visibility: var(--progress19);
+  margin-left: 90%;
+  content: url(/public/img/cartoon/bee/page1/progress13.png);
+}
+#progress20 {
+  visibility: var(--progress20);
+  margin-left: 94.3%;
+  content: url(/public/img/cartoon/bee/page1/progress13.png);
+}

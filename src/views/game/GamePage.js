@@ -47,7 +47,7 @@ function GamePage(props) {
         console.log("sentence length:" + sentence.length);
         if (correct === 0 && sentence.length >= 8)
             window.location.href = 'http://localhost:3000/finalgameover';
-        else if (correct === 1 && sentence.length == 8) {
+        else if (correct === 1) {
             setCorrect(0);
             window.location.href = 'http://localhost:3000/finish';
         }

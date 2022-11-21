@@ -2,9 +2,19 @@
   animation-name: fadeInUp;
   animation-duration: 1s;
 }
+.fadeInUpInfinite {
+  animation-name: fadeInUp;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+}
 .fadeOutDown {
   animation-name: fadeOutDown;
   animation-duration: 1s;
+}
+.falling_trash {
+  animation-name: falling_trash;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
 }
 .horseAni1 {
   animation-name: horseAni1;
@@ -35,8 +45,9 @@
 }
 .move-train {
   animation-name: move_train;
-  animation-duration: 50s;
+  animation-duration: 30s;
   animation-timing-function: linear;
+  animation-iteration-count: infinite;
 }
 .flash {
   animation-name: flash;
@@ -61,6 +72,7 @@
   animation-name: lightSpeedInLeft;
   animation-timing-function: ease-out;
   animation-duration: 2s;
+  animation-fill-mode: forwards;
 }
 .sweat {
   animation: sweat 1s infinite;
@@ -84,7 +96,7 @@
   animation-duration: 7.5s;
 }
 .swing {
-  transform-origin: top center;
+  transform-origin: bottom center;
   animation-name: swing;
   animation-duration: 6s;
   animation-iteration-count: infinite;
@@ -112,6 +124,11 @@
   animation-name: white_cat_entrance;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+}
+.mouseMove {
+  animation: move_mouse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 @keyframes fadeInUp {
   from {
@@ -175,9 +192,18 @@
 }
 @keyframes move_train {
   from {
+    transform: scaleX(1);
+  }
+  49% {
+    transform: scaleX(1);
+  }
+  50% {
+    transform: scaleX(-1);
+    margin-right: 120%;
   }
   to {
-    margin-right: 300%;
+    transform: scaleX(-1);
+    margin-right: -120%;
   }
 }
 @keyframes flash {
@@ -305,7 +331,8 @@
   }
 
   to {
-    transform: translate3d(0, 0, 0);
+    transform: translate3d(0%, 0, 0);
+    opacity: 1;
   }
 }
 @-webkit-keyframes twisterInDown {
@@ -472,6 +499,38 @@
 
   to {
     opacity: 1;
-    transform: translateX(-160%);
+    transform: translateX(-150%);
+  }
+}
+@keyframes move_mouse {
+  from {
+  }
+  to {
+    margin-right: -30%;
+    margin-bottom: -10%;
+  }
+}
+.clock_long {
+  animation: clock_long 10s infinite linear;
+}
+.clock_short {
+  animation: clock_short 5s infinite linear;
+}
+@keyframes clock_long {
+  from {
+    transform-origin: 50% 100%;
+  }
+  to {
+    transform-origin: 50% 100%;
+    transform: rotate(360deg);
+  }
+}
+@keyframes clock_short {
+  from {
+    transform-origin: 0% 25%;
+  }
+  to {
+    transform-origin: 0% 25%;
+    transform: rotate(360deg);
   }
 }

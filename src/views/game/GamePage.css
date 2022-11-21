@@ -52,6 +52,22 @@
           z-index: 5;
       }
 
+      .open {
+          position: absolute;
+          width: 87vw;
+          height: 40vh;
+          top: 33%;
+          left: 6%;
+      }
+
+      .replay {
+          position: absolute;
+          width: 32vw;
+          height: 6vh;
+          top: 85%;
+          left: 30%;
+      }
+
       .word1 {
           position: absolute;
           color: white;
@@ -181,6 +197,22 @@
           cursor: pointer;
           cursor: hand;
           z-index: 5;
+      }
+
+      .open {
+          position: absolute;
+          width: 65vw;
+          height: 59vh;
+          top: 23%;
+          left: 17%;
+      }
+
+      .replay {
+          position: absolute;
+          width: 21vw;
+          height: 11vh;
+          top: 83%;
+          left: 39%;
       }
 
       .word1 {
