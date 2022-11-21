@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link } from "react-router-dom";
 import "../bee/Bee_page1.css";
 import "./Mushroom_page4.css";
@@ -9,6 +9,17 @@ function setScreenSize() {
   let vw = window.innerWidth;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
   document.documentElement.style.setProperty("--vw", `${vw}px`);
+}
+
+function mush4_animation() {
+  // 마우스 지우기
+  document.getElementById("mush4_cursor").style.visibility = "hidden";
+  // 범퍼카2 애니메이션
+  document.getElementById("mush4_bumpercar2").classList.add("bumpercar2_animation");
+  // 부딪히는 효과
+  document.getElementById("mush4_effect").classList.add("bump_animation");
+  // 범퍼카3 애니메이션
+  document.getElementById("mush4_bumpercar3").classList.add("bumpercar3_animation");
 }
 
 function Mushroom_page4() {
@@ -24,8 +35,10 @@ function Mushroom_page4() {
           {/* http://labs.rampinteractive.co.uk/touchSwipe/demos/Page_scrolling.html
           [자바스크립트] 스와이프 방향 알아내기 - Marshall K
            */}
-          <div id="mush4_bumpercar2" />
+          <div id="mush4_bumpercar2" onClick={ () => {mush4_animation()} }/>
+          <div id="mush4_cursor" className="gardenermushroom_mouse"/>
           <div id="mush4_bumpercar3" />
+          <div id="mush4_effect"/>
           <div id="mush4_bumpercar4" />
 
           {/* 포장마차 */}
