@@ -1,6 +1,8 @@
 import React from 'react';
-import Header from '../main/mainHeader';
+import Header from './goodsHeader';
 import './goodsLayout.css';
+import styled from 'styled-components';
+
 
 function goodsLayout() {
     
@@ -16,7 +18,7 @@ function goodsLayout() {
     
     return (
         <div>
-            <Header />
+            <Header style={{ backgroundColor: "#F1A6A5 !important"}} />
             <div className='goodsBox'>
                 {/* test */}
                 <div className='goodsArray'>
@@ -32,3 +34,8 @@ function goodsLayout() {
 }
 
 export default goodsLayout;
+
+// const HeaderGoods = styled(<Header/>)`
+//     background-color:#F1A6A5
+//     color : white
+// `;
