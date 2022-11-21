@@ -72,6 +72,7 @@ function sprout_page1_talking_ani() {
 function Sprout_page1() {
   setScreenSize();
   useEffect(() => {
+    clickCnt = 0;
     sprout_page1_init();
     sweat_ani();
     sprout_page1_talking_ani();
