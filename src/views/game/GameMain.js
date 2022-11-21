@@ -116,9 +116,7 @@ function GameMain() {
 
                         <span className="h_text">힌트를 보려면 누르세요!</span>
                         <span className="hintKey">
-                            <img alt="hintkey" className="_hintkey" src="/img/game/HintKey.png"
-                                onClick={(e) => hintPopUp(questions[currentIndex].hint)}
-                            />
+                            <img alt="hintkey" className="_hintkey" src="/img/game/HintKey.png" />
                         </span>
                     </span>
                     <span className="question">{questions[currentIndex].question}</span>
