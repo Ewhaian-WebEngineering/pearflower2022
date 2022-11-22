@@ -1,13 +1,27 @@
-#bee_page2 {
-  overflow: hidden;
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  /*background-color: blue;*/
-  background-image: url("/public/img/cartoon/bee/page2/background.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+@media screen and (max-width: 779px) {
+  #bee_page2 {
+    overflow: hidden;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: blue;*/
+    background-image: url("/public/img/cartoon/bee/page2/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .phoneFrame_wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrame {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrameInside {
+    width: 100%;
+    height: 100%;
+  }
 }
 #bee_page2_window_wrap {
   overflow: hidden;

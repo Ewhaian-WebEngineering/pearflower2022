@@ -91,11 +91,6 @@ function Sprout_page1() {
     <div className="bee_container">
       <div className="phoneFrame_wrap">
         <div className="phoneFrame">
-          <div className="phoneFrameInside"></div>
-        </div>
-      </div>
-      <div className="phoneFrame_wrap">
-        <div className="phoneFrame">
           <div className="phoneFrameInside">
             <div className="bee_background_wrap">
               <div id="sprout_page1">
