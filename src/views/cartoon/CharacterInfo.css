@@ -1,15 +1,41 @@
 .dungeunmo_font {
   font-family: "DungGeunMo";
 }
-#characterInfo_container {
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: var(--vw);
-  height: var(--vh);
-  background-color: rgb(234, 234, 234);
+@media screen and (max-width: 779px) {
+  #characterInfo_container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: var(--vw);
+    height: var(--vh);
+    background-color: rgb(234, 234, 234);
+  }
+  .phoneFrame_wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrame {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrameInside_info {
+    width: 100%;
+    height: 100%;
+  }
+  .characterInfo_description_wrap {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 48%;
+    background-image: url(/public/img/cartoon/characterInfo/info_content_wrap.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
 }
+
 #characterInfo_container_wrap {
   left: 0;
   right: 0;
@@ -87,17 +113,7 @@
   /*background-color: rgb(255, 127, 246);*/
 }
 /*-----------------*/
-.characterInfo_description_wrap {
-  margin-top: 2%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 80%;
-  height: 48%;
-  background-image: url(/public/img/cartoon/characterInfo/info_content_wrap.png);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
+
 .characterInfo_description_content {
   margin-top: 10%;
   font-size: 70%;
