@@ -58,11 +58,6 @@
 
     .mobileEscapeContent {
         margin-top: 9%;
-        animation: fadein 1.5s;
-        -moz-animation: fadein 1.5s;
-        /* Firefox */
-        -webkit-animation: fadein 1.5s;
-        /* Safari and Chrome */
 
 
     }

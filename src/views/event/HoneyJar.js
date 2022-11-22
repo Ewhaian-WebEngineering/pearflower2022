@@ -1,8 +1,14 @@
 import { BrowserView, MobileView } from "react-device-detect";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import './HoneyJar.css';
+import Dropdown from "./Dropdown";
 
 function HoneyJar() {
+    const [dropDownView, setDropDownView] = useState(false);
+    const clickDropDown = () => {
+        setDropDownView(!dropDownView);
+    }
     return (
         <div>
             <MobileView>
@@ -10,12 +16,13 @@ function HoneyJar() {
                     <div className="eventHeader">
                         <Link to="/main"><img alt="logoSquare" className="Eventlogo"></img></Link>
                         <div className="menuBtnDiv">
-                            <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'}></img>
+                            <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'} onClick={clickDropDown}></img>
+                            {dropDownView && <Dropdown />}
                         </div>
                     </div>
                     <div className="mobileHoneyJarWrapper">
                         <div className="mobileBackToEventWrapper">
-                            <Link to="/event"><img alt="BackToEventPageBtn" className="mobileBackToEvent" src={process.env.PUBLIC_URL + '/img/event/mobileBackToEvent.png'}></img></Link>
+                            <Link to="/event"><img alt="BackToEventPageBtn" className="mobileBackToEvent" src={process.env.PUBLIC_URL + '/img/event/mobileBacktoEvent.png'}></img></Link>
                         </div>
                         <div className="mobileHoneyJarContent">
                             <img alt="HoneyJarExplanation" className="mobileDetailHoneyJar" src={process.env.PUBLIC_URL + '/img/event/mobileDetailHoneyJar.png'}></img>
@@ -37,7 +44,7 @@ function HoneyJar() {
                     </div>
                     <div className="honeyJarWrapper">
                         <div className="backToEventWrapper">
-                            <Link to="/event"><img alt="BackToEventPageBtn" className="backToEvent" src={process.env.PUBLIC_URL + '/img/event/detailBackToEvent.png'}></img></Link>
+                            <Link to="/event"><img alt="BackToEventPageBtn" className="backToEvent" src={process.env.PUBLIC_URL + '/img/event/detailBacktoEvent.png'}></img></Link>
                         </div>
                         <div className="honeyJarContent">
                             <img alt="HoneyJarExplanation" className="detailHoneyJar" src={process.env.PUBLIC_URL + '/img/event/detailHoneyJar.png'}></img>

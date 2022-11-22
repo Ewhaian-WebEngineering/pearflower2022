@@ -1,8 +1,14 @@
 import { BrowserView, MobileView } from "react-device-detect";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import './Escape.css';
+import Dropdown from "./Dropdown";
 
 function Escape() {
+    const [dropDownView, setDropDownView] = useState(false);
+    const clickDropDown = () => {
+        setDropDownView(!dropDownView);
+    }
     return (
         <div>
             <MobileView>
@@ -10,12 +16,13 @@ function Escape() {
                     <div className="eventHeader">
                         <Link to="/main"><img alt="logoSquare" className="Eventlogo"></img></Link>
                         <div className="menuBtnDiv">
-                            <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'}></img>
+                            <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'} onClick={clickDropDown}></img>
+                            {dropDownView && <Dropdown />}
                         </div>
                     </div>
                     <div className="mobileEscapeWrapper">
                         <div className="mobileBackToEventWrapper">
-                            <Link to="/event"><img alt="BackToEventPageBtn" className="mobileBackToEvent" src={process.env.PUBLIC_URL + '/img/event/detailBackToEvent.png'}></img></Link>
+                            <Link to="/event"><img alt="BackToEventPageBtn" className="mobileBackToEvent" src={process.env.PUBLIC_URL + '/img/event/detailBacktoEvent.png'}></img></Link>
                         </div>
                         <div className="mobileEscapeContent">
                             <img alt="escapeGameExplanation" className="mobileDetailEscape" src={process.env.PUBLIC_URL + '/img/event/mobileDetailEscape.png'}></img>
@@ -37,7 +44,7 @@ function Escape() {
                     </div>
                     <div className="escapeWrapper">
                         <div className="backToEventWrapper">
-                            <Link to="/event"><img alt="BackToEventPageBtn" className="backToEvent" src={process.env.PUBLIC_URL + '/img/event/detailBackToEvent.png'}></img></Link>
+                            <Link to="/event"><img alt="BackToEventPageBtn" className="backToEvent" src={process.env.PUBLIC_URL + '/img/event/detailBacktoEvent.png'}></img></Link>
                         </div>
                         <div className="escapeContent">
                             <img alt="escapeGameExplanation" className="detailEscape" src={process.env.PUBLIC_URL + '/img/event/detailEscape.png'}></img>

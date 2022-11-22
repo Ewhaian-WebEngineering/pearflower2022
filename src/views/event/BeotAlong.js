@@ -1,8 +1,14 @@
 import { BrowserView, MobileView } from "react-device-detect";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import './BeotAlong.css';
+import Dropdown from "./Dropdown";
 
 function BeotAlong() {
+    const [dropDownView, setDropDownView] = useState(false);
+    const clickDropDown = () => {
+        setDropDownView(!dropDownView);
+    }
     return (
         <div>
             <MobileView>
@@ -10,7 +16,8 @@ function BeotAlong() {
                     <div className="eventHeader">
                         <Link to="/main"><img alt="logoSquare" className="Eventlogo"></img></Link>
                         <div className="menuBtnDiv">
-                            <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'}></img>
+                            <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'} onClick={clickDropDown}></img>
+                            {dropDownView && <Dropdown />}
                         </div>
                     </div>
                     <div className="mobileBeotAlongWrapper">
@@ -37,7 +44,7 @@ function BeotAlong() {
                     </div>
                     <div className="beotAlongWrapper">
                         <div className="backToEventWrapper">
-                            <Link to="/event"><img alt="BackToEventPageBtn" className="backToEvent" src={process.env.PUBLIC_URL + '/img/event/detailBackToEvent.png'}></img></Link>
+                            <Link to="/event"><img alt="BackToEventPageBtn" className="backToEvent" src={process.env.PUBLIC_URL + '/img/event/detailBacktoEvent.png'}></img></Link>
                         </div>
                         <div className="beotAlongContent">
                             <img alt="BeotAlongExplanation" className="detailBeotAlong" src={process.env.PUBLIC_URL + '/img/event/detailBeotAlong.png'}></img>
