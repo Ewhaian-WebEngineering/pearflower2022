@@ -1,6 +1,7 @@
 @font-face {
-  font-family: 'BMJUA';
-  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff') format('woff');
+  font-family: "BMJUA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff")
+    format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -148,16 +149,17 @@
     transform: translate3d(0, 0, 0);
   }
 }
-
-#gardener_page2 {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  background-image: url("/public/img/cartoon/gardener/page2/garden2Bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
+@media screen and (max-width: 779px) {
+  #gardener_page2 {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/public/img/cartoon/gardener/page2/garden2Bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
 }
 
 #garden2_calendar {
@@ -216,8 +218,6 @@
   margin-left: 30%;
   visibility: hidden;
 }
-
-
 
 #garden2_cal2 {
   content: url(/public/img/cartoon/gardener/page2/garden2cal2_1.png);

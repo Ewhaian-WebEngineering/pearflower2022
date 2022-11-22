@@ -1,4 +1,5 @@
-#gardener_page1 {
+@media screen and (max-width: 779px) {
+  #gardener_page1 {
     width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -8,149 +9,150 @@
     background-repeat: no-repeat;
     overflow: hidden;
   }
+}
 
-  #garden1_window {
-    content: url(/public/img/cartoon/gardener/page1/garden1window.png);
-    position: absolute;
-    width: 90%;
-    top: 0;
-    margin-top: 10%;
-    left: 0;
-    margin-left: auto;
-    right: 0;
-    margin-right: auto;
+#garden1_window {
+  content: url(/public/img/cartoon/gardener/page1/garden1window.png);
+  position: absolute;
+  width: 90%;
+  top: 0;
+  margin-top: 10%;
+  left: 0;
+  margin-left: auto;
+  right: 0;
+  margin-right: auto;
+}
+
+#garden1_cursor {
+  content: url(/public/img/cartoon/gardener/page1/garden1cursor.png);
+  position: absolute;
+  width: 15%;
+  top: 0;
+  margin-top: 65%;
+  right: 0;
+  margin-right: 15%;
+}
+
+#garden1_first {
+  content: url(/public/img/cartoon/gardener/page1/garden1first.png);
+  position: absolute;
+  width: 55%;
+  top: 0;
+  margin-top: 68%;
+  visibility: hidden;
+}
+
+#garden1_second {
+  content: url(/public/img/cartoon/gardener/page1/garden1second.png);
+  position: absolute;
+  width: 55%;
+  top: 0;
+  margin-top: 105%;
+  right: 0;
+  transform: translate3d(-3000px, 0, 0);
+}
+
+@keyframes fadeOutTopLeft {
+  from {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    opacity: 0.7;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+  }
+}
+
+/* 바운스 애니메이션 */
+@keyframes bounce {
+  from,
+  20%,
+  53%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
 
-  #garden1_cursor {
-    content: url(/public/img/cartoon/gardener/page1/garden1cursor.png);
-    position: absolute;
-    width: 15%;
-    top: 0;
-    margin-top: 65%;
-    right: 0;
-    margin-right: 15%;
+  40%,
+  43% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
+    transform: translate3d(0, -30px, 0) scaleY(1.1);
   }
 
-  #garden1_first {
-    content: url(/public/img/cartoon/gardener/page1/garden1first.png);
-    position: absolute;
-    width: 55%;
-    top: 0;
-    margin-top: 68%;
-    visibility: hidden;
+  70% {
+    -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+    -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
+    transform: translate3d(0, -15px, 0) scaleY(1.05);
   }
 
-  #garden1_second {
-    content: url(/public/img/cartoon/gardener/page1/garden1second.png);
-    position: absolute;
-    width: 55%;
-    top: 0;
-    margin-top: 105%;
-    right: 0;
-    transform: translate3d(-3000px, 0, 0);
+  80% {
+    -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
+    transform: translate3d(0, 0, 0) scaleY(0.95);
   }
 
-  @keyframes fadeOutTopLeft {
-    from {
-      opacity: 1;
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-    to {
-      opacity: 0.7;
-      -webkit-transform: translate3d(-50%, -50%, 0);
-      transform: translate3d(-50%, -50%, 0);
-    }
+  90% {
+    -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
+    transform: translate3d(0, -4px, 0) scaleY(1.02);
+  }
+}
+
+/* 옆에서 bounce로 들어오는 애니메이션 */
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
   }
 
-  /* 바운스 애니메이션 */
-  @keyframes bounce {
-    from,
-    20%,
-    53%,
-    to {
-      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
-  
-    40%,
-    43% {
-      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      -webkit-transform: translate3d(0, -30px, 0) scaleY(1.1);
-      transform: translate3d(0, -30px, 0) scaleY(1.1);
-    }
-  
-    70% {
-      -webkit-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-      -webkit-transform: translate3d(0, -15px, 0) scaleY(1.05);
-      transform: translate3d(0, -15px, 0) scaleY(1.05);
-    }
-  
-    80% {
-      -webkit-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      -webkit-transform: translate3d(0, 0, 0) scaleY(0.95);
-      transform: translate3d(0, 0, 0) scaleY(0.95);
-    }
-  
-    90% {
-      -webkit-transform: translate3d(0, -4px, 0) scaleY(1.02);
-      transform: translate3d(0, -4px, 0) scaleY(1.02);
-    }
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(3000px, 0, 0) scaleX(3);
+    transform: translate3d(3000px, 0, 0) scaleX(3);
   }
 
-  /* 옆에서 bounce로 들어오는 애니메이션 */
-  @keyframes bounceInRight {
-    from,
-    60%,
-    75%,
-    90%,
-    to {
-      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-    }
-  
-    from {
-      opacity: 0;
-      -webkit-transform: translate3d(3000px, 0, 0) scaleX(3);
-      transform: translate3d(3000px, 0, 0) scaleX(3);
-    }
-  
-    60% {
-      opacity: 1;
-      -webkit-transform: translate3d(-25px, 0, 0) scaleX(1);
-      transform: translate3d(-25px, 0, 0) scaleX(1);
-    }
-  
-    75% {
-      -webkit-transform: translate3d(10px, 0, 0) scaleX(0.98);
-      transform: translate3d(10px, 0, 0) scaleX(0.98);
-    }
-  
-    90% {
-      -webkit-transform: translate3d(-5px, 0, 0) scaleX(0.995);
-      transform: translate3d(-5px, 0, 0) scaleX(0.995);
-    }
-  
-    to {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-    }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(-25px, 0, 0) scaleX(1);
+    transform: translate3d(-25px, 0, 0) scaleX(1);
   }
 
-  .gardenermushroom_mouse {
-    animation: fadeOutTopLeft 2s infinite;
+  75% {
+    -webkit-transform: translate3d(10px, 0, 0) scaleX(0.98);
+    transform: translate3d(10px, 0, 0) scaleX(0.98);
   }
 
-  .garden1_jump {
-    animation: bounce 2s 5;
+  90% {
+    -webkit-transform: translate3d(-5px, 0, 0) scaleX(0.995);
+    transform: translate3d(-5px, 0, 0) scaleX(0.995);
   }
 
-  .garden1_talk {
-    animation: bounceInRight 2s;
-    animation-fill-mode: forwards;
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
   }
+}
+
+.gardenermushroom_mouse {
+  animation: fadeOutTopLeft 2s infinite;
+}
+
+.garden1_jump {
+  animation: bounce 2s 5;
+}
+
+.garden1_talk {
+  animation: bounceInRight 2s;
+  animation-fill-mode: forwards;
+}
