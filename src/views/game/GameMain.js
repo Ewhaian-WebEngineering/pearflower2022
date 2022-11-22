@@ -92,6 +92,7 @@ function GameMain() {
                 setindex6((index6) => true)
             }
             setCurrentIndex(currentIndex + 1)
+            setPopUp(false)
         } else if (currentIndex === 7 && userAnswer === questions[currentIndex].answer) {
             setVisible((visible) => false)
             if (currentIndex === 7) {
@@ -138,10 +139,9 @@ function GameMain() {
                     <span>
 
 
-                        <span className="h_text">힌트를 보려면 누르세요!</span>
+                        {_popUp || <span className="h_text">'힌트를 보려면 누르세요!'</span>}
                         <span className="hintKey" onClick={Popup}>
                             <img alt="hintkey" className="_hintkey" src="img/game/HintKey.png" />
-
                         </span>
                         {_popUp && <span className="popupHint">{questions[currentIndex].hint}</span>}
                     </span>
@@ -157,7 +157,7 @@ function GameMain() {
                         {/* 사용자가 답을 입력함 */}
                         <form>
                             <input className='inputbar' type="text" onChange={(e) => setUserAnswer(e.target.value)} onKeyPress={handleOnKeyPress} ></input>
-                            <div className="answerBtn" >
+                            <div className="ansBtn" >
                                 <img alt="answer" id="_answerBtn" src="img/game/answerBtn.png" type="submit" onClick={handleOnClick}
                                 />
                             </div>

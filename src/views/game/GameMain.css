@@ -90,16 +90,16 @@
         border: none;
     }
 
-    .answerBtn {
+    .ansBtn {
         position: absolute;
         top: 47%;
-        right: 13%;
+        right: 16%;
         cursor: pointer;
         z-index: 3;
     }
 
     #_answerBtn {
-        width: 50%;
+        width: 55%;
     }
 
 
@@ -124,6 +124,13 @@
         border-radius: 50px;
         border: none;
         font-size: 150%;
+    }
+
+    .popupHint {
+        position: absolute;
+        width: 25%;
+        left: 12%;
+        top: 70%;
     }
 }
 
@@ -188,7 +195,7 @@
         width: 80vw;
     }
 
-    .answerBtn {
+    .ansBtn {
         width: 100%;
         position: absolute;
         top: 57vh;
@@ -229,6 +236,13 @@
         z-index: 3;
         border-radius: 50px;
         border: none;
+    }
+
+    .popupHint {
+        position: absolute;
+        width: 70%;
+        right: 13%;
+        top: 22%;
     }
 
 }
