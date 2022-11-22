@@ -1,0 +1,155 @@
+/*모바일*/
+@media screen and (max-width: 779px) {
+  .bee_container {
+    position: fixed;
+    width: var(--vw);
+    height: var(--vh);
+    background-color: rgb(255, 255, 255);
+  }
+  .bee_background_wrap {
+    width: 97%;
+    height: 98%;
+    margin: 0 auto;
+    margin-top: 2%;
+    /*background-color: rgb(180, 180, 47);*/
+    /*content: url("/public/img/cartoon/bee/page1/background.png");*/
+  }
+}
+/*웹*/
+@media screen and (min-width: 780px) {
+  .bee_container {
+    display: flex;
+    position: fixed;
+    width: var(--vw);
+    height: var(--vh);
+    background-color: rgb(255, 233, 186);
+  }
+  .phoneFrame_wrap {
+    display: flex;
+    align-items: center;
+    left: 0;
+    width: 45%;
+    height: 100%;
+    /*background-color: blue;*/
+  }
+  .phoneFrame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 35%;
+    width: 52%;
+    height: 85%;
+    background-image: url(/public/img/cartoon/webVer/phoneFrame.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /*background-color: blueviolet;*/
+  }
+  .phoneFrameInside {
+    border-radius: 30px;
+    width: 89%;
+    height: 95%;
+    overflow: hidden;
+    /*background-color: aqua;*/
+    background-image: url(/public/img/cartoon/webVer/phoneFrame_inside.png);
+  }
+  .bee_background_wrap {
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    /*background-color: rgb(180, 180, 47);*/
+    /*content: url("/public/img/cartoon/bee/page1/background.png");*/
+  }
+  #bee_page1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-image: url("/public/img/cartoon/bee/page1/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  #bee_page2 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: blue;*/
+    background-image: url("/public/img/cartoon/bee/page2/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  #bee_page3 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: blue;*/
+    background-image: url("/public/img/cartoon/bee/page3/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  #bee_page4 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: blue;*/
+    background-image: url("/public/img/cartoon/bee/page4/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  #sprout_page1 {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: blue;*/
+    background-image: url("/public/img/cartoon/sprout/page1/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  #sprout_page2 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: blue;*/
+    background-image: url("/public/img/cartoon/sprout/page2/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  #sprout_page3 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: blue;*/
+    background-image: url("/public/img/cartoon/sprout/page3/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  #sprout_page4 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    /*background-color: blue;*/
+    background-image: url("/public/img/cartoon/sprout/page4/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hi;
+  }
+  .webTitle {
+    /*background-color: blue;*/
+    width: 30%;
+    height: 32%;
+    margin-left: 10%;
+    margin-top: 10%;
+    content: url(/public/img/cartoon/webVer/title.png);
+  }
+}

@@ -6,6 +6,7 @@ import "../CartoonBtns.css";
 import "../AniZip.css";
 import "../Firecrackers.css";
 import "../bee/Clouds.css";
+import "../cartoonWeb.css";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -126,109 +127,123 @@ function Sprout_page4() {
   }, []);
   return (
     <div className="bee_container">
-      <div className="bee_background_wrap">
-        <div id="sprout_page4">
-          <div className="clouds inlineBlock"></div>
-          <div
-            id="sprout_page4_firecracker1_wrap"
-            className="inlineBlock firecracker1_wrap"
-          >
-            <div
-              id="sprout_page4_firecracker1_inside"
-              className="inlineBlock firecracker1_inside"
-            ></div>
-            <div
-              id="sprout_page4_firecracker1_outside"
-              className="inlineBlock firecracker1_outside"
-            ></div>
+      <div className="phoneFrame_wrap">
+        <div className="phoneFrame">
+          <div className="phoneFrameInside">
+            {" "}
+            <div className="bee_background_wrap">
+              <div id="sprout_page4">
+                <div className="clouds inlineBlock"></div>
+                <div
+                  id="sprout_page4_firecracker1_wrap"
+                  className="inlineBlock firecracker1_wrap"
+                >
+                  <div
+                    id="sprout_page4_firecracker1_inside"
+                    className="inlineBlock firecracker1_inside"
+                  ></div>
+                  <div
+                    id="sprout_page4_firecracker1_outside"
+                    className="inlineBlock firecracker1_outside"
+                  ></div>
+                </div>
+                <div
+                  id="sprout_page4_firecracker2_wrap"
+                  className="inlineBlock firecracker2_wrap"
+                >
+                  <div
+                    id="sprout_page4_firecracker2_inside"
+                    className="inlineBlock firecracker2_inside"
+                  ></div>
+                  <div
+                    id="sprout_page4_firecracker2_outside"
+                    className="inlineBlock firecracker2_outside"
+                  ></div>
+                </div>
+                <div
+                  id="sprout_page4_firecracker3_wrap"
+                  className="inlineBlock firecracker3_wrap"
+                >
+                  <div
+                    id="sprout_page4_firecracker3_inside"
+                    className="inlineBlock firecracker3_inside"
+                  ></div>
+                  <div
+                    id="sprout_page4_firecracker3_outside"
+                    className="inlineBlock firecracker3_outside"
+                  ></div>
+                </div>
+                <div
+                  id="sprout_page4_merryGoRound_wrap"
+                  className="inlineBlock"
+                >
+                  <div
+                    id="sprout_page4_merryGoRound_horse1"
+                    className="inlineBlock"
+                  ></div>
+                  <div
+                    id="sprout_page4_merryGoRound_horse2"
+                    className="inlineBlock"
+                  ></div>
+                  <div
+                    id="sprout_page4_merryGoRound_horse3"
+                    className="inlineBlock"
+                  ></div>
+                </div>
+                <div id="sprout_page4_train1_wrap" className="inlineBlock">
+                  <div id="sprout_page4_train1" className="inlineBlock"></div>
+                  <div
+                    id="sprout_page4_train1_wheel1"
+                    className="inlineBlock sprout_page4_train1_wheel"
+                  ></div>
+                  <div
+                    id="sprout_page4_train1_wheel2"
+                    className="inlineBlock sprout_page4_train1_wheel"
+                  ></div>
+                  <div
+                    id="sprout_page4_train1_wheel3"
+                    className="inlineBlock sprout_page4_train1_wheel"
+                  ></div>
+                  <div
+                    id="sprout_page4_train1_wheel4"
+                    className="inlineBlock sprout_page4_train1_wheel"
+                  ></div>
+                  <div
+                    id="sprout_page4_train1_wheel5"
+                    className="inlineBlock sprout_page4_train1_wheel"
+                  ></div>
+                  <div
+                    id="sprout_page4_train1_wheel6"
+                    className="inlineBlock sprout_page4_train1_wheel"
+                  ></div>
+                  <div
+                    id="sprout_page4_train1_wheel7"
+                    className="inlineBlock sprout_page4_train1_wheel"
+                  ></div>
+                </div>
+                <div id="sprout_page4_train2" className="inlineBlock"></div>
+                <div id="sprout_page4_persons" className="inlineBlock"></div>
+                <div
+                  id="sprout_page4_persons_effect"
+                  className="inlineBlock"
+                ></div>
+              </div>
+            </div>
+            <div className="cartoon_btns inlineBlock">
+              <Link to="/sprout3">
+                <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+              </Link>
+              <Link to="/main">
+                <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+              </Link>
+              <Link to="/characterInfo">
+                <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+              </Link>
+            </div>
           </div>
-          <div
-            id="sprout_page4_firecracker2_wrap"
-            className="inlineBlock firecracker2_wrap"
-          >
-            <div
-              id="sprout_page4_firecracker2_inside"
-              className="inlineBlock firecracker2_inside"
-            ></div>
-            <div
-              id="sprout_page4_firecracker2_outside"
-              className="inlineBlock firecracker2_outside"
-            ></div>
-          </div>
-          <div
-            id="sprout_page4_firecracker3_wrap"
-            className="inlineBlock firecracker3_wrap"
-          >
-            <div
-              id="sprout_page4_firecracker3_inside"
-              className="inlineBlock firecracker3_inside"
-            ></div>
-            <div
-              id="sprout_page4_firecracker3_outside"
-              className="inlineBlock firecracker3_outside"
-            ></div>
-          </div>
-          <div id="sprout_page4_merryGoRound_wrap" className="inlineBlock">
-            <div
-              id="sprout_page4_merryGoRound_horse1"
-              className="inlineBlock"
-            ></div>
-            <div
-              id="sprout_page4_merryGoRound_horse2"
-              className="inlineBlock"
-            ></div>
-            <div
-              id="sprout_page4_merryGoRound_horse3"
-              className="inlineBlock"
-            ></div>
-          </div>
-          <div id="sprout_page4_train1_wrap" className="inlineBlock">
-            <div id="sprout_page4_train1" className="inlineBlock"></div>
-            <div
-              id="sprout_page4_train1_wheel1"
-              className="inlineBlock sprout_page4_train1_wheel"
-            ></div>
-            <div
-              id="sprout_page4_train1_wheel2"
-              className="inlineBlock sprout_page4_train1_wheel"
-            ></div>
-            <div
-              id="sprout_page4_train1_wheel3"
-              className="inlineBlock sprout_page4_train1_wheel"
-            ></div>
-            <div
-              id="sprout_page4_train1_wheel4"
-              className="inlineBlock sprout_page4_train1_wheel"
-            ></div>
-            <div
-              id="sprout_page4_train1_wheel5"
-              className="inlineBlock sprout_page4_train1_wheel"
-            ></div>
-            <div
-              id="sprout_page4_train1_wheel6"
-              className="inlineBlock sprout_page4_train1_wheel"
-            ></div>
-            <div
-              id="sprout_page4_train1_wheel7"
-              className="inlineBlock sprout_page4_train1_wheel"
-            ></div>
-          </div>
-          <div id="sprout_page4_train2" className="inlineBlock"></div>
-          <div id="sprout_page4_persons" className="inlineBlock"></div>
-          <div id="sprout_page4_persons_effect" className="inlineBlock"></div>
         </div>
       </div>
-      <div className="cartoon_btns inlineBlock">
-        <Link to="/sprout3">
-          <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
-        </Link>
-        <Link to="/main">
-          <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
-        </Link>
-        <Link to="/characterInfo">
-          <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
-        </Link>
-      </div>
+      <div className="webTitle"></div>
     </div>
   );
 }

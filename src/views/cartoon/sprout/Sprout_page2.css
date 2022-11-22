@@ -1,13 +1,16 @@
-#sprout_page2 {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  /*background-color: blue;*/
-  background-image: url("/public/img/cartoon/sprout/page2/background.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+@media screen and (max-width: 779px) {
+  #sprout_page2 {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: blue;*/
+    background-image: url("/public/img/cartoon/sprout/page2/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
 }
+
 #sprout_page2_honeyBox {
   opacity: var(--page2-honeyBox);
   height: 13%;

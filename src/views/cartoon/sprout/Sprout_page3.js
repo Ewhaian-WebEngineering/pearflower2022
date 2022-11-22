@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../bee/Bee_page1.css";
 import "./Sprout_page3.css";
 import "../CartoonBtns.css";
+import "../cartoonWeb.css";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -88,94 +89,101 @@ function Sprout_page3() {
 
   return (
     <div className="bee_container">
-      <div className="bee_background_wrap">
-        <div id="sprout_page3">
-          <div id="sprout_page3_toDoListWrap" className="inlineBlock">
-            <div
-              id="sprout_page3_toDoListBox1_wrap"
-              className="inlineBlock"
-              onClick={() => {
-                check2();
-              }}
-            >
-              <img
-                id="sprout_page3_check1Bg"
-                className="inlineBlock"
-                alt="checkBox"
-                src={checkBox2Srcs[0]}
-              ></img>
-              <div
-                id="sprout_page3_toDoListCheck1"
-                className="inlineBlock"
-              ></div>
+      <div className="phoneFrame_wrap">
+        <div className="phoneFrame">
+          <div className="phoneFrameInside">
+            <div className="bee_background_wrap">
+              <div id="sprout_page3">
+                <div id="sprout_page3_toDoListWrap" className="inlineBlock">
+                  <div
+                    id="sprout_page3_toDoListBox1_wrap"
+                    className="inlineBlock"
+                    onClick={() => {
+                      check2();
+                    }}
+                  >
+                    <img
+                      id="sprout_page3_check1Bg"
+                      className="inlineBlock"
+                      alt="checkBox"
+                      src={checkBox2Srcs[0]}
+                    ></img>
+                    <div
+                      id="sprout_page3_toDoListCheck1"
+                      className="inlineBlock"
+                    ></div>
+                  </div>
+                  <div
+                    id="sprout_page3_toDoListBox2_wrap"
+                    className="inlineBlock"
+                    onClick={() => {
+                      check3();
+                    }}
+                  >
+                    <img
+                      id="sprout_page3_check2Bg"
+                      className="inlineBlock"
+                      alt="checkBox"
+                      src={checkBox3Srcs[0]}
+                    ></img>
+                    <div
+                      id="sprout_page3_toDoListCheck2"
+                      className="inlineBlock"
+                    ></div>
+                  </div>
+                  <div
+                    id="sprout_page3_toDoListBox3_wrap"
+                    className="inlineBlock"
+                    onClick={() => {
+                      check4();
+                    }}
+                  >
+                    <img
+                      id="sprout_page3_check3Bg"
+                      className="inlineBlock"
+                      alt="checkBox"
+                      src={checkBox4Srcs[0]}
+                    ></img>
+                    <div
+                      id="sprout_page3_toDoListCheck3"
+                      className="inlineBlock"
+                    ></div>
+                  </div>
+                </div>
+                <div
+                  id="sprout_page3_check4_wrap"
+                  className="inlineBlock"
+                  onClick={() => {
+                    check1();
+                  }}
+                >
+                  <img
+                    id="sprout_page3_check4Bg"
+                    className="inlineBlock"
+                    alt="checkBox"
+                    src={checkBox1Srcs[0]}
+                  ></img>
+                  <div id="sprout_page3_check4" className="inlineBlock"></div>
+                </div>
+                <div id="sprout_page3_mouse1" className="inlineBlock"></div>
+                <div id="sprout_page3_mouse2" className="inlineBlock"></div>
+              </div>
             </div>
-            <div
-              id="sprout_page3_toDoListBox2_wrap"
-              className="inlineBlock"
-              onClick={() => {
-                check3();
-              }}
-            >
-              <img
-                id="sprout_page3_check2Bg"
-                className="inlineBlock"
-                alt="checkBox"
-                src={checkBox3Srcs[0]}
-              ></img>
-              <div
-                id="sprout_page3_toDoListCheck2"
-                className="inlineBlock"
-              ></div>
-            </div>
-            <div
-              id="sprout_page3_toDoListBox3_wrap"
-              className="inlineBlock"
-              onClick={() => {
-                check4();
-              }}
-            >
-              <img
-                id="sprout_page3_check3Bg"
-                className="inlineBlock"
-                alt="checkBox"
-                src={checkBox4Srcs[0]}
-              ></img>
-              <div
-                id="sprout_page3_toDoListCheck3"
-                className="inlineBlock"
-              ></div>
+            <div className="cartoon_btns inlineBlock">
+              <Link to="/sprout2">
+                <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+              </Link>
+              <Link to="/main">
+                <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+              </Link>
+              <Link to="/sprout4">
+                <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+              </Link>
             </div>
           </div>
-          <div
-            id="sprout_page3_check4_wrap"
-            className="inlineBlock"
-            onClick={() => {
-              check1();
-            }}
-          >
-            <img
-              id="sprout_page3_check4Bg"
-              className="inlineBlock"
-              alt="checkBox"
-              src={checkBox1Srcs[0]}
-            ></img>
-            <div id="sprout_page3_check4" className="inlineBlock"></div>
-          </div>
-          <div id="sprout_page3_mouse1" className="inlineBlock"></div>
-          <div id="sprout_page3_mouse2" className="inlineBlock"></div>
         </div>
       </div>
-      <div className="cartoon_btns inlineBlock">
-        <Link to="/sprout2">
-          <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
-        </Link>
-        <Link to="/main">
-          <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
-        </Link>
-        <Link to="/sprout4">
-          <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
-        </Link>
-      </div>
+      <div className="webTitle"></div>
     </div>
   );
 }

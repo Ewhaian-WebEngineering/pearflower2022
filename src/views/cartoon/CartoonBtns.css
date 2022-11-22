@@ -37,3 +37,13 @@
   right: 0;
   content: url(/public/img/cartoon/button/skipBtn.png);
 }
+@media screen and (min-width: 780px) {
+  .cartoon_btns {
+    width: 40%;
+    height: 13%;
+    bottom: 33%;
+    left: 50%;
+    /*background-color: blue;*/
+    z-index: 100;
+  }
+}
