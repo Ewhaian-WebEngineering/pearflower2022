@@ -7,6 +7,9 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     overflow: hidden;
+
+    animation: open-door 2s;
+    animation-fill-mode: forwards;
 }
 
 #garden3_catchheart {
@@ -17,6 +20,8 @@
     margin-top: 95%;
     left: 0;
     margin-left: 10%;
+
+    animation: bounceInLeft 2s;
 }
 
 #garden3_welcome {
@@ -25,5 +30,20 @@
     width: 65%;
     bottom: 0;
     right: 0;
-    margin-right: 5%;
+    margin-right: 2%;
+    margin-bottom: -70%;
+
+    animation: rising-person 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes open-door {
+    from {background-image: url("/public/img/cartoon/gardener/page3/garden3Bg_close.png");}
+    to {background-image: url("/public/img/cartoon/gardener/page3/garden3Bg_open.png");}
+}
+
+@keyframes rising-person {
+    from {margin-bottom: -70%;}
+    to {margin-bottom: 0;}
 }
