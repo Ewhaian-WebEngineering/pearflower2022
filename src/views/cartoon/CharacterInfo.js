@@ -5,6 +5,7 @@ import "../Font.css";
 import "./bee/Bee_page1.css";
 import "./CartoonBtns.css";
 import "./cartoonWeb.css";
+import "./cartoonWeb.css";
 function setScreenSize() {
   let vh = window.innerHeight;
   let vw = window.innerWidth;
@@ -19,7 +20,7 @@ function CharacterInfo() {
     <div id="characterInfo_container">
       <div className="phoneFrame_wrap">
         <div className="phoneFrame">
-          <div className="phoneFrameInside">
+          <div className="phoneFrameInside_info">
             <div id="characterInfo_container_wrap">
               <div id="characterInfo_header">
                 <div id="characterInfo_title"></div>
