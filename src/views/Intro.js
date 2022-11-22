@@ -1,4 +1,3 @@
-import { click } from "@testing-library/user-event/dist/click";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Intro.css";
@@ -36,7 +35,7 @@ function Intro() {
     <div id="intro_container">
       <div className="phoneFrame_wrap">
         <div className="phoneFrame">
-          <div className="phoneFrameInside">
+          <div className="phoneFrameInside_intro">
             {" "}
             <div id="intro_ground"></div>
             <div id="intro_black_cat_shadow_wrap">
@@ -72,6 +71,7 @@ function Intro() {
           </div>
         </div>
       </div>
+      <div className="webTitle"></div>
     </div>
   );
 }

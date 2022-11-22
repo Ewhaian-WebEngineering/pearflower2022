@@ -52,6 +52,17 @@
     /*background-color: aqua;*/
     background-image: url(/public/img/cartoon/webVer/phoneFrame_inside.png);
   }
+  .phoneFrameInside_intro {
+    border-radius: 30px;
+    width: 89%;
+    height: 95%;
+    overflow: hidden;
+    /*background-color: aqua;*/
+    background-image: url(/public/img/cartoon/webVer/phoneFrame_inside.png);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
   .bee_background_wrap {
     margin-top: 0;
     width: 100%;
@@ -216,6 +227,13 @@
 
     animation: open-door 2s;
     animation-fill-mode: forwards;
+  }
+  #intro_container {
+    display: flex;
+    position: fixed;
+    width: var(--vw);
+    height: var(--vh);
+    background-color: rgb(234, 234, 234);
   }
   .webTitle {
     /*background-color: blue;*/
