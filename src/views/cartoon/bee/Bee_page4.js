@@ -6,6 +6,7 @@ import "../AniZip.css";
 import "./Clouds.css";
 import "../Firecrackers.css";
 import "../CartoonBtns.css";
+import "../cartoonWeb.css";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -73,106 +74,118 @@ function Bee_page4() {
   }, []);
   return (
     <div className="bee_container">
-      <div className="bee_background_wrap">
-        <div id="bee_page4">
-          <div className="clouds inlineBlock"></div>
-          <div
-            id="bee_page4_firecracker1_wrap"
-            className="inlineBlock firecracker1_wrap"
-          >
-            <div
-              id="bee_page4_firecracker1_inside"
-              className="inlineBlock firecracker1_inside"
-            ></div>
-            <div
-              id="bee_page4_firecracker1_outside"
-              className="inlineBlock firecracker1_outside"
-            ></div>
-          </div>
-          <div
-            id="bee_page4_firecracker2_wrap"
-            className="inlineBlock firecracker2_wrap"
-          >
-            <div
-              id="bee_page4_firecracker2_inside"
-              className="inlineBlock firecracker2_inside"
-            ></div>
-            <div
-              id="bee_page4_firecracker2_outside"
-              className="inlineBlock firecracker2_outside"
-            ></div>
-          </div>
-          <div
-            id="bee_page4_firecracker3_wrap"
-            className="inlineBlock firecracker3_wrap"
-          >
-            <div
-              id="bee_page4_firecracker3_inside"
-              className="inlineBlock firecracker3_inside"
-            ></div>
-            <div
-              id="bee_page4_firecracker3_outside"
-              className="inlineBlock firecracker3_outside"
-            ></div>
-          </div>
+      <div className="phoneFrame_wrap">
+        <div className="phoneFrame">
+          <div className="phoneFrameInside">
+            <div className="bee_background_wrap">
+              <div id="bee_page4">
+                <div className="clouds inlineBlock"></div>
+                <div
+                  id="bee_page4_firecracker1_wrap"
+                  className="inlineBlock firecracker1_wrap"
+                >
+                  <div
+                    id="bee_page4_firecracker1_inside"
+                    className="inlineBlock firecracker1_inside"
+                  ></div>
+                  <div
+                    id="bee_page4_firecracker1_outside"
+                    className="inlineBlock firecracker1_outside"
+                  ></div>
+                </div>
+                <div
+                  id="bee_page4_firecracker2_wrap"
+                  className="inlineBlock firecracker2_wrap"
+                >
+                  <div
+                    id="bee_page4_firecracker2_inside"
+                    className="inlineBlock firecracker2_inside"
+                  ></div>
+                  <div
+                    id="bee_page4_firecracker2_outside"
+                    className="inlineBlock firecracker2_outside"
+                  ></div>
+                </div>
+                <div
+                  id="bee_page4_firecracker3_wrap"
+                  className="inlineBlock firecracker3_wrap"
+                >
+                  <div
+                    id="bee_page4_firecracker3_inside"
+                    className="inlineBlock firecracker3_inside"
+                  ></div>
+                  <div
+                    id="bee_page4_firecracker3_outside"
+                    className="inlineBlock firecracker3_outside"
+                  ></div>
+                </div>
 
-          <div id="bee_page4_cat_person_wrap" className="inlineBlock">
-            <div id="bee_page4_white_cat" className="inlineBlock"></div>
-            <div id="bee_page4_persons" className="inlineBlock"></div>
-            <div
-              id="bee_page4_heart1"
-              className="bee_page4_heart inlineBlock swing"
-            ></div>
-            <div
-              id="bee_page4_heart2"
-              className="bee_page4_heart inlineBlock swing"
-            ></div>
-            <div
-              id="bee_page4_heart3"
-              className="bee_page4_heart inlineBlock swing"
-            ></div>
-            <div id="bee_page4_persons_effect" className="inlineBlock"></div>
-          </div>
-          <div
-            id="bee_page4_white_cat_footstep_wrap"
-            className="inlineBlock"
-            onClick={() => {
-              bee_page4_clickCnt++;
-              if (bee_page4_clickCnt == 1) {
-                //마우스 사라지게
-                document.documentElement.style.setProperty(
-                  "--bee-page4-mouse",
-                  "0"
-                );
-                //고양이 등장
-                document.documentElement.style.setProperty(
-                  "--white-cat",
-                  `visible`
-                );
-                var white_cat = document.getElementById("bee_page4_white_cat");
-                white_cat.classList.add("whiteCatEntrance");
-              }
-            }}
-          >
-            <div
-              id="bee_page4_white_cat_footstep"
-              className="inlineBlock"
-            ></div>
-            <div id="bee_page4_mouse" className="inlineBlock"></div>
+                <div id="bee_page4_cat_person_wrap" className="inlineBlock">
+                  <div id="bee_page4_white_cat" className="inlineBlock"></div>
+                  <div id="bee_page4_persons" className="inlineBlock"></div>
+                  <div
+                    id="bee_page4_heart1"
+                    className="bee_page4_heart inlineBlock swing"
+                  ></div>
+                  <div
+                    id="bee_page4_heart2"
+                    className="bee_page4_heart inlineBlock swing"
+                  ></div>
+                  <div
+                    id="bee_page4_heart3"
+                    className="bee_page4_heart inlineBlock swing"
+                  ></div>
+                  <div
+                    id="bee_page4_persons_effect"
+                    className="inlineBlock"
+                  ></div>
+                </div>
+                <div
+                  id="bee_page4_white_cat_footstep_wrap"
+                  className="inlineBlock"
+                  onClick={() => {
+                    bee_page4_clickCnt++;
+                    if (bee_page4_clickCnt == 1) {
+                      //마우스 사라지게
+                      document.documentElement.style.setProperty(
+                        "--bee-page4-mouse",
+                        "0"
+                      );
+                      //고양이 등장
+                      document.documentElement.style.setProperty(
+                        "--white-cat",
+                        `visible`
+                      );
+                      var white_cat = document.getElementById(
+                        "bee_page4_white_cat"
+                      );
+                      white_cat.classList.add("whiteCatEntrance");
+                    }
+                  }}
+                >
+                  <div
+                    id="bee_page4_white_cat_footstep"
+                    className="inlineBlock"
+                  ></div>
+                  <div id="bee_page4_mouse" className="inlineBlock"></div>
+                </div>
+              </div>
+            </div>
+            <div className="cartoon_btns inlineBlock">
+              <Link to="/bee3">
+                <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+              </Link>
+              <Link to="/main">
+                <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+              </Link>
+              <Link to="/characterInfo">
+                <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-      <div className="cartoon_btns inlineBlock">
-        <Link to="/bee3">
-          <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
-        </Link>
-        <Link to="/main">
-          <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
-        </Link>
-        <Link to="/characterInfo">
-          <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
-        </Link>
-      </div>
+      <div className="webTitle"></div>
     </div>
   );
 }

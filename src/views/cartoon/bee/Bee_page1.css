@@ -23,15 +23,18 @@ Link {
   /*background-color: rgb(180, 180, 47);*/
   /*content: url("/public/img/cartoon/bee/page1/background.png");*/
 }
-#bee_page1 {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  background-image: url("/public/img/cartoon/bee/page1/background.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+@media screen and (max-width: 779px) {
+  #bee_page1 {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/public/img/cartoon/bee/page1/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
 }
+
 #bee_page1_person1 {
   display: inline-block;
   position: absoltue;

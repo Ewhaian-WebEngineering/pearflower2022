@@ -1,14 +1,17 @@
-#sprout_page1 {
-  overflow: hidden;
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  /*background-color: blue;*/
-  background-image: url("/public/img/cartoon/sprout/page1/background.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+@media screen and (max-width: 779px) {
+  #sprout_page1 {
+    overflow: hidden;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: blue;*/
+    background-image: url("/public/img/cartoon/sprout/page1/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
 }
+
 #sprout_page1_cut1_sweat {
   top: 0;
   right: 0;

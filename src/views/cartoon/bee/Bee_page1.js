@@ -4,6 +4,7 @@ import "./Bee_page2.css";
 import "./Progress.css";
 import "../AniZip.css";
 import "../CartoonBtns.css";
+import "../cartoonWeb.css";
 import { Link } from "react-router-dom";
 //import { Link } from "react-router-dom";
 
@@ -118,113 +119,167 @@ function Bee_page1() {
   }, []);
   return (
     <div className="bee_container">
-      <div className="bee_background_wrap">
-        <div id="bee_page1">
-          <div id="bee_page1_person1_poster" className="inlineBlock">
-            <img
-              id="bee_page1_person1_poster_honeyBox"
-              className="inlineBlock"
-              alt="honeyBox"
-              src={honeyBoxSrcs[0]}
-            ></img>
-            <div
-              id="bee_page1_person1_honeyBoxBtn_wrap"
-              className="inlineBlock"
-              onClick={() => {
-                clickCnt++;
-                console.log(clickCnt);
-                var honeyBox = document.getElementById(
-                  "bee_page1_person1_poster_honeyBox"
-                );
-                if (clickCnt <= 20) {
-                  if (clickCnt == 1) {
-                    document.documentElement.style.setProperty(
-                      "--honeyBoxBtn-mouse",
-                      `hidden`
-                    );
-                    document
-                      .getElementById("bee_page1_person1_honeyBoxBtn_mouse")
-                      .classList.remove("mouseMove");
-                  }
-                  honeyBox.src = honeyBoxSrcs[clickCnt];
-                  document.documentElement.style.setProperty(
-                    `--progress${clickCnt}`,
-                    `visible`
-                  );
-                } else {
-                  honeyBox.src = honeyBoxSrcs[20];
-                }
-              }}
-            >
-              <div className="inlineBlock bee_page1_person1_honeyBoxBtn"></div>
-              <div
-                id="bee_page1_person1_honeyBoxBtn_content"
-                className="inlineBlock"
-              ></div>
-              <div
-                id="bee_page1_person1_honeyBoxBtn_mouse"
-                className="inlineBlock mouseMove"
-              ></div>
+      <div className="phoneFrame_wrap">
+        <div className="phoneFrame">
+          <div className="phoneFrameInside">
+            {" "}
+            <div className="bee_background_wrap">
+              <div id="bee_page1">
+                <div id="bee_page1_person1_poster" className="inlineBlock">
+                  <img
+                    id="bee_page1_person1_poster_honeyBox"
+                    className="inlineBlock"
+                    alt="honeyBox"
+                    src={honeyBoxSrcs[0]}
+                  ></img>
+                  <div
+                    id="bee_page1_person1_honeyBoxBtn_wrap"
+                    className="inlineBlock"
+                    onClick={() => {
+                      clickCnt++;
+                      console.log(clickCnt);
+                      var honeyBox = document.getElementById(
+                        "bee_page1_person1_poster_honeyBox"
+                      );
+                      if (clickCnt <= 20) {
+                        if (clickCnt == 1) {
+                          document.documentElement.style.setProperty(
+                            "--honeyBoxBtn-mouse",
+                            `hidden`
+                          );
+                          document
+                            .getElementById(
+                              "bee_page1_person1_honeyBoxBtn_mouse"
+                            )
+                            .classList.remove("mouseMove");
+                        }
+                        honeyBox.src = honeyBoxSrcs[clickCnt];
+                        document.documentElement.style.setProperty(
+                          `--progress${clickCnt}`,
+                          `visible`
+                        );
+                      } else {
+                        honeyBox.src = honeyBoxSrcs[20];
+                      }
+                    }}
+                  >
+                    <div className="inlineBlock bee_page1_person1_honeyBoxBtn"></div>
+                    <div
+                      id="bee_page1_person1_honeyBoxBtn_content"
+                      className="inlineBlock"
+                    ></div>
+                    <div
+                      id="bee_page1_person1_honeyBoxBtn_mouse"
+                      className="inlineBlock mouseMove"
+                    ></div>
+                  </div>
+                </div>
+                <div id="bee_page1_person1_progressBar">
+                  <div
+                    id="bee_page1_person1_progressBar_name"
+                    className="inlineBlock"
+                  ></div>
+                  <div
+                    id="bee_page1_person1_progressBar_wrap"
+                    className="inlineBlock"
+                  >
+                    <div id="progress1" className="progress inlineBlock"></div>
+                    <div id="progress2" className="progress inlineBlock"></div>
+                    <div id="progress3" className="progress inlineBlock"></div>
+                    <div id="progress4" className="progress inlineBlock"></div>
+                    <div id="progress5" className="progress inlineBlock"></div>
+                    <div id="progress6" className="progress inlineBlock"></div>
+                    <div id="progress7" className="progress_ inlineBlock"></div>
+                    <div id="progress8" className="progress_ inlineBlock"></div>
+                    <div id="progress9" className="progress_ inlineBlock"></div>
+                    <div
+                      id="progress10"
+                      className="progress_ inlineBlock"
+                    ></div>
+                    <div
+                      id="progress11"
+                      className="progress_ inlineBlock"
+                    ></div>
+                    <div
+                      id="progress12"
+                      className="progress_ inlineBlock"
+                    ></div>
+                    <div
+                      id="progress13"
+                      className="progress__ inlineBlock"
+                    ></div>
+                    <div
+                      id="progress14"
+                      className="progress__ inlineBlock"
+                    ></div>
+                    <div
+                      id="progress15"
+                      className="progress__ inlineBlock"
+                    ></div>
+                    <div
+                      id="progress16"
+                      className="progress__ inlineBlock"
+                    ></div>
+                    <div
+                      id="progress17"
+                      className="progress__ inlineBlock"
+                    ></div>
+                    <div
+                      id="progress18"
+                      className="progress__ inlineBlock"
+                    ></div>
+                    <div
+                      id="progress19"
+                      className="progress__ inlineBlock"
+                    ></div>
+                    <div
+                      id="progress20"
+                      className="progress__ inlineBlock"
+                    ></div>
+                  </div>
+                  <div
+                    id="bee_page1_person1_progressBar_line"
+                    className="inlineBlock"
+                  ></div>
+                </div>
+                <div
+                  id="bee_page1_person1_effect1"
+                  className="inlineBlock"
+                ></div>
+                <div
+                  id="bee_page1_person1_effect2"
+                  className="inlineBlock"
+                ></div>
+                <div id="bee_page1_person1" className="inlineBlock"></div>
+                <div id="bee_page1_person2" className="inlineBlock"></div>
+                <div
+                  id="bee_page1_person2_trash1"
+                  className="bee_page1_person2_trash inlineBlock"
+                ></div>
+                <div
+                  id="bee_page1_person2_trash2"
+                  className="bee_page1_person2_trash inlineBlock"
+                ></div>
+                <div
+                  id="bee_page1_person2_trash3"
+                  className="bee_page1_person2_trash inlineBlock"
+                ></div>
+                <div
+                  id="bee_page1_person2_effect"
+                  className="inlineBlock"
+                ></div>
+                <div id="bee_page1_person3" className="inlineBlock"></div>
+                <div id="bee_page1_person3_sweat" className="inlineBlock"></div>
+                <div id="bee_page1_person4" className="inlineBlock"></div>
+                <div
+                  id="bee_page1_person4_effect"
+                  className="inlineBlock"
+                ></div>
+                <div id="bee_page1_person4_work1" className="inlineBlock"></div>
+                <div id="bee_page1_person4_work2" className="inlineBlock"></div>
+              </div>
             </div>
           </div>
-          <div id="bee_page1_person1_progressBar">
-            <div
-              id="bee_page1_person1_progressBar_name"
-              className="inlineBlock"
-            ></div>
-            <div
-              id="bee_page1_person1_progressBar_wrap"
-              className="inlineBlock"
-            >
-              <div id="progress1" className="progress inlineBlock"></div>
-              <div id="progress2" className="progress inlineBlock"></div>
-              <div id="progress3" className="progress inlineBlock"></div>
-              <div id="progress4" className="progress inlineBlock"></div>
-              <div id="progress5" className="progress inlineBlock"></div>
-              <div id="progress6" className="progress inlineBlock"></div>
-              <div id="progress7" className="progress_ inlineBlock"></div>
-              <div id="progress8" className="progress_ inlineBlock"></div>
-              <div id="progress9" className="progress_ inlineBlock"></div>
-              <div id="progress10" className="progress_ inlineBlock"></div>
-              <div id="progress11" className="progress_ inlineBlock"></div>
-              <div id="progress12" className="progress_ inlineBlock"></div>
-              <div id="progress13" className="progress__ inlineBlock"></div>
-              <div id="progress14" className="progress__ inlineBlock"></div>
-              <div id="progress15" className="progress__ inlineBlock"></div>
-              <div id="progress16" className="progress__ inlineBlock"></div>
-              <div id="progress17" className="progress__ inlineBlock"></div>
-              <div id="progress18" className="progress__ inlineBlock"></div>
-              <div id="progress19" className="progress__ inlineBlock"></div>
-              <div id="progress20" className="progress__ inlineBlock"></div>
-            </div>
-            <div
-              id="bee_page1_person1_progressBar_line"
-              className="inlineBlock"
-            ></div>
-          </div>
-          <div id="bee_page1_person1_effect1" className="inlineBlock"></div>
-          <div id="bee_page1_person1_effect2" className="inlineBlock"></div>
-          <div id="bee_page1_person1" className="inlineBlock"></div>
-          <div id="bee_page1_person2" className="inlineBlock"></div>
-          <div
-            id="bee_page1_person2_trash1"
-            className="bee_page1_person2_trash inlineBlock"
-          ></div>
-          <div
-            id="bee_page1_person2_trash2"
-            className="bee_page1_person2_trash inlineBlock"
-          ></div>
-          <div
-            id="bee_page1_person2_trash3"
-            className="bee_page1_person2_trash inlineBlock"
-          ></div>
-          <div id="bee_page1_person2_effect" className="inlineBlock"></div>
-          <div id="bee_page1_person3" className="inlineBlock"></div>
-          <div id="bee_page1_person3_sweat" className="inlineBlock"></div>
-          <div id="bee_page1_person4" className="inlineBlock"></div>
-          <div id="bee_page1_person4_effect" className="inlineBlock"></div>
-          <div id="bee_page1_person4_work1" className="inlineBlock"></div>
-          <div id="bee_page1_person4_work2" className="inlineBlock"></div>
         </div>
       </div>
       <div className="cartoon_btns inlineBlock">
@@ -238,6 +293,7 @@ function Bee_page1() {
           <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
         </Link>
       </div>
+      <div className="webTitle"></div>
     </div>
   );
 }

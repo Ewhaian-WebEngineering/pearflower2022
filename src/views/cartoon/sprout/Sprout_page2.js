@@ -4,6 +4,7 @@ import "../bee/Bee_page1.css";
 import "./Sprout_page2.css";
 import "../AniZip.css";
 import "../CartoonBtns.css";
+import "../cartoonWeb.css";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -67,31 +68,47 @@ function Sprout_page2() {
   }, []);
   return (
     <div className="bee_container">
-      <div className="bee_background_wrap">
-        <div id="sprout_page2">
-          <div id="sprout_page2_honeyBox" className="inlineBlock"></div>
-          <div id="sprout_page2_amusementPark" className="inlineBlock"></div>
-          <div id="sprout_page2_what_wrap" className="inlineBlock">
-            <div id="sprout_page2_what" className="inlineBlock"></div>
-            <div id="sprout_page2_what_question" className="inlineBlock"></div>
-          </div>
-          <div id="sprout_page2_talk_wrap" className="inlineBlock">
-            <div id="sprout_page2_talk" className="inlineBlock"></div>
-            <div id="sprout_page2_talk_content" className="inlineBlock"></div>
+      <div className="phoneFrame_wrap">
+        <div className="phoneFrame">
+          <div className="phoneFrameInside">
+            <div className="bee_background_wrap">
+              <div id="sprout_page2">
+                <div id="sprout_page2_honeyBox" className="inlineBlock"></div>
+                <div
+                  id="sprout_page2_amusementPark"
+                  className="inlineBlock"
+                ></div>
+                <div id="sprout_page2_what_wrap" className="inlineBlock">
+                  <div id="sprout_page2_what" className="inlineBlock"></div>
+                  <div
+                    id="sprout_page2_what_question"
+                    className="inlineBlock"
+                  ></div>
+                </div>
+                <div id="sprout_page2_talk_wrap" className="inlineBlock">
+                  <div id="sprout_page2_talk" className="inlineBlock"></div>
+                  <div
+                    id="sprout_page2_talk_content"
+                    className="inlineBlock"
+                  ></div>
+                </div>
+              </div>
+            </div>
+            <div className="cartoon_btns inlineBlock">
+              <Link to="/sprout1">
+                <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+              </Link>
+              <Link to="/main">
+                <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+              </Link>
+              <Link to="/sprout3">
+                <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
-      <div className="cartoon_btns inlineBlock">
-        <Link to="/sprout1">
-          <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
-        </Link>
-        <Link to="/main">
-          <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
-        </Link>
-        <Link to="/sprout3">
-          <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
-        </Link>
-      </div>
+      <div className="webTitle"></div>
     </div>
   );
 }

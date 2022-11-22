@@ -1,14 +1,17 @@
-#bee_page4 {
-  overflow: hidden;
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  /*background-color: blue;*/
-  background-image: url("/public/img/cartoon/bee/page4/background.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+@media screen and (max-width: 779px) {
+  #bee_page4 {
+    overflow: hidden;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: blue;*/
+    background-image: url("/public/img/cartoon/bee/page4/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
 }
+
 #bee_page4_cat_person_wrap {
   bottom: 0;
   left: 0;
