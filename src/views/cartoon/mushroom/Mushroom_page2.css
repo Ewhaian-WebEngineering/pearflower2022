@@ -1,17 +1,18 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 779px) {
+  #mushroom_page2 {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/public/img/cartoon/mushroom/page2/mush2Bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
   }
-
-#mushroom_page2 {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  background-image: url("/public/img/cartoon/mushroom/page2/mush2Bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
 }
 
 #mush2_running {
@@ -36,7 +37,7 @@
   animation-fill-mode: forwards;
 }
 
-#bicycle { 
+#bicycle {
   /* top: 0;
   right: 0;
   margin-top: 90%;
@@ -93,8 +94,12 @@
 /* /// 애니메이션 키프레임 /// */
 
 @keyframes bicycle-move {
-  0% {margin-right: -15%}
-  100% {margin-right: 110%;}
+  0% {
+    margin-right: -15%;
+  }
+  100% {
+    margin-right: 110%;
+  }
 }
 
 /* 달리는 애니메이션 */
@@ -131,13 +136,20 @@
 
 /* 바퀴 굴러가는 효과 */
 @keyframes wheel-rotate {
-  0% {transform: rotate(0);}
-  100% {transform: rotate(360deg);}
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 @keyframes happy-effect {
-  0% {}
-  100% {filter: opacity(0.5) drop-shadow(0 0 0 white);}
+  0% {
+  }
+  100% {
+    filter: opacity(0.5) drop-shadow(0 0 0 white);
+  }
 }
 
 /* iphone SE 버전 */
@@ -151,4 +163,3 @@
     margin-bottom: 45%;
   }
 }
-

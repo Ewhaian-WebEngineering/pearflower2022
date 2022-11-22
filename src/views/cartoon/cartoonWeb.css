@@ -144,6 +144,79 @@
     background-repeat: no-repeat;
     overflow: hi;
   }
+  #mushroom_page1 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/public/img/cartoon/mushroom/page1/mush1Bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  #mushroom_page2 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/public/img/cartoon/mushroom/page2/mush2Bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  #mushroom_page3 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/public/img/cartoon/mushroom/page3/mush3Bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  #mushroom_page4 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/public/img/cartoon/mushroom/page4/mush4Bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  #gardener_page1 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/public/img/cartoon/gardener/page1/garden1Bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  #gardener_page2 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/public/img/cartoon/gardener/page2/garden2Bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  #gardener_page3 {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/public/img/cartoon/gardener/page3/garden3Bg_close.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    animation: open-door 2s;
+    animation-fill-mode: forwards;
+  }
   .webTitle {
     /*background-color: blue;*/
     width: 30%;

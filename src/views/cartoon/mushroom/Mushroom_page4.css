@@ -1,12 +1,14 @@
-#mushroom_page4 {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  background-image: url("/public/img/cartoon/mushroom/page4/mush4Bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
+@media screen and (max-width: 779px) {
+  #mushroom_page4 {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/public/img/cartoon/mushroom/page4/mush4Bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
 }
 
 /* 범퍼카부분 */
@@ -174,8 +176,12 @@
 */
 
 @keyframes bumpercar2-effect {
-  49% {transform: translateX(80%);}
-  50% {content: url(/public/img/cartoon/mushroom/page4/mush4bumpercar2_turn.png);}
+  49% {
+    transform: translateX(80%);
+  }
+  50% {
+    content: url(/public/img/cartoon/mushroom/page4/mush4bumpercar2_turn.png);
+  }
   98% {
     content: url(/public/img/cartoon/mushroom/page4/mush4bumpercar2_turn.png);
     transform: translate(-0.3%, 54%) skewX(10deg);
@@ -187,26 +193,41 @@
 }
 
 @keyframes bumpercar3-effect {
-  from {}
-  to {transform: translate(-7%, 0) skewX(5deg);}
+  from {
+  }
+  to {
+    transform: translate(-7%, 0) skewX(5deg);
+  }
 }
 
 /* 부딪히는 효과 */
 @keyframes bump-effect {
-  0% {visibility: hidden;}
-  100% {visibility: visible;}
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 /* 아이스크림 차 이동 애니메이션 */
 @keyframes icecream-move {
-  0% {transform: translateX(-30%);}
-  100% {transform: translatex(2%);}
+  0% {
+    transform: translateX(-30%);
+  }
+  100% {
+    transform: translatex(2%);
+  }
 }
 
 /* 바퀴 굴러가는 효과 */
 @keyframes wheel-rotate {
-  0% {transform: rotate(0);}
-  100% {transform: rotate(360deg);}
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* /// 애니메이션 클래스 /// */
@@ -259,6 +280,4 @@
   #mush4_bumpercar4 {
     margin-top: 104%;
   }
-
-
 }
