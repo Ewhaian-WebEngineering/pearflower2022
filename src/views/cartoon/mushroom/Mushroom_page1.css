@@ -9,6 +9,18 @@
     background-repeat: no-repeat;
     overflow: hidden;
   }
+  .phoneFrame_wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrame {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrameInside {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @keyframes shaking-item {
