@@ -16,19 +16,19 @@ export default function GameInfo() {
             <div className='gameheader'>
                 <div className='header-box'>
                     <Link to='/main'>
-                        <img id='logo' src='/img/logo_main.png' alt='logo main'></img>
+                        <img id='logo' src='img/logo_main.png' alt='logo main'></img>
                     </Link>
                 </div>
             </div>
             <div className='gamemiddle'>
                 <div className='circle'>
-                    <img id='circle' src='/img/game/circle.png' alt='circle'></img>
+                    <img id='circle' src='img/game/circle.png' alt='circle'></img>
                 </div>
                 <div className='howtolabel'>
-                    <img id='howtolabel' src='/img/game/howtolabel.png' alt='howtolabel'></img>
+                    <img id='howtolabel' src='img/game/howtolabel.png' alt='howtolabel'></img>
                 </div>
                 <div className='gameboard'>
-                    <img id='gameboard' src='/img/game/gameboard.png' alt='gameboard'></img>
+                    <img id='gameboard' src='img/game/gameboard.png' alt='gameboard'></img>
                     <span className='explain'>이화이언 이스케이프게임에 오신 벗들 환영합니다!
                         문제는 총 8문제로 이루어져 있으며, 한 문제를 맞힐때마다 가방안에
                         자물쇠를 열기 위한 글자 중 하나가 주어집니다.
@@ -37,7 +37,7 @@ export default function GameInfo() {
                 </div>
                 <div className='start'>
                     <Link to='/gamemain'>
-                        <img id='startbtn' src='/img/game/startbtn.png' alt='startbtn'></img>
+                        <img id='startbtn' src='img/game/startbtn.png' alt='startbtn'></img>
                     </Link>
                 </div>
             </div>

@@ -128,19 +128,19 @@ function GameMain() {
             <div className='gameheader'>
                 <div className='header-box'>
                     <Link to='/main'>
-                        <img id='logo' src='/img/logo_main.png' alt='logo main'></img>
+                        <img id='logo' src='img/logo_main.png' alt='logo main'></img>
                     </Link>
                 </div>
             </div>
             <div className="gamemiddle">
                 <div className="main1">
-                    <img className="_question" alt="question" src="/img/game/Question.png" />
+                    <img className="_question" alt="question" src="img/game/Question.png" />
                     <span>
 
 
                         <span className="h_text">힌트를 보려면 누르세요!</span>
                         <span className="hintKey" onClick={Popup}>
-                            <img alt="hintkey" className="_hintkey" src="/img/game/HintKey.png" />
+                            <img alt="hintkey" className="_hintkey" src="img/game/HintKey.png" />
 
                         </span>
                         {_popUp && <span className="popupHint">{questions[currentIndex].hint}</span>}
@@ -150,22 +150,22 @@ function GameMain() {
                 </div>
                 <div className="main2">
                     <div id="p_result_rec">
-                        <img id="result_rec" alt="result" src="/img/game/AnswerRec.png" ></img>
+                        <img id="result_rec" alt="result" src="img/game/AnswerRec.png" ></img>
                         {
-                            visible && <img className="wrong" src="/img/game/wrong.png"></img>
+                            visible && <img className="wrong" src="img/game/wrong.png"></img>
                         }
                         {/* 사용자가 답을 입력함 */}
                         <form>
                             <input className='inputbar' type="text" onChange={(e) => setUserAnswer(e.target.value)} onKeyPress={handleOnKeyPress} ></input>
                             <div className="answerBtn" >
-                                <img alt="answer" id="_answerBtn" src="/img/game/answerBtn.png" type="submit" onClick={handleOnClick}
+                                <img alt="answer" id="_answerBtn" src="img/game/answerBtn.png" type="submit" onClick={handleOnClick}
                                 />
                             </div>
                         </form>
 
                     </div>
                     <div className="pocket" >
-                        <img className="_pocket" alt="pocket" src="/img/game/mainPocket.png" />
+                        <img className="_pocket" alt="pocket" src="img/game/mainPocket.png" />
                         {
                             index0 && <div className="word5">l</div>
                         }
