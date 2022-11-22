@@ -1,4 +1,156 @@
-#gardener_page2 {
+@font-face {
+  font-family: "BMJUA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMJUA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@keyframes fadeInCal1 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  33.333% {
+    opacity: 0.3333;
+    -webkit-transform: translate3d(90%, 90%, 0);
+    transform: translate3d(90%, 90%, 0);
+  }
+  60% {
+    content: url(/public/img/cartoon/gardener/page2/garden2cal1_2.png);
+    margin-top: 50%;
+  }
+  60.666% {
+    opacity: 0.6666;
+    -webkit-transform: translate3d(10%, 180%, 0);
+    transform: translate3d(10%, 180%, 0);
+  }
+  62% {
+    content: url(/public/img/cartoon/gardener/page2/garden2cal1_1.png);
+    width: 26%;
+  }
+  100% {
+    opacity: 0.3333;
+    width: 24%;
+    -webkit-transform: translate3d(300%, 300%, 0);
+    transform: translate3d(300%, 300%, 0);
+  }
+}
+
+@keyframes rollOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translate3d(160%, 130%, 0) rotate3d(0, 0, 1, 120deg);
+    transform: translate3d(160%, 130%, 0) rotate3d(0, 0, 1, 120deg);
+  }
+}
+
+@keyframes fadeInCal3 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  33.333% {
+    opacity: 0.3333;
+    -webkit-transform: translate3d(95%, 95%, 0);
+    transform: translate3d(95%, 95%, 0);
+  }
+  60% {
+    content: url(/public/img/cartoon/gardener/page2/garden2cal3_2.png);
+    margin-top: 50%;
+  }
+  63% {
+    opacity: 0.6666;
+  }
+  90% {
+    opacity: 0.3333;
+    -webkit-transform: translate3d(-60%, 100%, 0) rotate3d(0, 0, 1, 310deg);
+    transform: translate3d(-60%, 100%, 0) rotate3d(0, 0, 1, 310deg);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(-90%, 160%, 0) rotate3d(0, 0, 1, 310deg);
+    transform: translate3d(-90%, 160%, 0) rotate3d(0, 0, 1, 310deg);
+  }
+}
+
+@keyframes fadeInCal4 {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0%, 0%, 0);
+    transform: translate3d(0%, 0%, 0);
+  }
+  33.333% {
+    opacity: 0.3333;
+    -webkit-transform: translate3d(90%, 90%, 0);
+    transform: translate3d(90%, 90%, 0);
+  }
+  60% {
+    content: url(/public/img/cartoon/gardener/page2/garden2cal4_2.png);
+    margin-top: 50%;
+  }
+  60.666% {
+    opacity: 0.6666;
+    -webkit-transform: translate3d(10%, 180%, 0);
+    transform: translate3d(10%, 180%, 0);
+  }
+  62% {
+    content: url(/public/img/cartoon/gardener/page2/garden2cal4_1.png);
+    width: 26%;
+  }
+  100% {
+    opacity: 0.3333;
+    width: 24%;
+    -webkit-transform: translate3d(300%, 300%, 0);
+    transform: translate3d(300%, 300%, 0);
+  }
+}
+
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(-200px, 0, 0) scaleX(3);
+    transform: translate3d(-200px, 0, 0) scaleX(3);
+  }
+
+  60% {
+    opacity: 1;
+    -webkit-transform: translate3d(25px, 0, 0) scaleX(1);
+    transform: translate3d(25px, 0, 0) scaleX(1);
+  }
+
+  75% {
+    -webkit-transform: translate3d(-10px, 0, 0) scaleX(0.98);
+    transform: translate3d(-10px, 0, 0) scaleX(0.98);
+  }
+
+  90% {
+    -webkit-transform: translate3d(5px, 0, 0) scaleX(0.995);
+    transform: translate3d(5px, 0, 0) scaleX(0.995);
+  }
+
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@media screen and (max-width: 779px) {
+  #gardener_page2 {
     width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -8,3 +160,148 @@
     background-repeat: no-repeat;
     overflow: hidden;
   }
+  .phoneFrame_wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrame {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrameInside {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#garden2_calendar {
+  /* content: url(/public/img/cartoon/gardener/page2/garden2calendar4.png); */
+  width: 40%;
+  position: absolute;
+  top: 0;
+  margin-top: 15%;
+  left: 0;
+  margin-left: 10%;
+  box-shadow: 1px 1px 6px #444;
+  z-index: 10;
+}
+
+#garden2_thumbup {
+  content: url(/public/img/cartoon/gardener/page2/garden2thumbsup.png);
+  position: absolute;
+  width: 20%;
+  top: 0;
+  margin-top: 33%;
+  left: 0;
+  margin-left: 45%;
+  visibility: hidden;
+}
+
+#garden2_effect {
+  content: url(/public/img/cartoon/gardener/page2/garden2effect.png);
+  position: absolute;
+  width: 7%;
+  top: 0;
+  margin-top: 33%;
+  right: 0;
+  margin-right: 22%;
+  visibility: hidden;
+}
+
+#garden2_cursor {
+  content: url(/public/img/cartoon/gardener/page1/garden1cursor.png);
+  position: absolute;
+  width: 12%;
+  top: 0;
+  margin-top: 55%;
+  left: 0;
+  margin-left: 45%;
+  z-index: 100;
+}
+
+#garden2_cal1 {
+  content: url(/public/img/cartoon/gardener/page2/garden2cal1_1.png);
+  width: 37%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  margin-top: 40%;
+  left: 0;
+  margin-left: 30%;
+  visibility: hidden;
+}
+
+#garden2_cal2 {
+  content: url(/public/img/cartoon/gardener/page2/garden2cal2_1.png);
+  width: 37%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  margin-top: 40%;
+  left: 0;
+  margin-left: 30%;
+  visibility: hidden;
+}
+
+#garden2_cal3 {
+  content: url(/public/img/cartoon/gardener/page2/garden2cal3_1.png);
+  width: 35%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  margin-top: 40%;
+  left: 0;
+  margin-left: 30%;
+  visibility: hidden;
+}
+
+#garden2_cal4 {
+  content: url(/public/img/cartoon/gardener/page2/garden2cal4_1.png);
+  width: 37%;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  margin-top: 40%;
+  left: 0;
+  margin-left: 30%;
+  visibility: hidden;
+}
+
+#garden2_heartbubble {
+  content: url(/public/img/cartoon/gardener/page2/garden2heartbubble.png);
+  position: absolute;
+  width: 20%;
+  bottom: 0;
+  margin-bottom: 70%;
+  left: 0;
+  margin-left: 30%;
+  visibility: hidden;
+}
+
+.cal1_animation {
+  animation: fadeInCal1 4s;
+  /* animation-delay: 3s; */
+  animation-fill-mode: forwards;
+}
+
+.cal2_animation {
+  animation: rollOut 2s;
+  /* animation-delay: 2s; */
+  animation-fill-mode: forwards;
+}
+
+.cal3_animation {
+  animation: fadeInCal3 4s;
+  /* animation-delay: 1s; */
+  animation-fill-mode: forwards;
+}
+
+.cal4_animation {
+  animation: fadeInCal4 4s;
+  animation-fill-mode: forwards;
+}
+
+.thumbup_animation {
+  animation: bounceInLeft 2s;
+  animation-fill-mode: forwards;
+}

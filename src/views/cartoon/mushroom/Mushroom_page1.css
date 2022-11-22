@@ -1,17 +1,34 @@
-#mushroom_page1 {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  background-image: url("/public/img/cartoon/mushroom/page1/mush1Bg.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-  overflow: hidden;
+@media screen and (max-width: 779px) {
+  #mushroom_page1 {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/public/img/cartoon/mushroom/page1/mush1Bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  .phoneFrame_wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrame {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrameInside {
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @keyframes shaking-item {
-  0% {transform: translateX(3px);}
-  100% {}
+  0% {
+    transform: translateX(3px);
+  }
+  100% {
+  }
 }
 
 #mush1_exclamationmark {
@@ -27,8 +44,12 @@
 }
 
 @keyframes show-item {
-  0% {visibility: hidden;}
-  100% {visibility: visible;}
+  0% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: visible;
+  }
 }
 
 #mush1_squarehoney {

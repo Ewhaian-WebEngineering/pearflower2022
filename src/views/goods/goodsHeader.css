@@ -1,0 +1,35 @@
+.goodsHeaderFlame{
+    height: 80px;
+    background-color: #F1A6A5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerLogo{
+    padding-left: 50px;
+}
+
+.headerLogo img{
+    height: 70px;
+}
+
+.goodsHeaderLink{
+    padding-right: 70px;
+    display: flex;
+   
+
+}
+
+.goodsHeaderLink p {
+    font-weight: 600;
+    font-size: 25px;
+    padding-right: 50px;
+   
+    
+}
+
+.goodsHeaderLink a {
+    text-decoration: none;
+    color: white;
+}

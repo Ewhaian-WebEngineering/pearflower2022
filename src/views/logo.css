@@ -1,6 +1,6 @@
 /*모바일*/
 @media screen and (max-width : 779px) {
-    .logo {
+    .Eventlogo {
         content: url("/public/img/logo_main.png");
         top: 0;
         left: 0;
@@ -14,7 +14,7 @@
 
 /*웹*/
 @media screen and (min-width: 780px) {
-    .logo {
+    .Eventlogo {
         content: url("/public/img/logo_main.png");
         top: 0;
         left: 0;

@@ -4,6 +4,7 @@ import "./Bee_page1.css";
 import "./Bee_page3.css";
 import "../CartoonBtns.css";
 import "../AniZip.css";
+import "../cartoonWeb.css";
 function setScreenSize() {
   let vh = window.innerHeight;
   let vw = window.innerWidth;
@@ -54,26 +55,34 @@ function Bee_page3() {
   }, []);
   return (
     <div className="bee_container">
-      <div className="bee_background_wrap">
-        <div id="bee_page3">
-          <div id="cloud1" className="inlineBlock cloud"></div>
-          <div id="cloud2" className="inlineBlock cloud"></div>
-          <div id="cloud3" className="inlineBlock cloud"></div>
-          <div id="cloud4" className="inlineBlock"></div>
-          <div id="cloud4_effect" className="inlineBlock"></div>
+      <div className="phoneFrame_wrap">
+        <div className="phoneFrame">
+          <div className="phoneFrameInside">
+            {" "}
+            <div className="bee_background_wrap">
+              <div id="bee_page3">
+                <div id="cloud1" className="inlineBlock cloud"></div>
+                <div id="cloud2" className="inlineBlock cloud"></div>
+                <div id="cloud3" className="inlineBlock cloud"></div>
+                <div id="cloud4" className="inlineBlock"></div>
+                <div id="cloud4_effect" className="inlineBlock"></div>
+              </div>
+            </div>
+            <div className="cartoon_btns inlineBlock">
+              <Link to="/bee2">
+                <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+              </Link>
+              <Link to="/main">
+                <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+              </Link>
+              <Link to="/bee4">
+                <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="cartoon_btns inlineBlock">
-        <Link to="/bee2">
-          <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
-        </Link>
-        <Link to="/main">
-          <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
-        </Link>
-        <Link to="/bee4">
-          <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
-        </Link>
-      </div>
+      <div className="webTitle"></div>
     </div>
   );
 }

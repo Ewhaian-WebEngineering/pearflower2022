@@ -65,7 +65,7 @@
     }
 
     #howtolabel {
-        width: 35vw;
+        width: 30vw;
     }
 
     .start {
@@ -77,6 +77,16 @@
 
     #startbtn {
         width: 62vw;
+    }
+
+    .explain {
+        position: absolute;
+        width: 60%;
+        right: 0;
+        top: 0;
+        font-size: 80%;
+        margin-right: 20%;
+        margin-top: 35%;
     }
 }
 
@@ -194,4 +204,13 @@
         width: 80%;
     }
 
+    .explain {
+        position: absolute;
+        width: 80%;
+        top: 0;
+        margin-top: 20%;
+        left: 0;
+        margin-left: 30%;
+        font-size: 150%;
+    }
 }

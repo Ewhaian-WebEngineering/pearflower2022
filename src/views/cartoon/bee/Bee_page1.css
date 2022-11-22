@@ -6,6 +6,9 @@
   display: inline-block;
   position: absolute;
 }
+Link {
+  appearance: none;
+}
 .bee_container {
   position: fixed;
   width: var(--vw);
@@ -20,15 +23,30 @@
   /*background-color: rgb(180, 180, 47);*/
   /*content: url("/public/img/cartoon/bee/page1/background.png");*/
 }
-#bee_page1 {
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  background-image: url("/public/img/cartoon/bee/page1/background.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+@media screen and (max-width: 779px) {
+  #bee_page1 {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    background-image: url("/public/img/cartoon/bee/page1/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .phoneFrame_wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrame {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrameInside {
+    width: 100%;
+    height: 100%;
+  }
 }
+
 #bee_page1_person1 {
   display: inline-block;
   position: absoltue;

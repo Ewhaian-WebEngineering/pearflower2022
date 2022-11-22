@@ -4,10 +4,11 @@
   bottom: 0;
   left: 0;
   /*background-color: blue;*/
+  z-index: 100;
 }
 .cartoonBtn {
   bottom: 0;
-  height: 80%;
+  height: 65%;
   opacity: 100%;
 }
 .cartoonPrevBtn {
@@ -23,4 +24,26 @@
 .cartoonNextBtn {
   right: 0;
   content: url(/public/img/cartoon/button/nextBtn.png);
+}
+#characterInfo_prevBtn {
+  opacity: 100%;
+  height: 65%;
+  left: 0;
+  content: url(/public/img/cartoon/button/prevBtn.png);
+}
+#characterInfo_skipBtn {
+  opacity: 100%;
+  height: 65%;
+  right: 0;
+  content: url(/public/img/cartoon/button/skipBtn.png);
+}
+@media screen and (min-width: 780px) {
+  .cartoon_btns {
+    width: 40%;
+    height: 13%;
+    bottom: 33%;
+    left: 50%;
+    /*background-color: blue;*/
+    z-index: 100;
+  }
 }

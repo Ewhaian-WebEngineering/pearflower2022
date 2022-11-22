@@ -110,14 +110,14 @@
     }
 
     .mobileBeotAlongForm {
-        width: 20rem;
+        width: 15rem;
         height: auto;
         display: block;
         margin: 0 auto;
 
         cursor: pointer;
         padding-top: 10%;
-        padding-bottom: 30%;
+        padding-bottom: 50%;
     }
 
     .mobileEscapeBtn:hover {
@@ -149,9 +149,9 @@
     }
 
     .menuBtnDiv {
-        height: 55px;
+        height: 60px;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: flex-end;
     }
 

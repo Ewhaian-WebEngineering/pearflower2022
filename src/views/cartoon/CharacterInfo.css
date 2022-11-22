@@ -1,0 +1,129 @@
+.dungeunmo_font {
+  font-family: "DungGeunMo";
+}
+@media screen and (max-width: 779px) {
+  #characterInfo_container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: var(--vw);
+    height: var(--vh);
+    background-color: rgb(234, 234, 234);
+  }
+  .phoneFrame_wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrame {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrameInside_info {
+    width: 100%;
+    height: 100%;
+  }
+  .characterInfo_description_wrap {
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 48%;
+    background-image: url(/public/img/cartoon/characterInfo/info_content_wrap.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+#characterInfo_container_wrap {
+  left: 0;
+  right: 0;
+  margin: 4% auto;
+  width: 86%;
+  height: 95%;
+  /*background-color: brown;*/
+}
+#characterInfo_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 13%;
+  /*background-color: blue;*/
+}
+#characterInfo_title {
+  width: 70%;
+  height: 60%;
+  content: url(/public/img/cartoon/characterInfo/title.png);
+}
+#characterInfo_description {
+  top: 0;
+  margin-top: 2%;
+  width: 90%;
+  height: 15%;
+  /*background-color: aquamarine;*/
+  content: url(/public/img/cartoon/characterInfo/subTitle.png);
+}
+#characterInfo_wrap_ {
+  width: 100%;
+  height: 84%;
+  background-image: url(/public/img/cartoon/characterInfo/contentWrap.png);
+  background-size: 100% 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.characterInfo_wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*justify-content: space-evenly;*/
+  width: 50%;
+  height: 50%;
+  /*background-color: blue;*/
+}
+.characterInfo_name {
+  margin-top: 5%;
+  font-size: 120%;
+}
+.characterInfo_img {
+  margin-top: 0%;
+  width: 60%;
+  height: 30%;
+  top: 0;
+}
+.characterInfo_subName {
+  margin-top: 2%;
+  font-size: 90%;
+}
+/*각 캐릭터 이미지*/
+#characterInfo_mushroom_img {
+  content: url(/public/img/cartoon/characterInfo/mushroom_img.png);
+  /*background-color: rgb(255, 127, 246);*/
+}
+#characterInfo_bee_img {
+  content: url(/public/img/cartoon/characterInfo/bee_img.png);
+  /*background-color: rgb(255, 127, 246);*/
+}
+#characterInfo_sprout_img {
+  content: url(/public/img/cartoon/characterInfo/sprout_img.png);
+  /*background-color: rgb(255, 127, 246);*/
+}
+#characterInfo_gardener_img {
+  content: url(/public/img/cartoon/characterInfo/gardener_img.png);
+  /*background-color: rgb(255, 127, 246);*/
+}
+/*-----------------*/
+
+.characterInfo_description_content {
+  margin-top: 10%;
+  font-size: 70%;
+  line-height: 140%;
+}
+.characterInfo_description_btn {
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  content: url(/public/img/cartoon/characterInfo/btn.png);
+}

@@ -1,4 +1,5 @@
-#gardener_page3 {
+@media screen and (max-width: 779px) {
+  #gardener_page3 {
     width: 80%;
     height: 100%;
     margin: 0 auto;
@@ -7,4 +8,64 @@
     background-size: 100% 100%;
     background-repeat: no-repeat;
     overflow: hidden;
+
+    animation: open-door 2s;
+    animation-fill-mode: forwards;
+  }
+  .phoneFrame_wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrame {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrameInside {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+#garden3_catchheart {
+  content: url(/public/img/cartoon/gardener/page3/garden3catchheart.png);
+  position: absolute;
+  width: 50%;
+  top: 0;
+  margin-top: 95%;
+  left: 0;
+  margin-left: 10%;
+
+  animation: bounceInLeft 2s;
+}
+
+#garden3_welcome {
+  content: url(/public/img/cartoon/gardener/page3/garden3welcome.png);
+  position: absolute;
+  width: 65%;
+  bottom: 0;
+  right: 0;
+  margin-right: 2%;
+  margin-bottom: -70%;
+
+  animation: rising-person 2s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes open-door {
+  from {
+    background-image: url("/public/img/cartoon/gardener/page3/garden3Bg_close.png");
+  }
+  to {
+    background-image: url("/public/img/cartoon/gardener/page3/garden3Bg_open.png");
+  }
+}
+
+@keyframes rising-person {
+  from {
+    margin-bottom: -70%;
+  }
+  to {
+    margin-bottom: 0;
+  }
 }

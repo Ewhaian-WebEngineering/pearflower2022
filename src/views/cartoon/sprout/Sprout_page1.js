@@ -4,6 +4,7 @@ import "../bee/Bee_page1.css";
 import "../AniZip.css";
 import "./Sprout_page1.css";
 import "../CartoonBtns.css";
+import "../cartoonWeb.css";
 
 var clickCnt = 0;
 function setScreenSize() {
@@ -88,140 +89,164 @@ function Sprout_page1() {
   }, []);
   return (
     <div className="bee_container">
-      <div className="bee_background_wrap">
-        <div id="sprout_page1">
-          <div id="sprout_page1_cut1_sweat" className="inlineBlock"></div>
-          <div
-            id="sprout_page1_cut1_coffee_cloud1"
-            className="inlineBlock"
-          ></div>
-          <div
-            id="sprout_page1_cut1_coffee_cloud2"
-            className="inlineBlock"
-          ></div>
-          <div
-            id="sprout_page1_cut1_coffee_cloud3"
-            className="inlineBlock"
-          ></div>
-          <div id="sprout_page1_cut1_clock_wrap" className="inlineBlock">
-            <div id="sprout_page1_cut1_clock" className="inlineBlock"></div>
-            <div
-              id="sprout_page1_cut1_clock_long"
-              className="inlineBlock clock_long"
-            ></div>
-            <div
-              id="sprout_page1_cut1_clock_short"
-              className="inlineBlock clock_short"
-            ></div>
-          </div>
+      <div className="phoneFrame_wrap">
+        <div className="phoneFrame">
+          <div className="phoneFrameInside">
+            <div className="bee_background_wrap">
+              <div id="sprout_page1">
+                <div id="sprout_page1_cut1_sweat" className="inlineBlock"></div>
+                <div
+                  id="sprout_page1_cut1_coffee_cloud1"
+                  className="inlineBlock"
+                ></div>
+                <div
+                  id="sprout_page1_cut1_coffee_cloud2"
+                  className="inlineBlock"
+                ></div>
+                <div
+                  id="sprout_page1_cut1_coffee_cloud3"
+                  className="inlineBlock"
+                ></div>
+                <div id="sprout_page1_cut1_clock_wrap" className="inlineBlock">
+                  <div
+                    id="sprout_page1_cut1_clock"
+                    className="inlineBlock"
+                  ></div>
+                  <div
+                    id="sprout_page1_cut1_clock_long"
+                    className="inlineBlock clock_long"
+                  ></div>
+                  <div
+                    id="sprout_page1_cut1_clock_short"
+                    className="inlineBlock clock_short"
+                  ></div>
+                </div>
 
-          <div
-            id="sprout_page1_cut2_basketWrap"
-            className="inlineBlock"
-            onClick={() => {
-              clickCnt++;
-              var basket = document.getElementById("sprout_page1_cut2_basket");
-              var basketEffect = document.getElementById(
-                "sprout_page1_cut2_basket_effect"
-              );
-              var mouse = document.getElementById("sprout_page1_mouse");
-              var black_cat = document.getElementById(
-                "sprout_page1_cut2_black_cat"
-              );
-              var black_cat_talk = document.getElementById(
-                "sprout_page1_cut2_cat_talk"
-              );
-              if (clickCnt == 1) {
-                basket.classList.remove("swing");
-                basketEffect.classList.remove("swing");
-                document.documentElement.style.setProperty(
-                  "--basket-effect",
-                  "hidden"
-                );
-                document.documentElement.style.setProperty(
-                  "--sprout-page1-mouse",
-                  "hidden"
-                );
-                mouse.classList.remove("sprout_page1_mouse_move");
-                setTimeout(() => {
-                  black_cat.classList.add("basket_cat_entrance");
-                  document.documentElement.style.setProperty(
-                    "--basket-black-cat",
-                    "visible"
-                  );
-                  setTimeout(() => {
-                    document.documentElement.style.setProperty(
-                      "--basket-black-cat-wrap",
-                      "visible"
+                <div
+                  id="sprout_page1_cut2_basketWrap"
+                  className="inlineBlock"
+                  onClick={() => {
+                    clickCnt++;
+                    var basket = document.getElementById(
+                      "sprout_page1_cut2_basket"
                     );
-                    black_cat_talk.classList.add("fadeInUp");
-                    document.documentElement.style.setProperty(
-                      "--basket-black-cat-talk",
-                      "visible"
+                    var basketEffect = document.getElementById(
+                      "sprout_page1_cut2_basket_effect"
                     );
-                  }, 1500);
-                }, 500);
-              }
-            }}
-          >
-            <div id="sprout_page1_cut2_basket" className="inlineBlock"></div>
-            <div id="sprout_page1_cut2_black_cat_wrap" className="inlineBlock">
-              <div
-                id="sprout_page1_cut2_black_cat"
-                className="inlineBlock"
-              ></div>
+                    var mouse = document.getElementById("sprout_page1_mouse");
+                    var black_cat = document.getElementById(
+                      "sprout_page1_cut2_black_cat"
+                    );
+                    var black_cat_talk = document.getElementById(
+                      "sprout_page1_cut2_cat_talk"
+                    );
+                    if (clickCnt == 1) {
+                      basket.classList.remove("swing");
+                      basketEffect.classList.remove("swing");
+                      document.documentElement.style.setProperty(
+                        "--basket-effect",
+                        "hidden"
+                      );
+                      document.documentElement.style.setProperty(
+                        "--sprout-page1-mouse",
+                        "hidden"
+                      );
+                      mouse.classList.remove("sprout_page1_mouse_move");
+                      setTimeout(() => {
+                        black_cat.classList.add("basket_cat_entrance");
+                        document.documentElement.style.setProperty(
+                          "--basket-black-cat",
+                          "visible"
+                        );
+                        setTimeout(() => {
+                          document.documentElement.style.setProperty(
+                            "--basket-black-cat-wrap",
+                            "visible"
+                          );
+                          black_cat_talk.classList.add("fadeInUp");
+                          document.documentElement.style.setProperty(
+                            "--basket-black-cat-talk",
+                            "visible"
+                          );
+                        }, 1500);
+                      }, 500);
+                    }
+                  }}
+                >
+                  <div
+                    id="sprout_page1_cut2_basket"
+                    className="inlineBlock"
+                  ></div>
+                  <div
+                    id="sprout_page1_cut2_black_cat_wrap"
+                    className="inlineBlock"
+                  >
+                    <div
+                      id="sprout_page1_cut2_black_cat"
+                      className="inlineBlock"
+                    ></div>
+                  </div>
+                  <div
+                    id="sprout_page1_cut2_basket_effect"
+                    className="inlineBlock"
+                  ></div>
+                  <div id="sprout_page1_mouse" className="inlineBlock"></div>
+                </div>
+                <div
+                  id="sprout_page1_cut2_person1_check"
+                  className="inlineBlock"
+                ></div>
+                <div
+                  id="sprout_page1_cut2_cat_talk"
+                  className="inlineBlock"
+                ></div>
+                <div
+                  id="sprout_page1_cut2_person2_heart"
+                  className="inlineBlock"
+                ></div>
+                <div
+                  id="sprout_page1_cut2_person2_talk"
+                  className="inlineBlock"
+                ></div>
+                <div
+                  id="sprout_page1_cut2_person1_hair"
+                  className="inlineBlock hair_swing"
+                ></div>
+
+                <div id="sprout_page1_cut3_cat" className="inlineBlock"></div>
+                <div
+                  id="sprout_page1_cut3_downTree"
+                  className="inlineBlock"
+                ></div>
+                <div
+                  id="sprout_page1_cut3_person_effect"
+                  className="inlineBlock flash"
+                ></div>
+                <div
+                  id="sprout_page1_cut3_persons"
+                  className="inlineBlock persons_move"
+                ></div>
+                <div
+                  id="sprout_page1_cut3_person_heart"
+                  className="inlineBlock"
+                ></div>
+              </div>
             </div>
-            <div
-              id="sprout_page1_cut2_basket_effect"
-              className="inlineBlock"
-            ></div>
-            <div id="sprout_page1_mouse" className="inlineBlock"></div>
+            <div className="cartoon_btns inlineBlock">
+              <Link to="/">
+                <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
+              </Link>
+              <Link to="/main">
+                <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
+              </Link>
+              <Link to="/sprout2">
+                <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
+              </Link>
+            </div>
           </div>
-          <div
-            id="sprout_page1_cut2_person1_check"
-            className="inlineBlock"
-          ></div>
-          <div id="sprout_page1_cut2_cat_talk" className="inlineBlock"></div>
-          <div
-            id="sprout_page1_cut2_person2_heart"
-            className="inlineBlock"
-          ></div>
-          <div
-            id="sprout_page1_cut2_person2_talk"
-            className="inlineBlock"
-          ></div>
-          <div
-            id="sprout_page1_cut2_person1_hair"
-            className="inlineBlock hair_swing"
-          ></div>
-
-          <div id="sprout_page1_cut3_cat" className="inlineBlock"></div>
-          <div id="sprout_page1_cut3_downTree" className="inlineBlock"></div>
-          <div
-            id="sprout_page1_cut3_person_effect"
-            className="inlineBlock flash"
-          ></div>
-          <div
-            id="sprout_page1_cut3_persons"
-            className="inlineBlock persons_move"
-          ></div>
-          <div
-            id="sprout_page1_cut3_person_heart"
-            className="inlineBlock"
-          ></div>
         </div>
       </div>
-      <div className="cartoon_btns inlineBlock">
-        <Link to="/">
-          <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
-        </Link>
-        <Link to="/main">
-          <div className="cartoonSkipBtn inlineBlock cartoonBtn"></div>
-        </Link>
-        <Link to="/sprout2">
-          <div className="cartoonNextBtn inlineBlock cartoonBtn"></div>
-        </Link>
-      </div>
+      <div className="webTitle"></div>
     </div>
   );
 }

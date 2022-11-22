@@ -8,7 +8,7 @@ function Escape() {
             <MobileView>
                 <div className="mobileEscapeBg">
                     <div className="eventHeader">
-                        <Link to="/main"><img alt="logoSquare" className="logo"></img></Link>
+                        <Link to="/main"><img alt="logoSquare" className="Eventlogo"></img></Link>
                         <div className="menuBtnDiv">
                             <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'}></img>
                         </div>
@@ -27,7 +27,7 @@ function Escape() {
             <BrowserView>
                 <div className="EscapeBg">
                     <div className="eventHeader">
-                        <Link to="/main"><img alt="logoSquare" className="logo"></img></Link>
+                        <Link to="/main"><img alt="logoSquare" className="Eventlogo"></img></Link>
                         <div className="menuBtnDiv">
                             <Link to="/main"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerToMain.png'}></img></Link>
                             <Link to="/timeTable"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerSchedule.png'}></img></Link>

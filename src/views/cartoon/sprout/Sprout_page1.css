@@ -1,14 +1,29 @@
-#sprout_page1 {
-  overflow: hidden;
-  width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  position: relative;
-  /*background-color: blue;*/
-  background-image: url("/public/img/cartoon/sprout/page1/background.png");
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+@media screen and (max-width: 779px) {
+  #sprout_page1 {
+    overflow: hidden;
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /*background-color: blue;*/
+    background-image: url("/public/img/cartoon/sprout/page1/background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  .phoneFrame_wrap {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrame {
+    width: 100%;
+    height: 100%;
+  }
+  .phoneFrameInside {
+    width: 100%;
+    height: 100%;
+  }
 }
+
 #sprout_page1_cut1_sweat {
   top: 0;
   right: 0;
@@ -76,7 +91,7 @@
   left: 0;
   width: 18%;
   height: 8%;
-  margin-top: 84%;
+  margin-top: 86%;
   margin-left: 33%;
 }
 #sprout_page1_cut2_basket {
@@ -219,7 +234,7 @@
   bottom: 0;
   right: 0;
   height: 1.2%;
-  margin-bottom: 87%;
+  margin-bottom: 88.5%;
   margin-right: 26%;
   content: url(/public/img/cartoon/sprout/page1/person_in_window_effect.png);
 }
