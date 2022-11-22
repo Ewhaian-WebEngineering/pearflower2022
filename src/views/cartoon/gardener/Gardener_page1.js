@@ -53,7 +53,7 @@ function Gardener_page1() {
               </div>
             </div>
             <div className="cartoon_btns inlineBlock">
-              <Link to="/">
+              <Link to="/characterInfo">
                 <div className="cartoonPrevBtn inlineBlock cartoonBtn"></div>
               </Link>
               <Link to="/main">
