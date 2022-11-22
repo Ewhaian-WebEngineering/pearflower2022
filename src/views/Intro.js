@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Intro.css";
 import "./cartoon/bee/Bee_page1.css";
 import "../views/cartoon/cartoonWeb.css";
+import "./cartoon/AniZip.css";
 
 var clickCnt;
 function setScreenSize() {
@@ -38,11 +39,11 @@ function Intro() {
           <div className="phoneFrameInside_intro">
             {" "}
             <div id="intro_ground"></div>
-            <div id="intro_black_cat_shadow_wrap">
+            <div id="intro_black_cat_shadow_wrap" className="fadeInLeft">
               <div id="intro_black_cat_shadow"></div>
               <div id="intro_black_cat"></div>
             </div>
-            <div id="intro_speech_bubble_wrap">
+            <div id="intro_speech_bubble_wrap" className="fadeInLeft">
               <div id="intro_speech_bubble"></div>
               <div
                 id="intro_speech_bubble_btn"
