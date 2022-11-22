@@ -19,9 +19,9 @@
 @media screen and (min-width: 780px) {
   .bee_container {
     display: flex;
-    position: fixed;
-    width: var(--vw);
-    height: var(--vh);
+    /*position: fixed;*/
+    width: 100vw;
+    height: 100vh;
     background-color: rgb(255, 233, 186);
   }
   .phoneFrame_wrap {
@@ -239,17 +239,15 @@
   }
   #intro_container {
     display: flex;
-    position: fixed;
-    width: var(--vw);
-    height: var(--vh);
-    background-color: rgb(234, 234, 234);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 233, 186);
   }
   #characterInfo_container {
-    position: fixed;
     display: flex;
-    width: var(--vw);
-    height: var(--vh);
-    background-color: rgb(234, 234, 234);
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 233, 186);
   }
 
   .webTitle {
