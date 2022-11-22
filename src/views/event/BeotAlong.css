@@ -149,9 +149,9 @@
     }
 
     .menuBtnDiv {
-        height: 55px;
+        height: 60px;
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: flex-end;
     }
 
