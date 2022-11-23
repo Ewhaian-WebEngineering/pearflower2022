@@ -7,9 +7,9 @@ import './goodsDetailLayout.css';
 
 function goodsLayout() {
 
-    function goodsDetailLayout() {
+    function GoodsDetailLayout() {
         // const detailGoodsId = props;
-        console.log(detailGoodsId);
+        // console.log(detailGoodsId);
         // console.log(displayHandle);
         const detailGoodsId = 0;
         
@@ -155,10 +155,12 @@ function goodsLayout() {
         // 
         if (typeof(e) == "object") {
             console.log("test")
-            return <Detail detailGoodsId={index} displayHandle={displayHandle} />
+            return ;
+            // return <Detail detailGoodsId={index} displayHandle={displayHandle} />
         } else {
             console.log(e);
-            return <Detail detailGoodsId={e} displayHandle={displayHandle} />
+            return <GoodsDetailLayout/>
+            // return <Detail detailGoodsId={e} displayHandle={displayHandle} />
         }  
         
     }
@@ -201,7 +203,9 @@ function goodsLayout() {
                     
                 </div>
             </div>
-            <goodsDetailLayout/>
+            <GoodsDetailLayout/>
+
+
         </div>
     )
 }

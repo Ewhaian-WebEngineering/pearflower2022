@@ -30,7 +30,7 @@ function header() {
             </div>
             
             <div className='headerLink' id='headerUl'>
-                <p> <Link to="/main" id='toGoMainBtn'>메인으로</Link> </p>
+                <p> <Link to="/gamehome" id='toGoMainBtn'>게임</Link> </p>
                 <p> <Link to="/timeTable">행사일정</Link> </p>
                 <p> <Link to="/event">이벤트</Link> </p>
                 <p> <Link to="/goods">굿즈</Link> </p>
