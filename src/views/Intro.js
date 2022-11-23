@@ -20,16 +20,14 @@ const textSrcs = [
   "/img/cartoon/intro/text4.png",
   "/img/cartoon/intro/text5.png",
   "/img/cartoon/intro/text6.png",
-  "/img/cartoon/intro/text7.png",
-  "/img/cartoon/intro/text8.png",
-  "/img/cartoon/intro/text9.png",
 ];
 function Intro() {
   useEffect(() => {
-    clickCnt = 1;
+    clickCnt = 0;
     setScreenSize();
     var target = document.getElementById("intro_speech_bubble_wrap");
     target.style.backgroundImage = `url(/img/cartoon/intro/text1.png)`;
+    document.documentElement.style.setProperty("--cat-mouse", `hidden`);
   }, []);
 
   return (
@@ -39,21 +37,63 @@ function Intro() {
           <div className="phoneFrameInside_intro">
             {" "}
             <div id="intro_ground"></div>
-            <div id="intro_black_cat_shadow_wrap" className="fadeInLeft">
+            <div id="intro_black_cat_shadow_wrap" className="bounceInDown">
               <div id="intro_black_cat_shadow"></div>
-              <div id="intro_black_cat"></div>
+              <div
+                id="intro_black_cat"
+                onClick={() => {
+                  if (clickCnt == 3) {
+                    var cat = document.getElementById("intro_black_cat");
+                    cat.style.content = `url(/public/img/cartoon/intro/surprisedCat.png)`;
+
+                    setTimeout(() => {
+                      cat.style.content = `url(/public/img/cartoon/intro/black_cat.png)`;
+                    }, 700);
+                  }
+                }}
+              ></div>
+              <div id="intro_cat_mouse" className="inlineBlock"></div>
             </div>
-            <div id="intro_speech_bubble_wrap" className="fadeInLeft">
+            <div id="intro_speech_bubble_wrap" className="bounceInDown">
               <div id="intro_speech_bubble"></div>
               <div
                 id="intro_speech_bubble_btn"
                 onClick={() => {
-                  if (clickCnt != 8) {
+                  if (clickCnt != 5) {
                     clickCnt++;
                     var target = document.getElementById(
                       "intro_speech_bubble_wrap"
                     );
                     target.style.backgroundImage = `url(${textSrcs[clickCnt]})`;
+                  }
+                  if (clickCnt == 3) {
+                    var mouse = document.getElementById("intro_cat_mouse");
+                    document.documentElement.style.setProperty(
+                      "--cat-mouse",
+                      `visible`
+                    );
+                    mouse.classList.add("intro_cat_mouse_move");
+                  } else {
+                    document.documentElement.style.setProperty(
+                      "--cat-mouse",
+                      `hidden`
+                    );
+                  }
+                  if (clickCnt == 5) {
+                    document.documentElement.style.setProperty(
+                      "--next-btn",
+                      `hidden`
+                    );
+                    setTimeout(() => {
+                      var cat = document.getElementById(
+                        "intro_black_cat_shadow_wrap"
+                      );
+                      var bubble = document.getElementById(
+                        "intro_speech_bubble_wrap"
+                      );
+                      cat.classList.add("bounceOutUp");
+                      bubble.classList.add("bounceOutUp");
+                    }, 2000);
                   }
                 }}
               ></div>

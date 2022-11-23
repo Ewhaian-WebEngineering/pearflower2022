@@ -2,6 +2,16 @@
   animation-name: fadeInUp;
   animation-duration: 1s;
 }
+.bounceInDown {
+  animation-name: bounceInDown;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+.bounceOutUp {
+  animation-name: bounceOutUp;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
 .fadeInUpInfinite {
   animation-name: fadeInUp;
   animation-duration: 1.5s;
@@ -532,5 +542,53 @@
   to {
     transform-origin: 0% 25%;
     transform: rotate(360deg);
+  }
+}
+@keyframes bounceInDown {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(0, -3000px, 0) scaleY(3);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(0, 25px, 0) scaleY(0.9);
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0) scaleY(0.95);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0) scaleY(0.985);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes bounceOutUp {
+  20% {
+    transform: translate3d(0, -10px, 0) scaleY(0.985);
+  }
+
+  40%,
+  45% {
+    opacity: 1;
+    transform: translate3d(0, 20px, 0) scaleY(0.9);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -2000px, 0) scaleY(3);
   }
 }

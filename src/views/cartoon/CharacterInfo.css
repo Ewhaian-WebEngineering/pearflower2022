@@ -1,6 +1,14 @@
 .dungeunmo_font {
   font-family: "DungGeunMo";
 }
+.nexonFontExtraBold {
+  font-family: "NEXON Lv1 Gothic OTF";
+  font-weight: 700;
+}
+.nexonFontBold {
+  font-family: "NEXON Lv1 Gothic OTF";
+  font-weight: 600;
+}
 @media screen and (max-width: 779px) {
   #characterInfo_container {
     position: fixed;
@@ -24,10 +32,11 @@
     height: 100%;
   }
   .characterInfo_description_wrap {
+    overflow: scroll;
     margin-top: 2%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     width: 80%;
     height: 48%;
     background-image: url(/public/img/cartoon/characterInfo/info_content_wrap.png);
@@ -82,7 +91,7 @@
 }
 .characterInfo_name {
   margin-top: 5%;
-  font-size: 120%;
+  font-size: 130%;
 }
 .characterInfo_img {
   margin-top: 0%;
@@ -92,7 +101,7 @@
 }
 .characterInfo_subName {
   margin-top: 2%;
-  font-size: 90%;
+  font-size: 100%;
 }
 /*각 캐릭터 이미지*/
 #characterInfo_mushroom_img {
@@ -114,9 +123,13 @@
 /*-----------------*/
 
 .characterInfo_description_content {
-  margin-top: 10%;
-  font-size: 70%;
-  line-height: 140%;
+  line-height: 130%;
+  margin-top: 15%;
+  width: 100%;
+  height: 100%;
+  /*background-color: aqua;*/
+  font-size: 80%;
+  word-break: keep-all;
 }
 .characterInfo_description_btn {
   left: 0;

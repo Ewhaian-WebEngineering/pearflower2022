@@ -71,6 +71,7 @@
   /*background-color: aquamarine;*/
 }
 #intro_speech_bubble_btn {
+  visibility: var(--next-btn);
   width: 38%;
   height: 13%;
   bottom: 0;
@@ -83,4 +84,24 @@
   display: inline-block;
   width: 10%;
   content: url(/public/img/cartoon/bee/page1/poster/mouse.png);
+}
+#intro_cat_mouse {
+  visibility: var(--cat-mouse);
+  width: 35%;
+  content: url(/public/img/cartoon/bee/page1/poster/mouse.png);
+  right: 0;
+  bottom: 0;
+  margin-right: -15%;
+  margin-bottom: -35%;
+}
+.intro_cat_mouse_move {
+  animation: intro_cat_mouse 2s infinite;
+}
+@keyframes intro_cat_mouse {
+  from {
+  }
+  to {
+    margin-right: -5%;
+    margin-bottom: -10%;
+  }
 }
