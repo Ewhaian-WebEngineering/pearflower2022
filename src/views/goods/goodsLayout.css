@@ -34,6 +34,10 @@
     .goodsBox{
         padding: 50px;
     }
+    .goodsArray{
+        height: 780px;        
+    }
+
     .goodsArray img {
         width: 110px;
         height: 110px;
@@ -44,7 +48,7 @@
     .goodsData{
         display:block;
         width: fit-content;
-    margin-left: 40px;
+        margin-left: 40px;
     }
 
     .goodsData p{
