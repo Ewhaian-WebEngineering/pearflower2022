@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import './GameMain.css';
 import './Gamehome.css';
+import './GamePage.css';
 import { Link, Navigate, useNavigate } from "react-router-dom";
 
 
@@ -179,7 +180,7 @@ function GameMain() {
                             index1 && <div className="word4">d</div>
                         }
                         {
-                            index2 && <div className="wor2">o</div>
+                            index2 && <div className="word2">o</div>
                         }
                         {
                             index3 && <div className="word8">k</div>

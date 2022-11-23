@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@300;400;500&display=swap');
+
 @media screen and (min-width: 768px) {
     * {
         text-align: center;
@@ -32,6 +34,10 @@
         font-size: 200%;
         overflow: auto;
         width: 27%;
+
+        font-family: 'Hahmlet', serif;
+        font-weight: 700;
+        color: #442121;
     }
 
     .h_text {
@@ -40,6 +46,9 @@
         top: 80%;
         left: 12%;
         font-size: 100%;
+        font-family: 'Hahmlet', serif;
+        font-weight: 700;
+        color: #442121;
 
     }
 
@@ -56,6 +65,9 @@
         top: 75vh;
         left: 18vw;
         font-size: 100%;
+        font-family: 'Hahmlet', serif;
+        font-weight: 700;
+        color: #442121;
     }
 
     /*결과 입력창 나타나는 곳*/
