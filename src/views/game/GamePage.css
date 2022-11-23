@@ -207,9 +207,8 @@
 
       .door {
           position: absolute;
-          width: 38vw;
-          height: 52vh;
-          top: 33%;
+          width: 33%;
+          top: 24%;
           left: 6.25%;
       }
 

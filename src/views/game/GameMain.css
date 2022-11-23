@@ -44,7 +44,7 @@
         /*힌트를 보려면 누르세요*/
         position: absolute;
         top: 80%;
-        left: 12%;
+        left: 16%;
         font-size: 100%;
         font-family: 'Hahmlet', serif;
         font-weight: 700;
@@ -55,7 +55,7 @@
     .hintKey {
         position: absolute;
         top: 76%;
-        left: 23%;
+        left: 30%;
         cursor: pointer;
     }
 
