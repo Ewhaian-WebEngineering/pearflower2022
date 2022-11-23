@@ -88,14 +88,14 @@
         font-size: 20px !important;
     }
      #toGoMainBtn{
-        display: none;
+        /* display: none; */
      }
     .headerLink p {
         float: left;
         width: fit-content;
         font-weight: 600;
         font-size: 25px;
-        padding-right: 7vw;
+        /* padding-right: 7vw; */
         padding-left: 10vw;
     }
 }

@@ -1,8 +1,9 @@
 .goodsDetailBox{
     background-color: #F5C7BA;
     width: 1311px;
-    height: 745px;  
+    /* height: 745px;   */
     border-radius: 20px; 
+    padding-bottom: 50px;
 }
 
 .closeBtn{
@@ -66,12 +67,39 @@
 }
 
 .detailImgBox {
-   display: flex;
-   padding-left: 70px;
+    width: 1300px;
+    display: flex;
+    padding-left: 70px;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .detailImgBox img {
     width: 280px;
     height: 280px;
     padding: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .goodsDetailBox{
+        width: 90%;
+    }
+
+    .closeBtn {
+        font-size: 31px;
+        padding: 25px;
+    }
+
+    .goodsDetail img {
+        /* padding-left: 40px; */
+        padding: 0px;
+        width: 190px;
+        height: 190px;
+    }
+
+    .goodsDetail {
+        padding: 50px 10px 0px 27px;
+        /* float: left; */
+        display: flex;
+    }
 }

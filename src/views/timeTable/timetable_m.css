@@ -14,9 +14,11 @@
     line-height: 21px;
     width: fit-content;
     padding-bottom: 17px;
+    word-break:keep-all; 
 }
 
 .ttSubTitle{
+    word-break:keep-all; 
     font-weight: 400;
     font-size: 15px;
     line-height: 25px;
@@ -43,16 +45,19 @@
 .ttEventDesc{
     display: flex;
     justify-content: space-between;;
+    word-break:keep-all; 
 }
 
 .ttEventDesc-title{
     text-align:left;
     font-weight: 600;
+    word-break:keep-all; 
 }
 
 .ttEventDesc-time{
     text-align:left;
     font-weight: 600;
+    word-break:keep-all; 
 }
 
 .ttBox{

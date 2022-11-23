@@ -14,6 +14,7 @@ function MainLayout() {
       <Main/>
       <Footer />
       <div className="floatingBtn2"><Link to="/gamehome"><img src="../img/goToPlayGame.png" alt="" /></Link></div>
+      <div className="floatingBtn3"><Link to="/characterInfo"><img src="../img/main_floatingBtn.png" alt="" /></Link></div>
 
     </div>
   );

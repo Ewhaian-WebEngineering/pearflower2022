@@ -18,7 +18,8 @@
 .textBox h1{
     font-weight: 600;
     font-size: 41px;
-    line-height: 38px;
+    word-break: keep-all;
+    line-height: 56px;
 }
 
 .textBox h2{
@@ -27,11 +28,15 @@
     padding-top: 75px;
     font-weight: 600;
     line-height: 38px;
+    word-break: keep-all;
+
 }
 
 .textBox p {
     padding-top: 50px;
     line-height: 38px;
+    word-break: keep-all;
+
 }
 
 .eventBoxFull{

@@ -24,11 +24,13 @@ function header() {
     return (
         <div className='gdsHeaderFlame' id="gdsheaderBox">
             <div className='headerLogo'>
-               <img src="../img/logo_main.png" alt="" />
+                <Link to="/main">
+                    <img src="../img/logo_main.png" alt="" />
+                </Link>
             </div>
             
             <div className='headerLink' id='gdsheaderUl'>
-                <p> <Link to="/main" >메인으로</Link> </p>
+                <p> <Link to="/gamehome" >게임</Link> </p>
                 <p> <Link to="/timeTable">행사일정</Link> </p>
                 <p> <Link to="/event">이벤트</Link> </p>
                 <p> <Link to="/goods"  id='gdsToGoGoods'>굿즈</Link> </p>
