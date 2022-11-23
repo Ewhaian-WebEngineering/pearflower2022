@@ -1,6 +1,6 @@
 import React from 'react';
 import "./timeTableLimit.css"
-import Headers from '../main/mainHeader'
+import Headers from '../Header'
 
 
 function timeTableLimit() {

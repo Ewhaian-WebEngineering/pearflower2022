@@ -1,5 +1,5 @@
 import React from 'react';
-import Headers from '../main/mainHeader'
+import Headers from '../Header'
 import "./timetable.css"
 
 function timetable() {
@@ -23,11 +23,11 @@ function timetable() {
 
                         <div>
                             <p> 만렙 화연 이벤트</p>
-                            <img src="./img/timetable/section.png" alt="" style={{marginLeft:"33px"}} />
+                            <img src="./img/timetable/section.png" alt="" style={{ marginLeft: "33px" }} />
                             <p>~ 17:00 </p>
                         </div>
 
-                        </div>
+                    </div>
                 </div>
 
                 <div className='timeTableArray'>
