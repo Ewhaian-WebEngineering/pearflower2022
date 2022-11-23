@@ -247,7 +247,7 @@ Link {
   bottom: 0;
   left: 0;
   height: 7%;
-  margin-bottom: 40%;
+  margin-bottom: 30%;
   margin-left: 3%;
   content: url(/public/img/cartoon/bee/page1/person4_work1.png);
 }
@@ -255,7 +255,7 @@ Link {
   height: 7%;
   bottom: 0;
   left: 0;
-  margin-bottom: 72%;
+  margin-bottom: 60%;
   margin-left: 10%;
   content: url(/public/img/cartoon/bee/page1/person4_work2.png);
 }
