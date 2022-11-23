@@ -23,27 +23,54 @@
   }
 }
 
+#mush4_balloon {
+  content: url(/public/img/cartoon/mushroom/page4/mush4balloon.png);
+  width: 26%;
+  top: 0;
+  margin-top: 5%;
+  left: 0;
+
+  animation: balloon-up 5s;
+  animation-fill-mode: forwards;
+}
+
+#mush4_opening {
+  content: url(/public/img/cartoon/mushroom/page4/mush4opening.png);
+  position: absolute;
+  width: 22%;
+  top: 0;
+  margin-top: 50%;
+  right: 0;
+  margin-right: 7%;
+
+  animation: opening-effect 1s infinite;
+  
+}
+
 /* 범퍼카부분 */
 
-#mush4_playground {
-  content: url(/public/img/cartoon/mushroom/page4/mush4playground.png);
+#mush4_bumpercarzone {
   position: absolute;
-  width: 86%;
-  top: 0;
-  margin-top: 107%;
+  bottom: 0;
+  margin-bottom: 18%;
   left: 0;
   margin-left: 0.7%;
   z-index: 1;
+}
+
+#mush4_playground {
+  content: url(/public/img/cartoon/mushroom/page4/mush4playground.png);
+  width: 86%;
 }
 
 #mush4_bumpercar1 {
   content: url(/public/img/cartoon/mushroom/page4/mush4bumpercar1.png);
   position: absolute;
   width: 28%;
-  top: 0;
-  margin-top: 87%;
   left: 0;
   margin-left: 1%;
+  bottom: 0;
+  margin-bottom: 40%;
   z-index: 2;
 }
 
@@ -51,10 +78,12 @@
   content: url(/public/img/cartoon/mushroom/page4/mush4bumpercar2.png);
   position: absolute;
   width: 28%;
-  top: 0;
-  margin-top: 96%;
+  /* top: 0;
+  margin-top: 96%; */
   left: 0;
   margin-left: 35%;
+  bottom: 0;
+  margin-bottom: 32%;
   z-index: 11;
   cursor: pointer;
 }
@@ -63,21 +92,25 @@
   content: url(/public/img/cartoon/gardener/page1/garden1cursor.png);
   position: absolute;
   width: 12%;
-  top: 0;
-  margin-top: 124%;
+  /* top: 0;
+  margin-top: 124%; */
   right: 0;
   margin-right: 30%;
   z-index: 100;
+  bottom: 0;
+  margin-bottom: 20%;
 }
 
 #mush4_bumpercar3 {
   content: url(/public/img/cartoon/mushroom/page4/mush4bumpercar3.png);
   position: absolute;
   width: 28%;
-  top: 0;
-  margin-top: 113%;
+  /* top: 0;
+  margin-top: 113%; */
   left: 0;
   margin-left: 10%;
+  bottom: 0;
+  margin-bottom: 15%;
   z-index: 10;
 }
 
@@ -85,10 +118,10 @@
   content: url(/public/img/cartoon/mushroom/page4/mush4effect.png);
   position: absolute;
   width: 10%;
-  top: 0;
-  margin-top: 116%;
   left: 0;
   margin-left: 35%;
+  bottom: 0;
+  margin-bottom: 30%;
   z-index: 30;
   visibility: hidden;
 }
@@ -97,86 +130,13 @@
   content: url(/public/img/cartoon/mushroom/page4/mush4bumpercar4.png);
   position: absolute;
   width: 40%;
-  top: 0;
-  margin-top: 124%;
   left: 0;
   margin-left: 50%;
   z-index: 15;
-}
-
-/* 포장마차 부분 */
-
-#mush4_hotdog {
-  content: url(/public/img/cartoon/mushroom/page4/mush4hotdog.png);
-  position: absolute;
-  width: 23%;
   bottom: 0;
-  margin-bottom: 26%;
-  right: 0;
-  margin-right: -3.5%;
-  z-index: 20;
+  margin-bottom: -3%;
 }
 
-#mush4_redcart {
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 26%;
-  transform: translateX(41%);
-}
-
-#redcart {
-  content: url(/public/img/cartoon/mushroom/page4/mush4redcart.png);
-  width: 36%;
-  left: 0;
-}
-
-#redcartwheel {
-  content: url(/public/img/cartoon/mushroom/page4/mush4redcartwheel.png);
-  position: absolute;
-  width: 13%;
-  left: 0;
-  margin-left: 4%;
-  bottom: 0;
-}
-
-#mush4_icecream {
-  /* display: flex;
-  align-items: flex-end; */
-  position: absolute;
-  bottom: 0;
-  margin-bottom: 26%;
-  z-index: 5;
-  transform: translateX(-30%);
-  animation: icecream-move 1.5s ease-in;
-  animation-fill-mode: forwards;
-}
-
-#icecream {
-  content: url(/public/img/cartoon/mushroom/page4/mush4icecream.png);
-  width: 40%;
-  left: 0;
-}
-
-#icecreamwheel {
-  content: url(/public/img/cartoon/mushroom/page4/mush4icecreamwheel.png);
-  position: absolute;
-  width: 13%;
-  left: 0;
-  margin-left: 18%;
-  animation: wheel-rotate 1.5s linear;
-  bottom: 0;
-}
-
-#mush4_watchingcart {
-  content: url(/public/img/cartoon/mushroom/page4/mush4watchingcart.png);
-  position: absolute;
-  width: 30%;
-  bottom: 0;
-  margin-bottom: 5%;
-  left: 0;
-  margin-left: 25%;
-  z-index: 30;
-}
 
 /* /// 애니메이션 키프레임 /// */
 /* 범퍼카 애니메이션 
@@ -242,6 +202,25 @@
   }
 }
 
+/* 풍선 올라가는 효과 */
+@keyframes balloon-up {
+  from {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -100%, 0);
+  }
+}
+
+/* 문 여는 사람 애니메이션 */
+@keyframes opening-effect {
+  from {}
+  to {transform: translateX(5%);}
+}
+
 /* /// 애니메이션 클래스 /// */
 .bumpercar2_animation {
   animation: bumpercar2-effect 3s;
@@ -291,5 +270,15 @@
 
   #mush4_bumpercar4 {
     margin-top: 104%;
+  }
+}
+
+/* 웹 깨지는 부분 */
+@media screen and (min-width: 1500px) and (max-width: 1700px) and (min-height: 600px) and (max-height: 800px) {
+  #mush4_bumpercarzone {
+    margin-bottom: 5%;
+  }
+  #mush4_opening {
+    margin-top: 35%;
   }
 }

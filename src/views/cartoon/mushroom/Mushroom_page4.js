@@ -36,26 +36,10 @@ function Mushroom_page4() {
           <div className="phoneFrameInside">
             <div className="bee_background_wrap">
               <div id="mushroom_page4">
-                {/* 범퍼카 부분 */}
-                <div id="mush4_playground" />
-                <div id="mush4_bumpercar1" />
-                {/* 범퍼카 상호작용 넣을 경우 - animation 부분 따로 클래스 분리한다음 swipe 이벤트 발생 시 클래스 추가되도록 */}
-                {/* http://labs.rampinteractive.co.uk/touchSwipe/demos/Page_scrolling.html
-          [자바스크립트] 스와이프 방향 알아내기 - Marshall K
-           */}
-                <div
-                  id="mush4_bumpercar2"
-                  onClick={() => {
-                    mush4_animation();
-                  }}
-                />
-                <div id="mush4_cursor" className="gardenermushroom_mouse" />
-                <div id="mush4_bumpercar3" />
-                <div id="mush4_effect" />
-                <div id="mush4_bumpercar4" />
-
-                {/* 포장마차 */}
-                <div id="mush4_icecream">
+                <div id="mush4_balloon" />
+                <div id="mush4_opening" />
+                {/* 포장마차 -> 그냥 이미지로 박아둠 */}
+                {/* <div id="mush4_icecream">
                   <div id="icecream" />
                   <div id="icecreamwheel" />
                 </div>
@@ -65,7 +49,24 @@ function Mushroom_page4() {
                 </div>
                 <div id="mush4_hotdog" />
 
-                <div id="mush4_watchingcart" />
+                <div id="mush4_watchingcart" /> */}
+
+                {/* 범퍼카 존 */}
+                <div id="mush4_bumpercarzone">
+                  <div id="mush4_playground" />
+                  <div id="mush4_bumpercar1" />
+                  
+                  <div
+                    id="mush4_bumpercar2"
+                    onClick={() => {
+                      mush4_animation();
+                    }}
+                  />
+                  <div id="mush4_cursor" className="gardenermushroom_mouse" />
+                  <div id="mush4_bumpercar3" />
+                  <div id="mush4_effect" />
+                  <div id="mush4_bumpercar4" />
+                </div>
               </div>
             </div>
             <div className="cartoon_btns inlineBlock">
