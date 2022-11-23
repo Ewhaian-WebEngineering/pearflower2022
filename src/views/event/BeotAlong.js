@@ -22,7 +22,7 @@ function BeotAlong() {
                     </div>
                     <div className="mobileBeotAlongWrapper">
                         <div className="mobileBackToEventWrapper">
-                            <Link to="/event"><img alt="BackToEventPageBtn" className="mobileBackToEvent" src={process.env.PUBLIC_URL + '/img/event/detailBackToEvent.png'}></img></Link>
+                            <Link to="/event"><img alt="BackToEventPageBtn" className="mobileBackToEvent" src={process.env.PUBLIC_URL + '/img/event/detailBacktoEvent.png'}></img></Link>
                         </div>
                         <div className="mobileBeotAlongContent">
                             <img alt="BeotAlongExplanation" className="mobileDetailBeotAlong" src={process.env.PUBLIC_URL + '/img/event/mobileDetailBeotAlong.png'}></img>
