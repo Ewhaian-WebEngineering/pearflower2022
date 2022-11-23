@@ -1,3 +1,5 @@
+/*웹*/
+
 .timeTableBg {
     background-image: url("/public/img/event/WebEventBg.png");
     background-repeat: no-repeat;
@@ -18,6 +20,20 @@
 
 .timeIcons {
     width: 60rem;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/*모바일*/
+
+.mobileTimeTableWrapper {
+    width: 100%;
+    margin: 0;
+}
+
+.mobileFullEvent {
+    width: 100%;
     display: block;
     margin: 0 auto;
 }
