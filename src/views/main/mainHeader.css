@@ -46,12 +46,13 @@
         background-color: #A2B7CC;
     }
     .headerLink{
-        padding-right: 70px;
+        /* padding-right: 70px; */
         display: flex;
         position: absolute;
     }
 
     .toggleBtn {
+        padding-top: 10px;
         display: block;
         right: 40px;
         top: 20px;
@@ -67,24 +68,24 @@
       }
 
       #headerUl {
-        height: 74px;
+        height: 50px;
         padding-top: 20px;
         display: none;
         float: right;
         top: 75px;
-        /* right: 0px; */
+        right: 0px;
         background-color: #A2B7CC;
         width: 100vw;
         /* flex-direction: column; */
         flex-direction: row;
         flex-wrap: nowrap;
-        padding-left: 23vw;
+        /* padding-left: 23vw; */
       }
 
       .headerLink a {
         text-decoration: none;
         color: white;
-        font-size: 25px !important;
+        font-size: 20px !important;
     }
      #toGoMainBtn{
         display: none;
@@ -94,8 +95,8 @@
         width: fit-content;
         font-weight: 600;
         font-size: 25px;
-        padding-right: 0px;
-        padding-right: 10vw;
+        padding-right: 7vw;
+        padding-left: 10vw;
     }
 }
 

@@ -13,10 +13,10 @@ function header() {
     
           if (toggleUL.style.display === "block") {
             toggleUL.style.display = "none";
-            headerBox.style.boxShadow = "0px 5px 20px rgba(0, 0, 0, 0)";
+            toggleUL.style.boxShadow = "0px 20px 20px rgba(0, 0, 0, 0)";
           } else {
             toggleUL.style.display = "block";
-            headerBox.style.boxShadow = "0px 5px 20px rgba(0, 0, 0, 0.1)";
+            toggleUL.style.boxShadow = "0px 20px 20px rgba(0, 0, 0, 0.1)";
           }
         }
     };

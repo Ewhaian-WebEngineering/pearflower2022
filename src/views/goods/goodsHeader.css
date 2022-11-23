@@ -52,6 +52,7 @@
     }
 
     .toggleBtn {
+        padding-top: 10px;
         display: block;
         right: 40px;
         top: 20px;
@@ -92,7 +93,7 @@
      }
     .headerLink p {
         /* float: left; */
-        width: -moz-fit-content;
+        /* width: -moz-fit-content; */
         width: fit-content;
         font-weight: 600;
         font-size: 25px;
