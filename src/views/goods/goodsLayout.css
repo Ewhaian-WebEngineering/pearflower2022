@@ -2,14 +2,18 @@
     background-color: #FFF0D0;
     display: flex;
     justify-content: center;
-    height: 1000px;
+    height: fit-content;
     align-items: center;
+    padding: 100px;
 }
 
 .goodsArray{
     /* background-color: black; */
     width: 909px;
-    height: 606px;
+    /* height: 606px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .goodsArray img {
@@ -17,4 +21,39 @@
     height: 233px;
     /* background-color: red; */
     margin: 35px;
+}
+
+.goodsData{
+    display: none;
+}
+.goodsArrayBox{
+    width: fit-content;
+}
+
+@media screen and (max-width: 768px) {
+    .goodsBox{
+        padding: 50px;
+    }
+    .goodsArray img {
+        width: 153px;
+        height: 153px;
+        /* background-color: red; */
+        margin: 15px;
+    }
+
+    .goodsData{
+        display:block;
+        width: fit-content;
+    margin-left: 55px;
+    }
+
+    .goodsData p{
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        text-align: center;
+
+        color: #A7B8CB;
+    }
+
 }
