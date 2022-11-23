@@ -1,24 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Header from './goodsHeader';
-import Detail from "./goodsDetailLayout";
 import './goodsLayout.css';
 import './goodsDetailLayout.css';
 
 
-function goodsLayout() {
+function GoodsLayout() {
 
-    function GoodsDetailLayout() {
-        // const detailGoodsId = props;
-        // console.log(detailGoodsId);
-        // console.log(displayHandle);
-        const detailGoodsId = 0;
-        
-        // const [number, setNumber] = useState(0);
-        // setNumber = detailGoodsId;
+    const detailGoodsId = 0;
 
-        function handleVoid(e) {
-
-        }
 
 
         const detailImg_1 = [
@@ -66,8 +55,6 @@ function goodsLayout() {
         ]
 
 
-
-        // console.log(detailData.len);
         const detailData = [
             {
                 id: 1,
@@ -119,49 +106,45 @@ function goodsLayout() {
             }
         ];
         
-        // const srcEdit = `../img/goods/goods_detail/` + { detailGoodsId } + `-` + { detailData[detailGoodsId].num } + `.png`;
-        // console.log(srcEdit);
-        // document.getElementById("detailImg").src = srcEdit;
         
-
-        return (
-            <div className='goodsDetailBox'>
-                <h1 className='closeBtn' onClick={handleVoid}>X</h1>
-                <div className='goodsDetail'>
-                    <img src={detailData[detailGoodsId].img} alt=""/>
-                    <div className='goodsDetailText'>
-                        <h1 id='goodsTitle'>{detailData[detailGoodsId].title}</h1>
-                        <h1 id='goodsPrice'>{detailData[detailGoodsId].price}</h1>
-                        <h5 id='goodsDesc'>{detailData[detailGoodsId].describe}</h5>
-                        <button className="goodsBtn2Buy">구매하기</button>
-                    </div>
-                </div>
-
-                <div className="detailImgBox">
-                    {(detailData[detailGoodsId].detailImg).map(data => (
-                    <img id="detailImg" src={data} alt="" />
-                    ))}
-                </div>
-            </div>
-        
-        )
-    }
 
     // var index = 1
     
-    function ActiveLink(e) {
-        const index = 1; 
-        const displayHandle = 0;
-        // 
-        if (typeof(e) == "object") {
-            console.log("test")
-            return ;
-            // return <Detail detailGoodsId={index} displayHandle={displayHandle} />
+    let [goodsNum, setGoodsNum] = useState(0);
+    
+
+    const ActiveLink = (e) =>{
+        console.log(e);
+
+
+        let goodsDetailBox = document.getElementById("goodsDetailBox");
+        // console.log(goodsDetailBox);
+        let goodsTitle = document.getElementById("goodsTitle");
+        let goodsPrice = document.getElementById("goodsPrice");
+        let goodsDesc = document.getElementById("goodsDesc");
+
+        
+        if (typeof (e) == "object") {
+            return;
         } else {
-            console.log(e);
-            return <GoodsDetailLayout/>
-            // return <Detail detailGoodsId={e} displayHandle={displayHandle} />
-        }  
+            setGoodsNum(e);
+            console.log(setGoodsNum);
+            if (goodsDetailBox.style.display === "block") {
+                goodsDetailBox.style.display = "none";
+            } else {
+                goodsDetailBox.style.display = "block";
+                goodsTitle.innerText = detailData[e].title;
+                goodsPrice.innerText = detailData[e].price;
+                goodsDesc.innerText = detailData[e].describe;
+                document.getElementById("goodsDetailTitleImg").src = detailData[e].img;
+                // document.getElementById("detailImgBox").innerHTML = (detailData[e].detailImg).map(data => document.getElementById("detailImg").src = data  (<img id="detailImg" src='../img/goods/goods_detail/1-2.png' alt="" />))
+            }
+        }
+        }
+        
+    
+
+    const handleVoid = (e) => {
         
     }
     
@@ -203,12 +186,29 @@ function goodsLayout() {
                     
                 </div>
             </div>
-            <GoodsDetailLayout/>
+            <div className='goodsDetailBox' id ="goodsDetailBox">
+                <h1 className='closeBtn' onClick={() => ActiveLink(goodsNum)}>X</h1>
+                <div className='goodsDetail'>
+                    <img id="goodsDetailTitleImg" src={detailData[detailGoodsId].img} alt=""/>
+                    <div className='goodsDetailText'>
+                        <h1 id='goodsTitle'>goodsTitle</h1>
+                        <h1 id='goodsPrice'>goodsPrice</h1>
+                        <h5 id='goodsDesc'>goodsDesc</h5>
+                        <button className="goodsBtn2Buy">구매하기</button>
+                    </div>
+                </div>
+
+                <div className="detailImgBox" id="detailImgBox">
+                    {(detailData[goodsNum].detailImg).map(data => (
+                    <img id="detailImg" src={data} alt="" />
+                    ))}
+                </div>
+            </div>
 
 
         </div>
     )
 }
 
-export default goodsLayout;
+export default GoodsLayout;
 

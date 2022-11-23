@@ -1,8 +1,17 @@
+.goodsDetailBox{
+    display: none;
+    /* display: block; */
+    top: 245px;
+    position: absolute;
+    left: 50%;
+  transform: translateX(-50%);
+}
+
 .goodsBox{
     background-color: #FFF0D0;
     display: flex;
     justify-content: center;
-    height: fit-content;
+    height: 90vh;
     align-items: center;
     padding: 100px;
 }
