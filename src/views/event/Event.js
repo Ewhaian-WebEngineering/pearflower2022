@@ -8,6 +8,8 @@ import { ScrollToTopOnMount, SectionsContainer, Section } from 'react-fullpage';
 import Dropdown from "./Dropdown";
 import './Event.css';
 import '../logo.css';
+import Header from '../Header';
+
 let options = {
   anchors: ['page1', 'page2', 'page3'],
   arrowNavigation: true,
@@ -75,13 +77,7 @@ function Event() {
         <div>
           <Link to="/beotalong"><img alt="floatingBeotAlongAd" className={classnames('floatingBeotAlong', (floatHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileFloatingBeotAlong.png'}></img></Link>
           <img alt="killingFloatBtn" className={classnames('killFloatingBeotAlong', (floatHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileFloatingKill.png'} onClick={closeFloat}></img>
-          <div className="eventHeader">
-            <Link to="/main"><img alt="logoSquare" className="Eventlogo"></img></Link>
-            <div className="menuBtnDiv">
-              <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'} onClick={clickDropDown}></img>
-              {dropDownView && <Dropdown />}
-            </div>
-          </div>
+          <Header />
           <div className="outer">
             <ScrollToTopOnMount />
             <SectionsContainer {...options}>
@@ -90,10 +86,10 @@ function Event() {
 
                 <div className="inner scrollPage1">
                   <div className="mobileEventWrapper">
-                    <img alt="earlyEvent" className="MeventBtn early" src={process.env.PUBLIC_URL + '/img/event/earlyEventBtn.png'} onClick={earlyClick}></img>
-                    <img alt="todayEvent" className="MeventBtn today" src={process.env.PUBLIC_URL + '/img/event/todayEventBtn.png'} onClick={todayClick}></img>
-                    <img alt="brownEarlyEvent" className={classnames('BeventBtn', 'Bearly', (earlyHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/brownEarlyEventBtn.png'} onClick={earlyClick}></img>
-                    <img alt="brownTodayEvent" className={classnames('BeventBtn', 'Btoday', (todayHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/brownTodayEventBtn.png'} onClick={todayClick}></img>
+                    <img alt="earlyEvent" className="MeventBtn Mearly" src={process.env.PUBLIC_URL + '/img/event/earlyEventBtn.png'} onClick={earlyClick}></img>
+                    <img alt="todayEvent" className="MeventBtn Mtoday" src={process.env.PUBLIC_URL + '/img/event/todayEventBtn.png'} onClick={todayClick}></img>
+                    <img alt="brownEarlyEvent" className={classnames('mBeventBtn', 'mBearly', (earlyHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/brownEarlyEventBtn.png'} onClick={earlyClick}></img>
+                    <img alt="brownTodayEvent" className={classnames('mBeventBtn', 'mBtoday', (todayHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/brownTodayEventBtn.png'} onClick={todayClick}></img>
                   </div>
                   <div className="mobilePopups">
                     <img alt="mobileEarlyEventPopup" className={classnames('mobileEventPopUp', 'mobileEarlyPopUp', (earlyHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileEarlyPopup.png'}></img>
@@ -182,15 +178,7 @@ function Event() {
       </MobileView >
       <BrowserView>
         <div className="WebBg">
-          <div className="eventHeader">
-            <Link to="/main"><img alt="logoSquare" className="Eventlogo"></img></Link>
-            <div className="menuBtnDiv">
-              <Link to="/main"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerToMain.png'}></img></Link>
-              <Link to="/timeTable"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerSchedule.png'}></img></Link>
-              <Link to="/event"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerEvent.png'}></img></Link>
-              <Link to="/goods"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerGoods.png'}></img></Link>
-            </div>
-          </div>
+          <Header />
           <div className="eventWrapper">
             <img alt="earlyEvent" className="eventBtn early" src={process.env.PUBLIC_URL + '/img/event/earlyEventBtn.png'} onClick={earlyClick}></img>
             <img alt="todayEvent" className="eventBtn today" src={process.env.PUBLIC_URL + '/img/event/todayEventBtn.png'} onClick={todayClick}></img>
