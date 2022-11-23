@@ -27,7 +27,6 @@
     height: 100%;
   }
 }
-
 #intro_ground {
   width: 100%;
   height: 35%;
@@ -47,7 +46,6 @@
 #intro_black_cat {
   width: 88%;
   height: 83%;
-  content: url(/public/img/cartoon/intro/black_cat.png);
 }
 #intro_black_cat_shadow {
   margin-top: -5%;
@@ -71,6 +69,7 @@
   /*background-color: aquamarine;*/
 }
 #intro_speech_bubble_btn {
+  visibility: var(--next-btn);
   width: 38%;
   height: 13%;
   bottom: 0;
@@ -83,4 +82,59 @@
   display: inline-block;
   width: 10%;
   content: url(/public/img/cartoon/bee/page1/poster/mouse.png);
+}
+#intro_cat_mouse {
+  visibility: var(--cat-mouse);
+  width: 35%;
+  content: url(/public/img/cartoon/bee/page1/poster/mouse.png);
+  right: 0;
+  bottom: 0;
+  margin-right: -15%;
+  margin-bottom: -35%;
+}
+.intro_cat_mouse_move {
+  animation: intro_cat_mouse 2s infinite;
+}
+.bounceUp {
+  animation: bounceUp 2s;
+}
+#intro_cat_heart {
+  visibility: var(--intro-heart);
+  width: 35%;
+  top: 0;
+  left: 0;
+  margin-top: -10%;
+  content: url(/public/img/cartoon/intro/heart.png);
+}
+.catMoveIntro {
+  animation: catMoveIntro 2s infinite alternate;
+}
+@keyframes intro_cat_mouse {
+  from {
+  }
+  to {
+    margin-right: -5%;
+    margin-bottom: -10%;
+  }
+}
+@keyframes bounceUp {
+  20% {
+    transform: translate3d(0, -10px, 0) scaleY(0.985);
+  }
+
+  40%,
+  45% {
+    opacity: 1;
+    transform: translate3d(0, 20px, 0) scaleY(0.9);
+  }
+}
+@keyframes catMoveIntro {
+  from {
+  }
+  40% {
+    transform: rotate(5deg);
+  }
+  to {
+    transform: rotate(-5deg);
+  }
 }

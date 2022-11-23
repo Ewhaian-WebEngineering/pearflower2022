@@ -22,7 +22,7 @@
     /*position: fixed;*/
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 233, 186);
+    background: linear-gradient(rgb(246, 185, 184), white);
   }
   .phoneFrame_wrap {
     display: flex;
@@ -241,13 +241,13 @@
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 233, 186);
+    background: linear-gradient(rgb(246, 185, 184), white);
   }
   #characterInfo_container {
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: rgb(255, 233, 186);
+    background: linear-gradient(rgb(246, 185, 184), white);
   }
 
   .webTitle {
@@ -259,9 +259,11 @@
     content: url(/public/img/cartoon/webVer/title.png);
   }
   .characterInfo_description_wrap {
+    overflow: scroll;
     margin-top: 2%;
+    margin-bottom: 2%;
     display: flex;
-    justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
     width: 83%;
     height: 49%;

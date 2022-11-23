@@ -20,16 +20,15 @@ const textSrcs = [
   "/img/cartoon/intro/text4.png",
   "/img/cartoon/intro/text5.png",
   "/img/cartoon/intro/text6.png",
-  "/img/cartoon/intro/text7.png",
-  "/img/cartoon/intro/text8.png",
-  "/img/cartoon/intro/text9.png",
 ];
 function Intro() {
   useEffect(() => {
-    clickCnt = 1;
+    clickCnt = 0;
     setScreenSize();
     var target = document.getElementById("intro_speech_bubble_wrap");
     target.style.backgroundImage = `url(/img/cartoon/intro/text1.png)`;
+    document.documentElement.style.setProperty("--cat-mouse", `hidden`);
+    document.documentElement.style.setProperty("--intro-heart", `hidden`);
   }, []);
 
   return (
@@ -39,21 +38,90 @@ function Intro() {
           <div className="phoneFrameInside_intro">
             {" "}
             <div id="intro_ground"></div>
-            <div id="intro_black_cat_shadow_wrap" className="fadeInLeft">
+            <div id="intro_black_cat_shadow_wrap" className="bounceInDown">
               <div id="intro_black_cat_shadow"></div>
-              <div id="intro_black_cat"></div>
+              <img
+                id="intro_black_cat"
+                src="/img/cartoon/intro/black_cat.png"
+                onClick={() => {
+                  if (clickCnt == 3) {
+                    var cat = document.getElementById("intro_black_cat");
+                    cat.src = `/img/cartoon/intro/surprisedCat.png`;
+                    document.documentElement.style.setProperty(
+                      "--cat-mouse",
+                      `hidden`
+                    );
+                    cat.classList.add("bounceUp");
+                    setTimeout(() => {
+                      cat.src = `/img/cartoon/intro/black_cat.png`;
+                    }, 700);
+                  }
+                }}
+              ></img>
+              <div id="intro_cat_heart" className="inlineBlock"></div>
+              <div id="intro_cat_mouse" className="inlineBlock"></div>
             </div>
-            <div id="intro_speech_bubble_wrap" className="fadeInLeft">
+            <div id="intro_speech_bubble_wrap" className="bounceInDown">
               <div id="intro_speech_bubble"></div>
               <div
                 id="intro_speech_bubble_btn"
                 onClick={() => {
-                  if (clickCnt != 8) {
+                  var cat = document.getElementById("intro_black_cat");
+                  var catWrap = document.getElementById(
+                    "intro_black_cat_shadow_wrap"
+                  );
+                  if (clickCnt == 0) {
+                    cat.src = `/img/cartoon/intro/black_cat2.png`;
+                  } else if (clickCnt == 1) {
+                    cat.src = `/img/cartoon/intro/black_cat3.png`;
+                  }
+                  if (clickCnt != 5) {
                     clickCnt++;
                     var target = document.getElementById(
                       "intro_speech_bubble_wrap"
                     );
                     target.style.backgroundImage = `url(${textSrcs[clickCnt]})`;
+                  }
+                  if (clickCnt == 3) {
+                    var mouse = document.getElementById("intro_cat_mouse");
+                    document.documentElement.style.setProperty(
+                      "--cat-mouse",
+                      `visible`
+                    );
+                    mouse.classList.add("intro_cat_mouse_move");
+                  } else {
+                    document.documentElement.style.setProperty(
+                      "--cat-mouse",
+                      `hidden`
+                    );
+                  }
+                  if (clickCnt == 4) {
+                    var heart = document.getElementById("intro_cat_heart");
+                    document.documentElement.style.setProperty(
+                      "--intro-heart",
+                      `visible`
+                    );
+                    heart.classList.add("swing");
+                  }
+                  if (clickCnt == 5) {
+                    document.documentElement.style.setProperty(
+                      "--intro-heart",
+                      `hidden`
+                    );
+                    document.documentElement.style.setProperty(
+                      "--next-btn",
+                      `hidden`
+                    );
+                    setTimeout(() => {
+                      var cat = document.getElementById(
+                        "intro_black_cat_shadow_wrap"
+                      );
+                      var bubble = document.getElementById(
+                        "intro_speech_bubble_wrap"
+                      );
+                      cat.classList.add("bounceOutUp");
+                      bubble.classList.add("bounceOutUp");
+                    }, 2000);
                   }
                 }}
               ></div>
