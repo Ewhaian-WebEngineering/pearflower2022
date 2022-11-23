@@ -187,3 +187,28 @@ font-size: 21px;
     }
 
 }
+
+@media screen and (max-width: 600px) {
+    .mainGrayBox_box {
+        padding-top: 300px;
+        padding-left: 10px;
+    }
+
+    .mainGrayBoxText_box {
+        padding: 0px 10px 0px 10px;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 30px;
+        background: #FFFFFF;
+        border-radius: 20px;
+        margin-right: 15px;
+        /* height: 12px; */
+    }
+
+    .mainGrayBoxText p {
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 30px;
+        margin-bottom: 0px;
+    }
+}
