@@ -67,7 +67,6 @@ function timetable() {
                         <p>11:00 ~ 18:00</p>
                     </div>
                 </div>
-
             </div>
         </div>
     )
