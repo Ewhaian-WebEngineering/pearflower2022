@@ -1,11 +1,19 @@
 import React from 'react';
 import Header from '../Header'
 import { BrowserView, MobileView } from "react-device-detect";
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import { Link } from "react-router-dom";
 import "./timetable.css"
+import UseGAEventsTracker from '../../useGAEventsTracker';
 
 function timetable() {
+
+    /* GA 연동 */
+    // const GAEventsTracker = UseGAEventsTracker("행사일정");
+    // useEffect(() => {
+    //     GAEventsTracker();
+    // }, []);
+
     return (
         <div>
             <MobileView>

@@ -1,10 +1,10 @@
 //게임 입력 페이지
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './GameMain.css';
 import './Gamehome.css';
 import './GamePage.css';
 import { Link, Navigate, useNavigate } from "react-router-dom";
-
+import UseGAEventsTracker from '../../useGAEventsTracker';
 
 
 const questions = [
@@ -123,7 +123,11 @@ function GameMain() {
         }
     };
 
-
+    /* GA 연동 */
+    const GAEventsTracker = UseGAEventsTracker("이스케이프게임");
+    useEffect(() => {
+        GAEventsTracker();
+    }, []);
 
     return (
         <div className="_background" >

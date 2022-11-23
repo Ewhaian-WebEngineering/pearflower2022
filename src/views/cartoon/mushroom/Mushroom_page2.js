@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../bee/Bee_page1.css";
 import "./Mushroom_page2.css";
 import "../SkipBtn.css";
 import "../cartoonWeb.css";
+import UseGAEventsTracker from "../../../useGAEventsTracker";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -14,6 +15,13 @@ function setScreenSize() {
 
 function Mushroom_page2() {
   setScreenSize();
+
+  /* GA 연동 */
+  const GAEventsTracker = UseGAEventsTracker("버섯");
+  useEffect(() => {
+    GAEventsTracker();
+  }, []);
+
   return (
     <div className="bee_container">
       <div className="phoneFrame_wrap">

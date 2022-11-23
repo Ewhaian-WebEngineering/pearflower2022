@@ -5,6 +5,8 @@ import "./Bee_page3.css";
 import "../CartoonBtns.css";
 import "../AniZip.css";
 import "../cartoonWeb.css";
+import UseGAEventsTracker from "../../../useGAEventsTracker";
+
 function setScreenSize() {
   let vh = window.innerHeight;
   let vw = window.innerWidth;
@@ -47,12 +49,20 @@ function bee_page3_ani() {
     }, 500);
   }, 500);
 }
+
 function Bee_page3() {
   setScreenSize();
   useEffect(() => {
     bee_page3_init();
     bee_page3_ani();
   }, []);
+
+  /* GA 연동 */
+  const GAEventsTracker = UseGAEventsTracker("꿀벌");
+  useEffect(() => {
+    GAEventsTracker();
+  }, []);
+
   return (
     <div className="bee_container">
       <div className="phoneFrame_wrap">

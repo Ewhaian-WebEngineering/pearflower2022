@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Header from '../Header';
 import './goodsLayout.css';
 import './goodsDetailLayout.css';
-
+import UseGAEventsTracker from '../../useGAEventsTracker';
 
 function GoodsLayout() {
 
@@ -165,6 +165,12 @@ function GoodsLayout() {
         { name: "레고피규어", price: 9000 },
         { name: "그립톡", price: 3000 },
     ]
+
+    /* GA 연동 */
+    const GAEventsTracker = UseGAEventsTracker("굿즈");
+    useEffect(() => {
+        GAEventsTracker();
+    }, []);
 
     return (
         <div>

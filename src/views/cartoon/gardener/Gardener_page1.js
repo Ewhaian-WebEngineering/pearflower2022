@@ -5,6 +5,7 @@ import "./Gardener_page1.css";
 // import "../SkipBtn.css";
 import "../CartoonBtns.css";
 import "../cartoonWeb.css";
+import UseGAEventsTracker from "../../../useGAEventsTracker";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -32,6 +33,12 @@ function Gardener_page1() {
       document.getElementById("garden1_first").style.marginTop = "50%";
       document.getElementById("garden1_second").style.marginTop = "88%";
     }
+  }, []);
+
+  /* GA 연동 */
+  const GAEventsTracker = UseGAEventsTracker("정원지기");
+  useEffect(() => {
+    GAEventsTracker();
   }, []);
 
   return (

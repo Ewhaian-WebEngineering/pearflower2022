@@ -6,6 +6,7 @@ import "../SkipBtn.css";
 import "../CartoonBtns.css";
 import { set } from "lodash";
 import "../cartoonWeb.css";
+import UseGAEventsTracker from "../../../useGAEventsTracker";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -58,6 +59,12 @@ function garden2_animation() {
 
 function Gardener_page2() {
   setScreenSize();
+
+  /* GA 연동 */
+  const GAEventsTracker = UseGAEventsTracker("정원지기");
+  useEffect(() => {
+    GAEventsTracker();
+  }, []);
 
   return (
     <div className="bee_container">

@@ -4,10 +4,16 @@ import Header from './WebGameHeader'
 import './GamePage.css'
 import './GameInfo.css'
 import './Gamehome.css'
-
+import UseGAEventsTracker from '../../useGAEventsTracker';
 
 function GameFinish(props) {
 
+    /* GA 연동 */
+    const GAEventsTracker = UseGAEventsTracker("이스케이프게임");
+    useEffect(() => {
+        GAEventsTracker();
+    }, []);
+    
     return (
         <div >
             <div className='gameheader'>

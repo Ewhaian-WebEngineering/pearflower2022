@@ -1,6 +1,7 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './GameInfo.css';
 import { Link } from "react-router-dom";
+import UseGAEventsTracker from '../../useGAEventsTracker';
 
 function setScreenSize() {
     let vh = window.innerHeight;
@@ -11,6 +12,13 @@ function setScreenSize() {
 
 export default function GameInfo() {
     setScreenSize();
+
+    /* GA 연동 */
+    const GAEventsTracker = UseGAEventsTracker("이스케이프게임");
+    useEffect(() => {
+        GAEventsTracker();
+    }, []);
+
     return (
         <div className='wrapper'>
             <div className='gameheader'>
