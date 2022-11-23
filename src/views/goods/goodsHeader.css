@@ -46,7 +46,7 @@
         background-color: #FFF0D0;
     }
     .headerLink{
-        padding-right: 70px;
+        /* padding-right: 70px; */
         display: flex;
         position: absolute;
     }
@@ -67,35 +67,38 @@
       }
 
       #gdsheaderUl {
-        height: 74px;
+        height: 50px;
         padding-top: 20px;
         display: none;
-        float: right;
+        /* float: right; */
         top: 75px;
         /* right: 0px; */
         background-color: #FFF0D0;
         width: 100vw;
         /* flex-direction: column; */
-        flex-direction: row;
-        flex-wrap: nowrap;
-        padding-left: 23vw;
+        /* flex-direction: row; */
+        /* flex-wrap: nowrap; */
+        padding: 0px;
+        /* margin-left: 12vw;*/
       }
 
       .headerLink a {
         text-decoration: none;
-        color: white;
-        font-size: 25px !important;
+        color: black;
+        font-size: 20px !important;
     }
-     #toGoMainBtn{
+     #gdsToGoGoods{
         display: none;
      }
     .headerLink p {
-        float: left;
+        /* float: left; */
+        width: -moz-fit-content;
         width: fit-content;
         font-weight: 600;
         font-size: 25px;
-        padding-right: 0px;
-        padding-right: 10vw;
+        /* padding-right: 0px; */
+        padding-right: 7vw;
+        padding-left: 9vw;
     }
 }
 
