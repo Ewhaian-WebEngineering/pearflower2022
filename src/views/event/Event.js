@@ -104,15 +104,15 @@ function Event() {
 
                   <div className="eventIcons1">
                     <div className="mHONEYJAR">
-                      <Link to="/honeyjar"><img alt="HoneyJarEvent" className="icon honeyjar" src={process.env.PUBLIC_URL + '/img/event/iconHoneyJar.png'}></img></Link>
+                      <Link to="/honeyjar"><img alt="HoneyJarEvent" className="honeyjar" src={process.env.PUBLIC_URL + '/img/event/iconHoneyJar.png'}></img></Link>
                       <img alt="nameHoneyJarEvent" id="name" className="honeyjarname" src={process.env.PUBLIC_URL + '/img/event/iconNameHoneyJar.png'}></img>
                     </div>
                     <div className="mPHOTO">
-                      <img alt="PhotoEvent" className="icon photoevent" src={process.env.PUBLIC_URL + '/img/event/iconPhoto.png'} onClick={photoClick}></img>
+                      <img alt="PhotoEvent" className="photoevent" src={process.env.PUBLIC_URL + '/img/event/iconPhoto.png'} onClick={photoClick}></img>
                       <img alt="nameHoneyJarEvent" id="name" className="photoeventname" src={process.env.PUBLIC_URL + '/img/event/iconNamePhoto.png'}></img>
                     </div>
                     <div className="mBALANCE">
-                      <img alt="BalanceGame" className="icon balancegame" src={process.env.PUBLIC_URL + '/img/event/iconBalanceGame.png'} onClick={balanceClick}></img>
+                      <img alt="BalanceGame" className="balancegame" src={process.env.PUBLIC_URL + '/img/event/iconBalanceGame.png'} onClick={balanceClick}></img>
                       <img alt="nameHoneyJarEvent" id="name" className="balancegamename" src={process.env.PUBLIC_URL + '/img/event/iconNameBalanceGame.png'}></img>
                     </div>
                     <img alt="BalancePopup" className={classnames('mobilePopUp', (balanceHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileBalancePopup.png'} ></img>

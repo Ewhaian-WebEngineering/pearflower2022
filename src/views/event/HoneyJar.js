@@ -22,7 +22,7 @@ function HoneyJar() {
                     </div>
                     <div className="mobileHoneyJarWrapper">
                         <div className="mobileBackToEventWrapper">
-                            <Link to="/event"><img alt="BackToEventPageBtn" className="mobileBackToEvent" src={process.env.PUBLIC_URL + '/img/event/mobileBacktoEvent.png'}></img></Link>
+                            <Link to="/event"><img alt="BackToEventPageBtn" className="mobileBackToEvent" src={process.env.PUBLIC_URL + '/img/event/detailBacktoEvent.png'}></img></Link>
                         </div>
                         <div className="mobileHoneyJarContent">
                             <img alt="HoneyJarExplanation" className="mobileDetailHoneyJar" src={process.env.PUBLIC_URL + '/img/event/mobileDetailHoneyJar.png'}></img>
