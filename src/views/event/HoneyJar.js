@@ -1,14 +1,19 @@
 import { BrowserView, MobileView } from "react-device-detect";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import './HoneyJar.css';
 import Header from "../Header";
+import UseGAEventsTracker from "../../useGAEventsTracker";
 
 function HoneyJar() {
     const [dropDownView, setDropDownView] = useState(false);
     const clickDropDown = () => {
         setDropDownView(!dropDownView);
     }
+
+    /* GA 연동 */
+    const GAEventsTracker = UseGAEventsTracker("이벤트(꿀단지팝업)");
+
     return (
         <div>
             <MobileView>
@@ -20,7 +25,7 @@ function HoneyJar() {
                         </div>
                         <div className="mobileHoneyJarContent">
                             <img alt="HoneyJarExplanation" className="mobileDetailHoneyJar" src={process.env.PUBLIC_URL + '/img/event/mobileDetailHoneyJar.png'}></img>
-                            <img alt="FormBtn" className="mobileHoneyJarForm" src={process.env.PUBLIC_URL + '/img/event/mobileHoneyJarForm.png'}></img>
+                            <img onClick={GAEventsTracker("꿀단지신청하기")} alt="FormBtn" className="mobileHoneyJarForm" src={process.env.PUBLIC_URL + '/img/event/mobileHoneyJarForm.png'}></img>
                         </div>
                     </div>
                 </div>

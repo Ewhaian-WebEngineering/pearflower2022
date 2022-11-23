@@ -1,14 +1,19 @@
 import { BrowserView, MobileView } from "react-device-detect";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import './Escape.css';
 import Header from "../Header";
+import UseGAEventsTracker from "../../useGAEventsTracker";
 
 function Escape() {
     const [dropDownView, setDropDownView] = useState(false);
     const clickDropDown = () => {
         setDropDownView(!dropDownView);
     }
+
+    /* GA 연동 */
+    const GAEventsTracker = UseGAEventsTracker("이벤트(게임팝업)");
+
     return (
         <div>
             <MobileView>
@@ -20,7 +25,7 @@ function Escape() {
                         </div>
                         <div className="mobileEscapeContent">
                             <img alt="escapeGameExplanation" className="mobileDetailEscape" src={process.env.PUBLIC_URL + '/img/event/mobileDetailEscape.png'}></img>
-                            <Link to="/gamehome"><img alt="FormBtn" className="mobileEscapeBtn" src={process.env.PUBLIC_URL + '/img/event/mobileEscapeBtn.png'}></img></Link>
+                            <Link to="/gamehome" onClick={GAEventsTracker("게임하러가기")}><img alt="FormBtn" className="mobileEscapeBtn" src={process.env.PUBLIC_URL + '/img/event/mobileEscapeBtn.png'}></img></Link>
                         </div>
                     </div>
                 </div>

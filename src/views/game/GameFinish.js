@@ -13,7 +13,7 @@ function GameFinish(props) {
     useEffect(() => {
         GAEventsTracker();
     }, []);
-    
+
     return (
         <div >
             <div className='gameheader'>
@@ -29,7 +29,7 @@ function GameFinish(props) {
             <img src='img/game/background.png' className="background" alt="배경" />
             <img src='img/game/openDoor.png' className="open" alt="성공" />
             <span className='howtolabel'>와!! 탈출성공</span>
-            <Link to="/gamehome">
+            <Link to="/gamehome" onClick={GAEventsTracker("게임성공다시하기")}>
                 <img src='img/game/replay.png' className="replay" alt="다시하기" />
             </Link>
         </div>

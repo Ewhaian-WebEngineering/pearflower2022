@@ -1,9 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import './main.css';
 import {Link } from "react-router-dom";
+import UseGAEventsTracker from '../../useGAEventsTracker';
 
 
 function Main() {
+
+    /* GA 연동 */
+    const GAEventsTracker = UseGAEventsTracker("메인");
+
     return (
         <div className='mainFullBox'>
             <img src="../img/mainBackground.png" alt="" />
@@ -31,8 +36,8 @@ function Main() {
                         </div>
                     </div>
                     <div className='btnBox'>
-                        <div className='mainBtn'><Link to='/event'>이벤트 바로가기</Link> </div>
-                        <div className='mainBtn'><Link to='/timeTable'>행사일정 확인하기</Link></div>
+                        <div className='mainBtn' onClick={GAEventsTracker("이벤트바로가기")}><Link to='/event'>이벤트 바로가기</Link> </div>
+                        <div className='mainBtn' onClick={GAEventsTracker("행사일정확인하기")}><Link to='/timeTable'>행사일정 확인하기</Link></div>
                     </div>
                 </div>
                 

@@ -78,7 +78,7 @@ function GamePage(props) {
     useEffect(() => {
         GAEventsTracker();
     }, []);
-    
+
     return (
         <div className="_background" >
             <div className='gameheader'>
@@ -95,8 +95,8 @@ function GamePage(props) {
             <div>
                 <img src='img/game/lockedDoor.png' className="door" alt="문" />
                 <div>
-                    <img src='img/game/key.png' className="webkey" onClick={handleOnClick} />
-                    <img src='img/game/key.png' className="mobilekey" onClick={handleOnClick} />
+                    <img src='img/game/key.png' className="webkey" onClick={ () => {handleOnClick(); GAEventsTracker("게임정답확인");}} />
+                    <img src='img/game/key.png' className="mobilekey" onClick={() => {handleOnClick(); GAEventsTracker("게임정답확인");}} />
                 </div>
             </div>
             <div className="guideText">얻은 힌트를 조합해 정답을 입력하세요!</div>
