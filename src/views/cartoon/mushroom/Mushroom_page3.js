@@ -4,6 +4,7 @@ import "../bee/Bee_page1.css";
 import "./Mushroom_page3.css";
 import "../SkipBtn.css";
 import "../cartoonWeb.css";
+import UseGAEventsTracker from "../../../useGAEventsTracker";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -66,6 +67,13 @@ function Mushroom_page3() {
     firecracker_init();
     firecracker_ani();
   }, []);
+
+  /* GA 연동 */
+  const GAEventsTracker = UseGAEventsTracker("버섯");
+  useEffect(() => {
+    GAEventsTracker();
+  }, []);
+  
   return (
     <div className="bee_container">
       <div className="phoneFrame_wrap">

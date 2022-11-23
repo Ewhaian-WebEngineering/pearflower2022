@@ -4,6 +4,7 @@ import "../bee/Bee_page1.css";
 import "./Mushroom_page1.css";
 import "../SkipBtn.css";
 import "../cartoonWeb.css";
+import UseGAEventsTracker from "../../../useGAEventsTracker";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -31,6 +32,12 @@ function Mushroom_page1() {
     } else {
       secondcut.style.marginTop = "116%";
     }
+  }, []);
+
+  /* GA 연동 */
+  const GAEventsTracker = UseGAEventsTracker("버섯");
+  useEffect(() => {
+    GAEventsTracker();
   }, []);
 
   return (

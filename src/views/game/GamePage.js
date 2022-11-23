@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import './GamePage.css'
 import './Gamehome.css';
 import { Link, Navigate, useNavigate } from "react-router-dom";
-
+import UseGAEventsTracker from '../../useGAEventsTracker';
 
 
 
@@ -73,6 +73,12 @@ function GamePage(props) {
         }
     };
 
+    /* GA 연동 */
+    const GAEventsTracker = UseGAEventsTracker("이스케이프게임");
+    useEffect(() => {
+        GAEventsTracker();
+    }, []);
+    
     return (
         <div className="_background" >
             <div className='gameheader'>

@@ -7,6 +7,7 @@ import "../CartoonBtns.css";
 import "../cartoonWeb.css";
 import { Link } from "react-router-dom";
 //import { Link } from "react-router-dom";
+import UseGAEventsTracker from "../../../useGAEventsTracker";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -80,6 +81,7 @@ function falling_trashs_ani() {
     }, 1000);
   }, 1000);
 }
+
 function Bee_page1() {
   const honeyBoxSrcs = [
     `/img/cartoon/bee/page1/poster/honey0.png`,
@@ -117,6 +119,13 @@ function Bee_page1() {
     bee_page1_person4_effect_ani();
     bee_page1_person3_sweat();
   }, []);
+
+  /* GA 연동 */
+  const GAEventsTracker = UseGAEventsTracker("꿀벌");
+  useEffect(() => {
+    GAEventsTracker();
+  }, []);
+
   return (
     <div className="bee_container">
       <div className="phoneFrame_wrap">

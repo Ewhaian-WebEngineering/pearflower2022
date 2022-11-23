@@ -5,6 +5,7 @@ import "./Sprout_page2.css";
 import "../AniZip.css";
 import "../CartoonBtns.css";
 import "../cartoonWeb.css";
+import UseGAEventsTracker from "../../../useGAEventsTracker";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -66,6 +67,13 @@ function Sprout_page2() {
     );
     sprout_page2_animation_entrance();
   }, []);
+
+  /* GA 연동 */
+  const GAEventsTracker = UseGAEventsTracker("새싹");
+  useEffect(() => {
+    GAEventsTracker();
+  }, []);
+  
   return (
     <div className="bee_container">
       <div className="phoneFrame_wrap">

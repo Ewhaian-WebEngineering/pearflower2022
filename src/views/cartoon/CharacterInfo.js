@@ -6,6 +6,8 @@ import "./bee/Bee_page1.css";
 import "./CartoonBtns.css";
 import "./cartoonWeb.css";
 import "./cartoonWeb.css";
+import UseGAEventsTracker from "../../useGAEventsTracker";
+
 function setScreenSize() {
   let vh = window.innerHeight;
   let vw = window.innerWidth;
@@ -16,6 +18,13 @@ function CharacterInfo() {
   useEffect(() => {
     setScreenSize();
   }, []);
+
+  /* GA 연동 */
+  const GAEventsTracker = UseGAEventsTracker("캐릭터소개");
+  useEffect(() => {
+      GAEventsTracker();
+  }, []);
+
   return (
     <div id="characterInfo_container">
       <div className="phoneFrame_wrap">

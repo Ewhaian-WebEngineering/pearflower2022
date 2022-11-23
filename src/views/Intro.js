@@ -4,6 +4,7 @@ import "./Intro.css";
 import "./cartoon/bee/Bee_page1.css";
 import "../views/cartoon/cartoonWeb.css";
 import "./cartoon/AniZip.css";
+import UseGAEventsTracker from "../useGAEventsTracker";
 
 var clickCnt;
 function setScreenSize() {
@@ -29,6 +30,12 @@ function Intro() {
     target.style.backgroundImage = `url(/img/cartoon/intro/text1.png)`;
     document.documentElement.style.setProperty("--cat-mouse", `hidden`);
     document.documentElement.style.setProperty("--intro-heart", `hidden`);
+  }, []);
+
+  /* GA 연동 */
+  const GAEventsTracker = UseGAEventsTracker("인트로");
+  useEffect(() => {
+    GAEventsTracker();
   }, []);
 
   return (

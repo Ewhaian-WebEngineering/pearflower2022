@@ -7,6 +7,7 @@ import "./Clouds.css";
 import "../Firecrackers.css";
 import "../CartoonBtns.css";
 import "../cartoonWeb.css";
+import UseGAEventsTracker from "../../../useGAEventsTracker";
 
 function setScreenSize() {
   let vh = window.innerHeight;
@@ -61,6 +62,7 @@ function firecracker_init() {
   document.documentElement.style.setProperty("--firecracker3-outside", `0`);
 }
 var bee_page4_clickCnt;
+
 function Bee_page4() {
   setScreenSize();
   useEffect(() => {
@@ -72,6 +74,13 @@ function Bee_page4() {
     var mouse = document.getElementById("bee_page4_mouse");
     mouse.classList.add("bee_page4_mouse_move");
   }, []);
+
+  /* GA 연동 */
+  const GAEventsTracker = UseGAEventsTracker("꿀벌");
+  useEffect(() => {
+    GAEventsTracker();
+  }, []);
+
   return (
     <div className="bee_container">
       <div className="phoneFrame_wrap">

@@ -9,6 +9,7 @@ import Dropdown from "./Dropdown";
 import './Event.css';
 import '../logo.css';
 import Header from '../Header';
+import UseGAEventsTracker from '../../useGAEventsTracker';
 
 let options = {
   anchors: ['page1', 'page2', 'page3'],
@@ -70,6 +71,12 @@ function Event() {
   const maxLevClick = () => {
     setMaxLevHidden(!maxLevHidden);
   }
+
+  /* GA 연동 */
+  const GAEventsTracker = UseGAEventsTracker("이벤트");
+  useEffect(() => {
+    GAEventsTracker();
+  }, []);
 
   return (
     <div>
