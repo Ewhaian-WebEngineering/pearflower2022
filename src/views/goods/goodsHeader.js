@@ -24,7 +24,9 @@ function header() {
     return (
         <div className='gdsHeaderFlame' id="gdsheaderBox">
             <div className='headerLogo'>
-               <img src="../img/logo_main.png" alt="" />
+                <Link to="/main">
+                    <img src="../img/logo_main.png" alt="" />
+                </Link>
             </div>
             
             <div className='headerLink' id='gdsheaderUl'>
