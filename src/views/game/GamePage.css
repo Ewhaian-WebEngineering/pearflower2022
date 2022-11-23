@@ -65,9 +65,8 @@
 
       .locked {
           position: absolute;
-          width: 87vw;
-          height: 40vh;
-          top: 30%;
+          width: 87%;
+          top: 35%;
           left: 6%;
       }
 
@@ -253,10 +252,9 @@
 
       .replay {
           position: absolute;
-          width: 21vw;
-          height: 11vh;
+          width: 15%;
           top: 83%;
-          left: 39%;
+          left: 42%;
       }
 
       .word1 {

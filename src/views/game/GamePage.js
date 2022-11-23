@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react'
-import Header from './WebGameHeader'
 import './GamePage.css'
-import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd";
-import { add } from 'lodash';
+import './Gamehome.css';
 import { Link, Navigate, useNavigate } from "react-router-dom";
 
 
@@ -65,19 +63,6 @@ function GamePage(props) {
         }
     }
 
-
-
-
-    const onDragEnd = () => {
-        if (correct === 0 && sentence.length >= 8)
-            navigate('/finalgameover');
-        else if (correct === 1) {
-            setCorrect(0);
-            navigate('/finish');
-        }
-
-    }
-
     const handleOnClick = () => {
         console.log(correct);
         if (correct === 0 && sentence.length >= 8)
@@ -89,35 +74,26 @@ function GamePage(props) {
     };
 
     return (
-        <div >
-            <Header />
+        <div className="_background" >
+            <div className='gameheader'>
+                <div className='header-box'>
+                    <Link to='/main'>
+                        <img id='logo' src='img/logo_main.png' alt='logo main'></img>
+                    </Link>
+                </div>
+            </div>
             <img src='img/game/background.png' className="background" alt="배경" />
             <img src='img/game/window.png' className="keyWindow" alt="글자입력칸" />
 
-            <DragDropContext onDragEnd={onDragEnd}>
-                <Droppable droppableId="droppable">
-                    {(provided, snapshot) => (
-                        <div
-                            ref={provided.innerRef}
-                            {...provided.droppableProps}
-                        >
-                            <img src='img/game/lockedDoor.png' className="door" alt="문" />
-                            <Draggable draggableId="UseKey" index="1">
-                                {(provided, snapshot) => (
-                                    <div
-                                        ref={provided.innerRef}
-                                        {...provided.draggableProps}
-                                        {...provided.dragHandleProps}>
-                                        <img src='img/game/key.png' className="webkey" />
-                                        <img src='img/game/key.png' className="mobilekey" onClick={handleOnClick} />
-                                    </div>
-                                )}
-                            </Draggable>
-                            {provided.placeholder}
-                        </div>
-                    )}
-                </Droppable>
-            </DragDropContext>
+
+            <div>
+                <img src='img/game/lockedDoor.png' className="door" alt="문" />
+                <div>
+                    <img src='img/game/key.png' className="webkey" onClick={handleOnClick} />
+                    <img src='img/game/key.png' className="mobilekey" onClick={handleOnClick} />
+                </div>
+            </div>
+
             <img src='img/game/guideText.png' className="guideText" alt="설명" />
             <img src='img/game/gameCharacter.png' className="character" alt="주머니" />
 
