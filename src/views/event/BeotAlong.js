@@ -1,14 +1,19 @@
 import { BrowserView, MobileView } from "react-device-detect";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import './BeotAlong.css';
 import Header from "../Header";
+import UseGAEventsTracker from "../../useGAEventsTracker";
 
 function BeotAlong() {
     const [dropDownView, setDropDownView] = useState(false);
     const clickDropDown = () => {
         setDropDownView(!dropDownView);
     }
+
+    /* GA 연동 */
+    const GAEventsTracker = UseGAEventsTracker("이벤트(벗어롱팝업)");
+
     return (
         <div>
             <MobileView>
@@ -20,7 +25,7 @@ function BeotAlong() {
                         </div>
                         <div className="mobileBeotAlongContent">
                             <img alt="BeotAlongExplanation" className="mobileDetailBeotAlong" src={process.env.PUBLIC_URL + '/img/event/mobileDetailBeotAlong.png'}></img>
-                            <img alt="FormBtn" className="mobileBeotAlongForm" src={process.env.PUBLIC_URL + '/img/event/mobileBeotAlongForm.png'}></img>
+                            <img onClick={GAEventsTracker("벗어롱신청하기")} alt="FormBtn" className="mobileBeotAlongForm" src={process.env.PUBLIC_URL + '/img/event/mobileBeotAlongForm.png'}></img>
                         </div>
                     </div>
                 </div>

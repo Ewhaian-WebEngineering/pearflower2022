@@ -93,8 +93,8 @@ function Event() {
 
                 <div className="inner scrollPage1">
                   <div className="mobileEventWrapper">
-                    <img alt="earlyEvent" className="MeventBtn Mearly" src={process.env.PUBLIC_URL + '/img/event/earlyEventBtn.png'} onClick={earlyClick}></img>
-                    <img alt="todayEvent" className="MeventBtn Mtoday" src={process.env.PUBLIC_URL + '/img/event/todayEventBtn.png'} onClick={todayClick}></img>
+                    <img alt="earlyEvent" className="MeventBtn Mearly" src={process.env.PUBLIC_URL + '/img/event/earlyEventBtn.png'} onClick={() => {earlyClick(); GAEventsTracker("사전이벤트일정");}}></img>
+                    <img alt="todayEvent" className="MeventBtn Mtoday" src={process.env.PUBLIC_URL + '/img/event/todayEventBtn.png'} onClick={() => {todayClick(); GAEventsTracker("당일이벤트일정");}}></img>
                     <img alt="brownEarlyEvent" className={classnames('mBeventBtn', 'mBearly', (earlyHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/brownEarlyEventBtn.png'} onClick={earlyClick}></img>
                     <img alt="brownTodayEvent" className={classnames('mBeventBtn', 'mBtoday', (todayHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/brownTodayEventBtn.png'} onClick={todayClick}></img>
                   </div>
@@ -111,11 +111,11 @@ function Event() {
                       <img alt="nameHoneyJarEvent" id="name" className="honeyjarname" src={process.env.PUBLIC_URL + '/img/event/iconNameHoneyJar.png'}></img>
                     </div>
                     <div className="mPHOTO">
-                      <img alt="PhotoEvent" className="photoevent" src={process.env.PUBLIC_URL + '/img/event/iconPhoto.png'} onClick={photoClick}></img>
+                      <img alt="PhotoEvent" className="photoevent" src={process.env.PUBLIC_URL + '/img/event/iconPhoto.png'} onClick={() => {photoClick(); GAEventsTracker("이벤트클릭");}}></img>
                       <img alt="nameHoneyJarEvent" id="name" className="photoeventname" src={process.env.PUBLIC_URL + '/img/event/iconNamePhoto.png'}></img>
                     </div>
                     <div className="mBALANCE">
-                      <img alt="BalanceGame" className="balancegame" src={process.env.PUBLIC_URL + '/img/event/iconBalanceGame.png'} onClick={balanceClick}></img>
+                      <img alt="BalanceGame" className="balancegame" src={process.env.PUBLIC_URL + '/img/event/iconBalanceGame.png'} onClick={() => {balanceClick(); GAEventsTracker("이벤트클릭");}}></img>
                       <img alt="nameHoneyJarEvent" id="name" className="balancegamename" src={process.env.PUBLIC_URL + '/img/event/iconNameBalanceGame.png'}></img>
                     </div>
                     <img alt="BalancePopup" className={classnames('mobilePopUp', (balanceHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileBalancePopup.png'} ></img>
@@ -129,19 +129,19 @@ function Event() {
                 <div className="inner scrollPage2">
                   <div className="eventIcons2">
                     <div className="mBEOTALONG">
-                      <Link to="/beotalong"><img alt="SingAlongEvent" className="beotalong" src={process.env.PUBLIC_URL + '/img/event/iconBeotAlong.png'}></img></Link>
+                      <Link to="/beotalong" onClick={GAEventsTracker("이벤트클릭")}><img alt="SingAlongEvent" className="beotalong" src={process.env.PUBLIC_URL + '/img/event/iconBeotAlong.png'}></img></Link>
                       <img alt="nameSingAlongEvent" id="name2" className="beotalongname" src={process.env.PUBLIC_URL + '/img/event/iconNameBeotAlong.png'}></img>
                     </div>
                     <div className="mESCAPE">
-                      <Link to="/escape"><img alt="EscapeGame" className="eventEscape" src={process.env.PUBLIC_URL + '/img/event/iconEscape.png'}></img></Link>
+                      <Link to="/escape" onClick={GAEventsTracker("이벤트클릭")}><img alt="EscapeGame" className="eventEscape" src={process.env.PUBLIC_URL + '/img/event/iconEscape.png'}></img></Link>
                       <img alt="nameEscapeGame" id="name2" className="escapename" src={process.env.PUBLIC_URL + '/img/event/iconNameEscape.png'}></img>
                     </div>
                     <div className="mTEACOM">
-                      <img alt="TeaComEvent" className="teacom" src={process.env.PUBLIC_URL + '/img/event/iconTeaCom.png'} onClick={teacomClick}></img>
+                      <img alt="TeaComEvent" className="teacom" src={process.env.PUBLIC_URL + '/img/event/iconTeaCom.png'} onClick={() => {teacomClick(); GAEventsTracker("이벤트클릭");}}></img>
                       <img alt="nameTeaComEvent" id="name2" className="teacomname" src={process.env.PUBLIC_URL + '/img/event/iconNameTeaCom.png'}></img>
                     </div>
                     <div className="mNEWUSER">
-                      <img alt="NewUserEvent" className="newuser" src={process.env.PUBLIC_URL + '/img/event/iconNewUser.png'} onClick={newUserClick}></img>
+                      <img alt="NewUserEvent" className="newuser" src={process.env.PUBLIC_URL + '/img/event/iconNewUser.png'} onClick={() => {newUserClick(); GAEventsTracker("이벤트클릭");}}></img>
                       <img alt="nameNewUserEvent" id="name2" className="newusername" src={process.env.PUBLIC_URL + '/img/event/iconNameNewUser.png'}></img>
                     </div>
                     <img alt="TeaComPopup" className={classnames('mobilePopUp2', (teacomHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileTeacomPopup.png'} ></img>
@@ -155,15 +155,15 @@ function Event() {
                 <div className="inner scrollPage3">
                   <div className="eventIcons3">
                     <div className="mMAXLEV">
-                      <img alt="MaxLevelUserEvent" className=" icon3 maxlev" src={process.env.PUBLIC_URL + '/img/event/iconMaxLev.png'} onClick={maxLevClick}></img>
+                      <img alt="MaxLevelUserEvent" className=" icon3 maxlev" src={process.env.PUBLIC_URL + '/img/event/iconMaxLev.png'} onClick={() => {maxLevClick(); GAEventsTracker("이벤트클릭");}}></img>
                       <img alt="nameMaxLevelUserEvent" id="name3" className="maxlevname" src={process.env.PUBLIC_URL + '/img/event/iconNameMaxLev.png'}></img>
                     </div>
                     <div>
-                      <img alt="BingoGame" className="icon3 bingo" src={process.env.PUBLIC_URL + '/img/event/iconBingo.png'} onClick={bingoClick}></img>
+                      <img alt="BingoGame" className="icon3 bingo" src={process.env.PUBLIC_URL + '/img/event/iconBingo.png'} onClick={() => {bingoClick(); GAEventsTracker("이벤트클릭");}}></img>
                       <img alt="nameBingoGame" id="name3" className="bingoname" src={process.env.PUBLIC_URL + '/img/event/iconNameBingo.png'}></img>
                     </div>
                     <div className="mWISHTREE">
-                      <img alt="WishTree" className="icon3 wishtree" src={process.env.PUBLIC_URL + '/img/event/iconWishTree.png'} onClick={wishTreeClick}></img>
+                      <img alt="WishTree" className="icon3 wishtree" src={process.env.PUBLIC_URL + '/img/event/iconWishTree.png'} onClick={() => {wishTreeClick(); GAEventsTracker("이벤트클릭");}}></img>
                       <img alt="nameWishTree" id="name3" className="wishtreename" src={process.env.PUBLIC_URL + '/img/event/iconNameWishTree.png'}></img>
                     </div>
                     <img alt="MaxLevPopup" className={classnames('mobilePopUp3', (maxLevHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileMaxLevPopup.png'} ></img>
@@ -187,8 +187,8 @@ function Event() {
         <div className="WebBg">
           <Header />
           <div className="eventWrapper">
-            <img alt="earlyEvent" className="eventBtn early" src={process.env.PUBLIC_URL + '/img/event/earlyEventBtn.png'} onClick={earlyClick}></img>
-            <img alt="todayEvent" className="eventBtn today" src={process.env.PUBLIC_URL + '/img/event/todayEventBtn.png'} onClick={todayClick}></img>
+            <img alt="earlyEvent" className="eventBtn early" src={process.env.PUBLIC_URL + '/img/event/earlyEventBtn.png'} onClick={() => {earlyClick(); GAEventsTracker("사전이벤트일정");}}></img>
+            <img alt="todayEvent" className="eventBtn today" src={process.env.PUBLIC_URL + '/img/event/todayEventBtn.png'} onClick={() => {todayClick(); GAEventsTracker("당일이벤트일정");}}></img>
             <img alt="brownEarlyEvent" className={classnames('BeventBtn', 'Bearly', (earlyHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/brownEarlyEventBtn.png'} onClick={earlyClick}></img>
             <img alt="brownTodayEvent" className={classnames('BeventBtn', 'Btoday', (todayHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/brownTodayEventBtn.png'} onClick={todayClick}></img>
             <div className="popupWrapper">
@@ -216,15 +216,15 @@ function Event() {
             <div className="inner">
               <div className="eventIcons1">
                 <div className="BALANCEGAME">
-                  <img alt="BalanceGame" className="icon balancegame" src={process.env.PUBLIC_URL + '/img/event/iconBalanceGame.png'} onClick={balanceClick}></img>
+                  <img alt="BalanceGame" className="icon balancegame" src={process.env.PUBLIC_URL + '/img/event/iconBalanceGame.png'} onClick={() => {balanceClick(); GAEventsTracker("이벤트클릭");}}></img>
                   <img alt="nameHoneyJarEvent" id="name" className="balancegamename" src={process.env.PUBLIC_URL + '/img/event/iconNameBalanceGame.png'}></img>
                 </div>
                 <div className="PHOTOEVENT">
-                  <img alt="PhotoEvent" className="icon photoevent" src={process.env.PUBLIC_URL + '/img/event/iconPhoto.png'} onClick={photoClick}></img>
+                  <img alt="PhotoEvent" className="icon photoevent" src={process.env.PUBLIC_URL + '/img/event/iconPhoto.png'} onClick={() => {photoClick(); GAEventsTracker("이벤트클릭");}}></img>
                   <img alt="nameHoneyJarEvent" id="name" className="photoeventname" src={process.env.PUBLIC_URL + '/img/event/iconNamePhoto.png'}></img>
                 </div>
                 <div className="BINGO">
-                  <img alt="BingoGame" className="icon bingo" src={process.env.PUBLIC_URL + '/img/event/iconBingo.png'} onClick={bingoClick}></img>
+                  <img alt="BingoGame" className="icon bingo" src={process.env.PUBLIC_URL + '/img/event/iconBingo.png'} onClick={() => {bingoClick(); GAEventsTracker("이벤트클릭");}}></img>
                   <img alt="nameBingoGame" id="name" className="bingoname" src={process.env.PUBLIC_URL + '/img/event/iconNameBingo.png'}></img>
                 </div>
               </div>
@@ -232,19 +232,19 @@ function Event() {
             <div className="inner">
               <div className="eventIcons2">
                 <div className="HONEYJAR">
-                  <Link to="/honeyjar"><img alt="HoneyJarEvent" className="icon honeyjar" src={process.env.PUBLIC_URL + '/img/event/iconHoneyJar.png'}></img></Link>
+                  <Link to="/honeyjar" onClick={GAEventsTracker("이벤트클릭")}><img alt="HoneyJarEvent" className="icon honeyjar" src={process.env.PUBLIC_URL + '/img/event/iconHoneyJar.png'} ></img></Link>
                   <img alt="nameHoneyJarEvent" id="name" className="honeyjarname" src={process.env.PUBLIC_URL + '/img/event/iconNameHoneyJar.png'}></img>
                 </div>
                 <div className="TEACOM">
-                  <img alt="TeaComEvent" className="icon teacom" src={process.env.PUBLIC_URL + '/img/event/iconTeaCom.png'} onClick={teacomClick}></img>
+                  <img alt="TeaComEvent" className="icon teacom" src={process.env.PUBLIC_URL + '/img/event/iconTeaCom.png'} onClick={() => {teacomClick(); GAEventsTracker("이벤트클릭");}}></img>
                   <img alt="nameTeaComEvent" id="name" className="teacomname" src={process.env.PUBLIC_URL + '/img/event/iconNameTeaCom.png'}></img>
                 </div>
                 <div className="NEWUSER">
-                  <img alt="NewUserEvent" className="icon newuser" src={process.env.PUBLIC_URL + '/img/event/iconNewUser.png'} onClick={newUserClick}></img>
+                  <img alt="NewUserEvent" className="icon newuser" src={process.env.PUBLIC_URL + '/img/event/iconNewUser.png'} onClick={() => {newUserClick(); GAEventsTracker("이벤트클릭");}}></img>
                   <img alt="nameNewUserEvent" id="name" className="newusername" src={process.env.PUBLIC_URL + '/img/event/iconNameNewUser.png'}></img>
                 </div>
                 <div className="BEOTALONG">
-                  <Link to="/beotalong"><img alt="SingAlongEvent" className="icon beotalong" src={process.env.PUBLIC_URL + '/img/event/iconBeotAlong.png'} ></img></Link>
+                  <Link to="/beotalong" onClick={GAEventsTracker("이벤트클릭")}><img alt="SingAlongEvent" className="icon beotalong" src={process.env.PUBLIC_URL + '/img/event/iconBeotAlong.png'} ></img></Link>
                   <img alt="nameSingAlongEvent" id="name" className="beotalongname" src={process.env.PUBLIC_URL + '/img/event/iconNameBeotAlong.png'}></img>
                 </div>
 
@@ -253,15 +253,15 @@ function Event() {
             <div className="inner">
               <div className="eventIcons3">
                 <div className="WISHTREE">
-                  <img alt="WishTree" className="icon wishtree" src={process.env.PUBLIC_URL + '/img/event/iconWishTree.png'} onClick={wishTreeClick}></img>
+                  <img alt="WishTree" className="icon wishtree" src={process.env.PUBLIC_URL + '/img/event/iconWishTree.png'} onClick={() => {wishTreeClick(); GAEventsTracker("이벤트클릭");}}></img>
                   <img alt="nameWishTree" id="name" className="wishtreename" src={process.env.PUBLIC_URL + '/img/event/iconNameWishTree.png'}></img>
                 </div>
                 <div className="MAXLEV">
-                  <img alt="MaxLevelUserEvent" className=" icon maxlev" src={process.env.PUBLIC_URL + '/img/event/iconMaxLev.png'} onClick={maxLevClick}></img>
+                  <img alt="MaxLevelUserEvent" className=" icon maxlev" src={process.env.PUBLIC_URL + '/img/event/iconMaxLev.png'} onClick={() => {maxLevClick(); GAEventsTracker("이벤트클릭");}}></img>
                   <img alt="nameMaxLevelUserEvent" id="name" className="maxlevname" src={process.env.PUBLIC_URL + '/img/event/iconNameMaxLev.png'}></img>
                 </div>
                 <div className="ESCAPE">
-                  <Link to="/escape"><img alt="EscapeGame" className="icon eventEscape" src={process.env.PUBLIC_URL + '/img/event/iconEscape.png'}></img></Link>
+                  <Link to="/escape" onClick={GAEventsTracker("이벤트클릭")}><img alt="EscapeGame" className="icon eventEscape" src={process.env.PUBLIC_URL + '/img/event/iconEscape.png'}></img></Link>
                   <img alt="nameEscapeGame" id="name" className="escapename" src={process.env.PUBLIC_URL + '/img/event/iconNameEscape.png'}></img>
                 </div>
               </div>

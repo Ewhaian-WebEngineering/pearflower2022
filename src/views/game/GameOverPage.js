@@ -4,9 +4,16 @@ import Header from './WebGameHeader'
 import './GamePage.css'
 import './GameInfo.css'
 import './Gamehome.css'
+import UseGAEventsTracker from '../../useGAEventsTracker'
 
 function GameOverPage(props) {
 
+    /* GA 연동 */
+    const GAEventsTracker = UseGAEventsTracker("이스케이프게임");
+    useEffect(() => {
+        GAEventsTracker();
+    }, []);
+    
     return (
         <div >
             <div className='gameheader'>
@@ -22,7 +29,7 @@ function GameOverPage(props) {
             <img src='img/game/background.png' className="background" alt="배경" />
             <img src='img/game/withKeyDoor.png' className="locked" alt="실패" />
             <span className='howtolabel'>ㅠㅠ탈출실패</span>
-            <Link to="/finalgame">
+            <Link to="/finalgame" onClick={GAEventsTracker("게임실패다시하기")}>
                 <img src='img/game/replay.png' className="replay" alt="다시하기" />
             </Link>
 

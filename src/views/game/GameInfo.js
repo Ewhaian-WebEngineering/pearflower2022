@@ -48,7 +48,7 @@ export default function GameInfo() {
                     </span>
                 </div>
                 <div className='start'>
-                    <Link to='/gamemain'>
+                    <Link to='/gamemain' onClick={GAEventsTracker("게임시작")}>
                         <img id='startbtn' src='img/game/startbtn.png' alt='startbtn'></img>
                     </Link>
                 </div>
