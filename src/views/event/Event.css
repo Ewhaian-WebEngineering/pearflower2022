@@ -10,9 +10,12 @@
 
 
     .Navigation-Anchor {
-        width: 9px;
-        height: 9px;
+        width: 0;
 
+    }
+
+    .Navigation {
+        display: none;
     }
 
     .floatingBeotAlong {
@@ -987,7 +990,7 @@
         height: 38px;
         width: auto;
         display: flex;
-        padding-top: 5%;
+        padding-top: 2%;
     }
 
     .bingoname {
@@ -1043,6 +1046,7 @@
 
     .honeyjarname {
         padding-left: 25%;
+        margin-top: -7%;
     }
 
     .teacomname {
@@ -1055,6 +1059,7 @@
 
     .beotalongname {
         padding-left: 65%;
+        margin-top: -7%;
     }
 
 
@@ -1100,7 +1105,8 @@
     }
 
     .escapename {
-        padding-left: 5%;
+        padding-left: 10%;
+        margin-top: -7%;
     }
 
     /*팝업창*/
