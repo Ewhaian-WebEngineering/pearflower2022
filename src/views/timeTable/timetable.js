@@ -11,7 +11,9 @@ function timetable() {
             <MobileView>
                 <div className="mobileHoneyJarBg">
                     <Header />
-
+                    <div className='mobileTimeTableWrapper'>
+                        <img alt="FormBtn" className="mobileFullEvent" src={process.env.PUBLIC_URL + '/img/timetable/mobileTimeTable.png'}></img>
+                    </div>
                 </div>
             </MobileView>
             <BrowserView>
