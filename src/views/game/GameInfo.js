@@ -18,6 +18,9 @@ export default function GameInfo() {
                     <Link to='/main'>
                         <img id='logo' src='img/logo_main.png' alt='logo main'></img>
                     </Link>
+                    <Link to="/Gamehome">
+                        <img src='img/game/backBtn.png' className="backBtn" alt="뒤로가기" />
+                    </Link>
                 </div>
             </div>
             <div className='gamemiddle'>

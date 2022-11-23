@@ -17,8 +17,9 @@
     }
 
     .header-box {
-        padding-left: 2vw;
-        padding-top: 1.3vw;
+        /* padding-left: 2vw;
+        padding-top: 1.3vw; */
+        width: 100%;
     }
 
     .circle {
@@ -31,7 +32,18 @@
     }
 
     #logo {
+        position: absolute;
+        left: 0;
+        margin-left: 10px;
         width: 25vw;
+    }
+
+    .backBtn {
+        position: absolute;
+        right: 0;
+        margin-right: 20px;
+        width: 10vw;
+        height: 10vw;
     }
 
     .gamemiddle {
@@ -131,6 +143,17 @@
         margin-left: 20px;
     }
 
+    .backBtn {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        margin: auto 0;
+        width: 48px;
+        height: 48px;
+        margin-right: 20px;
+    }
+
     /* 
     .header-box {
         padding-left: 1.8vw;
@@ -218,5 +241,6 @@
         font-family: 'Hahmlet', serif;
         font-weight: 700;
         color: #442121;
+        overflow: hidden;
     }
 }
