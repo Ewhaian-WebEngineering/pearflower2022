@@ -60,6 +60,7 @@ function GameMain() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [userAnswer, setUserAnswer] = useState('');
     const [visible, setVisible] = useState(false);
+    const [text, setText] = useState('');
     const [_popUp, setPopUp] = useState(false);    //팝업
     const [index0, setindex0] = useState(false);
     const [index1, setindex1] = useState(false);
@@ -72,6 +73,10 @@ function GameMain() {
 
     const navigate = useNavigate();
 
+    // const userAns = (e) => {
+
+    //     setUserAnswer(inputText);
+    // }
     //해당 인덱스답과 사용자 입력 답이 맞을 시 , currentIndex+1
     function checkAns() {
         if (currentIndex < 7 && userAnswer === questions[currentIndex].answer) {
@@ -93,6 +98,7 @@ function GameMain() {
             }
             setCurrentIndex(currentIndex + 1)
             setPopUp(false)
+            setUserAnswer('')
         } else if (currentIndex === 7 && userAnswer === questions[currentIndex].answer) {
             setVisible((visible) => false)
             if (currentIndex === 7) {
@@ -156,7 +162,7 @@ function GameMain() {
                         }
                         {/* 사용자가 답을 입력함 */}
                         <form>
-                            <input className='inputbar' type="text" onChange={(e) => setUserAnswer(e.target.value)} onKeyPress={handleOnKeyPress} ></input>
+                            <input className='inputbar' value={userAnswer} onChange={(e) => { setUserAnswer(e.target.value) }} onKeyPress={handleOnKeyPress} ></input>
                             <div className="ansBtn" >
                                 <img alt="answer" id="_answerBtn" src="img/game/answerBtn.png" type="submit" onClick={handleOnClick}
                                 />
