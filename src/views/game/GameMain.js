@@ -137,22 +137,20 @@ function GameMain() {
             <div className="gamemiddle">
                 <div className="main1">
                     <img className="_question" alt="question" src="img/game/Question.png" />
-                    <span>
 
-
-                        {/* {_popUp || <span className="h_text">'힌트를 보려면 누르세요!'</span>} */}
-                        <span className="h_text">'힌트를 보려면 누르세요!'</span>
-                        <span className="hintKey" onClick={Popup}>
-                            <img alt="hintkey" className="_hintkey" src="img/game/HintKey.png" />
-                        </span>
-                        {_popUp &&
-                            <div className='hintbox'>
-                                <img id='hintbox' alt="hintbox" src='img/game/hintbox.png' />
-                                <img id='xbutton' onClick={Popup} alt="xbutton" src='img/game/xbutton.png' />
-                                <span className="popupHint">{questions[currentIndex].hint}</span>
-                            </div>
-                        }
+                    {/* {_popUp || <span className="h_text">'힌트를 보려면 누르세요!'</span>} */}
+                    <span className="h_text">'힌트를 보려면 누르세요!'</span>
+                    <span className="hintKey" onClick={Popup}>
+                        <img alt="hintkey" className="_hintkey" src="img/game/HintKey.png" />
                     </span>
+                    {_popUp &&
+                        <div className='hintbox'>
+                            <img id='hintbox' alt="hintbox" src='img/game/hintbox.png' />
+                            <img id='xbutton' onClick={Popup} alt="xbutton" src='img/game/xbutton.png' />
+                            <span className="popupHint">{questions[currentIndex].hint}</span>
+                        </div>
+                    }
+
                     <span className="question">{questions[currentIndex].question}</span>
 
                 </div>

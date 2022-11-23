@@ -81,10 +81,10 @@ function GamePage(props) {
     const handleOnClick = () => {
         console.log(correct);
         if (correct === 0 && sentence.length >= 8)
-            window.location.href = 'http://15.164.75.25/finalgameover';
+            navigate('/finalgameover');
         else if (correct === 1) {
             setCorrect(0);
-            window.location.href = 'http://15.164.75.25/finish';
+            navigate('/finish');
         }
     };
 
