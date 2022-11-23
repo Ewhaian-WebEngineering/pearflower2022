@@ -1,8 +1,8 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
 import Main from "./views/main/MainLayout";
-import TimeTable from "./views/timeTable";
-import TimeTableLimit from "./views/timeTable/timeTableLimit";
+import TimeTable from "./views/timeTable/timetable";
+
 import Event from "./views/event/Event";
 import HoneyJar from "./views/event/HoneyJar";
 import BeotAlong from "./views/event/BeotAlong";
@@ -56,7 +56,7 @@ function App() {
         <Route exact path="/gardener3" element={<Gardener3 />} />
         <Route exact path="/main" element={<Main />} />
         <Route exact path="/timeTable" element={<TimeTable />} />
-        <Route exact path="/timeTableLimit" element={<TimeTableLimit />} />
+
         <Route exact path="/event" element={<Event />} />
         <Route exact path="/honeyjar" element={<HoneyJar />} />
         <Route exact path="/beotalong" element={<BeotAlong />} />

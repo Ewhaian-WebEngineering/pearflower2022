@@ -2,7 +2,7 @@ import { BrowserView, MobileView } from "react-device-detect";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import './Escape.css';
-import Dropdown from "./Dropdown";
+import Header from "../Header";
 
 function Escape() {
     const [dropDownView, setDropDownView] = useState(false);
@@ -13,13 +13,7 @@ function Escape() {
         <div>
             <MobileView>
                 <div className="mobileEscapeBg">
-                    <div className="eventHeader">
-                        <Link to="/main"><img alt="logoSquare" className="Eventlogo"></img></Link>
-                        <div className="menuBtnDiv">
-                            <img alt="menuBtn" className="menuBtnMobile" src={process.env.PUBLIC_URL + '/img/event/hamburgerBtn.png'} onClick={clickDropDown}></img>
-                            {dropDownView && <Dropdown />}
-                        </div>
-                    </div>
+                    <Header />
                     <div className="mobileEscapeWrapper">
                         <div className="mobileBackToEventWrapper">
                             <Link to="/event"><img alt="BackToEventPageBtn" className="mobileBackToEvent" src={process.env.PUBLIC_URL + '/img/event/detailBacktoEvent.png'}></img></Link>
@@ -33,15 +27,7 @@ function Escape() {
             </MobileView>
             <BrowserView>
                 <div className="EscapeBg">
-                    <div className="eventHeader">
-                        <Link to="/main"><img alt="logoSquare" className="Eventlogo"></img></Link>
-                        <div className="menuBtnDiv">
-                            <Link to="/main"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerToMain.png'}></img></Link>
-                            <Link to="/timeTable"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerSchedule.png'}></img></Link>
-                            <Link to="/event"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerEvent.png'}></img></Link>
-                            <Link to="/goods"><img alt="menuBtn" className="headerMenuBtn" src={process.env.PUBLIC_URL + '/img/event/headerGoods.png'}></img></Link>
-                        </div>
-                    </div>
+                    <Header />
                     <div className="escapeWrapper">
                         <div className="backToEventWrapper">
                             <Link to="/event"><img alt="BackToEventPageBtn" className="backToEvent" src={process.env.PUBLIC_URL + '/img/event/detailBacktoEvent.png'}></img></Link>
