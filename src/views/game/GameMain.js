@@ -61,7 +61,6 @@ function GameMain() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [userAnswer, setUserAnswer] = useState('');
     const [visible, setVisible] = useState(false);
-    const [text, setText] = useState('');
     const [_popUp, setPopUp] = useState(false);    //팝업
     const [index0, setindex0] = useState(false);
     const [index1, setindex1] = useState(false);
@@ -74,11 +73,6 @@ function GameMain() {
 
     const navigate = useNavigate();
 
-    // const userAns = (e) => {
-
-    //     setUserAnswer(inputText);
-    // }
-    //해당 인덱스답과 사용자 입력 답이 맞을 시 , currentIndex+1
     function checkAns() {
         if ((currentIndex < 7 && userAnswer === questions[currentIndex].answer[0]) || (currentIndex < 7 && userAnswer === questions[currentIndex].answer[1])) {
             setVisible((visible) => false)
@@ -146,11 +140,18 @@ function GameMain() {
                     <span>
 
 
-                        {_popUp || <span className="h_text">'힌트를 보려면 누르세요!'</span>}
+                        {/* {_popUp || <span className="h_text">'힌트를 보려면 누르세요!'</span>} */}
+                        <span className="h_text">'힌트를 보려면 누르세요!'</span>
                         <span className="hintKey" onClick={Popup}>
                             <img alt="hintkey" className="_hintkey" src="img/game/HintKey.png" />
                         </span>
-                        {_popUp && <span className="popupHint">{questions[currentIndex].hint}</span>}
+                        {_popUp &&
+                            <div className='hintbox'>
+                                <img id='hintbox' alt="hintbox" src='img/game/hintbox.png' />
+                                <img id='xbutton' onClick={Popup} alt="xbutton" src='img/game/xbutton.png' />
+                                <span className="popupHint">{questions[currentIndex].hint}</span>
+                            </div>
+                        }
                     </span>
                     <span className="question">{questions[currentIndex].question}</span>
 

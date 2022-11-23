@@ -140,9 +140,29 @@
 
     .popupHint {
         position: absolute;
-        width: 25%;
-        left: 12%;
-        top: 70%;
+        width: 75%;
+        font-size: 200%;
+        left: 10%;
+        top: 55%;
+    }
+
+    .hintbox {
+        position: absolute;
+        right: 30%;
+        top: 20%;
+        width: 35%;
+        z-index: 4;
+    }
+
+    #hintbox {
+        width: 100%;
+    }
+
+    #xbutton {
+        position: absolute;
+        width: 4%;
+        left: 85%;
+        top: 10%;
     }
 }
 
@@ -262,10 +282,27 @@
         position: absolute;
         width: 70%;
         right: 13%;
-        top: 22%;
+        top: 40%;
         font-family: 'Hahmlet', serif;
         font-weight: 700;
         color: #442121;
     }
 
+    .hintbox {
+        position: absolute;
+        z-index: 4;
+        width: 90%;
+        left: 5%;
+        top: 24%;
+    }
+
+    #hintbox {
+        width: 100%;
+    }
+
+    #xbutton {
+        position: absolute;
+        right: 10%;
+        top: 10%;
+    }
 }
