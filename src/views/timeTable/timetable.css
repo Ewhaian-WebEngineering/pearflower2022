@@ -9,8 +9,15 @@
 
 .timeTableWrapper {
     padding-top: 7%;
+
 }
 
 .fullEvent {
     width: 30rem;
+}
+
+.timeIcons {
+    width: 60rem;
+    display: block;
+    margin: 0 auto;
 }
