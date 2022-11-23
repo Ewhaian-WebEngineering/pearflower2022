@@ -85,7 +85,7 @@
         position: relative;
         width: 100%;
         display: flex;
-        margin-top: 10%;
+        margin-top: 5%;
     }
 
     .MeventBtn {
@@ -170,7 +170,7 @@
     .mobilePopUp {
         position: absolute;
         height: 89%;
-        margin-top: -25%;
+        margin-top: -30%;
         z-index: 6;
     }
 
@@ -183,7 +183,7 @@
     .mobileClosePopUp2 {
         position: absolute;
         width: 5%;
-        margin-top: -17%;
+        margin-top: -22%;
         padding-left: 50%;
         z-index: 6;
     }
