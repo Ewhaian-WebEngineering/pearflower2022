@@ -169,17 +169,25 @@
         width: 55%;
         right: 26%;
         top: 5%;
+        font-family: 'Hahmlet', serif;
+        font-weight: 700;
+        color: #442121;
     }
 
     ._question {
         width: 80vw;
         height: 30vh;
+
     }
 
     .h_text {
         position: absolute;
         top: 25%;
         left: 20%;
+
+        font-family: 'Hahmlet', serif;
+        font-weight: 700;
+        color: #442121;
     }
 
     .hintKey {
@@ -255,6 +263,9 @@
         width: 70%;
         right: 13%;
         top: 22%;
+        font-family: 'Hahmlet', serif;
+        font-weight: 700;
+        color: #442121;
     }
 
 }
