@@ -6,7 +6,7 @@ function timetable() {
     return (
         <div>
             <Headers />
-            <div className='background'>
+            <div className='ttBackground'>
                 <h1>전체 일정</h1>
                 <p className='subdes'>*이벤트에 대한 자세한 사항은 이벤트 페이지에서 확인하실 수 있습니다*</p>
                 <div className='topBox'>
