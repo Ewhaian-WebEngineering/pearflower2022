@@ -4,6 +4,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #FFFFFF;
+
 }
 
 .headerLogo{
@@ -15,7 +17,8 @@
 }
 
 .headerLink{
-    padding-right: 70px;
+    /* padding-right: 70px; */
+    padding-right: 2vw;
     display: flex;
 
 }
@@ -29,5 +32,70 @@
 .headerLink a {
     text-decoration: none;
     color: black;
+    font-size: 25px !important;
+}
+
+.toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+  }
+
+@media screen and (max-width: 768px) {
+    .headerFlame{
+        background-color: #A2B7CC;
+    }
+    .headerLink{
+        padding-right: 70px;
+        display: flex;
+        position: absolute;
+    }
+
+    .toggleBtn {
+        display: block;
+        right: 40px;
+        top: 20px;
+        width: 25px;
+        height: 30px;
+      }
+
+    .toggleBar {
+        width: 100%;
+        height: 3px;
+        border-radius: 5px;
+        background-color: #ffffff;
+      }
+
+      #headerUl {
+        height: 74px;
+        padding-top: 20px;
+        display: none;
+        float: right;
+        top: 75px;
+        /* right: 0px; */
+        background-color: #A2B7CC;
+        width: 100vw;
+        /* flex-direction: column; */
+        flex-direction: row;
+        flex-wrap: nowrap;
+        padding-left: 23vw;
+      }
+
+      .headerLink a {
+        text-decoration: none;
+        color: white;
+        font-size: 25px !important;
+    }
+     #toGoMainBtn{
+        display: none;
+     }
+    .headerLink p {
+        float: left;
+        width: fit-content;
+        font-weight: 600;
+        font-size: 25px;
+        padding-right: 0px;
+        padding-right: 10vw;
+    }
 }
 

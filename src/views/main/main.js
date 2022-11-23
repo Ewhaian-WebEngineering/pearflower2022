@@ -18,7 +18,18 @@ function Main() {
             <div className='eventBoxFull'>
                 <div className='eventGrayBox'>
                     <p>이벤트 SNS 이미지</p>
-                    <div className='mainGrayBox'>mainGrayBox</div>
+                    <div className='mainGrayBox'>
+                        <div className='mainGrayBox_box'>
+                            <div className="mainGrayBoxText">
+                                <div className="mainGrayBoxText_box">온라인</div>
+                                <p> 2022. 11. 17 목 -  2022. 11. 24 목   |   배꽃정원 행사 페이지  </p>
+                            </div>
+                            <div className="mainGrayBoxText">
+                                <div className="mainGrayBoxText_box">오프라인</div>
+                                <p>  2022. 11. 24  목    |   11:00~18:00   |  ECC 극장   </p>
+                            </div>
+                        </div>
+                    </div>
                     <div className='btnBox'>
                         <div className='mainBtn'><Link to='/event'>이벤트 바로가기</Link> </div>
                         <div className='mainBtn'><Link to='/timeTable'>행사일정 확인하기</Link></div>
