@@ -29,11 +29,12 @@ export default function GameInfo() {
                 </div>
                 <div className='gameboard'>
                     <img id='gameboard' src='img/game/gameboard.png' alt='gameboard'></img>
-                    <span className='explain'>이화이언 이스케이프게임에 오신 벗들 환영합니다!
-                        문제는 총 8문제로 이루어져 있으며, 한 문제를 맞힐때마다 가방안에
-                        자물쇠를 열기 위한 글자 중 하나가 주어집니다.
-                        8개의 문제를 모두 맞춘 후, 가방안의 글자들을 조합해서 키워드를 완성해보세요!
-                        문제가 어렵다면 힌트를 눌러 참고해보세요! 그럼 행운을 빌어요~~!</span>
+                    <span className='explain'>이화이언 이스케이프게임에 오신 벗들 환영합니다!<br></br><br></br>
+                        문제는 총 8문제로 이루어져 있으며,<br></br> 한 문제를 맞힐때마다 가방안에
+                        자물쇠를 열기 위한 글자 중 하나가 주어집니다.<br></br><br></br>
+                        8개의 문제를 모두 맞춘 후, 가방안의 글자들을 키워드를 완성해보세요!<br></br>
+                        문제가 어렵다면 힌트를 참고하실 수 있습니다.<br></br><br></br> 그럼 행운을 빌어요~~!
+                    </span>
                 </div>
                 <div className='start'>
                     <Link to='/gamemain'>

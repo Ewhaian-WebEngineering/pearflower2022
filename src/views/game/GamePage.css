@@ -265,7 +265,8 @@
           color: white;
           top: 79%;
           left: 70%;
-          font-size: 1.5vw;
+          font-size: 2vw;
+          font-weight: bold;
           cursor: pointer;
       }
 
@@ -274,7 +275,8 @@
           color: white;
           top: 80%;
           left: 65%;
-          font-size: 1.5vw;
+          font-size: 2vw;
+          font-weight: bold;
           cursor: pointer;
       }
 
@@ -283,7 +285,8 @@
           color: white;
           top: 75%;
           left: 80%;
-          font-size: 1.5vw;
+          font-size: 2vw;
+          font-weight: bold;
           cursor: pointer;
       }
 
@@ -292,7 +295,8 @@
           color: white;
           top: 77%;
           left: 75%;
-          font-size: 1.5vw;
+          font-size: 2vw;
+          font-weight: bold;
           cursor: pointer;
       }
 
@@ -301,7 +305,8 @@
           color: white;
           top: 76%;
           left: 72%;
-          font-size: 1.5vw;
+          font-size: 2vw;
+          font-weight: bold;
           cursor: pointer;
       }
 
@@ -310,7 +315,8 @@
           color: white;
           top: 75%;
           left: 67%;
-          font-size: 1.5vw;
+          font-size: 2vw;
+          font-weight: bold;
           cursor: pointer;
       }
 
@@ -319,16 +325,18 @@
           color: white;
           top: 76%;
           left: 69%;
-          font-size: 1.5vw;
+          font-size: 2vw;
+          font-weight: bold;
           cursor: pointer;
       }
 
       .word8 {
           position: absolute;
           color: white;
-          top: 78%;
-          left: 62%;
-          font-size: 1.5vw;
+          top: 80%;
+          left: 80%;
+          font-size: 2vw;
+          font-weight: bold;
           cursor: pointer;
       }
 
