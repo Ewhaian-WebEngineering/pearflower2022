@@ -183,7 +183,7 @@ function GoodsLayout() {
                             </div>
                         </>
                     ))}
-                    
+                    <button className="goodsBtn2Buy" id="goodsBtn2Buy" >구매하기</button>
                 </div>
             </div>
             <div className='goodsDetailBox' id ="goodsDetailBox">

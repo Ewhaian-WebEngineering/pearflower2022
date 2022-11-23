@@ -79,3 +79,27 @@
     height: 280px;
     padding: 10px;
 }
+
+@media screen and (max-width: 768px) {
+    .goodsDetailBox{
+        width: 90%;
+    }
+
+    .closeBtn {
+        font-size: 31px;
+        padding: 25px;
+    }
+
+    .goodsDetail img {
+        /* padding-left: 40px; */
+        padding: 0px;
+        width: 190px;
+        height: 190px;
+    }
+
+    .goodsDetail {
+        padding: 50px 10px 0px 27px;
+        /* float: left; */
+        display: flex;
+    }
+}

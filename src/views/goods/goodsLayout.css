@@ -39,7 +39,20 @@
     width: fit-content;
 }
 
+.goodsBtn2Buy{
+    display: none;
+}
+
 @media screen and (max-width: 768px) {
+    .goodsDetailBox{
+        display: none;
+        /* display: block; */
+        top: 50px;
+        position: absolute;
+        left: 50%;
+      transform: translateX(-50%);
+    }
+
     .goodsBox{
         padding: 50px;
     }
@@ -67,6 +80,10 @@
         text-align: center;
 
         color: #A7B8CB;
+    }
+
+    .goodsBtn2Buy{
+        display: block;
     }
 
 }
