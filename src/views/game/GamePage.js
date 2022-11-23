@@ -93,8 +93,7 @@ function GamePage(props) {
                     <img src='img/game/key.png' className="mobilekey" onClick={handleOnClick} />
                 </div>
             </div>
-
-            <img src='img/game/guideText.png' className="guideText" alt="설명" />
+            <div className="guideText">얻은 힌트를 조합해 정답을 입력하세요!</div>
             <img src='img/game/gameCharacter.png' className="character" alt="주머니" />
 
             <div className="word1" value="g" onClick={() => addWord('g')}>g</div>

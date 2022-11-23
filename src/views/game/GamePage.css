@@ -10,10 +10,11 @@
 
       .guideText {
           position: absolute;
-          width: 66vw;
-          height: 2vh;
-          top: 11%;
-          left: 17%;
+          color: white;
+          font-size: 1.9vh;
+          font-weight: bold;
+          top: 13%;
+          left: 15%;
           z-index: 3;
       }
 
@@ -85,6 +86,7 @@
           left: 55%;
           font-size: 4vw;
           cursor: pointer;
+          font-weight: bold;
       }
 
       .word2 {
@@ -94,6 +96,7 @@
           left: 25%;
           font-size: 4vw;
           cursor: pointer;
+          font-weight: bold;
       }
 
       .word3 {
@@ -103,6 +106,7 @@
           left: 48%;
           font-size: 4vw;
           cursor: pointer;
+          font-weight: bold;
       }
 
       .word4 {
@@ -112,6 +116,7 @@
           left: 38%;
           font-size: 4vw;
           cursor: pointer;
+          font-weight: bold;
       }
 
       .word5 {
@@ -121,6 +126,7 @@
           left: 33%;
           font-size: 4vw;
           cursor: pointer;
+          font-weight: bold;
       }
 
       .word6 {
@@ -130,6 +136,7 @@
           left: 45%;
           font-size: 4vw;
           cursor: pointer;
+          font-weight: bold;
       }
 
       .word7 {
@@ -139,6 +146,7 @@
           left: 23%;
           font-size: 4vw;
           cursor: pointer;
+          font-weight: bold;
       }
 
       .word8 {
@@ -148,6 +156,7 @@
           left: 35%;
           font-size: 4vw;
           cursor: pointer;
+          font-weight: bold;
       }
 
       .array {
@@ -189,10 +198,11 @@
 
       .guideText {
           position: absolute;
-          width: 28vw;
-          height: 3vh;
+          color: white;
+          font-size: 2.3vh;
+          font-weight: bold;
           top: 17%;
-          left: 59%;
+          left: 61%;
           z-index: 3;
       }
 
