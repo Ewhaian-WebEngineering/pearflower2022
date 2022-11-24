@@ -34,6 +34,7 @@ function Main() {
           입장해볼까요?{" "}
         </p>
       </div>
+      <img className="mainLine" src="/img/mainLine.png"></img>
       <div className="eventBoxFull">
         <div className="eventGrayBox">
           <img
