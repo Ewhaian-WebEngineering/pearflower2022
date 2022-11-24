@@ -32,9 +32,9 @@ function Timetable() {
                         <img alt="FormBtn" className="fullEvent" src={process.env.PUBLIC_URL + '/img/timetable/fullEvent.png'}></img>
                         <img alt="FormBtn" className="timeIcons" src={process.env.PUBLIC_URL + '/img/timetable/timeTableIcons.png'}></img>
                         <div className="timetablewebbg">
-                            <img alt="FormBtn" className="timetable" src={process.env.PUBLIC_URL + '/img/timetable/timetableWeb.png'}></img>
+                            <img alt="timetable" className="timetable" src={process.env.PUBLIC_URL + '/img/timetable/timetableWeb.png'}></img>
                         </div> 
-                        <img alt="FormBtn" className="timetablefooter" src={process.env.PUBLIC_URL + '/img/timetable/timetablefooter.png'}></img>
+                        <img alt="footer" className="timetablefooter" src={process.env.PUBLIC_URL + '/img/timetable/timetableFooter.png'}></img>
                     </div>
                 </div>
 
