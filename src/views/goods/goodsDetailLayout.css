@@ -5,6 +5,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'PyeongChangPeace-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GangwonEdu_OTFBoldA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .goodsDetailBox {
     background-color: #F5C7BA;
     /* width: 1311px; */
@@ -202,23 +216,25 @@
 
 #goodsModalText {
     /* 굿즈 텍스트 */
-    font-family: 'Pretendard-Regular';
-    line-height: 45px;
+    font-family: 'GangwonEdu_OTFBoldA';
+    line-height: 35px;
 }
 
 #goodsTitle {
     /* 굿즈 이름 */
+    font-size: 55px;
+    font-weight: bolder;
+    color: white;
+    text-align: left;
+    font-family: 'GangwonEdu_OTFBoldA';
+}
+
+#goodsPrice {
     font-size: 35px;
     font-weight: bold;
     color: white;
     text-align: left;
-}
-
-#goodsPrice {
-    font-size: 30px;
-    font-weight: bold;
-    color: white;
-    text-align: left;
+    font-family: 'GangwonEdu_OTFBoldA';
 }
 
 #goodsDesc {
@@ -227,6 +243,7 @@
     text-align: left;
     width: 30vw;
     word-break: keep-all;
+
 }
 
 #goodsModalBuyBtn {
