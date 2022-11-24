@@ -27,11 +27,11 @@ function Main() {
                         <div className='mainGrayBox_box'>
                             <div className="mainGrayBoxText">
                                 <div className="mainGrayBoxText_box">온라인</div>
-                                <p> 2022. 11. 17 목 -  2022. 11. 24 목   |   배꽃정원 행사 페이지  </p>
+                                <p> 2022. 11. 24 목 -  2022. 12. 01 목   |   배꽃정원 행사 페이지  </p>
                             </div>
                             <div className="mainGrayBoxText">
                                 <div className="mainGrayBoxText_box">오프라인</div>
-                                <p>  2022. 11. 24  목    |   11:00~18:00   |  ECC 극장   </p>
+                                <p>  2022. 12. 01  목    |   11:00~19:00   |  ECC 극장   </p>
                             </div>
                         </div>
                     </div>
