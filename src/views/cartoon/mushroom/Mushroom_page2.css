@@ -34,7 +34,7 @@
   margin-left: -20%;
   height: 30%;
   content: url(/public/img/cartoon/mushroom/page2/mush2running1.png);
-  z-index: 10;
+  z-index: 20;
   animation: running-move 3s ease-in;
   animation-fill-mode: forwards;
 }
@@ -66,7 +66,7 @@
   margin-left: 40%;
   bottom: 0;
   margin-bottom: 3%;
-  z-index: 10;
+  z-index: 5;
 }
 
 #bicyclewheel {
