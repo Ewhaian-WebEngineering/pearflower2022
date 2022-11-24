@@ -99,12 +99,12 @@
         display: block;
         width: fit-content;
         /* margin-left: 40px; */
-        font-family: 'Pretendard-Regular';
+        font-family: 'GangwonEdu_OTFBoldA';
     }
 
     .goodsData p {
         font-weight: 600;
-        font-size: 20px;
+        font-size: 25px;
         /* line-height: 19px; */
         text-align: center;
 
