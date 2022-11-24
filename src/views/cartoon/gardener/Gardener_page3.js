@@ -16,6 +16,15 @@ function setScreenSize() {
 function Gardener_page3() {
   setScreenSize();
 
+  useEffect(() => {
+    let vh = window.innerHeight;
+    let vw = window.innerWidth;
+    if (vh / vw < 1) {
+      // 웹 - 높이가 넓이보다 작은 경우
+      document.getElementById("garden3_catchheart").style.marginTop = "55%";
+    }
+  }, []);
+
   /* GA 연동 */
   const GAEventsTracker = UseGAEventsTracker("정원지기");
   useEffect(() => {

@@ -19,60 +19,6 @@
     font-style: normal;
 }
 
-.goodsDetailBox {
-    background-color: #F5C7BA;
-    /* width: 1311px; */
-    /* height: 745px;   */
-    border-radius: 20px;
-    padding-bottom: 50px;
-    width: 80vw;
-}
-
-.closeBtn {
-    font-weight: 600;
-    font-size: 60px;
-    color: white;
-    float: right;
-    padding: 40px;
-}
-
-.goodsDetail {
-    padding: 75px 50px 0px 80px;
-    /* float: left; */
-    display: flex;
-}
-
-.goodsDetail img {
-    padding-left: 40px;
-    width: 290px;
-    height: 290px;
-}
-
-.goodsDetailText {
-    padding: 50px 50px 35px 50px;
-    float: left;
-}
-
-.goodsDetailText h1 {
-    font-weight: 600;
-    font-size: 48px;
-    line-height: 58px;
-    color: #FFFFFF;
-    padding-bottom: 10px;
-    width: fit-content;
-
-}
-
-.goodsDetailText h5 {
-    font-weight: 600;
-    font-size: 26px;
-    line-height: 34px;
-    color: #9B9B9B;
-    width: fit-content;
-    padding-bottom: 20px;
-
-}
-
 .goodsBtn2Buy {
     width: 200px;
     height: 65px;
@@ -88,64 +34,7 @@
     float: left;
 }
 
-.detailImgBox {
-    width: 80vw;
-    display: flex;
-    padding-left: 70px;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-}
-
-.detailImgBox img {
-    width: 280px;
-    height: 280px;
-    padding: 10px;
-}
-
 @media screen and (max-width: 768px) {
-    .goodsDetailBox {
-        width: 90%;
-    }
-
-    .closeBtn {
-        font-size: 31px;
-        padding: 25px;
-    }
-
-    .goodsDetail img {
-        padding: 0px;
-        padding-right: 17px;
-        width: 170px;
-        height: 170px;
-    }
-
-    .goodsDetail {
-        padding: 50px 10px 0px 27px;
-        /* float: left; */
-        display: flex;
-    }
-
-    .goodsDetailText {
-        padding: 0px;
-        float: left;
-    }
-
-    .goodsDetailText h1 {
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 20px;
-    }
-
-    .goodsDetailText h5 {
-        font-weight: 600;
-        font-size: 10px;
-        line-height: 10px;
-        color: #9B9B9B;
-        /* width: -moz-fit-content; */
-        width: fit-content;
-        padding-bottom: 5px;
-    }
 
     .goodsBtn2Buy {
         width: 96px;
@@ -161,18 +50,6 @@
         float: left;
         line-height: 42px;
         font-family: 'Pretendard-Regular';
-    }
-
-    .detailImgBox img {
-        width: 130px;
-        height: 130px;
-        padding: 10px;
-    }
-
-    .detailImgBox {
-        width: 90%;
-        padding-left: 0px;
-        justify-content: space-evenly;
     }
 
 }
@@ -218,7 +95,7 @@
 #goodsModalText {
     /* 굿즈 텍스트 */
     font-family: 'GangwonEdu_OTFBoldA';
-    line-height: 35px;
+    line-height: 40px;
 }
 
 #goodsTitle {
