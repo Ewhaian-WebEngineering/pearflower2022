@@ -16,19 +16,22 @@ function GameFinish(props) {
 
     return (
         <div >
-            <div className='gameheader'>
-                <div className='header-box'>
-                    <Link to='/main'>
-                        <img id='logo' src='img/logo_main.png' alt='logo main'></img>
-                    </Link>
-                    <Link to="/main">
-                        <img src='img/game/exit.png' className="backBtn" alt="나가기" />
-                    </Link>
+            <div className="_background" >
+                <div className='gameheader'>
+                    <div className='header-box'>
+                        <Link to='/main'>
+                            <img id='logo' src='img/logo_main.png' alt='logo main'></img>
+                        </Link>
+                        <Link to="/main">
+                            <img src='img/game/exit.png' className="backBtn" alt="나가기" />
+                        </Link>
+                    </div>
                 </div>
             </div>
+
             <img src='img/game/background.png' className="background" alt="배경" />
             <img src='img/game/openDoor.png' className="open" alt="성공" />
-            <span className='howtolabel'>와!! 탈출성공</span>
+            <span className='lasttext'>와!! 탈출성공</span>
             <Link to="/gamehome" onClick={GAEventsTracker("게임성공다시하기")}>
                 <img src='img/game/replay.png' className="replay" alt="다시하기" />
             </Link>

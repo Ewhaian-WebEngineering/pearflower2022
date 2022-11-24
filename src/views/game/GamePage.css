@@ -76,7 +76,7 @@
           width: 32vw;
           height: 6vh;
           top: 85%;
-          left: 30%;
+          left: 35%;
       }
 
       .word1 {
@@ -179,6 +179,14 @@
           /* top: 131px; */
           top: 17%;
           left: 8%;
+      }
+
+      .lasttext {
+          position: absolute;
+          top: 26%;
+          right: 26%;
+          font-family: 'Hahmlet', serif;
+          font-size: 190%;
       }
   }
 
@@ -360,4 +368,11 @@
           margin-right: 2.7vw;
       }
 
+      .lasttext {
+          position: absolute;
+          font-family: 'Hahmlet', serif;
+          right: 43%;
+          top: 7.5%;
+          font-size: 300%;
+      }
   }

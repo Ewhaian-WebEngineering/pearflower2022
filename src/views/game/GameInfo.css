@@ -74,7 +74,6 @@
         left: 0;
         right: 0;
         z-index: 2;
-        font-family: 'Hahmlet', serif;
     }
 
     #howtolabel {
@@ -203,8 +202,6 @@
         margin-right: 47%;
         width: 8%;
         z-index: 2;
-        font-family: 'Hahmlet', serif;
-        font-size: 130%;
     }
 
     .start {
