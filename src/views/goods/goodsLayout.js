@@ -60,7 +60,7 @@ function GoodsLayout() {
             id: 1,
             title: '스티커팩',
             price: 1500,
-            describe: '설명설명설명설명',
+            describe: '버섯이의 우당탕탕 놀이공원 체험기! 노트북, 휴대폰 여기저기에 붙여봐요!',
             img: "../img/goods/goods_detail/1-1.png",
             detailImg: detailImg_1
         },
@@ -68,7 +68,7 @@ function GoodsLayout() {
             id: 2,
             title: '스택컵',
             price: 9000,
-            describe: '설명설명설명설명',
+            describe: '신나는 회전목마가 그려진 컵, 어떤 음료를 담아 마셔도 맛있을 거예요!',
             img: "../img/goods/goods_detail/2-1.png",
             detailImg: detailImg_2
 
@@ -77,14 +77,14 @@ function GoodsLayout() {
             id: 3,
             title: '말랑비즈인형',
             price: 13000,
-            describe: '설명설명설명설명',
+            describe: '스트레스 받을 땐 말랑콩떡 버섯 인형을 꾹꾹 눌러봐요!',
             img: "../img/goods/goods_detail/3-1.png",
             detailImg: detailImg_3
         }, {
             id: 4,
             title: '액정클리너',
             price: 2000,
-            describe: '설명설명설명설명',
+            describe: '언제 어디서든 화면이 흐릿하면 이화이언 클리너로 쓱싹!',
             img: "../img/goods/goods_detail/4-1.png",
             detailImg: detailImg_4
         },
@@ -92,7 +92,7 @@ function GoodsLayout() {
             id: 5,
             title: '레고 피규어',
             price: 11000,
-            describe: '설명설명설명설명',
+            describe: '초록 후드의 캐릭터, 공구템을 입고 있는 벗들의 모습 같지 않나요?',
             img: "../img/goods/goods_detail/5-1.png",
             detailImg: detailImg_5
         },
@@ -100,7 +100,7 @@ function GoodsLayout() {
             id: 6,
             title: '그립톡',
             price: 4000,
-            describe: '설명설명설명설명',
+            describe: '달콤한 바닐라맛의 아이스크림 그립톡, 보기만 해도 놀이동산이 가고 싶어지지 않나요?',
             img: "../img/goods/goods_detail/6-1.png",
             detailImg: detailImg_6
         }
@@ -140,20 +140,20 @@ function GoodsLayout() {
             // 모달창박스
             <div id='goodsModalBox'>
                 {/* x 버튼 */}
-                <h1 id="goodsModalCloseBtn" onClick={()=> {setIsOpenModal(false);}}>X</h1>
+                <h1 id="goodsModalCloseBtn" onClick={() => { setIsOpenModal(false); }}>X</h1>
                 {/* 굿즈 설명 부분 */}
                 <div id="goodsModalContent">
                     {/* 이미지 + 정보 */}
                     <div id="goodsModalInfo">
                         {/* 대표 굿즈 이미지 */}
                         <img id="goodsModalTitleImg" src={detailData[pickedModalNum].img} alt="대표굿즈이미지" />
-                            {/* 굿즈 정보 */}
-                            <div id="goodsModalText">
-                                <p id='goodsTitle'>{detailData[pickedModalNum].title}</p>
-                                <p id='goodsPrice'>{detailData[pickedModalNum].price}</p>
-                                <p id='goodsDesc'>{detailData[pickedModalNum].describe}</p>
-                                <button id="goodsModalBuyBtn" onClick={GAEventsTracker("굿즈구매하기")}>구매하기</button>
-                            </div>   
+                        {/* 굿즈 정보 */}
+                        <div id="goodsModalText">
+                            <p id='goodsTitle'>{detailData[pickedModalNum].title}</p>
+                            <p id='goodsPrice'>{detailData[pickedModalNum].price}</p>
+                            <p id='goodsDesc'>{detailData[pickedModalNum].describe}</p>
+                            <button id="goodsModalBuyBtn" onClick={GAEventsTracker("굿즈구매하기")}>구매하기</button>
+                        </div>
                     </div>
                     {/* 상세 이미지 */}
                     <div id="goodsModalDetailDiv">
@@ -183,7 +183,7 @@ function GoodsLayout() {
                     {new Array(6).fill(null).map((_, index) => (
                         <>
                             <div className='goodsArrayBox'>
-                                <img src={imgSrc[index]} alt="" onClick={() => {setPickedModalNum(index); setIsOpenModal(true);}} />
+                                <img src={imgSrc[index]} alt="" onClick={() => { setPickedModalNum(index); setIsOpenModal(true); }} />
                                 <div className='goodsData'>
                                     <p>{imgTitle[index].name}</p>
                                     <p>{imgTitle[index].price}</p>
@@ -194,7 +194,7 @@ function GoodsLayout() {
                     <button className="goodsBtn2Buy" id="goodsBtn2Buy" onClick={GAEventsTracker("굿즈구매하기")}>구매하기</button>
                 </div>
             </div>
-            
+
             {isOpenModal === true ? <GoodsModal /> : null}
             <div id="goodsFloatingBtn">구매하기</div>
 
