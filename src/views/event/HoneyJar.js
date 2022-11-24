@@ -12,7 +12,7 @@ function HoneyJar() {
     }
 
     /* GA 연동 */
-    const GAEventsTracker = UseGAEventsTracker("이벤트(꿀단지팝업)");
+    const GAEventsTracker = UseGAEventsTracker("꿀단지이벤트페이지");
 
     return (
         <div>

@@ -3,16 +3,16 @@ import Header from '../Header'
 import { BrowserView, MobileView } from "react-device-detect";
 import { useState, useEffect} from "react";
 import { Link } from "react-router-dom";
-import "./timetable.css"
+import "./Timetable.css"
 import UseGAEventsTracker from '../../useGAEventsTracker';
 
-function timetable() {
+function Timetable() {
 
     /* GA 연동 */
-    // const GAEventsTracker = UseGAEventsTracker("행사일정");
-    // useEffect(() => {
-    //     GAEventsTracker();
-    // }, []);
+    const GAEventsTracker = UseGAEventsTracker("행사일정");
+    useEffect(() => {
+        GAEventsTracker();
+    }, []);
 
     return (
         <div>
@@ -41,4 +41,4 @@ function timetable() {
     )
 }
 
-export default timetable;
+export default Timetable;

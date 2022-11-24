@@ -12,7 +12,7 @@ function BeotAlong() {
     }
 
     /* GA 연동 */
-    const GAEventsTracker = UseGAEventsTracker("이벤트(벗어롱팝업)");
+    const GAEventsTracker = UseGAEventsTracker("벗어롱이벤트페이지");
 
     return (
         <div>

@@ -189,7 +189,7 @@ function GoodsLayout() {
                             </div>
                         </>
                     ))}
-                    <button className="goodsBtn2Buy" id="goodsBtn2Buy" >구매하기</button>
+                    <button className="goodsBtn2Buy" id="goodsBtn2Buy" onClick={GAEventsTracker("굿즈구매하기")}>구매하기</button>
                 </div>
             </div>
             <div className='goodsDetailBox' id="goodsDetailBox">
@@ -200,7 +200,7 @@ function GoodsLayout() {
                         <h1 id='goodsTitle'>goodsTitle</h1>
                         <h1 id='goodsPrice'>goodsPrice</h1>
                         <h5 id='goodsDesc'>goodsDesc</h5>
-                        <button className="goodsBtn2Buy">구매하기</button>
+                        <button className="goodsBtn2Buy" onClick={GAEventsTracker("굿즈구매하기")}>구매하기</button>
                     </div>
                 </div>
 

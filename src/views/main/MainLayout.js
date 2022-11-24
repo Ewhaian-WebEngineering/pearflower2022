@@ -20,8 +20,8 @@ function MainLayout() {
       <Header />
       <Main />
       <Footer />
-      <div className="floatingBtn2"><Link to="/gamehome" onClick={GAEventsTracker("게임바로가기")}><img src="../img/goToPlayGame.png" alt="" /></Link></div>
-      <div className="floatingBtn3"><Link to="/characterInfo" onClick={GAEventsTracker("카툰다시보기")}><img src="../img/main_floatingBtn.png" alt="" /></Link></div>
+      <div className="floatingBtn2"><Link to="/gamehome" onClick={GAEventsTracker("게임바로가기고정버튼")}><img src="../img/goToPlayGame.png" alt="" /></Link></div>
+      <div className="floatingBtn3"><Link to="/characterInfo" onClick={GAEventsTracker("카툰다시보기고정버튼")}><img src="../img/main_floatingBtn.png" alt="" /></Link></div>
 
     </div>
   );

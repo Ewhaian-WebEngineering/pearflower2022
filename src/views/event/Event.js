@@ -82,7 +82,7 @@ function Event() {
     <div>
       <MobileView>
         <div>
-          <Link to="/beotalong"><img alt="floatingBeotAlongAd" className={classnames('floatingBeotAlong', (floatHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileFloatingBeotAlong.png'}></img></Link>
+          <Link to="/beotalong" onClick={GAEventsTracker("이벤트클릭")}><img alt="floatingBeotAlongAd" className={classnames('floatingBeotAlong', (floatHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileFloatingBeotAlong.png'}></img></Link>
           <img alt="killingFloatBtn" className={classnames('killFloatingBeotAlong', (floatHidden ? "hide" : "show"))} src={process.env.PUBLIC_URL + '/img/event/mobileFloatingKill.png'} onClick={closeFloat}></img>
           <Header />
           <div className="outer">
@@ -107,7 +107,7 @@ function Event() {
 
                   <div className="eventIcons1">
                     <div className="mHONEYJAR">
-                      <Link to="/honeyjar"><img alt="HoneyJarEvent" className="honeyjar" src={process.env.PUBLIC_URL + '/img/event/iconHoneyJar.png'}></img></Link>
+                      <Link to="/honeyjar" onClick={GAEventsTracker("이벤트클릭")}><img alt="HoneyJarEvent" className="honeyjar" src={process.env.PUBLIC_URL + '/img/event/iconHoneyJar.png'}></img></Link>
                       <img alt="nameHoneyJarEvent" id="name" className="honeyjarname" src={process.env.PUBLIC_URL + '/img/event/iconNameHoneyJar.png'}></img>
                     </div>
                     <div className="mPHOTO">

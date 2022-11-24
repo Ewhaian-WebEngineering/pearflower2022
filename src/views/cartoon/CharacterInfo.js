@@ -48,6 +48,7 @@ function CharacterInfo() {
                     className="characterInfo_img"
                     onClick={() => {
                       window.location.pathname = "/mushroom1";
+                      GAEventsTracker("캐릭터소개-버섯");
                     }}
                   ></div>
                   <div
@@ -79,6 +80,7 @@ function CharacterInfo() {
                     className="characterInfo_img"
                     onClick={() => {
                       window.location.pathname = "/bee1";
+                      GAEventsTracker("캐릭터소개-꿀벌");
                     }}
                   ></div>
                   <div
@@ -113,6 +115,7 @@ function CharacterInfo() {
                     className="characterInfo_img"
                     onClick={() => {
                       window.location.pathname = "/sprout1";
+                      GAEventsTracker("캐릭터소개-새싹");
                     }}
                   ></div>
                   <div
@@ -145,6 +148,7 @@ function CharacterInfo() {
                     className="characterInfo_img"
                     onClick={() => {
                       window.location.pathname = "/gardener1";
+                      GAEventsTracker("캐릭터소개-정원지기");
                     }}
                   ></div>
                   <div
