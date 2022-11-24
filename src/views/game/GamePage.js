@@ -63,6 +63,13 @@ function GamePage(props) {
         }
     }
 
+    const remove = (sentence) => {
+
+        const newSentence = sentence.filter((word) => false);
+        sentenceId.current = 1;
+        setSentence(newSentence);
+    }
+
     const handleOnClick = () => {
         console.log(correct);
         if (correct === 0 && sentence.length >= 8)
@@ -95,12 +102,14 @@ function GamePage(props) {
             <div>
                 <img src='img/game/lockedDoor.png' className="door" alt="문" />
                 <div>
-                    <img src='img/game/key.png' className="webkey" onClick={ () => {handleOnClick(); GAEventsTracker("게임정답확인");}} />
-                    <img src='img/game/key.png' className="mobilekey" onClick={() => {handleOnClick(); GAEventsTracker("게임정답확인");}} />
+                    <img src='img/game/key.png' className="webkey" onClick={() => { handleOnClick(); GAEventsTracker("게임정답확인"); }} />
+                    <img src='img/game/key.png' className="mobilekey" onClick={() => { handleOnClick(); GAEventsTracker("게임정답확인"); }} />
                 </div>
             </div>
             <div className="guideText">얻은 힌트를 조합해 정답을 입력하세요!</div>
             <img src='img/game/gameCharacter.png' className="character" alt="주머니" />
+            <img src='img/game/retype.png' className="retype" onClick={() => remove(sentence)} alt="다시 쓰기" />
+            <img src='img/game/retype_mobile.png' className="retype_mobile" onClick={() => remove(sentence)} alt="다시 쓰기" />
 
             <div className="word1" value="g" onClick={() => addWord('g')}>g</div>
             <div className="word2" value="o" onClick={() => addWord('o')}>o</div>
