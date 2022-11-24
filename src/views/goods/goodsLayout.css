@@ -63,7 +63,11 @@
         padding: 50px;
     }
     .goodsArray{
-        height: 780px;        
+        /* height: 780px;   */
+
+        /* 민정 수정 */
+        height: 90vh;
+        padding-top : 0px;      
     }
 
     .goodsArray img {
@@ -100,4 +104,11 @@
         display: block;
     }
 
+}
+
+/* iphone SE 버전 */
+@media screen and (device-width: 375px) and (device-height: 667px) {
+    .goodsArray {
+        padding-bottom: 5vh;
+    }
 }
