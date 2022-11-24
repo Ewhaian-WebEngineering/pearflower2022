@@ -8,7 +8,7 @@
     height: 100px;
     position: fixed;
     bottom: 150px;
-    left: 85vw;
+    right:5vw;
 }
 
 .floatingBtn2 img{
@@ -26,7 +26,7 @@
     height: 100px;
     bottom: 30px;
     position: fixed;
-    left: 85vw;
+    right: 5vw;
 }
 
 .floatingBtn3 img{
