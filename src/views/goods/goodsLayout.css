@@ -1,13 +1,13 @@
-.goodsDetailBox{
+.goodsDetailBox {
     display: none;
     /* display: block; */
     top: 245px;
     position: absolute;
     left: 50%;
-  transform: translateX(-50%);
+    transform: translateX(-50%);
 }
 
-.goodsBox{
+.goodsBox {
     background-color: #FFF0D0;
     display: flex;
     justify-content: center;
@@ -19,7 +19,7 @@
     align-items: center;
 }
 
-.goodsArray{
+.goodsArray {
     /* background-color: black; */
     width: 909px;
     /* height: 606px; */
@@ -38,38 +38,46 @@
     margin: 35px;
 }
 
-.goodsData{
+.goodsData {
     /* 웹에서만 */
     display: none;
 }
-.goodsArrayBox{
+
+.goodsArrayBox {
     width: fit-content;
+    transition: 0.2s;
+    cursor: pointer;
 }
 
-.goodsBtn2Buy{
+.goodsArrayBox:hover {
+    transform: scale(1.09);
+}
+
+.goodsBtn2Buy {
     /* 웹에서만 */
     display: none;
 }
 
 @media screen and (max-width: 768px) {
-    .goodsDetailBox{
+    .goodsDetailBox {
         display: none;
         /* display: block; */
         top: 50px;
         position: absolute;
         left: 50%;
-      transform: translateX(-50%);
+        transform: translateX(-50%);
     }
 
-    .goodsBox{
+    .goodsBox {
         padding: 50px;
     }
-    .goodsArray{
+
+    .goodsArray {
         /* height: 780px;   */
 
         /* 민정 수정 */
         height: 90vh;
-        padding-top : 0px;      
+        padding-top: 0px;
     }
 
     .goodsArray img {
@@ -87,14 +95,14 @@
         align-items: center;
     }
 
-    .goodsData{
-        display:block;
+    .goodsData {
+        display: block;
         width: fit-content;
         /* margin-left: 40px; */
         font-family: 'Pretendard-Regular';
     }
 
-    .goodsData p{
+    .goodsData p {
         font-weight: 600;
         font-size: 20px;
         /* line-height: 19px; */
@@ -103,7 +111,7 @@
         color: #A7B8CB;
     }
 
-    .goodsBtn2Buy{
+    .goodsBtn2Buy {
         display: block;
     }
 
