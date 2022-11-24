@@ -39,6 +39,7 @@
 }
 
 .goodsData{
+    /* 웹에서만 */
     display: none;
 }
 .goodsArrayBox{
@@ -46,6 +47,7 @@
 }
 
 .goodsBtn2Buy{
+    /* 웹에서만 */
     display: none;
 }
 
@@ -89,12 +91,13 @@
         display:block;
         width: fit-content;
         /* margin-left: 40px; */
+        font-family: 'Pretendard-Regular';
     }
 
     .goodsData p{
         font-weight: 600;
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 20px;
+        /* line-height: 19px; */
         text-align: center;
 
         color: #A7B8CB;

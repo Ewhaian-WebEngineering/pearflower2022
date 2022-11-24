@@ -249,6 +249,7 @@
     overflow-x: scroll;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2vh;
 }
 
 #goodsModalDetailImg {
@@ -256,15 +257,12 @@
 }
 
 #goodsFloatingBtn {
-    display: inline-block;
-    background: #FFFFFF;
-    box-shadow: 0px 4px 5px rgb(0 0 0 / 19%);
-    border-radius: 56px;
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    bottom: 150px;
+    content: url("../../../public/img/goods/goodsBuyFloatingBtn.png");
+    width: 6vw;
+    position: absolute;
+    bottom: 5vw;
     left: 85vw;
+    cursor: pointer;
 }
 
 /* 모바일 */
@@ -312,6 +310,7 @@
         /* 상세 이미지들 큰 묶음 */
         display: inline-block;
         width: 80vw;
+        margin-bottom: 0;
     }
 
     #goodsModalDetailImg {
