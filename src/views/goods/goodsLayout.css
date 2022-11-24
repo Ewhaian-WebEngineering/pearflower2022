@@ -69,7 +69,8 @@
     }
 
     .goodsBox {
-        padding: 50px;
+        /* padding: 50px; */
+        padding: 0 50px;
     }
 
     .goodsArray {
@@ -77,7 +78,7 @@
 
         /* 민정 수정 */
         height: 90vh;
-        padding-top: 0px;
+        padding-top: 10vh;
     }
 
     .goodsArray img {

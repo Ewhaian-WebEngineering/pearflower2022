@@ -160,6 +160,7 @@
         text-align: center;
         float: left;
         line-height: 42px;
+        font-family: 'Pretendard-Regular';
     }
 
     .detailImgBox img {
@@ -343,6 +344,10 @@
         display: inline-block;
         width: 80vw;
         margin-bottom: 0;
+
+        /* 모바일 스크롤 */
+        height: 70vw;
+        overflow-y: scroll;
     }
 
     #goodsModalDetailImg {
