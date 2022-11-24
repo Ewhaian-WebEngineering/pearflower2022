@@ -5,16 +5,16 @@
     font-style: normal;
 }
 
-.goodsDetailBox{
+.goodsDetailBox {
     background-color: #F5C7BA;
     /* width: 1311px; */
     /* height: 745px;   */
-    border-radius: 20px; 
+    border-radius: 20px;
     padding-bottom: 50px;
     width: 80vw;
 }
 
-.closeBtn{
+.closeBtn {
     font-weight: 600;
     font-size: 60px;
     color: white;
@@ -22,24 +22,24 @@
     padding: 40px;
 }
 
-.goodsDetail{
+.goodsDetail {
     padding: 75px 50px 0px 80px;
     /* float: left; */
     display: flex;
 }
 
-.goodsDetail img{
+.goodsDetail img {
     padding-left: 40px;
     width: 290px;
     height: 290px;
 }
 
-.goodsDetailText{
+.goodsDetailText {
     padding: 50px 50px 35px 50px;
     float: left;
 }
 
-.goodsDetailText h1{
+.goodsDetailText h1 {
     font-weight: 600;
     font-size: 48px;
     line-height: 58px;
@@ -49,7 +49,7 @@
 
 }
 
-.goodsDetailText h5{
+.goodsDetailText h5 {
     font-weight: 600;
     font-size: 26px;
     line-height: 34px;
@@ -59,7 +59,7 @@
 
 }
 
-.goodsBtn2Buy{
+.goodsBtn2Buy {
     width: 200px;
     height: 65px;
     background: #EB7979;
@@ -80,7 +80,7 @@
     padding-left: 70px;
     flex-direction: row;
     flex-wrap: wrap;
-    
+
 }
 
 .detailImgBox img {
@@ -90,7 +90,7 @@
 }
 
 @media screen and (max-width: 768px) {
-    .goodsDetailBox{
+    .goodsDetailBox {
         width: 90%;
     }
 
@@ -111,6 +111,7 @@
         /* float: left; */
         display: flex;
     }
+
     .goodsDetailText {
         padding: 0px;
         float: left;
@@ -152,6 +153,7 @@
         height: 130px;
         padding: 10px;
     }
+
     .detailImgBox {
         width: 90%;
         padding-left: 0px;
@@ -178,9 +180,10 @@
     display: flex;
     justify-content: flex-end;
     color: #FFFFFF;
-    font-size: 40px; 
+    font-size: 40px;
     margin-top: 1vw;
     margin-right: 2vw;
+    cursor: pointer;
 }
 
 #goodsModalInfo {
@@ -226,19 +229,22 @@
 
 #goodsModalBuyBtn {
     /* 구매하기 버튼 */
-    width: 96px;
-    height: 35px;
+    width: 120px;
+    height: 45px;
     background: #EB7979;
     border-radius: 30px;
     border-style: none;
     color: white;
     font-weight: 600;
     /* font-size: 26px; */
-    font-size: 17px;
+    font-size: 21px;
     text-align: center;
     float: left;
     font-family: 'Pretendard-Regular';
+    cursor: pointer;
 }
+
+
 
 #goodsModalDetailDiv {
     /* 상세 이미지들 큰 묶음 */
@@ -254,6 +260,7 @@
 
 #goodsModalDetailImg {
     width: 15vw;
+    padding-left: 2%;
 }
 
 #goodsFloatingBtn {
@@ -263,6 +270,11 @@
     bottom: 5vw;
     left: 85vw;
     cursor: pointer;
+    transition: 0.2s;
+}
+
+#goodsFloatingBtn:hover {
+    transform: scale(1.09);
 }
 
 /* 모바일 */
@@ -297,11 +309,11 @@
         color: white;
         text-align: left;
     }
-    
+
     #goodsPrice {
         font-size: 25px;
     }
-    
+
     #goodsDesc {
         font-size: 20px;
     }
