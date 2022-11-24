@@ -152,7 +152,11 @@ function GoodsLayout() {
                             <p id='goodsTitle'>{detailData[pickedModalNum].title}</p>
                             <p id='goodsPrice'>{detailData[pickedModalNum].price}</p>
                             <p id='goodsDesc'>{detailData[pickedModalNum].describe}</p>
-                            <button id="goodsModalBuyBtn" onClick={GAEventsTracker("굿즈구매하기")}>구매하기</button>
+                            <a href="https://witchform.com/deposit_form.php?idx=302813" onClick={GAEventsTracker("굿즈구매하기")}>
+                                <button id="goodsModalBuyBtn">
+                                    구매하기
+                                </button>
+                            </a>
                         </div>
                     </div>
                     {/* 상세 이미지 */}
@@ -191,12 +195,20 @@ function GoodsLayout() {
                             </div>
                         </>
                     ))}
-                    <button className="goodsBtn2Buy" id="goodsBtn2Buy" onClick={GAEventsTracker("굿즈구매하기")}>구매하기</button>
+                    <a href="https://witchform.com/deposit_form.php?idx=302813" onClick={GAEventsTracker("굿즈구매하기")}>
+                        <button className="goodsBtn2Buy" id="goodsBtn2Buy">
+                            구매하기
+                        </button>
+                    </a>
                 </div>
             </div>
 
             {isOpenModal === true ? <GoodsModal /> : null}
-            <div id="goodsFloatingBtn">구매하기</div>
+            <a href="https://witchform.com/deposit_form.php?idx=302813" onClick={GAEventsTracker("굿즈구매하기")}>
+                <div id="goodsFloatingBtn">
+                    구매하기
+                </div>
+            </a>
 
         </div>
     )
