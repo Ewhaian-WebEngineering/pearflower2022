@@ -49,6 +49,28 @@ div{
     margin: 0;
     padding:0;
 }
+
+.fullBox {
+    height: 180px;
+    background-color: #F6CFAF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.sponserBox img{
+    width: 380px;
+}
+
+.fullBox p {
+   font-size: 6px;
+}
+
+@media screen and (max-width: 450px) {
+    .sponserBox img{
+        width: 90vw;
+    }
+}
 /*모바일*/
 
 .mobileTimeTableWrapper {

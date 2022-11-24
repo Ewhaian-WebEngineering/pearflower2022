@@ -34,7 +34,12 @@ function Timetable() {
                         <div className="timetablewebbg">
                             <img alt="timetable" className="timetable" src={process.env.PUBLIC_URL + '/img/timetable/timetableWeb.png'}></img>
                         </div> 
-                        <img alt="footer" className="timetablefooter" src={process.env.PUBLIC_URL + '/img/timetable/timetableFooter.png'}></img>
+                        <div className='fullBox'>
+                            <div className='sponserBox'>
+                                <img src="../img/sponserBox.png" alt="" />
+                            </div>
+                            <p>copyright@Ewhaian.All Rights Reserved</p>
+                        </div>
                     </div>
                 </div>
 
