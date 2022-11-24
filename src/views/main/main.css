@@ -13,8 +13,13 @@
 }
 .textBox {
   /* background-color: red; */
-  padding-top: 40px;
+  padding-top: 20px;
   text-align: center;
+  width: 60%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  content: url(/public/img/mainEx1.png);
 }
 
 .textBox h1 {
@@ -131,9 +136,14 @@
   }
 
   .textBox {
-    padding: 40px;
     /* background-color: red; */
+    padding-top: 20px;
     text-align: center;
+    width: 95%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    content: url(/public/img/mainEx1.png);
   }
 
   .textBox h1 {
