@@ -46,6 +46,6 @@
     bottom: 33%;
     left: 50%;
     /*background-color: blue;*/
-    z-index: 100;
+    z-index: 200;
   }
 }
