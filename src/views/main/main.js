@@ -37,11 +37,12 @@ function Main() {
       <img className="mainLine" src="/img/mainLine.png"></img>
       <div className="eventBoxFull">
         <div className="eventGrayBox">
+          <a href="https://instagram.com/ewhaian_2001?igshid=YmMyMTA2M2Y=">
           <img
             alt="mainSNS"
             id="mainGrayBox"
             src={process.env.PUBLIC_URL + "/img/mainSNS.png"}
-          ></img>
+          ></img></a>
           <div className="btnBox">
             <div
               className="mainBtn"
