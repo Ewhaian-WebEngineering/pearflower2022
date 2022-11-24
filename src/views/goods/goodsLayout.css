@@ -11,9 +11,12 @@
     background-color: #FFF0D0;
     display: flex;
     justify-content: center;
-    height: 90vh;
+    /* height: 90vh;
+    padding: 100px; */
+
+    /* 민정 수정 */
+    height: 100vh;
     align-items: center;
-    padding: 100px;
 }
 
 .goodsArray{
@@ -23,6 +26,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+
+    /* 민정 수정 */
+    padding-top: 60px;
 }
 
 .goodsArray img {
@@ -67,10 +73,18 @@
         margin: 10px;
     }
 
+    /* 민정 수정 */
+    .goodsArrayBox {
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .goodsData{
         display:block;
         width: fit-content;
-        margin-left: 40px;
+        /* margin-left: 40px; */
     }
 
     .goodsData p{
