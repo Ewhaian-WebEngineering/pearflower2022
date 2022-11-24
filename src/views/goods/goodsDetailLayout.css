@@ -166,7 +166,8 @@
     position: fixed;
     top: 50%;
     left: 50%;
-     transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
+    transform: translate(-50%, -45%);
     background-color: #F5C7BA;
     width: 70vw;
     border-radius: 20px;
@@ -242,10 +243,16 @@
 #goodsModalDetailDiv {
     /* 상세 이미지들 큰 묶음 */
     margin-top: 8vh;
+
+    display: flex;
+    width: 60vw;
+    overflow-x: scroll;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #goodsModalDetailImg {
-    width: 10vw;
+    width: 15vw;
 }
 
 #goodsFloatingBtn {
@@ -299,6 +306,17 @@
     
     #goodsDesc {
         font-size: 20px;
+    }
+
+    #goodsModalDetailDiv {
+        /* 상세 이미지들 큰 묶음 */
+        display: inline-block;
+        width: 80vw;
+    }
+
+    #goodsModalDetailImg {
+        width: 30vw;
+        margin: 2vw;
     }
 
     #goodsFloatingBtn {
