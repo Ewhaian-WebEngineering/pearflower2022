@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import Header from './WebGameHeader'
 import './GamePage.css'
 import './GameInfo.css'
 import './Gamehome.css'
