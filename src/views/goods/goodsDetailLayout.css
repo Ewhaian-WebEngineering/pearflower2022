@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 .goodsDetailBox{
     background-color: #F5C7BA;
     /* width: 1311px; */
@@ -151,4 +158,150 @@
         justify-content: space-evenly;
     }
 
+}
+
+/* 민정 팝업 수정 */
+#goodsModalBox {
+    /* 모달 박스 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+     transform: translate(-50%, -50%);
+    background-color: #F5C7BA;
+    width: 70vw;
+    border-radius: 20px;
+}
+
+#goodsModalCloseBtn {
+    /* 모달 x버튼 */
+    display: flex;
+    justify-content: flex-end;
+    color: #FFFFFF;
+    font-size: 40px; 
+    margin-top: 1vw;
+    margin-right: 2vw;
+}
+
+#goodsModalInfo {
+    /* 굿즈 정보 - 사진, 텍스트 */
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-left: 10vw;
+}
+
+#goodsModalTitleImg {
+    /* 굿즈 대표이미지 */
+    width: 15vw;
+    margin-right: 3vw;
+}
+
+#goodsModalText {
+    /* 굿즈 텍스트 */
+    font-family: 'Pretendard-Regular';
+    line-height: 45px;
+}
+
+#goodsTitle {
+    /* 굿즈 이름 */
+    font-size: 35px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+}
+
+#goodsPrice {
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    text-align: left;
+}
+
+#goodsDesc {
+    font-size: 25px;
+    color: #9B9B9B;
+    text-align: left;
+}
+
+#goodsModalBuyBtn {
+    /* 구매하기 버튼 */
+    width: 96px;
+    height: 35px;
+    background: #EB7979;
+    border-radius: 30px;
+    border-style: none;
+    color: white;
+    font-weight: 600;
+    /* font-size: 26px; */
+    font-size: 17px;
+    text-align: center;
+    float: left;
+    font-family: 'Pretendard-Regular';
+}
+
+#goodsModalDetailDiv {
+    /* 상세 이미지들 큰 묶음 */
+    margin-top: 8vh;
+}
+
+#goodsModalDetailImg {
+    width: 10vw;
+}
+
+#goodsFloatingBtn {
+    display: inline-block;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 5px rgb(0 0 0 / 19%);
+    border-radius: 56px;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    bottom: 150px;
+    left: 85vw;
+}
+
+/* 모바일 */
+@media screen and (max-width: 768px) {
+
+    #goodsModalBox {
+        width: 90vw;
+    }
+
+    #goodsModalInfo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
+    }
+
+    #goodsModalTitleImg {
+        width: 40vw;
+        margin-right: 3vw;
+    }
+
+    #goodsModalText {
+        /* 굿즈 텍스트 */
+        font-family: 'Pretendard-Regular';
+        line-height: 40px;
+    }
+
+    #goodsTitle {
+        /* 굿즈 이름 */
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        text-align: left;
+    }
+    
+    #goodsPrice {
+        font-size: 25px;
+    }
+    
+    #goodsDesc {
+        font-size: 20px;
+    }
+
+    #goodsFloatingBtn {
+        display: none;
+    }
 }
