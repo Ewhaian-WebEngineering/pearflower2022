@@ -33,6 +33,12 @@ function Gardener_page1() {
       document.getElementById("garden1_first").style.marginTop = "50%";
       document.getElementById("garden1_second").style.marginTop = "88%";
     }
+    if (vh / vw < 1) {
+      // 웹 - 높이가 넓이보다 작은 경우
+      document.getElementById("garden1_second").style.marginTop = "80%";
+      document.getElementById("garden1_first").style.width = "45%";
+      document.getElementById("garden1_second").style.width = "45%";
+    }
   }, []);
 
   /* GA 연동 */
