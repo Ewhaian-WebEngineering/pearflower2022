@@ -1,4 +1,3 @@
-
 .mainFullBox {
     
 }
@@ -58,11 +57,10 @@
     font-size: 20px;
 }
 
-.mainGrayBox{
-    height: 440px;
+#mainGrayBox{
+    width: 450px;
+    height: auto;
     /* width: 950px; */
-    background-color: #ECECEC;
-
 }
 
 .btnBox{
