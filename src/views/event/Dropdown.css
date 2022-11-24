@@ -12,6 +12,10 @@ li {
     border-bottom: 1px solid #807d7d;
 }
 
+ul.menuList li:first-child {
+    padding-top: 1%;
+}
+
 ul.menuList li:last-child {
     border-bottom: 0px;
 }
@@ -19,7 +23,7 @@ ul.menuList li:last-child {
 .menuList {
     list-style: none;
     position: absolute;
-    margin-top: 60%;
+    margin-top: 59%;
     width: 30vw;
     padding-top: 5%;
     background-color: white;
