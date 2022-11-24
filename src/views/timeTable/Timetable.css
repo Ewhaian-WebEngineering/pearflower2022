@@ -30,10 +30,12 @@
 .mobileTimeTableWrapper {
     width: 100%;
     margin: 0;
+
 }
 
 .mobileFullEvent {
     width: 100%;
     display: block;
     margin: 0 auto;
+    overflow: scroll;
 }
