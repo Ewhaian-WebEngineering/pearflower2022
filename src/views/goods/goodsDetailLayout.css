@@ -225,6 +225,8 @@
     font-size: 25px;
     color: #9B9B9B;
     text-align: left;
+    width: 30vw;
+    word-break: keep-all;
 }
 
 #goodsModalBuyBtn {
@@ -316,6 +318,7 @@
 
     #goodsDesc {
         font-size: 20px;
+        display: none;
     }
 
     #goodsModalDetailDiv {
