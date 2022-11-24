@@ -1,235 +1,234 @@
 .mainFullBox {
-    
 }
 
-.mainFullBox img{
-    text-align: center;
-    width: 100%;
+.mainFullBox img {
+  text-align: center;
+  width: 100%;
 }
 
-
-.textBox{
-    /* background-color: red; */
-    padding-top: 40px;
-    text-align: center;
+.textBox {
+  /* background-color: red; */
+  padding-top: 40px;
+  text-align: center;
 }
 
-.textBox h1{
-    font-weight: 600;
-    font-size: 41px;
-    word-break: keep-all;
-    line-height: 56px;
+.textBox h1 {
+  font-weight: 900;
+  font-size: 41px;
+  word-break: keep-all;
+  line-height: 56px;
 }
 
-.textBox h2{
-    color: #EB4C53;
-    font-size: 31px;
-    padding-top: 75px;
-    font-weight: 600;
-    line-height: 38px;
-    word-break: keep-all;
-
+.textBox h2 {
+  color: #eb4c53;
+  font-size: 31px;
+  padding-top: 75px;
+  font-weight: 800;
+  line-height: 38px;
+  word-break: keep-all;
 }
 
 .textBox p {
-    padding-top: 50px;
-    line-height: 38px;
-    word-break: keep-all;
-
+  font-size: 20px;
+  font-weight: 700;
+  padding-top: 50px;
+  line-height: 38px;
+  word-break: keep-all;
 }
 
-.eventBoxFull{
-    padding-top: 95px;
-    display: flex;
-    justify-content: center;
-    padding-bottom: 180px;
+.eventBoxFull {
+  padding-top: 95px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 180px;
 }
 
 .eventGrayBox {
-    /* height: 480px; */
-    width: 950px;
-    
+  /* height: 480px; */
+  width: 950px;
 }
 
 .eventGrayBox p {
-    margin-bottom: 15px;
-    font-weight: 500;
-    font-size: 20px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  font-size: 20px;
 }
 
-#mainGrayBox{
-    width: 60%;
-    height: auto;
-    /* width: 950px; */
+#mainGrayBox {
+  width: 60%;
+  height: auto;
+  /* width: 950px; */
 }
 
-.btnBox{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 30px;
+.btnBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 30px;
 }
 
-.mainBtn{
-width:  350px;
-height:70px;
-background: #FFB09F;
-border-radius: 34.9351px;
-text-align: center;
-line-height: 70px;
-font-weight: 500;
-font-size: 21px;
+.mainBtn {
+  width: 350px;
+  height: 70px;
+  background: #ffb09f;
+  border-radius: 34.9351px;
+  text-align: center;
+  line-height: 70px;
+  font-weight: 500;
+  font-size: 21px;
 }
 
 .mainBtn a {
-    text-decoration: none;
-    color: black;
-    font-size: 30px;
+  text-decoration: none;
+  color: black;
+  font-size: 30px;
 }
 
-.mainGrayBox{
-
+.mainGrayBox {
 }
 
-.mainGrayBox_box{
-    padding-top: 322px;
-    padding-left: 15px;
+.mainGrayBox_box {
+  padding-top: 322px;
+  padding-left: 15px;
 }
 
-
-.mainGrayBoxText{
-    display: flex;
-    margin-bottom: 10px;
+.mainGrayBoxText {
+  display: flex;
+  margin-bottom: 10px;
 }
 
-.mainGrayBoxText_box{
-    padding: 0px 20px 0px 20px;
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 40px;
-    background: #FFFFFF;
-    border-radius: 20px;
-    margin-right: 30px;
-    /* height: 12px; */
+.mainGrayBoxText_box {
+  padding: 0px 20px 0px 20px;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 40px;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-right: 30px;
+  /* height: 12px; */
 }
 
 .mainGrayBoxText p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 40px;
+  margin-bottom: 0px;
+}
+
+@media screen and (max-width: 768px) {
+  .btnBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .textBox {
+    padding: 40px;
+    /* background-color: red; */
+    text-align: center;
+  }
+
+  .textBox h1 {
+    font-weight: 900;
+    font-size: 31px;
+    line-height: 38px;
+  }
+
+  .textBox h2 {
+    color: #eb4c53;
+    font-size: 21px;
+    padding-top: 75px;
+    font-weight: 800;
+    line-height: 38px;
+  }
+
+  .textBox p {
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 50px;
+    line-height: 38px;
+    word-break: keep-all;
+  }
+
+  .mainGrayBox {
+    height: 440px;
+    background-color: #ececec;
+  }
+
+  .eventGrayBox {
+    /* height: 480px; */
+    width: 95%;
+  }
+
+  .mainBtn {
+    width: 250px;
+    height: 50px;
+    background: #ffb09f;
+    border-radius: 34.9351px;
+    text-align: center;
+    line-height: 50px;
+    font-weight: 500;
+    font-size: 17px;
+    margin-top: 20px;
+  }
+
+  .mainBtn a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+
+  .mainGrayBoxText_box {
+    padding: 0px 10px 0px 10px;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 40px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin-right: 20px;
+    /* height: 12px; */
+  }
+
+  .mainGrayBoxText p {
     font-weight: 500;
     font-size: 20px;
     line-height: 40px;
     margin-bottom: 0px;
-}
-
-
-@media screen and (max-width: 768px) {
-
-    .btnBox{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 30px;
-    }
-
-    .textBox{
-        padding: 40px;
-        /* background-color: red; */
-        text-align: center;
-    }
-
-    .textBox h1{
-        font-weight: 600;
-        font-size: 31px;
-        line-height: 38px;
-    }
-    
-    .textBox h2{
-        color: #EB4C53;
-        font-size: 21px;
-        padding-top: 75px;
-        font-weight: 600;
-        line-height: 38px;
-    }
-
-    .mainGrayBox {
-        height: 440px;
-        background-color: #ECECEC;
-    }
-
-    .eventGrayBox {
-        /* height: 480px; */
-        width: 95%;
-    }
-
-    .mainBtn{
-        width:  250px;
-        height: 50px;
-        background: #FFB09F;
-        border-radius: 34.9351px;
-        text-align: center;
-        line-height: 50px;
-        font-weight: 500;
-        font-size: 17px;
-        margin-top: 20px;
-    }
-
-    .mainBtn a {
-        text-decoration: none;
-        color: black;
-        font-size: 20px;
-    }
-
-    .mainGrayBoxText_box{
-        padding: 0px 10px 0px 10px;
-        font-weight: 500;
-        font-size: 22px;
-        line-height: 40px;
-        background: #FFFFFF;
-        border-radius: 20px;
-        margin-right: 20px;
-        /* height: 12px; */
-    }
-    
-    .mainGrayBoxText p {
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 40px;
-        margin-bottom: 0px;
-    }
-
+  }
 }
 
 @media screen and (max-width: 600px) {
+  .btnBox {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+  }
 
-    .btnBox{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-        margin-top: 30px;
-    }
+  .mainGrayBox_box {
+    padding-top: 300px;
+    padding-left: 10px;
+  }
 
-    .mainGrayBox_box {
-        padding-top: 300px;
-        padding-left: 10px;
-    }
+  .mainGrayBoxText_box {
+    padding: 0px 10px 0px 10px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 30px;
+    background: #ffffff;
+    border-radius: 20px;
+    margin-right: 15px;
+    /* height: 12px; */
+  }
 
-    .mainGrayBoxText_box {
-        padding: 0px 10px 0px 10px;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 30px;
-        background: #FFFFFF;
-        border-radius: 20px;
-        margin-right: 15px;
-        /* height: 12px; */
-    }
-
-    .mainGrayBoxText p {
-        font-weight: 500;
-        font-size: 13px;
-        line-height: 30px;
-        margin-bottom: 0px;
-    }
+  .mainGrayBoxText p {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 30px;
+    margin-bottom: 0px;
+  }
 }
