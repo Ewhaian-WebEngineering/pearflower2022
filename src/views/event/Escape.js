@@ -12,7 +12,7 @@ function Escape() {
     }
 
     /* GA 연동 */
-    const GAEventsTracker = UseGAEventsTracker("이벤트(게임팝업)");
+    const GAEventsTracker = UseGAEventsTracker("이스케이프게임이벤트페이지)");
 
     return (
         <div>
