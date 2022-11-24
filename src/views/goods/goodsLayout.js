@@ -59,15 +59,15 @@ function GoodsLayout() {
         {
             id: 1,
             title: '스티커팩',
-            price: 3000,
+            price: 1500,
             describe: '설명설명설명설명',
             img: "../img/goods/goods_detail/1-1.png",
             detailImg: detailImg_1
         },
         {
             id: 2,
-            title: '유리컵',
-            price: 6000,
+            title: '스택컵',
+            price: 9000,
             describe: '설명설명설명설명',
             img: "../img/goods/goods_detail/2-1.png",
             detailImg: detailImg_2
@@ -76,14 +76,14 @@ function GoodsLayout() {
         {
             id: 3,
             title: '말랑비즈인형',
-            price: 5000,
+            price: 13000,
             describe: '설명설명설명설명',
             img: "../img/goods/goods_detail/3-1.png",
             detailImg: detailImg_3
         }, {
             id: 4,
-            title: '멀티클리너',
-            price: 3000,
+            title: '액정클리너',
+            price: 2000,
             describe: '설명설명설명설명',
             img: "../img/goods/goods_detail/4-1.png",
             detailImg: detailImg_4
@@ -91,7 +91,7 @@ function GoodsLayout() {
         {
             id: 5,
             title: '레고 피규어',
-            price: 9000,
+            price: 11000,
             describe: '설명설명설명설명',
             img: "../img/goods/goods_detail/5-1.png",
             detailImg: detailImg_5
@@ -99,7 +99,7 @@ function GoodsLayout() {
         {
             id: 6,
             title: '그립톡',
-            price: 3000,
+            price: 4000,
             describe: '설명설명설명설명',
             img: "../img/goods/goods_detail/6-1.png",
             detailImg: detailImg_6
@@ -123,9 +123,9 @@ function GoodsLayout() {
 
     const imgTitle = [
         { name: "스티커팩", price: 1500 },
-        { name: "유리컵", price: 9000 },
+        { name: "스택컵", price: 9000 },
         { name: "말랑비즈인형", price: 13000 },
-        { name: "멀티클리너", price: 2000 },
+        { name: "액정클리너", price: 2000 },
         { name: "레고피규어", price: 11000 },
         { name: "그립톡", price: 4000 },
     ];
