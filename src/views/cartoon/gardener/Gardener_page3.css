@@ -69,3 +69,10 @@
     margin-bottom: 0;
   }
 }
+
+/* iphone SE 버전 */
+@media screen and (device-width: 375px) and (device-height: 667px) {
+  #garden3_catchheart {
+    margin-top: 75%;
+  }
+}

@@ -305,3 +305,11 @@
   animation: bounceInLeft 2s;
   animation-fill-mode: forwards;
 }
+
+/* iphone SE 버전 */
+@media screen and (device-width: 375px) and (device-height: 667px) {
+  #garden2_heartbubble {
+    margin-bottom: 55%;
+    margin-left: 34%;
+  }
+}

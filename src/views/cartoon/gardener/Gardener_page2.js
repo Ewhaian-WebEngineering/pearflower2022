@@ -60,6 +60,15 @@ function garden2_animation() {
 function Gardener_page2() {
   setScreenSize();
 
+  useEffect(() => {
+    let vh = window.innerHeight;
+    let vw = window.innerWidth;
+    if (vh / vw < 1) {
+      // 웹 - 높이가 넓이보다 작은 경우
+      document.getElementById("garden2_heartbubble").style.marginBottom = "50%";
+    }
+  }, []);
+
   /* GA 연동 */
   const GAEventsTracker = UseGAEventsTracker("정원지기");
   useEffect(() => {
