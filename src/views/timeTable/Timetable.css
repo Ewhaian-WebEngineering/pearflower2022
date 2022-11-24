@@ -24,7 +24,31 @@
     margin: 0 auto;
 }
 
+.timetablewebbg {
+    background-size:cover;
+    background-position:50%;
+    background-image: url("../../../public/img/timetable/timetableWebBG.png");
+    background-attachment: fixed;
+}
 
+.timetable {
+    width:50%;
+    margin-top: 10vh;
+}
+
+.timetablefooter{
+    max-width: 100%;
+}
+
+img{
+    margin: 0;
+    padding:0;
+}
+
+div{
+    margin: 0;
+    padding:0;
+}
 /*모바일*/
 
 .mobileTimeTableWrapper {
