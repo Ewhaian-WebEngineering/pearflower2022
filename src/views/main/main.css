@@ -65,6 +65,7 @@
 
 .btnBox{
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: center;
     margin-top: 30px;
@@ -123,7 +124,14 @@ font-size: 21px;
 
 @media screen and (max-width: 768px) {
 
-    
+    .btnBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+    }
+
     .textBox{
         padding: 40px;
         /* background-color: red; */
@@ -163,6 +171,7 @@ font-size: 21px;
         line-height: 50px;
         font-weight: 500;
         font-size: 17px;
+        margin-top: 20px;
     }
 
     .mainBtn a {
@@ -192,6 +201,15 @@ font-size: 21px;
 }
 
 @media screen and (max-width: 600px) {
+
+    .btnBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 30px;
+    }
+
     .mainGrayBox_box {
         padding-top: 300px;
         padding-left: 10px;
