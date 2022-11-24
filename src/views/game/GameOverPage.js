@@ -27,6 +27,7 @@ function GameOverPage(props) {
                         </Link>
                     </div>
                 </div>
+                <img src='img/game/cry.png' className='cry' alt='우는애기'></img>
             </div>
 
             <img src='img/game/background.png' className="background" alt="배경" />
@@ -35,7 +36,6 @@ function GameOverPage(props) {
             <Link to="/finalgame" onClick={GAEventsTracker("게임실패다시하기")}>
                 <img src='img/game/replay.png' className="replay" alt="다시하기" />
             </Link>
-
         </div>
     )
 
