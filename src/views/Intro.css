@@ -85,7 +85,7 @@
 }
 #intro_cat_mouse {
   visibility: var(--cat-mouse);
-  width: 35%;
+  width: 28%;
   content: url(/public/img/cartoon/bee/page1/poster/mouse.png);
   right: 0;
   bottom: 0;

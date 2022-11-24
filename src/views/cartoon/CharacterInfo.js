@@ -22,7 +22,7 @@ function CharacterInfo() {
   /* GA 연동 */
   const GAEventsTracker = UseGAEventsTracker("캐릭터소개");
   useEffect(() => {
-      GAEventsTracker();
+    GAEventsTracker();
   }, []);
 
   return (
@@ -39,7 +39,7 @@ function CharacterInfo() {
                 <div className="characterInfo_wrap">
                   <div
                     id="characterInfo_mushroom_name"
-                    className="nexonFontExtraBold characterInfo_name"
+                    className="gmarketFontBold characterInfo_name"
                   >
                     버섯
                   </div>
@@ -53,14 +53,14 @@ function CharacterInfo() {
                   ></div>
                   <div
                     id="characterInfo_mushroom_subName"
-                    className="nexonFontBold characterInfo_subName"
+                    className="gmarketFont characterInfo_subName"
                   >
                     '재학생'
                   </div>
                   <div className="characterInfo_description_wrap">
                     <div
                       id="characterInfo_mushroom_description_content"
-                      className="nexonFontBold characterInfo_description_content"
+                      className="gmarketFont characterInfo_description_content"
                     >
                       대면학기를 그리워하며<br></br>비대면학기를 보내던<br></br>
                       와중...<br></br>누군가로부터 온<br></br>초대 메세지!?
@@ -71,7 +71,7 @@ function CharacterInfo() {
                 <div className="characterInfo_wrap">
                   <div
                     id="characterInfo_bee_name"
-                    className="nexonFontExtraBold characterInfo_name"
+                    className="gmarketFontBold characterInfo_name"
                   >
                     꿀벌
                   </div>
@@ -85,14 +85,14 @@ function CharacterInfo() {
                   ></div>
                   <div
                     id="characterInfo_bee_subName"
-                    className="nexonFontBold characterInfo_subName"
+                    className="gmarketFont characterInfo_subName"
                   >
                     '졸업생'
                   </div>
                   <div className="characterInfo_description_wrap">
                     <div
                       id="characterInfo_bee_description_content"
-                      className="nexonFontBold characterInfo_description_content"
+                      className="gmarketFont characterInfo_description_content"
                     >
                       후배들을 위해<br></br>열심히 농축한<br></br>꿀벌 표
                       <br></br>
@@ -106,7 +106,7 @@ function CharacterInfo() {
                 <div className="characterInfo_wrap">
                   <div
                     id="characterInfo_sprout_name"
-                    className="nexonFontExtraBold characterInfo_name"
+                    className="gmarketFontBold characterInfo_name"
                   >
                     새싹
                   </div>
@@ -120,14 +120,14 @@ function CharacterInfo() {
                   ></div>
                   <div
                     id="characterInfo_sprout_subName"
-                    className="nexonFontBold characterInfo_subName"
+                    className="gmarketFont characterInfo_subName"
                   >
                     '신입생'
                   </div>
                   <div className="characterInfo_description_wrap">
                     <div
                       id="characterInfo_sprout_description_content"
-                      className="nexonFontBold characterInfo_description_content"
+                      className="gmarketFont characterInfo_description_content"
                     >
                       여기저기 '배꽃정원'<br></br>도대체<br></br>'배꽃정원'이
                       뭔데?
@@ -139,7 +139,7 @@ function CharacterInfo() {
                 <div className="characterInfo_wrap">
                   <div
                     id="characterInfo_gardener_name"
-                    className="nexonFontExtraBold characterInfo_name"
+                    className="gmarketFontBold characterInfo_name"
                   >
                     정원지기
                   </div>
@@ -153,14 +153,14 @@ function CharacterInfo() {
                   ></div>
                   <div
                     id="characterInfo_gardener_subName"
-                    className="nexonFontBold characterInfo_subName"
+                    className="gmarketFont characterInfo_subName"
                   >
                     '운영진'
                   </div>
                   <div className="characterInfo_description_wrap">
                     <div
                       id="characterInfo_gardener_description_content"
-                      className="nexonFontBold characterInfo_description_content"
+                      className="gmarketFont characterInfo_description_content"
                     >
                       뭐?<br></br>이제 대면학기라고?<br></br>이건 못 참지
                       <br></br>
