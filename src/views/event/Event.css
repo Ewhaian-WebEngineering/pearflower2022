@@ -376,24 +376,24 @@
     }
 
     .maxlev {
-        width: 55%;
+        width: 50%;
         padding-top: 3%;
         display: block;
-        padding-left: 25%;
+        padding-left: 27%;
     }
 
     .bingo {
-        width: 45%;
+        width: 43%;
         padding-top: 2vh;
         display: block;
-        padding-left: 25%;
+        padding-left: 27%;
     }
 
     .wishtree {
-        width: 50%;
+        width: 48%;
         padding-top: 2vh;
         display: block;
-        padding-left: 25%;
+        padding-left: 27%;
     }
 
     /*이벤트 아이콘 이름표 스타일*/
