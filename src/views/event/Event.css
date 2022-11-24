@@ -3,8 +3,6 @@
 
     body {
         margin: 0;
-        overflow-y: hidden;
-        /*스크롤은 body가 아닌 outer div에서 제어할 것이므로 일단 스크롤 막기*/
     }
 
 
