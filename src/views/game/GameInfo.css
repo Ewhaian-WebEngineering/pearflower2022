@@ -93,12 +93,12 @@
 
     .explain {
         position: absolute;
-        width: 60%;
+        width: 70%;
         right: 0;
         top: 0;
         font-size: 80%;
-        margin-right: 20%;
-        margin-top: 50%;
+        margin-right: 15%;
+        margin-top: 35%;
         font-family: 'Hahmlet', serif;
         font-weight: 700;
         color: #442121;
