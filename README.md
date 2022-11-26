@@ -1,70 +1,20 @@
-# Getting Started with Create React App
+# Pearflower2022
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## (1) 소개
+2022 배꽃정원 행사 페이지
 
-## Available Scripts
+## (2) 개발자 정보
+39기 김민정(@wowalswjd) - 카툰페이지(버섯, 정원지기), 굿즈페이지 최종 수정\
+39기 김근주(@tdddt) - 최종 호스팅 \
+39기 김가은(@binggamel) - 메인페이지, 굿즈페이지 \
+40기 김가영(@gxxo) - 이스케이프 게임페이지 \
+40기 김주은(@JK-cs) - 이스케이프 게임페이지 \
+41기 나혜인(@hyeinNa) - 이스케이프 게임페이지 \
+41기 윤경민(@yoongang02) - 인트로페이지, 캐릭터소개페이지, 카툰페이지(꿀벌, 새싹), 메인페이지 최종 수정 \
+41기 한현경(@HyunKyungHan) - 이벤트페이지, 상단바, 행사일정페이지, 굿즈페이지 최종 수정 
 
-In the project directory, you can run:
+## (3) 페이지 정보
+- 카툰페이지 : css animation을 사용하여 새싹, 버섯, 꿀벌, 정원지기의 스토리를 담은 만화를 애니메이션으로 구현
+- 이스케이프 게임페이지 : <br> 이화와 관련된 문제를 풀면서 탈출하는 방탈출 웹게임. 각 문제를 맞추면 문을 열 수 있는 암호가 하나씩 뜨고, 마지막에는 암호를 조합하여 문을 열고 탈출하는 방식
+- 이벤트페이지 : 각 아이콘을 클릭하면 오프라인 이벤트를 설명하는 팝업이 뜨도록 구현
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
