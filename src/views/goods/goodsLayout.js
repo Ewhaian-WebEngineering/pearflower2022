@@ -26,7 +26,7 @@ function GoodsLayout() {
         "../img/goods/goods_detail/2-5.png",
         "../img/goods/goods_detail/2-6.png",
         "../img/goods/goods_detail/2-7.png",
-        "../img/goods/goods_detail/2-8.png",
+        // "../img/goods/goods_detail/2-8.png",
     ]
 
     const detailImg_3 = [

@@ -139,3 +139,13 @@
   width: 70%;
   content: url(/public/img/cartoon/characterInfo/btn.png);
 }
+
+/* iphone SE 버전 */
+@media screen and (device-width: 375px) and (device-height: 667px) {
+  .characterInfo_description_wrap {
+    height: 44%; 
+  }
+  .characterInfo_description_content {
+    margin-top: 28%;
+  }
+}

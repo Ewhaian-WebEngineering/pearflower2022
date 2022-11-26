@@ -29,6 +29,9 @@ function Mushroom_page1() {
       secondcut.style.marginTop = "135%";
     } else if (vh / vw >= 1.79 && vh / vw < 2) {
       secondcut.style.marginTop = "123%";
+    } else if (vw === 375 && vh === 667) {
+      // iphone SE 레이아웃 조정
+      secondcut.style.marginTop = "116%";
     } else if (vh/ vw >= 1 && vh/ vw < 1.79){
       secondcut.style.marginTop = "116%";
     } else {
