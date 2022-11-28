@@ -138,7 +138,7 @@ function GoodsLayout() {
     function GoodsModal() {
         return (
             // 모달창박스
-            <div id='goodsModalBox'>
+            <div id={pickedModalNum <=2 ? "goodsModalBox_long": "goodsModalBox"}>
                 {/* x 버튼 */}
                 <h1 id="goodsModalCloseBtn" onClick={() => { setIsOpenModal(false); }}>X</h1>
                 {/* 굿즈 설명 부분 */}
@@ -160,7 +160,7 @@ function GoodsLayout() {
                         </div>
                     </div>
                     {/* 상세 이미지 */}
-                    <div id="goodsModalDetailDiv">
+                    <div id={pickedModalNum <=2 ? "goodsModalDetailDiv_long": "goodsModalDetailDiv"}>
                         {(detailData[pickedModalNum].detailImg).map(data => (
                             <img id="goodsModalDetailImg" src={data} alt="" />
                         ))}
