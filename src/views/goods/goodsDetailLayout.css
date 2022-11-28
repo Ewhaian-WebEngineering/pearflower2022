@@ -55,7 +55,7 @@
 }
 
 /* 민정 팝업 수정 */
-#goodsModalBox {
+#goodsModalBox, #goodsModalBox_long {
     /* 모달 박스 */
     position: fixed;
     top: 50%;
@@ -143,7 +143,7 @@
 
 
 
-#goodsModalDetailDiv {
+#goodsModalDetailDiv, #goodsModalDetailDiv_long {
     /* 상세 이미지들 큰 묶음 */
     margin-top: 8vh;
 
@@ -179,6 +179,12 @@
 
     #goodsModalBox {
         width: 90vw;
+    }
+
+    #goodsModalBox_long {
+        /* 1, 2, 3번 굿즈의 경우 box높이를 길게 해줌 */
+        width: 90vw;
+        height: 85vh;
     }
 
     #goodsModalInfo {
@@ -221,9 +227,19 @@
         display: inline-block;
         width: 80vw;
         margin-bottom: 0;
+        margin-top: 6vh;
 
         /* 모바일 스크롤 */
         height: 70vw;
+        overflow-y: scroll;
+    }
+
+    #goodsModalDetailDiv_long {
+        display: inline-block;
+        width: 80vw;
+        margin-bottom: 0;
+        margin-top: 6vh;
+        height: 49vh;
         overflow-y: scroll;
     }
 
@@ -234,5 +250,18 @@
 
     #goodsFloatingBtn {
         display: none;
+    }
+}
+
+/* iphone SE 버전 */
+@media screen and (device-width: 375px) and (device-height: 667px) {
+    #goodsModalDetailDiv_long {
+        height: 40vh;
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 740px) {
+    #goodsModalDetailDiv_long {
+        height: 52vh;
     }
 }
